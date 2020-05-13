@@ -5,9 +5,11 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
+    
     public class Labirinto1
 
     {
+        public List<Moeda> moedas = new List<Moeda>();
 
         public List<Parede> linha1 = new List<Parede>();
         public List<Parede> linha2 = new List<Parede>();
@@ -22,6 +24,15 @@ namespace MeuRPGZinCore
 
         public Labirinto1()
         {
+            moedas.Add(new Moeda { x = 1, y = 4 });
+            moedas.Add(new Moeda { x = 1, y = 5 });
+            moedas.Add(new Moeda { x = 1, y = 7 });
+            moedas.Add(new Moeda { x = 2, y = 7 });
+            moedas.Add(new Moeda { x = 3, y = 7 });
+            moedas.Add(new Moeda { x = 9, y = 7 });
+            moedas.Add(new Moeda { x = 9, y = 6 });
+            moedas.Add(new Moeda { x = 9, y = 5 });
+
             linha1.Add(new Parede { topo = true, esquerda = true });
             linha1.Add(new Parede { topo = true, baixo = true });
             linha1.Add(new Parede { topo = true, direita = true, baixo = true });
@@ -349,6 +360,34 @@ namespace MeuRPGZinCore
             }
 
             return resultado;
+
+        }
+
+        public void TemPeca (int x, int y, Feiticeira bia)
+        {
+          for(int i = 0; i<moedas.Count; ++i)
+            {
+              if(moedas[i].x == x && moedas[i].y == y)
+                {
+                    bia.moedas ++;
+                    moedas.Remove(moedas[i]);
+                }
+            }
+        }
+
+        public void TemItem (int x, int y, Feiticeira bia, Item item)
+        {
+            bool pegou = false;
+
+            if (x == 1 && y == 2 && pegou == false)
+            {
+
+                pegou = true;
+                bia.mochila.AddItem(item, bia.mochila.bagWhey);
+
+
+            }
+      
 
         }
 

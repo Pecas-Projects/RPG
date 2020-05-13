@@ -18,13 +18,17 @@ using MeuRPGZinCore;
 
 namespace MeuRPGZinUWP
 {
+
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
     public sealed partial class pagina4 : Page
     {
         int feiticeiraX = 9, feiticeiraY = 0;
-        Labirinto1 l;
+        public Labirinto1 l;
+        public PocaoWhey pocao_whey = new PocaoWhey();
+        public Feiticeira bia = new Feiticeira();
+
 
         public pagina4()
         {
@@ -73,6 +77,8 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
+            l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey);
+
         }
 
             public void Down()
@@ -81,8 +87,11 @@ namespace MeuRPGZinUWP
                 {
                     feiticeiraMovimento.Y += 80;
                     feiticeiraX += 1;
+              
 
                 }
+
+
             }
 
             public void Up()
