@@ -1,0 +1,22 @@
+RELATÓRIO RPG:
+ -30/04: Ana e maria consertaram o projeto e as classes que envolvem personagem, refizeram calculos de ataque e mudaram o ataque especial
+    *Ana fez o gitignore
+--------------------------------------------------------------------------------------------------------------------------------
+ -01/05: Bia e Fernanda decidiram fazer o labirinto com grid, primeiro fazer ele no photoshop e depois passar o grid por cima, alguma variável para detectar que é uma parede
+    *Maria terminou de consertar os erros fezes no projeto
+---------------------------------------------------------------------------------------------------------------------------------
+ -06/05: Fernanda acabou o desenho do primeiro labirindo
+---------------------------------------------------------------------------------------------------------------------------------
+ -07/05: Bia definiu as paredes, Bia e Fernanda fizeram o primeiro labirinto mas não conseguiram testar
+-07/05: Maria e Ana testaram a mecânica do jogo e corrigiram a os cálculos correspondentes. Definiram o padrão de comportamento do Sereiano
+---------------------------------------------------------------------------------------------------------------------------------
+-08/05: Maria arrumou o pirlimpimpim e mais alguns detalhes referentes as classes e interfaces relacionadas aos itens e a mochila
+-08/05: Ana e Maria terminaram a classe do Sereiano e tiraram duvida sobre o controller da batalha de turno
+-08/05: Fernanda fez o desenho do segundo labirinto
+-08/05: Bia e Fernanda conseguiram fazer a tela aparecer, a feiticeira se mover e consertaram as listas de checagem de parede
+     *Bia consertou os erros fazendo feiticeira se mover e detectar as paredes
+---------------------------------------------------------------------------------------------------------------------------------
+-13/05: decidiu que não terá mais mapa
+-13/05: decidiu pop-up: ver bolsa, a cada final de fase ela pode ir à loja; pop-up avisando que venceu a fase/batalha;
+13/05: Maria removeu os obstáculos e local, também fez a correção do uso dos itens
+---------------------------------------------------------------------------------------------------------------------------------
