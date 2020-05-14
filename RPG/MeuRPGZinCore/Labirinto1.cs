@@ -41,10 +41,9 @@ namespace MeuRPGZinCore
             linha2.Add(new Parede { topo = true, direita = true });
             linha2.Add(new Parede { esquerda = true, direita = true });
             linha2.Add(new Parede { direita = true, esquerda = true });
-            linha2.Add(new Parede { baixo = true, direita = true });
 
             //linha3
-            linha3.Add(new Parede { baixo = true, direita = true });
+            linha3.Add(new Parede { esquerda = true, baixo = true, direita = true });
             linha3.Add(new Parede { esquerda = true, direita = true });
             linha3.Add(new Parede { esquerda = true, direita = true });
             linha3.Add(new Parede { esquerda = true, direita = true });
@@ -58,6 +57,7 @@ namespace MeuRPGZinCore
             linha4.Add(new Parede { esquerda = true, topo = true });
             linha4.Add(new Parede { baixo = true });
             linha4.Add(new Parede { baixo = true, direita = true });
+            linha4.Add(new Parede { esquerda = true, direita = true });
             linha4.Add(new Parede { esquerda = true, direita = true });
             linha4.Add(new Parede { esquerda = true, topo = true, direita = true });
             linha4.Add(new Parede { esquerda = true, direita = true });
@@ -144,7 +144,7 @@ namespace MeuRPGZinCore
 
             else if (x == 4)
             {
-                if (linha1[y].topo == true) resultado = true;
+                if (linha4[y].topo == true) resultado = true;
             }
 
             else if (x == 5)

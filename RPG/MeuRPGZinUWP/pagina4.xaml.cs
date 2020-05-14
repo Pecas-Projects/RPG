@@ -95,11 +95,16 @@ namespace MeuRPGZinUWP
             }
 
             public void Up()
+            {   
+                if (feiticeiraX == 4)
             {
+                Console.WriteLine("tá na linha 4");
+            }
                 if (l.TemParedeTopo(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.Y -= 80;
                     feiticeiraX -= 1;
+                
 
                 }
             }
