@@ -22,3 +22,5 @@ RELATÓRIO RPG:
 -13/05: Maria removeu os obstáculos e local, também fez a correção do uso dos itens
 ---------------------------------------------------------------------------------------------------------------------------------
 -14/05: Maria e Ana fizeram o primeiro teste da batalha de turno, criaram a tela da batalha. O sereiano já conseguei atacar, defender e descansar sozinho
+---------------------------------------------------------------------------------------------------------------------------------
+-15/05: Maria e Ana implementarão a classe controladora da batalha de turnos, definição da passagem da feiticeira pelo jogo, além de como ocorrerá a troca de inimigos entre as batalhas. Além do detalhamento da batalha (aparece o que cada um fez na batalha)
