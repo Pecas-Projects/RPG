@@ -78,7 +78,15 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey);
+            if (l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey) == true)
+            {
+                
+            }
+            if (l.TemPeca(feiticeiraX, feiticeiraY, bia) == true)
+            {
+                bia.moedas++;
+
+            }
 
         }
 
@@ -88,10 +96,8 @@ namespace MeuRPGZinUWP
                 {
                     feiticeiraMovimento.Y += 80;
                     feiticeiraX += 1;
-              
 
                 }
-
 
             }
 
@@ -104,8 +110,7 @@ namespace MeuRPGZinUWP
                 if (l.TemParedeTopo(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.Y -= 80;
-                    feiticeiraX -= 1;
-                
+                    feiticeiraX -= 1;               
 
                 }
             }
@@ -117,7 +122,7 @@ namespace MeuRPGZinUWP
                     feiticeiraMovimento.X += 80;
                     feiticeiraY += 1;
 
-                }
+                }                
             }
 
             public void Left()
