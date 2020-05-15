@@ -30,6 +30,7 @@ namespace MeuRPGZinUWP
         public Feiticeira bia = new Feiticeira();
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
+
         public pagina4()
         {
             this.InitializeComponent();
