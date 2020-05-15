@@ -9,7 +9,8 @@ RELATÓRIO RPG:
 -06/05: Fernanda acabou o desenho do primeiro labirindo
 ---------------------------------------------------------------------------------------------------------------------------------
 -07/05: Bia definiu as paredes, Bia e Fernanda fizeram o primeiro labirinto mas não conseguiram testar
--07/05: Maria e Ana testaram a mecânica do jogo e corrigiram a os cálculos correspondentes. Definiram o padrão de comportamento do        Sereiano
+-07/05: Maria e Ana testaram a mecânica do jogo e corrigiram a os cálculos correspondentes.
+Definiram o padrão de comportamento do Sereiano
 ---------------------------------------------------------------------------------------------------------------------------------
 -08/05: Maria arrumou o pirlimpimpim e mais alguns detalhes referentes as classes e interfaces relacionadas aos itens e a mochila
 -08/05: Ana e Maria terminaram a classe do Sereiano e tiraram duvida sobre o controller da batalha de turno
