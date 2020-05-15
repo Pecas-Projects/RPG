@@ -45,6 +45,7 @@ namespace MeuRPGZinUWP
             matrizImg[9, 7] = moeda5;
             matrizImg[9, 6] = moeda6;
             matrizImg[9, 5] = moeda7;
+            matrizImg[1, 2] = whey;
         }
 
         /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
@@ -90,13 +91,16 @@ namespace MeuRPGZinUWP
 
             if (l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey))
             {
-                
+                Image Whey = matrizImg[feiticeiraX, feiticeiraY];
+                canvasMap.Children.Remove(Whey); //remove visualmente o item
+                //Console.WriteLine(bia.mochila.bagWhey.Count);
             }
             if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
             {
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
                 //moeda.Opacity = 100;
                 canvasMap.Children.Remove(moeda); //remove visualmente a moeda
+                //Console.WriteLine(bia.moedas);
             }
 
         }

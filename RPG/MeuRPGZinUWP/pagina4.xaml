@@ -44,7 +44,7 @@
 
             <Image x:Name="moeda7" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="644" Canvas.Left="403" Stretch="Fill" />
 
-            <Image x:Name="Whey" Source="Assets/pocao_whey.png"  Height="36" Width="36" Canvas.Top="48" Canvas.Left="182" Stretch="Fill" />
+            <Image x:Name="whey" Source="Assets/pocao_whey.png"  Height="36" Width="36" Canvas.Top="48" Canvas.Left="182" Stretch="Fill" />
 
 
         </Canvas>
