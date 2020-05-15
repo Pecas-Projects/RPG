@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MeuRPGZinCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,22 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TelaIntegracao : Page
     {
+        public Feiticeira feiticeira = new Feiticeira();
+
         public TelaIntegracao()
         {
             this.InitializeComponent();
+        }
+
+        private void paginaDaBatalha(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TesteBatalha2),feiticeira);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            feiticeira = e.Parameter as Feiticeira;
         }
     }
 }

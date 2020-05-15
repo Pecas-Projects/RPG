@@ -33,12 +33,12 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-       /* protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            inimigoTroll = e.Parameter as Personagem;
-           ((PersonagemNPC)inimigoTroll).Inteligencia(p);
-        }*/
+            p = e.Parameter as Feiticeira;
+           //((PersonagemNPC)p).Inteligencia(p);
+        }
 
         public void AtualizarStatus()
         {

@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Margin="0,582,0,0" VerticalAlignment="Top" Width="390" HorizontalAlignment="Center" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
 
     </Grid>
 </Page>

@@ -134,9 +134,9 @@ namespace MeuRPGZinUWP
             {
 
                 if(feiticeiraX == 1 && feiticeiraY == 8)
-            {
+                {
                 this.Frame.Navigate(typeof(TelaIntegracao), bia);
-            }
+                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.X += 80;
