@@ -202,7 +202,7 @@ namespace MeuRPGZinCore
 
             else if (x == 4)
             {
-                if (linha1[y].direita == true) resultado = true;
+                if (linha4[y].direita == true) resultado = true;
             }
 
             else if (x == 5)
@@ -260,7 +260,7 @@ namespace MeuRPGZinCore
 
             else if (x == 4)
             {
-                if (linha1[y].esquerda == true) resultado = true;
+                if (linha4[y].esquerda == true) resultado = true;
             }
 
             else if (x == 5)
@@ -318,7 +318,7 @@ namespace MeuRPGZinCore
 
             else if (x == 4)
             {
-                if (linha1[y].baixo == true) resultado = true;
+                if (linha4[y].baixo == true) resultado = true;
             }
 
             else if (x == 5)
