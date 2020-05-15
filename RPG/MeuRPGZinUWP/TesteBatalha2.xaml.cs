@@ -93,8 +93,8 @@ namespace MeuRPGZinUWP
         private void usarEscudoBrabo(object sender, RoutedEventArgs e)
         {
             int acaoInimigo;
-            acaoInimigo = s.Inteligencia(p);
             p.usarEscudo();
+            acaoInimigo = s.Inteligencia(p);
             Controller.FimDeTurno(p, s, 0, acaoInimigo);
             RegistraAcoes(0, acaoInimigo);
             AtualizarStatus();
