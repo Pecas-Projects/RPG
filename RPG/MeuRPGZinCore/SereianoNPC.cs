@@ -17,10 +17,10 @@ namespace MeuRPGZinCore
     {
        public SereianosNPC()
         {
-            this.forca = 20;
-            this.perdaEstamina = 0.25;
-            this.ganhoEstamnina = 0.15;
-            this.escudo = 50;
+            this.Forca = 20;
+            this.PerdaEstamina = 0.25;
+            this.GanhoEstamnina = 0.15;
+            this.Escudo = 50;
         }
 
         /// <summary>
@@ -31,113 +31,134 @@ namespace MeuRPGZinCore
         /// <param name="inimigo"></param>
         public override void ataqueEspecial(Personagem inimigo)
         {
-            if(this.estamina >= 0.85)
+            if(this.Estamina >= 0.85)
             {
-                inimigo.estamina = 0;
+                inimigo.Estamina = 0;
             }
         }
 
-        public void inteligencia(Feiticeira inimiga)
+        /// <summary>
+        /// Se for ataque return 1
+        /// Se for escudo return 0
+        /// Se for descanço return -1
+        /// </summary>
+        /// <param name="inimiga"></param>
+        /// <returns></returns>
+        public int Inteligencia(Feiticeira inimiga)
         {
             //Sorteia os numeros para a inteligencia 
             Random radNum = new Random();
             int dado =  radNum.Next(9);
             int decisao = radNum.Next(2);
 
+
             //Caso entre neste if ele ira preferir DEFENDER
-            if(this.estamina <= inimiga.estamina && this.vida < inimiga.vida)
+            if(this.Estamina <= inimiga.Estamina && this.Vida < inimiga.Vida)
             {
                 //Chance de 60% de defender
                 if(dado >= 0 && dado < 5)
                 {
                     //Verifica se ele tem escudo
-                    if(this.escudo > 0)
+                    if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     //Verifica se é vantajoso atacar
-                    else if (this.estamina >= 0.7)
+                    else if (this.Estamina >= 0.7)
                     {
                         if( decisao == 0 || decisao == 1)
                         {
                                 atacar(inimiga);
+                                return 1;
                         }
                         else
                         {
                             descansar();
+                            return -1;
                         }
                     }
                     //Caso nao tenha nenhuma alternativa
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 //Chance de Ataque de 30%
                 else if(dado >= 5 && dado < 8)
                 {
                     //verifica se ele tem estamina
-                    if( this.estamina >= this.perdaEstamina)
+                    if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 else
                 {
                     descansar();
-
+                    return -1;
                 }
             }
             //Caso entre neste if ele prefere atacar
-            else if( this.estamina > inimiga.estamina && this.vida >= inimiga.vida)
+            else if( this.Estamina > inimiga.Estamina && this.Vida >= inimiga.Vida)
             {
                 //cance de 70% de ataque
                 if( dado >= 0 && dado < 6)
                 {
                     //verifica estamina
-                    if(this.estamina >= this.perdaEstamina)
+                    if(this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
                         //decide entre defender e descansar
                         if(decisao ==0 || decisao == 1)
                         {
-                            if( this.escudo > 0)
+                            if( this.Escudo > 0)
                             {
                                 usarEscudo();
+                                return 0;
                             }
                             else
                             {
                                 descansar();
+                                return -1;
                             }
                         }
                         else
                         {
                             descansar();
+                            return -1;
                         }
                     }
                 }
                 // Chance de usar escudo de 30% 
                 else if( dado >= 6 && dado <= 8 )
                 {
-                    if(this.escudo > 0)
+                    if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 else
                 {
                     descansar();
+                    return -1;
                 }
             }
             // Caso nao se encaixe em nenhuma ocasião especifica entra neste else
@@ -147,35 +168,41 @@ namespace MeuRPGZinCore
                 if( dado >= 0 && dado <= 4)
                 {
                     //verifica se ele tem escudo
-                    if(this.escudo > 0)
+                    if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     //caso nao tenha ele verifica a estamina e ataca
-                    else if( this.estamina >= this.perdaEstamina)
+                    else if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 // Chance de atacar de 40%
                 else if (dado >=5 && dado <= 8)
                 {
                     //verifica se ele tem estamina
-                    if( this.estamina >= this.perdaEstamina)
+                    if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
-                    else if(this.escudo > 0)
+                    else if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
 
                 }
@@ -183,17 +210,20 @@ namespace MeuRPGZinCore
                 else
                 {
                     //Confere se vale a pena descansar
-                    if( this.estamina <= 0.7)
+                    if( this.Estamina <= 0.7)
                     {
                         descansar();
+                        return -1;
                     }
-                    else if( this.escudo > 15)
+                    else if( this.Escudo > 15)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         atacar(inimiga);
+                        return -1;
                     }
                 }
             }

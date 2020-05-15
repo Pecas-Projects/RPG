@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    interface PersonagemNPC
+    public interface PersonagemNPC
     {
-        void inteligencia(Feiticeira inimiga);
+        int Inteligencia(Feiticeira inimiga);
     }
 }
