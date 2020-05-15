@@ -353,12 +353,12 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// verifica se tem moeda na coordenada desejada
+        /// verifica se tem moeda na coordenada desejada retorna true caso possua
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <param name="bia"></param>
-        public override void TemPeca(int x, int y, Feiticeira bia)
+        public override bool TemPeca(int x, int y, Feiticeira bia)
         {
             for (int i = 0; i < moedas.Count; ++i)
             {
@@ -366,18 +366,22 @@ namespace MeuRPGZinCore
                 {
                     bia.moedas++;
                     moedas.Remove(moedas[i]);
+                    return true;
                 }
             }
+            
+            return false;
+           
         }
 
         /// <summary>
-        /// verifica se tem item na coordenada desejada
+        /// verifica se tem item na coordenada desejada retorna caso
         /// </summary>
         /// <param name="x"> coordenada x </param>
         /// <param name="y"> coordenada y </param>
         /// <param name="bia"></param>
         /// <param name="item"></param>
-        public override void TemItem(int x, int y, Feiticeira bia, Item item)
+        public override bool TemItem(int x, int y, Feiticeira bia, Item item)
         {
             bool pegou = false;
 
@@ -386,9 +390,9 @@ namespace MeuRPGZinCore
 
                 pegou = true;
                 bia.mochila.AddItem(item, bia.mochila.bagWhey);
-
+                return true;
             }
-
+            return false;
         }
 
 

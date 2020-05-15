@@ -26,8 +26,8 @@ namespace MeuRPGZinCore
         public abstract bool TemParedeDireita(int x, int y);
         public abstract bool TemParedeEsquerda(int x, int y);
         public abstract bool TemParedeBaixo(int x, int y);
-        public abstract void TemPeca(int x, int y, Feiticeira bia);
-        public abstract void TemItem(int x, int y, Feiticeira bia, Item item);
+        public abstract bool TemPeca(int x, int y, Feiticeira bia);
+        public abstract bool TemItem(int x, int y, Feiticeira bia, Item item);
 
     }
 }
