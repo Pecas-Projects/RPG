@@ -13,14 +13,14 @@ namespace MeuRPGZinCore
 
         public Labirinto1()
         {
-            moedas.Add(new Moeda { x = 1, y = 4 });
-            moedas.Add(new Moeda { x = 1, y = 5 });
-            moedas.Add(new Moeda { x = 1, y = 7 });
-            moedas.Add(new Moeda { x = 2, y = 7 });
-            moedas.Add(new Moeda { x = 3, y = 7 });
-            moedas.Add(new Moeda { x = 9, y = 7 });
-            moedas.Add(new Moeda { x = 9, y = 6 });
-            moedas.Add(new Moeda { x = 9, y = 5 });
+            moedas.Add(new Moeda { X = 1, Y = 4 });
+            moedas.Add(new Moeda { X = 1, Y = 5 });
+            moedas.Add(new Moeda { X = 1, Y = 7 });
+            moedas.Add(new Moeda { X = 2, Y = 7 });
+            moedas.Add(new Moeda { X = 3, Y = 7 });
+            moedas.Add(new Moeda { X = 9, Y = 7 });
+            moedas.Add(new Moeda { X = 9, Y = 6 });
+            moedas.Add(new Moeda { X = 9, Y = 5 });
 
             linha1.Add(new Parede { topo = true, esquerda = true });
             linha1.Add(new Parede { topo = true, baixo = true });
@@ -362,7 +362,7 @@ namespace MeuRPGZinCore
         {
             for (int i = 0; i < moedas.Count; ++i)
             {
-                if (moedas[i].x == x && moedas[i].y == y)
+                if (moedas[i].X == x && moedas[i].Y == y)
                 {
                     bia.moedas++;
                     moedas.Remove(moedas[i]);

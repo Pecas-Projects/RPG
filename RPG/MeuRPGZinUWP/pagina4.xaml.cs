@@ -36,6 +36,7 @@ namespace MeuRPGZinUWP
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto1();
         }
+
         /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
                {
                    base.OnKeyDown(e);
