@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    class PocaoWhey : Item, ItemUtilizavel
+   public class PocaoWhey : Item, ItemUtilizavel
     {
-        PocaoWhey()
+        public PocaoWhey()
         {
             this.nome = "Poção de Whey";
             this.utilizado = false;

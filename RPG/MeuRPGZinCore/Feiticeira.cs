@@ -14,20 +14,22 @@ namespace MeuRPGZinCore
     public class Feiticeira : Personagem
     {
         public int moedas { get; set; }
-        public Mochila mochila { get; set; }
+        public Mochila mochila;
 
         /// <summary>
         /// a magia será utilizada na batalha de turno, 
         /// uma barra adicional que só a feiticeira tem
         /// e controla seu ataque especial
         /// </summary>
-        
+
         public double magia { get; set; }
 
-        ArrayList ItemdeBatalha = new ArrayList();
+        public ArrayList ItemdeBatalha = new ArrayList();
         
         public Feiticeira()
         {
+            this.mochila = new Mochila();
+
             //implementar valores default para a feiticeira
             this.Forca = 20;
             this.PerdaEstamina = 0.30;
