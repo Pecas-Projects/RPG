@@ -24,7 +24,7 @@ namespace MeuRPGZinCore
             }
         }
 
-        public void inteligencia(Feiticeira inimiga)
+        public int Inteligencia(Feiticeira inimiga)
         {
             throw new NotImplementedException();
         }

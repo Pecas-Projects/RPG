@@ -37,12 +37,20 @@ namespace MeuRPGZinCore
             }
         }
 
-        public void inteligencia(Feiticeira inimiga)
+        /// <summary>
+        /// Se for ataque return 1
+        /// Se for escudo return 0
+        /// Se for descanço return -1
+        /// </summary>
+        /// <param name="inimiga"></param>
+        /// <returns></returns>
+        public int Inteligencia(Feiticeira inimiga)
         {
             //Sorteia os numeros para a inteligencia 
             Random radNum = new Random();
             int dado =  radNum.Next(9);
             int decisao = radNum.Next(2);
+
 
             //Caso entre neste if ele ira preferir DEFENDER
             if(this.Estamina <= inimiga.Estamina && this.Vida < inimiga.Vida)
@@ -54,6 +62,7 @@ namespace MeuRPGZinCore
                     if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     //Verifica se é vantajoso atacar
                     else if (this.Estamina >= 0.7)
@@ -61,16 +70,19 @@ namespace MeuRPGZinCore
                         if( decisao == 0 || decisao == 1)
                         {
                                 atacar(inimiga);
+                                return 1;
                         }
                         else
                         {
                             descansar();
+                            return -1;
                         }
                     }
                     //Caso nao tenha nenhuma alternativa
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 //Chance de Ataque de 30%
@@ -80,16 +92,18 @@ namespace MeuRPGZinCore
                     if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 else
                 {
                     descansar();
-
+                    return -1;
                 }
             }
             //Caso entre neste if ele prefere atacar
@@ -102,6 +116,7 @@ namespace MeuRPGZinCore
                     if(this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
@@ -111,15 +126,18 @@ namespace MeuRPGZinCore
                             if( this.Escudo > 0)
                             {
                                 usarEscudo();
+                                return 0;
                             }
                             else
                             {
                                 descansar();
+                                return -1;
                             }
                         }
                         else
                         {
                             descansar();
+                            return -1;
                         }
                     }
                 }
@@ -129,15 +147,18 @@ namespace MeuRPGZinCore
                     if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 else
                 {
                     descansar();
+                    return -1;
                 }
             }
             // Caso nao se encaixe em nenhuma ocasião especifica entra neste else
@@ -150,15 +171,18 @@ namespace MeuRPGZinCore
                     if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     //caso nao tenha ele verifica a estamina e ataca
                     else if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
                 }
                 // Chance de atacar de 40%
@@ -168,14 +192,17 @@ namespace MeuRPGZinCore
                     if( this.Estamina >= this.PerdaEstamina)
                     {
                         atacar(inimiga);
+                        return 1;
                     }
                     else if(this.Escudo > 0)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         descansar();
+                        return -1;
                     }
 
                 }
@@ -186,14 +213,17 @@ namespace MeuRPGZinCore
                     if( this.Estamina <= 0.7)
                     {
                         descansar();
+                        return -1;
                     }
                     else if( this.Escudo > 15)
                     {
                         usarEscudo();
+                        return 0;
                     }
                     else
                     {
                         atacar(inimiga);
+                        return -1;
                     }
                 }
             }

@@ -23,36 +23,13 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TesteBatalha2 : Page
     {
-        public Feiticeira p =  null;
-        public SereianosNPC s = null;
+        public Feiticeira p = new Feiticeira();
+        public SereianosNPC s = new SereianosNPC();
+        public ControllerBatalha Controller = new ControllerBatalha();
 
         public TesteBatalha2()
         {
             this.InitializeComponent();
-        }
-
-        private void batalhaInicio(object sender, RoutedEventArgs e)
-        {
-            if(p == null && s == null)
-            {
-                p = new Feiticeira();
-                s = new SereianosNPC();
-                AtualizarStatus();
-            }
-        }
-
-        private void Ataque(object sender, RoutedEventArgs e)
-        {
-            s.inteligencia(p);
-            p.atacar(s);
-            AtualizarStatus();
-        }
-
-        private void usarEscudoBrabo(object sender, RoutedEventArgs e)
-        {
-            s.inteligencia(p);
-            p.usarEscudo();
-            AtualizarStatus();
         }
 
         public void AtualizarStatus()
@@ -64,6 +41,74 @@ namespace MeuRPGZinUWP
             sereianoVida.Text = "Vida: " + s.Vida;
             sereianoEscudo.Text = "Escudo: " + s.Escudo;
             sereianoEstamina.Text = "Estamina: " + s.Estamina;
+        }
+
+        public void RegistraAcoes (int jogadora, int inimigo)
+        {
+            if (inimigo == -1)
+            {
+                acaoSereiano.Text = "Ação: Descançou";
+            }
+            else if (inimigo == 0)
+            {
+                acaoSereiano.Text = "Ação: Usou escudo";
+            }
+            else if (inimigo == 1)
+            {
+                acaoSereiano.Text = "Ação: Atacou";
+            }
+
+            if (jogadora == -1)
+            {
+                acaoFeiticeira.Text = "Ação: Descançou";
+            }
+            else if (jogadora == 0)
+            {
+                acaoFeiticeira.Text = "Ação: Usou escudo";
+            }
+            else if (jogadora == 1)
+            {
+                acaoFeiticeira.Text = "Ação: Atacou";
+            }
+        }
+
+        private void batalhaInicio(object sender, RoutedEventArgs e)
+        {
+            if(p != null && s != null)
+            {
+                AtualizarStatus();
+            }
+        }
+
+        private void Ataque(object sender, RoutedEventArgs e)
+        {
+            int acaoInimigo;
+            acaoInimigo = s.Inteligencia(p);
+            p.atacar(s);
+            Controller.FimDeTurno(p, s, 1, acaoInimigo);
+            RegistraAcoes(1, acaoInimigo);
+            AtualizarStatus();
+        }
+
+        private void usarEscudoBrabo(object sender, RoutedEventArgs e)
+        {
+            int acaoInimigo;
+            acaoInimigo = s.Inteligencia(p);
+            p.usarEscudo();
+            Controller.FimDeTurno(p, s, 0, acaoInimigo);
+            RegistraAcoes(0, acaoInimigo);
+            AtualizarStatus();
+        }
+
+        private void DescancarTroll(object sender, RoutedEventArgs e)
+        {
+            int acaoInimigo;
+            acaoInimigo = s.Inteligencia(p);
+            p.descansar();
+            Controller.FimDeTurno(p, s, -1, acaoInimigo);
+            RegistraAcoes(-1, acaoInimigo);
+            AtualizarStatus();
+
         }
     }
 }

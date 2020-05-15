@@ -17,16 +17,17 @@ namespace MeuRPGZinCore
 
         public void DesativarItem(Feiticeira jogador)
         {
-            aux = jogador.forca / 0.15;
-            jogador.forca = aux;
+            aux = jogador.Forca / 0.15;
+            jogador.Forca = aux;
             jogador.mochila.RemoverItem(jogador.mochila.bagFortalecedora);
         }
 
         public void utilizar(Feiticeira jogador) //aumenta 15% da forca
         {
-            aux = jogador.forca * 0.15;
-            jogador.forca = aux;
+            aux = jogador.Forca * 0.15;
+            jogador.Forca = aux;
             this.utilizado = true;
         }
+
     }
 }

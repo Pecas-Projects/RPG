@@ -26,7 +26,7 @@ namespace MeuRPGZinTest
         [Test]
         public void NumAleatorio()
         {
-            p.inteligencia(ini);
+            p.Inteligencia(ini);
             Assert.AreNotEqual(20, p.Forca);
             Console.WriteLine(p.Forca);
             //  p.Vida = 99;

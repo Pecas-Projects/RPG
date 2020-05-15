@@ -8,6 +8,6 @@ namespace MeuRPGZinCore
 {
     interface PersonagemNPC
     {
-        void inteligencia(Feiticeira inimiga);
+        int Inteligencia(Feiticeira inimiga);
     }
 }

@@ -32,7 +32,7 @@ namespace MeuRPGZinCore
             if(this.Estamina >= this.PerdaEstamina)
             {
 
-                if (inimigo.EscudoAtivo)
+                if (inimigo.EscudoAtivo == true)
                 {
                     dano = (this.Forca * this.Estamina) - inimigo.Escudo;
                     if(dano < 0)
@@ -72,7 +72,7 @@ namespace MeuRPGZinCore
 
         public void usarEscudo()
         {
-            EscudoAtivo = true;
+            this.EscudoAtivo = true;
         }
 
         /// <summary>
