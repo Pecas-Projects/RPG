@@ -84,8 +84,10 @@ namespace MeuRPGZinCore
         }
 
 
-        public void morrer()
+        public bool EstaMorto()
         {
+            if (this.vida == 0) return true;
+            else return false;
             //ALGUMA COISA COM EVENTO NO FRONT
         }
     }
