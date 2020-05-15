@@ -18,7 +18,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Canvas Grid.Row="0">
+        <Canvas Grid.Row="0" x:Name="canvasMap">
             <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fase1.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
             </Image>
 

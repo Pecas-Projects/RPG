@@ -28,13 +28,22 @@ namespace MeuRPGZinUWP
         public Labirinto1 l;
         public PocaoWhey pocao_whey = new PocaoWhey();
         public Feiticeira bia = new Feiticeira();
-
+        Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
         public pagina4()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto1();
+            //setando imagens das moedas à matriz controladora
+            matrizImg[1, 4] = moeda0;
+            matrizImg[1, 5] = moeda1;
+            matrizImg[1, 7] = moeda2;
+            matrizImg[2, 7] = moeda3;
+            matrizImg[3, 7] = moeda4;
+            matrizImg[9, 7] = moeda5;
+            matrizImg[9, 6] = moeda6;
+            matrizImg[9, 5] = moeda7;
         }
 
         /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
@@ -78,14 +87,15 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            if (l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey) == true)
+            if (l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey))
             {
                 
             }
-            if (l.TemPeca(feiticeiraX, feiticeiraY, bia) == true)
+            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
             {
-                bia.moedas++;
-
+                Image moeda = matrizImg[feiticeiraX, feiticeiraY];
+                //moeda.Opacity = 100;
+                canvasMap.Children.Remove(moeda); //remove visualmente a moeda
             }
 
         }
@@ -134,10 +144,6 @@ namespace MeuRPGZinUWP
 
                 }
             }
-
-
-
-
    
 
         }
