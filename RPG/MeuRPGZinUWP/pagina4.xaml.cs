@@ -77,6 +77,7 @@ namespace MeuRPGZinUWP
                 Uri url2 = new Uri(this.BaseUri, "Assets/feiticeira_right_2.png");
                 img1.UriSource = url2;
                 ImgBestFriend.Source = img1;*/
+
                 Up();
 
             }
@@ -98,7 +99,6 @@ namespace MeuRPGZinUWP
             if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
             {
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
-                //moeda.Opacity = 100;
                 canvasMap.Children.Remove(moeda); //remove visualmente a moeda
                 //Console.WriteLine(bia.moedas);
             }
@@ -148,8 +148,7 @@ namespace MeuRPGZinUWP
                     feiticeiraY -= 1;
 
                 }
-            }
-   
+            }   
 
         }
     }

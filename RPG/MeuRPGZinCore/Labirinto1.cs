@@ -13,6 +13,7 @@ namespace MeuRPGZinCore
 
         public Labirinto1()
         {
+            //adição das moedas presentes no labirinto de acordo com suas coordenadas
             moedas.Add(new Moeda { X = 1, Y = 4 });
             moedas.Add(new Moeda { X = 1, Y = 5 });
             moedas.Add(new Moeda { X = 1, Y = 7 });
