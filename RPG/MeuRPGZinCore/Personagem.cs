@@ -8,18 +8,18 @@ namespace MeuRPGZinCore
 {
     public abstract class Personagem
     {
-        public double forca { get; set; }
-        public double vida { get; set; } = 100;
+        public double Forca { get; set; }
+        public double Vida { get; set; } = 100;
 
         /// <summary>
         /// ATENÇÃO: A estamina é um numero entre 0 e 1
         /// </summary>
-        public double estamina { get; set; } = 1;
-        public double perdaEstamina { get; set; }
-        public double ganhoEstamnina { get; set; }
+        public double Estamina { get; set; } = 1;
+        public double PerdaEstamina { get; set; }
+        public double GanhoEstamnina { get; set; }
 
-        public double escudo { get; set; }
-        public bool escudoAtivo { get; set; } = false;
+        public double Escudo { get; set; }
+        public bool EscudoAtivo { get; set; } = false;
 
         /// <summary>
         /// Metodo void que calcula o Dano dado no oponente.
@@ -29,31 +29,31 @@ namespace MeuRPGZinCore
         {
             double dano;
 
-            if(this.estamina >= this.perdaEstamina)
+            if(this.Estamina >= this.PerdaEstamina)
             {
 
-                if (inimigo.escudoAtivo)
+                if (inimigo.EscudoAtivo)
                 {
-                    dano = (this.forca * this.estamina) - inimigo.escudo;
+                    dano = (this.Forca * this.Estamina) - inimigo.Escudo;
                     if(dano < 0)
                     {
                         //Caso o personagem seja atacado com o escudo ativo, o escudo se desgasta
-                        inimigo.escudo -= (this.forca * this.estamina) * 0.35;
+                        inimigo.Escudo -= (this.Forca * this.Estamina) * 0.35;
                     }
                     else
                     {
-                        inimigo.vida -= dano;
-                        inimigo.escudo -= (this.forca * this.estamina) * 0.25;
+                        inimigo.Vida -= dano;
+                        inimigo.Escudo -= (this.Forca * this.Estamina) * 0.25;
                     }
                     
                 }
                 else
                 {
-                    inimigo.vida -= (this.forca * this.estamina);
+                    inimigo.Vida -= (this.Forca * this.Estamina);
 
                 }
 
-                this.estamina -= this.perdaEstamina;
+                this.Estamina -= this.PerdaEstamina;
             }
             else
             {
@@ -72,7 +72,7 @@ namespace MeuRPGZinCore
 
         public void usarEscudo()
         {
-            escudoAtivo = true;
+            EscudoAtivo = true;
         }
 
         /// <summary>
@@ -80,13 +80,13 @@ namespace MeuRPGZinCore
         /// </summary>
         public void descansar() 
         {
-            this.estamina += this.ganhoEstamnina * 2;   
+            this.Estamina += this.GanhoEstamnina * 2;   
         }
 
 
         public bool EstaMorto()
         {
-            if (this.vida == 0) return true;
+            if (this.Vida == 0) return true;
             else return false;
             //ALGUMA COISA COM EVENTO NO FRONT
         }

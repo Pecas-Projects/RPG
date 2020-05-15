@@ -9,15 +9,15 @@ namespace MeuRPGZinCore
     {
         public FadaNPC()
         {
-            this.forca = 25;
-            this.perdaEstamina = 0.2;
-            this.ganhoEstamnina = 0.3;
-            this.escudo = 60;
+            this.Forca = 25;
+            this.PerdaEstamina = 0.2;
+            this.GanhoEstamnina = 0.3;
+            this.Escudo = 60;
         }
 
         public override void ataqueEspecial(Personagem inimigo)
         {
-            if(this.estamina > 0.6)
+            if(this.Estamina > 0.6)
             {
                 //alguma coisa para impedir que a feiticeira use o ataque especial dela por um tempo
 

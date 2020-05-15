@@ -8,10 +8,10 @@ namespace MeuRPGZinCore
     {
         public BarbaroNPC()
         {
-            this.forca = 35;
-            this.perdaEstamina = 0.3;
-            this.ganhoEstamnina = 0.2;
-            this.escudo = 70;
+            this.Forca = 35;
+            this.PerdaEstamina = 0.3;
+            this.GanhoEstamnina = 0.2;
+            this.Escudo = 70;
         }
 
         public override void ataqueEspecial(Personagem inimigo)

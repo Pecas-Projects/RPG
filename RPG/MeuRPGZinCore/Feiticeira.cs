@@ -29,10 +29,10 @@ namespace MeuRPGZinCore
         public Feiticeira()
         {
             //implementar valores default para a feiticeira
-            this.forca = 20;
-            this.perdaEstamina = 0.30;
-            this.ganhoEstamnina = 0.12;
-            this.escudo = 50;
+            this.Forca = 20;
+            this.PerdaEstamina = 0.30;
+            this.GanhoEstamnina = 0.12;
+            this.Escudo = 50;
             this.magia = 1.2;
             this.ItemdeBatalha.Capacity = 2;
            
@@ -48,7 +48,7 @@ namespace MeuRPGZinCore
         public override void ataqueEspecial(Personagem inimigo)
         {
             //Colocar if para contar as defesas, na classe controladora da batalha
-            inimigo.vida -= this.forca * this.estamina * magia;
+            inimigo.Vida -= this.Forca * this.Estamina * magia;
 
         }
 

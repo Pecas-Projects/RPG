@@ -57,13 +57,13 @@ namespace MeuRPGZinUWP
 
         public void AtualizarStatus()
         {
-            feiticeiraVida.Text = "Vida: " + p.vida;
-            feiticeiraEscudo.Text = "Escudo: " + p.escudo;
-            feiticeiraEstamina.Text = "Estamina: " + p.estamina;
+            feiticeiraVida.Text = "Vida: " + p.Vida;
+            feiticeiraEscudo.Text = "Escudo: " + p.Escudo;
+            feiticeiraEstamina.Text = "Estamina: " + p.Estamina;
 
-            sereianoVida.Text = "Vida: " + s.vida;
-            sereianoEscudo.Text = "Escudo: " + s.escudo;
-            sereianoEstamina.Text = "Estamina: " + s.estamina;
+            sereianoVida.Text = "Vida: " + s.Vida;
+            sereianoEscudo.Text = "Escudo: " + s.Escudo;
+            sereianoEstamina.Text = "Estamina: " + s.Estamina;
         }
     }
 }

@@ -9,10 +9,10 @@ namespace MeuRPGZinCore
 
         public HumanoNPC()
         {
-            this.forca = 30;
-            this.perdaEstamina = 0.2;
-            this.ganhoEstamnina = 0.1;
-            this.escudo = 40;
+            this.Forca = 30;
+            this.PerdaEstamina = 0.2;
+            this.GanhoEstamnina = 0.1;
+            this.Escudo = 40;
         }
 
         /// <summary>
@@ -22,9 +22,9 @@ namespace MeuRPGZinCore
         /// <param name="inimigo"></param>
         public override void ataqueEspecial(Personagem inimigo)
         {
-            if (this.estamina > 0.8)
+            if (this.Estamina > 0.8)
             {
-                inimigo.escudoAtivo = false;
+                inimigo.EscudoAtivo = false;
                 this.atacar(inimigo);
             }
         }

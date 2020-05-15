@@ -15,7 +15,7 @@ namespace MeuRPGZinCore
         }
         public void utilizar(Feiticeira jogador) //aumenta 30% da estamina
         {
-            jogador.estamina += jogador.estamina * 0.3;
+            jogador.Estamina += jogador.Estamina * 0.3;
             this.utilizado = true;
         }
     }
