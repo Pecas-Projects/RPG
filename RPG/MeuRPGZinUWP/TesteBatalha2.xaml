@@ -9,24 +9,35 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid Margin="0,10,0,-10">
-            <Button x:Name="ataque" Content="Atacar" FontSize="30" Height="98" Margin="58,346,0,0" VerticalAlignment="Top" Width="315" Click="Ataque"/>
-            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="96" Margin="58,495,0,0" VerticalAlignment="Top" Width="315" Click="usarEscudoBrabo"/>
-            <Button x:Name="descancar" Content="Descançar TROLL" FontSize="30" Height="111" Margin="58,639,0,0" VerticalAlignment="Top" Width="316" Click="DescancarTroll"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png" Canvas.Top="644" Canvas.Left="10" Width="300" Height="300" Margin="451,425,749,275" />
-            <TextBlock x:Name="feiticeiraVida" HorizontalAlignment="Left" Height="58"  FontSize="50" Text="Vida: " TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Margin="548,99,0,0"/>
-            <TextBlock x:Name="feiticeiraEscudo" HorizontalAlignment="Left" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" VerticalAlignment="Top" Width="427" Margin="542,186,0,0"/>
-            <TextBlock x:Name="feiticeiraEstamina" HorizontalAlignment="Left" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Margin="548,292,0,0"/>
+        <Canvas Grid.Row="0" x:Name="canvasMap">
 
-            <Image x:Name="sereiano" Source="Assets/rei_sereiano.png" Canvas.Top="644" Canvas.Left="10" Width="300" Height="300" Margin="972,425,228,275"/>
-            <TextBlock x:Name="sereianoVida" HorizontalAlignment="Left" Height="58" FontSize="50" Text="Vida: " TextWrapping="Wrap" VerticalAlignment="Top" Width="361" Margin="945,132,0,0"/>
-            <TextBlock x:Name="sereianoEscudo" HorizontalAlignment="Left" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" VerticalAlignment="Top" Width="434" Margin="945,219,0,0"/>
-            <TextBlock x:Name="sereianoEstamina" HorizontalAlignment="Left" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" VerticalAlignment="Top" Width="463" Margin="945,305,0,0"/>
+
+            <Button x:Name="ataque" Content="Atacar" FontSize="30" Height="98" Margin="58,231,0,0" VerticalAlignment="Top" Width="315" Click="Ataque"/>
+            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="96" Margin="59,425,0,0" VerticalAlignment="Top" Width="315" Click="usarEscudoBrabo"/>
+            <Button x:Name="descancar" Content="Descançar TROLL" FontSize="30" Height="111" Margin="59,614,0,0" VerticalAlignment="Top" Width="316" Click="DescancarTroll"/>
+
+            <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png" Canvas.Top="323" Canvas.Left="401" Width="300" Height="300" />
+            <TextBlock x:Name="feiticeiraVida" Height="58"  FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="366" Canvas.Left="447" Canvas.Top="70" />
+            <TextBlock x:Name="feiticeiraEscudo" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="427" Canvas.Left="447" Canvas.Top="145" />
+            <TextBlock x:Name="feiticeiraEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="440" Canvas.Left="447" Canvas.Top="226"/>
+
+            <Image x:Name="sereianoImg" Source="Assets/rei_sereiano.png" Canvas.Top="323" Canvas.Left="932" Width="300" Height="300" />
+            <TextBlock x:Name="sereianoVida" Height="58" FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="361" Canvas.Left="932" Canvas.Top="83" />
+            <TextBlock x:Name="sereianoEscudo" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="434" Canvas.Left="932" Canvas.Top="158" />
+            <TextBlock x:Name="sereianoEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="463" Canvas.Left="932" Canvas.Top="226" />
 
             <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="108" Margin="58,58,0,0" VerticalAlignment="Top" Width="316" Click="batalhaInicio"/>
-            <TextBlock x:Name="acaoFeiticeira" FontSize="40" HorizontalAlignment="Left" Height="71" Text="Ação: " TextWrapping="Wrap" VerticalAlignment="Top" Width="419" Margin="504,795,0,0"/>
-            <TextBlock x:Name="acaoSereiano" FontSize="40" HorizontalAlignment="Left" Height="71"  Text="Ação: " TextWrapping="Wrap" VerticalAlignment="Top" Width="419" Margin="1001,768,0,0"/>
-        </Grid>
+            <TextBlock x:Name="acaoFeiticeira" FontSize="40" Height="71" Text="Ação: " TextWrapping="Wrap" Width="419"  Canvas.Left="447" Canvas.Top="643"/>
+            <TextBlock x:Name="acaoSereiano" FontSize="40" Height="71"  Text="Ação: " TextWrapping="Wrap" Width="419" Canvas.Left="932" Canvas.Top="638"/>
+
+        </Canvas>
     </Grid>
 </Page>
