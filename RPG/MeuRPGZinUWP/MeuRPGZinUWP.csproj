@@ -140,6 +140,9 @@
     <Content Include="Assets\lab_fundo_do_mar.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\moeda_front.png" />
+    <Content Include="Assets\pedra_da_agua.png" />
+    <Content Include="Assets\pedra_da_agua2.png" />
+    <Content Include="Assets\pedra_da_agua3.png" />
     <Content Include="Assets\pocao_whey.png" />
     <Content Include="Assets\rei_sereiano.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
