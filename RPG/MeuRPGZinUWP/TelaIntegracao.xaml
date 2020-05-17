@@ -9,7 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Margin="0,582,0,0" VerticalAlignment="Top" Width="390" HorizontalAlignment="Center" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas >
 
+            <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="600" Canvas.Left="200" />
+
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="550" Canvas.Top="800" VerticalAlignment="Top" Width="390" HorizontalAlignment="Center" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
+
+        </Canvas>
     </Grid>
 </Page>
