@@ -19,10 +19,10 @@
         </Grid.ColumnDefinitions>
 
         <Canvas Grid.Row="0" x:Name="canvasMap">
-            <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fase1.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
+            <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fundo_do_mar.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Left="2">
             </Image>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="644" Canvas.Left="10" >
+            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="640" Canvas.Left="8" >
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="feiticeiraMovimento"/>
                 </Image.RenderTransform>

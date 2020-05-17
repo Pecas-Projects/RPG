@@ -137,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\feiticeira_front.png" />
-    <Content Include="Assets\lab_fase1.png" />
+    <Content Include="Assets\lab_fundo_do_mar.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\moeda_front.png" />
     <Content Include="Assets\pocao_whey.png" />
