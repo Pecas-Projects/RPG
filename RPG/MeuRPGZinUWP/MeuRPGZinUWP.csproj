@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\feiticeira_front.png" />
+    <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
