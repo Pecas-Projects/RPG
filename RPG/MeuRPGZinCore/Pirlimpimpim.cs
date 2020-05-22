@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    internal class Pirlimpimpim : Item, ItemDesativado, ItemUtilizavel
+    public class Pirlimpimpim : Item, ItemDesativado, ItemUtilizavel
     {
         double aux;
 
-        Pirlimpimpim()
+        public Pirlimpimpim()
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
+            this.preco = 10;
         }
         /// <summary>
         /// decidir se o item é utilizado durante toda batalha

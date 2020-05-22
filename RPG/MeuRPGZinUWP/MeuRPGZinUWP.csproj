@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Loja.xaml.cs">
+      <DependentUpon>Loja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pagina4.xaml.cs">
       <DependentUpon>pagina4.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,7 @@
     <Content Include="Assets\feiticeira_front.png" />
     <Content Include="Assets\lab_fundo_do_mar.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\mercadora.png" />
     <Content Include="Assets\moeda_front.png" />
     <Content Include="Assets\pedra_da_agua.png" />
     <Content Include="Assets\pedra_da_agua2.png" />
@@ -158,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Loja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pagina4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

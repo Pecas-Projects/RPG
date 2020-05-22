@@ -21,11 +21,11 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class TelaIntegracao : Page
+    public sealed partial class Loja : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
 
-        public TelaIntegracao()
+        public Loja()
         {
             this.InitializeComponent();
         }
@@ -40,11 +40,6 @@ namespace MeuRPGZinUWP
             contPecas.Text = "Você tem " + feiticeira.moedas + " moedas";
         }
 
-        private void paginaDaBatalha(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(TesteBatalha2),feiticeira);
-        }
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -52,9 +47,48 @@ namespace MeuRPGZinUWP
             AtualizarContItens();
         }
 
-        private void paginaDaLoja(object sender, RoutedEventArgs e)
+        private void ComprarPoPirlimpimpim(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Loja), feiticeira);
+            Pirlimpimpim produto = new Pirlimpimpim();
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagPirlimpimpim, produto.preco);
+            AtualizarContItens();
+
+        }
+
+        private void ComprarPocaoWhey(object sender, RoutedEventArgs e)
+        {
+            PocaoWhey produto = new PocaoWhey();
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagWhey, produto.preco);
+            AtualizarContItens();
+        }
+
+        private void ComprarPocaoRadix(object sender, RoutedEventArgs e)
+        {
+            PocaoRadix produto = new PocaoRadix();
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagRadix, produto.preco);
+            AtualizarContItens();
+
+        }
+
+        private void ComprarPocaoVitae(object sender, RoutedEventArgs e)
+        {
+            PocaoVitae produto = new PocaoVitae();
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagVitae, produto.preco);
+            AtualizarContItens();
+
+        }
+
+        private void ComprarPocaoFortalecedora(object sender, RoutedEventArgs e)
+        {
+            PocaoFortalecedora produto = new PocaoFortalecedora();
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagFortalecedora, produto.preco);
+            AtualizarContItens();
+        }
+
+        private void IrparaMochila(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+            AtualizarContItens();
         }
     }
 }
