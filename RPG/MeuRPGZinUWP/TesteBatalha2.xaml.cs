@@ -90,43 +90,33 @@ namespace MeuRPGZinUWP
 
         private void Ataque(object sender, RoutedEventArgs e)
         {
-            if(p.Estamina >= p.PerdaEstamina)
+            int acaoInimigo;
+            acaoInimigo = s.Inteligencia(p);
+            p.atacar(s);
+
+            if (Controller.FimDeTurno(p, s, 1, acaoInimigo) != null)
             {
-                int acaoInimigo;
-                acaoInimigo = s.Inteligencia(p);
-                p.atacar(s);
-
-                if (Controller.FimDeTurno(p, s, 1, acaoInimigo) != null)
-                {
-                    AtualizarStatus();
-                    //acabar o jogo aqui e mostrar o vencedor
-                    //tudo some, fica só uma imagem de ganhador
-                    //botões de 1px, feiticeira feliz ou triste
-                    //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                    Fim_BTN.Height = 71;
-                    Fim_BTN.Width = 419;
-                    Inicio_BTN.Height = 0;
-                    Inicio_BTN.Width = 0;
-                    usarEscudo.Width = 0;
-                    usarEscudo.Height = 0;
-                    ataque.Width = 0;
-                    ataque.Height = 0;
-                    descancar.Width = 0;
-                    descancar.Height = 0;
-                }
-                else
-                {
-                    RegistraAcoes(1, acaoInimigo);
-                    AtualizarStatus();
-                }
-
-
+                AtualizarStatus();
+                //acabar o jogo aqui e mostrar o vencedor
+                //tudo some, fica só uma imagem de ganhador
+                //botões de 1px, feiticeira feliz ou triste
+                //um botão que era de 1px fica grande falando pra pular para a próxima fase
+                Fim_BTN.Height = 71;
+                Fim_BTN.Width = 419;
+                Inicio_BTN.Height = 0;
+                Inicio_BTN.Width = 0;
+                usarEscudo.Width = 0;
+                usarEscudo.Height = 0;
+                ataque.Width = 0;
+                ataque.Height = 0;
+                descancar.Width = 0;
+                descancar.Height = 0;
             }
             else
             {
-                //algo no fronte falando que não pode atacar 
+                RegistraAcoes(1, acaoInimigo);
+                AtualizarStatus();
             }
-            
 
             
             

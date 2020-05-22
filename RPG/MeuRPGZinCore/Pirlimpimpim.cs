@@ -15,7 +15,6 @@ namespace MeuRPGZinCore
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
-            this.preco = 10;
         }
         /// <summary>
         /// decidir se o item é utilizado durante toda batalha

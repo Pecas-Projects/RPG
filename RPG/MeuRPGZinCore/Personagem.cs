@@ -56,15 +56,15 @@ namespace MeuRPGZinCore
 
                 this.Estamina -= this.PerdaEstamina;
             }
-       
+            else
+            {
+                //Algo no fronte que impessa isso
+                Console.WriteLine("Nao pode uiuiuiuiui!!");
+            }
 
             if (inimigo.Escudo < 0)
             {
                 inimigo.Escudo = 0;
-            }
-            if (inimigo.Vida < 0)
-            {
-                inimigo.Vida = 0;
             }
 
         }

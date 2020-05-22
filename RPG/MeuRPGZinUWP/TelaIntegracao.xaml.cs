@@ -30,16 +30,6 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-        public void AtualizarContItens()
-        {
-            contFortalecedora.Text = "Poção Fortalecedora: " + feiticeira.mochila.bagFortalecedora.Count;
-            contPirlimpimpim.Text = "Pó de Pirlimpimpim: " + feiticeira.mochila.bagPirlimpimpim.Count;
-            contRadix.Text = "Poção Radix: " + feiticeira.mochila.bagRadix.Count;
-            contVitae.Text = "Poção Vitae: " + feiticeira.mochila.bagVitae.Count;
-            contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
-            contPecas.Text = "Você tem " + feiticeira.moedas + " moedas";
-        }
-
         private void paginaDaBatalha(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(TesteBatalha2),feiticeira);
@@ -49,12 +39,6 @@ namespace MeuRPGZinUWP
         {
             base.OnNavigatedTo(e);
             feiticeira = e.Parameter as Feiticeira;
-            AtualizarContItens();
-        }
-
-        private void paginaDaLoja(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Loja), feiticeira);
         }
     }
 }

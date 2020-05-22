@@ -13,7 +13,6 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção Fortalecedora";
             this.utilizado = false;
-            this.preco = 8;
         }
 
         public void DesativarItem(Feiticeira jogador)
