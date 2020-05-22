@@ -25,7 +25,7 @@
                     <CompositeTransform Rotation="-0.988"/>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="48" Margin="59,425,0,0" Width="315" Click="usarEscudoBrabo" Canvas.Left="10" Canvas.Top="-65"/>
+            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="48" Margin="59,425,0,0" Width="315" Click="usarEscudoBrabo" Canvas.Left="10" Canvas.Top="-65" RenderTransformOrigin="2.295,0.875"/>
             <Button x:Name="descancar" Content="Descançar TROLL" FontSize="30" Height="82" Margin="59,614,0,0" Width="212" Click="DescancarTroll" Canvas.Left="69" Canvas.Top="-101"/>
 
             <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png" Canvas.Top="323" Canvas.Left="401" Width="300" Height="300" />
