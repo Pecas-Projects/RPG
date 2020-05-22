@@ -26,9 +26,9 @@ namespace MeuRPGZinCore
             linha1.Add(new Parede { topo = true, baixo = true });
             linha1.Add(new Parede { topo = true, direita = true, baixo = true });
             linha1.Add(new Parede { topo = true, esquerda = true });
-            linha1.Add(new Parede { topo = true, baixo = true });
-            linha1.Add(new Parede { topo = true, baixo = true });
-            linha1.Add(new Parede { topo = true, direita = true, baixo = true });
+            linha1.Add(new Parede { topo = true });
+            linha1.Add(new Parede { topo = true });
+            linha1.Add(new Parede { topo = true, direita = true});
             linha1.Add(new Parede { topo = true, esquerda = true });
             linha1.Add(new Parede { topo = true }); //linha coordenada da saida
 
@@ -36,7 +36,7 @@ namespace MeuRPGZinCore
             linha2.Add(new Parede { direita = true, topo = true });
             linha2.Add(new Parede { topo = true, esquerda = true });
             linha2.Add(new Parede()); //linha2[3] tem todas as opcoes livre
-            linha2.Add(new Parede { topo = true, direita = true });
+            linha2.Add(new Parede { baixo = true, direita = true });
             linha2.Add(new Parede { topo = true, esquerda = true });
             linha2.Add(new Parede { topo = true, direita = true });
             linha2.Add(new Parede { esquerda = true, direita = true });
@@ -137,15 +137,17 @@ namespace MeuRPGZinCore
         /// <param name="y"> coordenada y </param>
         /// <param name="bia"></param>
         /// <param name="item"></param>
-        public override bool TemItem(int x, int y, Feiticeira bia, Item item)
+        /// 
+        public override bool TemItem(int x, int y, Feiticeira bia)
         {
             bool pegou = false;
+            PocaoWhey pocao_whey = new PocaoWhey();
 
             if (x == 1 && y == 2 && pegou == false)
             {
 
                 pegou = true;
-                bia.mochila.AddItem(item, bia.mochila.bagWhey);
+                bia.mochila.AddItem(pocao_whey, bia.mochila.bagWhey);
                 return true;
             }
             return false;

@@ -22,21 +22,20 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class pagina4 : Page
+    public sealed partial class Fase1 : Page
     {
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
-        public PocaoWhey pocao_whey = new PocaoWhey();
         public Feiticeira bia = new Feiticeira();
+
+
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
-
-        public pagina4()
+        public Fase1()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto1();
-            //setando imagens das moedas à matriz controladora
             matrizImg[1, 4] = moeda0;
             matrizImg[1, 5] = moeda1;
             matrizImg[1, 7] = moeda2;
@@ -77,7 +76,6 @@ namespace MeuRPGZinUWP
                 Uri url2 = new Uri(this.BaseUri, "Assets/feiticeira_right_2.png");
                 img1.UriSource = url2;
                 ImgBestFriend.Source = img1;*/
-
                 Up();
 
             }
@@ -90,18 +88,7 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            if (l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey))
-            {
-                Image Whey = matrizImg[feiticeiraX, feiticeiraY];
-                canvasMap.Children.Remove(Whey); //remove visualmente o item
-                //Console.WriteLine(bia.mochila.bagWhey.Count);
-            }
-            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
-            {
-                Image moeda = matrizImg[feiticeiraX, feiticeiraY];
-                canvasMap.Children.Remove(moeda); //remove visualmente a moeda
-                //Console.WriteLine(bia.moedas);
-            }
+            l.TemItem(feiticeiraX, feiticeiraY, bia);
 
         }
 
@@ -111,8 +98,10 @@ namespace MeuRPGZinUWP
                 {
                     feiticeiraMovimento.Y += 80;
                     feiticeiraX += 1;
+              
 
                 }
+
 
             }
 
@@ -125,24 +114,20 @@ namespace MeuRPGZinUWP
                 if (l.TemParedeTopo(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.Y -= 80;
-                    feiticeiraX -= 1;               
+                    feiticeiraX -= 1;
+                
 
                 }
             }
 
             public void Right()
             {
-
-                if(feiticeiraX == 1 && feiticeiraY == 8)
-                {
-                this.Frame.Navigate(typeof(TelaIntegracao), bia);
-                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.X += 80;
                     feiticeiraY += 1;
 
-                }                
+                }
             }
 
             public void Left()
@@ -153,7 +138,12 @@ namespace MeuRPGZinUWP
                     feiticeiraY -= 1;
 
                 }
-            }   
+            }
+
+
+
+
+   
 
         }
     }
