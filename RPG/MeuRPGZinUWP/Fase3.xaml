@@ -21,7 +21,7 @@
             <Image x:Name="lab2" Stretch="UniformToFill" Source="Assets/lab_vulcao.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
             </Image>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="634" Canvas.Left="644" >
+            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="625" Canvas.Left="630" >
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="feiticeiraMovimento"/>
                 </Image.RenderTransform>
@@ -30,7 +30,7 @@
             <Image x:Name="moeda0" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="636" Canvas.Left="490" Stretch="Fill" >
             </Image>
 
-            <Image x:Name="moeda1" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="636" Canvas.Left="565" Stretch="Fill" >
+            <Image x:Name="moeda1" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="636" Canvas.Left="567" Stretch="Fill" >
             </Image>
 
             <Image x:Name="moeda2" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="555" Canvas.Left="105" Stretch="Fill" >
@@ -57,7 +57,7 @@
 
             </Image>
 
-            <Image x:Name="moeda8" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="335" Canvas.Left="560" Stretch="Fill" >
+            <Image x:Name="moeda8" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="335" Canvas.Left="562" Stretch="Fill" >
             </Image>
 
             <Image x:Name="moeda9" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="23" Canvas.Left="170" Stretch="Fill" >
