@@ -20,7 +20,7 @@
 
             <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="79" Canvas.Left="150" />
 
-            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="555" Canvas.Top="298" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="555" Canvas.Top="308" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
 
         </Canvas>
     </Grid>

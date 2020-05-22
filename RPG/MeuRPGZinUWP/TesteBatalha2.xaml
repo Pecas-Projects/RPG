@@ -41,7 +41,7 @@
             <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="79" Margin="58,58,0,0" Width="244" Click="batalhaInicio" Canvas.Left="58" Canvas.Top="58"/>
             <TextBlock x:Name="acaoFeiticeira" FontSize="40" Height="71" Text="Ação: " TextWrapping="Wrap" Width="419"  Canvas.Left="447" Canvas.Top="643"/>
             <TextBlock x:Name="acaoSereiano" FontSize="40" Height="71"  Text="Ação: " TextWrapping="Wrap" Width="419" Canvas.Left="932" Canvas.Top="638"/>
-
+            <Button x:Name="Fim_BTN" Content="fim " FontSize="30" Height="1" Margin="58,58,0,0" Width="0" Click="ProximaFase" Canvas.Left="551" Canvas.Top="636" RenderTransformOrigin="2.309,9.857"/>
         </Canvas>
     </Grid>
 </Page>
