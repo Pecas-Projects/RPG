@@ -6,32 +6,31 @@ namespace MeuRPGZinTest
 {
     public class Tests
     {
-        SereianosNPC p;
-        Feiticeira ini;
+        Personagem Atacante;
+        Personagem Inimigo;
 
         [SetUp]
         public void Setup()
         {
-            p = new SereianosNPC { Forca = 20, PerdaEstamina = 0.25,
-                GanhoEstamnina = 0.15, Escudo = 50};
-            ini = new Feiticeira {
-                Forca = 20,
-                PerdaEstamina = 0.25,
-                GanhoEstamnina = 0.15,
-                Escudo = 50
-            } ;
-           // p = new Personagem { Vida = 10, Nivel = 1 };            
+            Atacante = new Feiticeira { Forca = 10, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50};
+            Inimigo = new Feiticeira { Forca = 10, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50 };
+            /* p = new SereianosNPC { Forca = 20, PerdaEstamina = 0.25,
+                 GanhoEstamnina = 0.15, Escudo = 50};
+             ini = new Feiticeira {
+                 Forca = 20,
+                 PerdaEstamina = 0.25,
+                 GanhoEstamnina = 0.15,
+                 Escudo = 50
+             } ;*/
+            // p = new Personagem { Vida = 10, Nivel = 1 };            
         }
 
         [Test]
-        public void NumAleatorio()
+        public void Ataque_SemEscudoAtivo()
         {
-            p.Inteligencia(ini);
-            Assert.AreNotEqual(20, p.Forca);
-            Console.WriteLine(p.Forca);
-            //  p.Vida = 99;
-            // p.GanharVida();
-            //Assert.AreEqual(3, p.Nivel);
+            Atacante.atacar(Inimigo);
+            Assert.AreEqual(Inimigo.Vida == 90, Atacante.Estamina == 0.8);
+            
         }
     }
 }
