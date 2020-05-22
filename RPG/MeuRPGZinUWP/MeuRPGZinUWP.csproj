@@ -122,9 +122,6 @@
     <Compile Include="Fase2.xaml.cs">
       <DependentUpon>Fase2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pagina3.xaml.cs">
-      <DependentUpon>Pagina3.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Fase1.xaml.cs">
       <DependentUpon>Fase1.xaml</DependentUpon>
     </Compile>
@@ -158,10 +155,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Fase2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pagina3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
