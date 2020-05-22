@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.TelaIntegracao"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas >
+
+            <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="79" Canvas.Left="150" />
+
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="555" Canvas.Top="308" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
+
+        </Canvas>
+    </Grid>
+</Page>

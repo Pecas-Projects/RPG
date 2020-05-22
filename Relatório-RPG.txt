@@ -9,7 +9,8 @@ RELATÓRIO RPG:
 -06/05: Fernanda acabou o desenho do primeiro labirindo
 ---------------------------------------------------------------------------------------------------------------------------------
 -07/05: Bia definiu as paredes, Bia e Fernanda fizeram o primeiro labirinto mas não conseguiram testar
--07/05: Maria e Ana testaram a mecânica do jogo e corrigiram a os cálculos correspondentes. Definiram o padrão de comportamento do        Sereiano
+-07/05: Maria e Ana testaram a mecânica do jogo e corrigiram a os cálculos correspondentes.
+Definiram o padrão de comportamento do Sereiano
 ---------------------------------------------------------------------------------------------------------------------------------
 -08/05: Maria arrumou o pirlimpimpim e mais alguns detalhes referentes as classes e interfaces relacionadas aos itens e a mochila
 -08/05: Ana e Maria terminaram a classe do Sereiano e tiraram duvida sobre o controller da batalha de turno
@@ -21,3 +22,8 @@ RELATÓRIO RPG:
 -13/05: decidiu pop-up: ver bolsa, a cada final de fase ela pode ir à loja; pop-up avisando que venceu a fase/batalha;
 -13/05: Maria removeu os obstáculos e local, também fez a correção do uso dos itens
 ---------------------------------------------------------------------------------------------------------------------------------
+-14/05: Maria e Ana fizeram o primeiro teste da batalha de turno, criaram a tela da batalha. O sereiano já conseguei atacar, defender
+e descansar sozinho
+---------------------------------------------------------------------------------------------------------------------------------
+-15/05: Maria e Ana implementarão a classe controladora da batalha de turnos, definição da passagem da feiticeira pelo jogo, além de
+como ocorrerá a troca de inimigos entre as batalhas. Além do detalhamento da batalha (aparece o que cada um fez na batalha)

@@ -33,12 +33,12 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-       /* protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            inimigoTroll = e.Parameter as Personagem;
-           ((PersonagemNPC)inimigoTroll).Inteligencia(p);
-        }*/
+            p = e.Parameter as Feiticeira;
+           //((PersonagemNPC)p).Inteligencia(p);
+        }
 
         public void AtualizarStatus()
         {
@@ -93,19 +93,75 @@ namespace MeuRPGZinUWP
             int acaoInimigo;
             acaoInimigo = s.Inteligencia(p);
             p.atacar(s);
-            Controller.FimDeTurno(p, s, 1, acaoInimigo);
-            RegistraAcoes(1, acaoInimigo);
-            AtualizarStatus();
+
+            if (Controller.FimDeTurno(p, s, 1, acaoInimigo) != null)
+            {
+                AtualizarStatus();
+                //acabar o jogo aqui e mostrar o vencedor
+                //tudo some, fica só uma imagem de ganhador
+                //botões de 1px, feiticeira feliz ou triste
+                //um botão que era de 1px fica grande falando pra pular para a próxima fase
+                Fim_BTN.Height = 71;
+                Fim_BTN.Width = 419;
+                Inicio_BTN.Height = 0;
+                Inicio_BTN.Width = 0;
+                usarEscudo.Width = 0;
+                usarEscudo.Height = 0;
+                ataque.Width = 0;
+                ataque.Height = 0;
+                descancar.Width = 0;
+                descancar.Height = 0;
+            }
+            else
+            {
+                RegistraAcoes(1, acaoInimigo);
+                AtualizarStatus();
+            }
+
+            
+            
         }
 
         private void usarEscudoBrabo(object sender, RoutedEventArgs e)
         {
-            int acaoInimigo;
-            p.usarEscudo();
-            acaoInimigo = s.Inteligencia(p);
-            Controller.FimDeTurno(p, s, 0, acaoInimigo);
-            RegistraAcoes(0, acaoInimigo);
-            AtualizarStatus();
+            
+            if(p.Escudo > 0)
+            {
+                int acaoInimigo;
+                p.usarEscudo();
+                acaoInimigo = s.Inteligencia(p);
+
+                if(Controller.FimDeTurno(p, s, 0, acaoInimigo) != null)
+                {
+                    AtualizarStatus();
+                    //acabar o jogo aqui e mostrar o vencedor
+                    //tudo some, fica só uma imagem de ganhador
+                    //botões de 1px, feiticeira feliz ou triste
+                    //um botão que era de 1px fica grande falando pra pular para a próxima fase
+                    Fim_BTN.Height = 71;
+                    Fim_BTN.Width = 419;
+                    Inicio_BTN.Height = 0;
+                    Inicio_BTN.Width = 0;
+                    usarEscudo.Width = 0;
+                    usarEscudo.Height = 0;
+                    ataque.Width = 0;
+                    ataque.Height = 0;
+                    descancar.Width = 0;
+                    descancar.Height = 0;
+                }
+                else
+                {
+                    RegistraAcoes(0, acaoInimigo);
+                    AtualizarStatus();
+                   
+                }
+                
+            }
+            else
+            {
+                //algo no fronte avisando q não tem escudo e pedindo pra escolher outra coisa
+            }
+            
         }
 
         private void DescancarTroll(object sender, RoutedEventArgs e)
@@ -113,10 +169,40 @@ namespace MeuRPGZinUWP
             int acaoInimigo;
             acaoInimigo = s.Inteligencia(p);
             p.descansar();
-            Controller.FimDeTurno(p, s, -1, acaoInimigo);
-            RegistraAcoes(-1, acaoInimigo);
-            AtualizarStatus();
+            
 
+            if (Controller.FimDeTurno(p, s, -1, acaoInimigo) != null)
+            {
+                AtualizarStatus();
+                //acabar o jogo aqui e mostrar o vencedor
+                //tudo some, fica só uma imagem de ganhador
+                //botões de 1px, feiticeira feliz ou triste
+                //um botão que era de 1px fica grande falando pra pular para a próxima fase
+                Fim_BTN.Height = 71;
+                Fim_BTN.Width = 419;
+                Inicio_BTN.Height = 0;
+                Inicio_BTN.Width = 0;
+                usarEscudo.Width = 0;
+                usarEscudo.Height = 0;
+                ataque.Width = 0;
+                ataque.Height = 0;
+                descancar.Width = 0;
+                descancar.Height = 0;
+
+            }
+            else
+            {
+                RegistraAcoes(-1, acaoInimigo);
+                AtualizarStatus();
+                
+            }
+
+          
+        }
+
+        private void ProximaFase(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(pagina4),p);
         }
     }
 }

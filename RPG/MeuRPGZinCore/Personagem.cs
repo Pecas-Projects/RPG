@@ -61,6 +61,11 @@ namespace MeuRPGZinCore
                 Console.WriteLine("Nao pode uiuiuiuiui!!");
             }
 
+            if (inimigo.Escudo < 0)
+            {
+                inimigo.Escudo = 0;
+            }
+
         }
 
         /// <summary>
@@ -72,7 +77,11 @@ namespace MeuRPGZinCore
 
         public void usarEscudo()
         {
-            this.EscudoAtivo = true;
+            if (this.Escudo > 0)
+            {
+                this.EscudoAtivo = true;
+            }
+            
         }
 
         /// <summary>
@@ -86,7 +95,7 @@ namespace MeuRPGZinCore
 
         public bool EstaMorto()
         {
-            if (this.Vida == 0) return true;
+            if (this.Vida <= 0) return true;
             else return false;
             //ALGUMA COISA COM EVENTO NO FRONT
         }
