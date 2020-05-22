@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid RenderTransformOrigin="0.668,0.572">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="1"/>
@@ -20,7 +20,15 @@
         <Canvas Grid.Row="0">
             <Image x:Name="lab2" Stretch="UniformToFill" Source="Assets/lab_ceu.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
             </Image>
+
+            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="634" Canvas.Left="644" >
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="feiticeiraMovimento"/>
+                </Image.RenderTransform>
+            </Image>
+
         </Canvas>
-        
+        <Button x:Name="butao" Grid.Row="1" Height="1" Width="1"/>
+
     </Grid>
 </Page>

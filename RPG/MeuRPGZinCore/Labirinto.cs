@@ -270,7 +270,7 @@ namespace MeuRPGZinCore
 
         }
 
-        public abstract bool TemItem(int x, int y, Feiticeira bia, Item item);
+        public abstract bool TemItem(int x, int y, Feiticeira bia);
 
     }
 }

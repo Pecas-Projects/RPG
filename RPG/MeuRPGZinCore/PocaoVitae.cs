@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace MeuRPGZinCore
 {
 
-        class PocaoVitae : Item, ItemUtilizavel
+        public class PocaoVitae : Item, ItemUtilizavel
         {
-            PocaoVitae() //era um construtor que se tentava fazer?
+        public PocaoVitae() //era um construtor que se tentava fazer?
             {
                 this.nome = "Poção Vitae";
                 this.utilizado = false;

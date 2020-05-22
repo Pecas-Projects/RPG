@@ -9,14 +9,17 @@ namespace MeuRPGZinCore
         public Labirinto2()
         {
             //setar moedas labirinto 2
+            moedas.Add(new Moeda { X = 9, Y = 1 });
+            moedas.Add(new Moeda { X = 9, Y = 2 });
+            moedas.Add(new Moeda { X = 9, Y = 3 });
+            moedas.Add(new Moeda { X = 8, Y = 3 });
+            moedas.Add(new Moeda { X = 8, Y = 5 });
+            moedas.Add(new Moeda { X = 7, Y = 5 });
+            moedas.Add(new Moeda { X = 6, Y = 0 });
+            moedas.Add(new Moeda { X = 6, Y = 1 });
+            moedas.Add(new Moeda { X = 2, Y = 5 });
             moedas.Add(new Moeda { X = 1, Y = 4 });
             moedas.Add(new Moeda { X = 1, Y = 5 });
-            moedas.Add(new Moeda { X = 1, Y = 7 });
-            moedas.Add(new Moeda { X = 2, Y = 7 });
-            moedas.Add(new Moeda { X = 3, Y = 7 });
-            moedas.Add(new Moeda { X = 9, Y = 7 });
-            moedas.Add(new Moeda { X = 9, Y = 6 });
-            moedas.Add(new Moeda { X = 9, Y = 5 });
 
             //linha 1
             linha1.Add(new Parede { topo = true });
@@ -120,9 +123,29 @@ namespace MeuRPGZinCore
 
         }
 
-        public override bool TemItem(int x, int y, Feiticeira bia, Item item)
+        public override bool TemItem(int x, int y, Feiticeira bia)
         {
-            throw new NotImplementedException();
+            bool pegou1 = true, pegou2 = true;
+            PocaoRadix pocao_radix = new PocaoRadix();
+            PocaoVitae pocao_vitae = new PocaoVitae();
+
+            if (x == 7 && y == 0 && pegou1 == false) //radix
+            {
+                pegou1 = true;
+                bia.mochila.AddItem(pocao_radix, bia.mochila.bagRadix);
+                return true;
+
+            }
+
+            if(x == 1 && y == 6 && pegou2 == false) //vitae
+            {
+                pegou2 = true;
+                bia.mochila.AddItem(pocao_vitae, bia.mochila.bagVitae);
+                return true;
+
+            }
+
+            return false;
         }
     }
 

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    class PocaoFortalecedora : Item, ItemDesativado, ItemUtilizavel
+    public class PocaoFortalecedora : Item, ItemDesativado, ItemUtilizavel
     {
         double aux;
-        PocaoFortalecedora()
+        public PocaoFortalecedora()
         {
             this.nome = "Poção Fortalecedora";
             this.utilizado = false;

@@ -22,15 +22,14 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class pagina4 : Page
+    public sealed partial class Fase1 : Page
     {
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
-        public PocaoWhey pocao_whey = new PocaoWhey();
         public Feiticeira bia = new Feiticeira();
 
 
-        public pagina4()
+        public Fase1()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
