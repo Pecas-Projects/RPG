@@ -96,6 +96,7 @@ namespace MeuRPGZinUWP
 
             if (Controller.FimDeTurno(p, s, 1, acaoInimigo) != null)
             {
+                AtualizarStatus();
                 //acabar o jogo aqui e mostrar o vencedor
                 //tudo some, fica só uma imagem de ganhador
                 //botões de 1px, feiticeira feliz ou triste
@@ -115,7 +116,6 @@ namespace MeuRPGZinUWP
             {
                 RegistraAcoes(1, acaoInimigo);
                 AtualizarStatus();
-
             }
 
             
@@ -133,6 +133,7 @@ namespace MeuRPGZinUWP
 
                 if(Controller.FimDeTurno(p, s, 0, acaoInimigo) != null)
                 {
+                    AtualizarStatus();
                     //acabar o jogo aqui e mostrar o vencedor
                     //tudo some, fica só uma imagem de ganhador
                     //botões de 1px, feiticeira feliz ou triste
@@ -168,9 +169,11 @@ namespace MeuRPGZinUWP
             int acaoInimigo;
             acaoInimigo = s.Inteligencia(p);
             p.descansar();
+            
 
-            if (Controller.FimDeTurno(p, s, -1, acaoInimigo) == null)
+            if (Controller.FimDeTurno(p, s, -1, acaoInimigo) != null)
             {
+                AtualizarStatus();
                 //acabar o jogo aqui e mostrar o vencedor
                 //tudo some, fica só uma imagem de ganhador
                 //botões de 1px, feiticeira feliz ou triste
@@ -192,7 +195,6 @@ namespace MeuRPGZinUWP
                 RegistraAcoes(-1, acaoInimigo);
                 AtualizarStatus();
                 
-
             }
 
           
