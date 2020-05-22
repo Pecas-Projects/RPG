@@ -18,7 +18,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Canvas Grid.Row="0">
+        <Canvas Grid.Row="0" x:Name="canvasMap">
             <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fase1.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
             </Image>
 
@@ -29,52 +29,39 @@
             </Image>
 
             <Image x:Name="moeda0" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="50" Canvas.Left="356" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m1_4"/>
-                </Image.RenderTransform>
+               
             </Image>
 
             <Image x:Name="moeda1" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="50" Canvas.Left="425" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m1_5"/>
-                </Image.RenderTransform>
+               
             </Image>
 
             <Image x:Name="moeda2" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="50" Canvas.Left="567" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m1_7"/>
-                </Image.RenderTransform>
+               
             </Image>
 
             <Image x:Name="moeda3" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="121" Canvas.Left="567" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m2_7"/>
-                </Image.RenderTransform>
+                
             </Image>
 
             <Image x:Name="moeda4" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="195" Canvas.Left="567" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m3_7"/>
-                </Image.RenderTransform>
+                
             </Image>
 
             <Image x:Name="moeda5" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="644" Canvas.Left="567" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m9_7"/>
-                </Image.RenderTransform>
+                
             </Image>
 
             <Image x:Name="moeda6" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="644" Canvas.Left="484" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m9_6"/>
-                </Image.RenderTransform>
+            
             </Image>
 
             <Image x:Name="moeda7" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="644" Canvas.Left="403" Stretch="Fill" >
-                <Image.RenderTransform>
-                    <TranslateTransform x:Name="m9_5"/>
-                </Image.RenderTransform>
+               
             </Image>
+
+            <Image x:Name="whey" Source="Assets/pocao_whey.png"  Height="36" Width="36" Canvas.Top="48" Canvas.Left="182" Stretch="Fill" />
+
 
         </Canvas>
         <Button x:Name="butao" Grid.Row="1" Height="1" Width="1"/>

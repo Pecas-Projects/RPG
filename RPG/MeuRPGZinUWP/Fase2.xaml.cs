@@ -27,12 +27,26 @@ namespace MeuRPGZinUWP
         int feiticeiraX = 9, feiticeiraY = 8;
         public Labirinto2 l;
         public Feiticeira bia = new Feiticeira();
+        Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
         public Fase2()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto2();
+            matrizImg[9, 1] = moeda0;
+            matrizImg[9, 2] = moeda1;
+            matrizImg[9, 3] = moeda2;
+            matrizImg[8, 3] = moeda3;
+            matrizImg[7, 5] = moeda4;
+            matrizImg[8, 5] = moeda5;
+            matrizImg[6, 0] = moeda6;
+            matrizImg[6, 1] = moeda7;
+            matrizImg[1, 5] = moeda8;
+            matrizImg[1, 4] = moeda9;
+            matrizImg[2, 5] = moeda10;
+            matrizImg[1, 6] = vitae;
+            matrizImg[7, 0] = radix;
         }
 
 
@@ -77,7 +91,20 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            l.TemItem(feiticeiraX, feiticeiraY, bia);
+            if (l.TemItem(feiticeiraX, feiticeiraY, bia))
+            {
+               
+                Image Item = matrizImg[feiticeiraX, feiticeiraY];
+                canvasMap.Children.Remove(Item); //remove visualmente o item
+              
+            }
+            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
+            {
+                Image moeda = matrizImg[feiticeiraX, feiticeiraY];
+                canvasMap.Children.Remove(moeda); //remove visualmente a moeda
+                //Console.WriteLine(bia.moedas);
+            }
+            
 
         }
 
@@ -96,10 +123,7 @@ namespace MeuRPGZinUWP
 
         public void Up()
         {
-            if (feiticeiraX == 4)
-            {
-                Console.WriteLine("tá na linha 4");
-            }
+           
             if (l.TemParedeTopo(feiticeiraX, feiticeiraY) == false)
             {
                 feiticeiraMovimento.Y -= 80;

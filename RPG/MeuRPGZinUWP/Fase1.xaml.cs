@@ -29,11 +29,22 @@ namespace MeuRPGZinUWP
         public Feiticeira bia = new Feiticeira();
 
 
+        Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
+
         public Fase1()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto1();
+            matrizImg[1, 4] = moeda0;
+            matrizImg[1, 5] = moeda1;
+            matrizImg[1, 7] = moeda2;
+            matrizImg[2, 7] = moeda3;
+            matrizImg[3, 7] = moeda4;
+            matrizImg[9, 7] = moeda5;
+            matrizImg[9, 6] = moeda6;
+            matrizImg[9, 5] = moeda7;
+            matrizImg[1, 2] = whey;
         }
 
         /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
@@ -77,7 +88,7 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            l.TemItem(feiticeiraX, feiticeiraY, bia, pocao_whey);
+            l.TemItem(feiticeiraX, feiticeiraY, bia);
 
         }
 

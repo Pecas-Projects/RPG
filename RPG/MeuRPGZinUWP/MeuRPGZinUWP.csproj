@@ -140,6 +140,10 @@
     <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\moeda_front.png" />
+    <Content Include="Assets\pocao_radix.png" />
+    <Content Include="Assets\pocao_vitae.png" />
+    <Content Include="Assets\pocao_whey.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />

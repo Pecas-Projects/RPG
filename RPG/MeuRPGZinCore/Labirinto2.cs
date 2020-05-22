@@ -58,7 +58,7 @@ namespace MeuRPGZinCore
             linha4.Add(new Parede { topo = true, esquerda = true });
             linha4.Add(new Parede { direita = true, baixo = true });
             linha4.Add(new Parede { direita = true, esquerda = true });
-            linha3.Add(new Parede { topo = true, esquerda = true, direita = true });
+            linha4.Add(new Parede { topo = true, esquerda = true, direita = true });
             linha4.Add(new Parede { direita = true, esquerda = true });
             linha4.Add(new Parede { esquerda = true, direita = true });
             linha4.Add(new Parede { esquerda = true, baixo = true });
@@ -99,7 +99,7 @@ namespace MeuRPGZinCore
             linha7.Add(new Parede { topo = true, direita = true });
 
             //linha 8 
-            linha8.Add(new Parede { direita = true });
+            linha8.Add(new Parede { esquerda = true });
             linha8.Add(new Parede { topo = true, baixo = true });
             linha8.Add(new Parede { baixo = true, direita = true });
             linha8.Add(new Parede { esquerda = true, topo = true, direita = true });
@@ -125,7 +125,7 @@ namespace MeuRPGZinCore
 
         public override bool TemItem(int x, int y, Feiticeira bia)
         {
-            bool pegou1 = true, pegou2 = true;
+            bool pegou1 = false, pegou2 = false;
             PocaoRadix pocao_radix = new PocaoRadix();
             PocaoVitae pocao_vitae = new PocaoVitae();
 
