@@ -18,9 +18,9 @@
         </Grid.ColumnDefinitions>
         <Canvas >
 
-            <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="600" Canvas.Left="200" />
+            <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="79" Canvas.Left="150" />
 
-            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="550" Canvas.Top="800" VerticalAlignment="Top" Width="390" HorizontalAlignment="Center" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="555" Canvas.Top="298" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" />
 
         </Canvas>
     </Grid>

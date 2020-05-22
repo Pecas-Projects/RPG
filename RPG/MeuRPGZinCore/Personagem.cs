@@ -61,6 +61,11 @@ namespace MeuRPGZinCore
                 Console.WriteLine("Nao pode uiuiuiuiui!!");
             }
 
+            if (inimigo.Escudo < 0)
+            {
+                inimigo.Escudo = 0;
+            }
+
         }
 
         /// <summary>
@@ -72,7 +77,11 @@ namespace MeuRPGZinCore
 
         public void usarEscudo()
         {
-            this.EscudoAtivo = true;
+            if (this.Escudo > 0)
+            {
+                this.EscudoAtivo = true;
+            }
+            
         }
 
         /// <summary>

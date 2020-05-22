@@ -20,9 +20,13 @@
         <Canvas Grid.Row="0" x:Name="canvasMap">
 
 
-            <Button x:Name="ataque" Content="Atacar" FontSize="30" Height="98" Margin="58,231,0,0" VerticalAlignment="Top" Width="315" Click="Ataque"/>
-            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="96" Margin="59,425,0,0" VerticalAlignment="Top" Width="315" Click="usarEscudoBrabo"/>
-            <Button x:Name="descancar" Content="Descançar TROLL" FontSize="30" Height="111" Margin="59,614,0,0" VerticalAlignment="Top" Width="316" Click="DescancarTroll"/>
+            <Button x:Name="ataque" Content="Atacar" FontSize="30" Height="53" Margin="58,231,0,0" Width="247" Click="Ataque" Canvas.Left="51.197" Canvas.Top="27.174" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="-0.988"/>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="usarEscudo" Content="Usar Escudo BRABO!" FontSize="30" Height="48" Margin="59,425,0,0" Width="315" Click="usarEscudoBrabo" Canvas.Left="10" Canvas.Top="-65"/>
+            <Button x:Name="descancar" Content="Descançar TROLL" FontSize="30" Height="82" Margin="59,614,0,0" Width="212" Click="DescancarTroll" Canvas.Left="69" Canvas.Top="-101"/>
 
             <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png" Canvas.Top="323" Canvas.Left="401" Width="300" Height="300" />
             <TextBlock x:Name="feiticeiraVida" Height="58"  FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="366" Canvas.Left="447" Canvas.Top="70" />
@@ -34,7 +38,7 @@
             <TextBlock x:Name="sereianoEscudo" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="434" Canvas.Left="932" Canvas.Top="158" />
             <TextBlock x:Name="sereianoEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="463" Canvas.Left="932" Canvas.Top="226" />
 
-            <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="108" Margin="58,58,0,0" VerticalAlignment="Top" Width="316" Click="batalhaInicio"/>
+            <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="79" Margin="58,58,0,0" Width="244" Click="batalhaInicio" Canvas.Left="58" Canvas.Top="58"/>
             <TextBlock x:Name="acaoFeiticeira" FontSize="40" Height="71" Text="Ação: " TextWrapping="Wrap" Width="419"  Canvas.Left="447" Canvas.Top="643"/>
             <TextBlock x:Name="acaoSereiano" FontSize="40" Height="71"  Text="Ação: " TextWrapping="Wrap" Width="419" Canvas.Left="932" Canvas.Top="638"/>
 

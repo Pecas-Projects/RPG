@@ -100,12 +100,20 @@ namespace MeuRPGZinUWP
 
         private void usarEscudoBrabo(object sender, RoutedEventArgs e)
         {
-            int acaoInimigo;
-            p.usarEscudo();
-            acaoInimigo = s.Inteligencia(p);
-            Controller.FimDeTurno(p, s, 0, acaoInimigo);
-            RegistraAcoes(0, acaoInimigo);
-            AtualizarStatus();
+            if(p.Escudo > 0)
+            {
+                int acaoInimigo;
+                p.usarEscudo();
+                acaoInimigo = s.Inteligencia(p);
+                Controller.FimDeTurno(p, s, 0, acaoInimigo);
+                RegistraAcoes(0, acaoInimigo);
+                AtualizarStatus();
+            }
+            else
+            {
+                //algo no fronte avisando q não tem escudo e pedindo pra escolher outra coisa
+            }
+            
         }
 
         private void DescancarTroll(object sender, RoutedEventArgs e)
