@@ -77,6 +77,7 @@ namespace MeuRPGZinCore
             }
 
             return resultado;
+
         }
 
         public bool TemParedeDireita(int x, int y)
@@ -134,6 +135,7 @@ namespace MeuRPGZinCore
             }
 
             return resultado;
+
         }
 
         public bool TemParedeEsquerda(int x, int y)
@@ -191,7 +193,9 @@ namespace MeuRPGZinCore
             }
 
             return resultado;
+
         }
+
         public bool TemParedeBaixo(int x, int y)
         {
             bool resultado = false;
@@ -247,14 +251,9 @@ namespace MeuRPGZinCore
             }
 
             return resultado;
+
         }
 
-        /// <summary>
-        /// verifica se tem moeda na coordenada desejada retorna true caso possua
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="bia"></param>
         public bool TemPeca(int x, int y, Feiticeira bia)
         {
             for (int i = 0; i < moedas.Count; ++i)
@@ -268,6 +267,7 @@ namespace MeuRPGZinCore
             }
 
             return false;
+
         }
 
         public abstract bool TemItem(int x, int y, Feiticeira bia, Item item);

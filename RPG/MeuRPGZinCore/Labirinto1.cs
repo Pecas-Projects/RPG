@@ -13,7 +13,6 @@ namespace MeuRPGZinCore
 
         public Labirinto1()
         {
-            //adição das moedas presentes no labirinto de acordo com suas coordenadas
             moedas.Add(new Moeda { X = 1, Y = 4 });
             moedas.Add(new Moeda { X = 1, Y = 5 });
             moedas.Add(new Moeda { X = 1, Y = 7 });
@@ -70,11 +69,11 @@ namespace MeuRPGZinCore
             linha5.Add(new Parede { topo = true, esquerda = true });
             linha5.Add(new Parede { direita = true, topo = true });
             linha5.Add(new Parede { baixo = true, esquerda = true });
-            linha5.Add(new Parede { baixo = true, direita = true});
+            linha5.Add(new Parede { baixo = true, direita = true });
             linha5.Add(new Parede { esquerda = true });
             linha5.Add(new Parede { baixo = true });
             linha5.Add(new Parede { direita = true, topo = true, baixo = true });
-            linha5.Add(new Parede { direita = true, baixo = true, esquerda = true });
+            linha5.Add(new Parede { direita = true, baixo = true });
 
             linha6.Add(new Parede { baixo = true, esquerda = true });
             linha6.Add(new Parede { direita = true, baixo = true });
@@ -121,6 +120,16 @@ namespace MeuRPGZinCore
 
         }
 
+       
+
+        /// <summary>
+        /// verifica se tem moeda na coordenada desejada retorna true caso possua
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="bia"></param>
+       
+
         /// <summary>
         /// verifica se tem item na coordenada desejada retorna caso
         /// </summary>
@@ -141,6 +150,8 @@ namespace MeuRPGZinCore
             }
             return false;
         }
+
+
     }
 }
 
