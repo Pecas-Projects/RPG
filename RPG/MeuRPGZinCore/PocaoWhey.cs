@@ -12,6 +12,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção de Whey";
             this.utilizado = false;
+            this.preco = 3;
         }
         public void utilizar(Feiticeira jogador) //aumenta 30% da estamina
         {

@@ -55,13 +55,12 @@ namespace MeuRPGZinCore
         }
 
 
-        public void ComprarItem(Item itemGenerico, ArrayList bag,int preco)
+        public void ComprarItem(Item itemGenerico, ArrayList bag, int preco)
         {
             if (this.moedas >= preco)
             {
                 mochila.AddItem(itemGenerico, bag);
                 this.moedas -= preco;
-
             }
         }
 

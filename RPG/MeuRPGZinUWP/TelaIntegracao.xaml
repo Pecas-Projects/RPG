@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    Height="700"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
@@ -16,11 +17,17 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Canvas >
+        <Canvas RenderTransformOrigin="0.525,0.452" Margin="0,0,10,0" Grid.RowSpan="2" >
 
-            <TextBox FontSize="65" Height="100" Width="1200"  Text="Você completou o primeiro labirinto!" TextWrapping="Wrap" Canvas.Top="79" Canvas.Left="150" />
-
-            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="555" Canvas.Top="308" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="129" Canvas.Left="863" Canvas.Top="519" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
+            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="30" Height="124" Canvas.Left="863" Canvas.Top="366" Width="390" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaLoja" RenderTransformOrigin="0.074,-1.387" />
+            <TextBlock Height="108" Canvas.Left="445" Canvas.Top="112" Text="Você está na Bag" FontSize="80" TextWrapping="Wrap" Width="652"/>
+            <TextBlock x:Name="contPirlimpimpim" Height="80" Canvas.Left="100" Canvas.Top="264" Text="Pó de Pirlimpimpim: " FontSize="40" TextWrapping="Wrap" Width="512"/>
+            <TextBlock x:Name="contWhey" Height="80" Canvas.Left="98" Canvas.Top="339" Text="Poção Whey: " FontSize="40" TextWrapping="Wrap" Width="512"/>
+            <TextBlock x:Name="contFortalecedora" Height="80" Canvas.Left="93" Canvas.Top="411" Text="Poção Fortalecedora: " FontSize="40" TextWrapping="Wrap" Width="512"/>
+            <TextBlock x:Name="contRadix" Height="80" Canvas.Left="93" Canvas.Top="506" Text="Poção Radix: " FontSize="40" TextWrapping="Wrap" Width="512"/>
+            <TextBlock x:Name="contVitae" Height="80" Canvas.Left="93" Canvas.Top="595" FontSize="40" TextWrapping="Wrap" Width="512"><Run Text="Poção "/><Run Text="Vitae"/><Run Text=": "/></TextBlock>
+            <TextBlock x:Name="contPecas"  Height="45" Canvas.Left="856" Canvas.Top="272" Text="Você tem:" FontSize="40" TextWrapping="Wrap" Width="397"/>
 
         </Canvas>
     </Grid>
