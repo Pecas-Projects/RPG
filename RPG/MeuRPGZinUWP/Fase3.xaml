@@ -21,7 +21,7 @@
             <Image x:Name="lab2" Stretch="UniformToFill" Source="Assets/lab_vulcao.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black">
             </Image>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="625" Canvas.Left="630" >
+            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="636" Canvas.Left="403" >
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="feiticeiraMovimento"/>
                 </Image.RenderTransform>

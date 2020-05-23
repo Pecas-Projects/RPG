@@ -102,7 +102,7 @@ namespace MeuRPGZinCore
             linha8.Add(new Parede { esquerda = true });
             linha8.Add(new Parede { baixo = true, direita = true });
             linha8.Add(new Parede { esquerda = true, baixo = true });
-            linha8.Add(new Parede());
+            linha8.Add(new Parede()); //todas as opções livres 
             linha8.Add(new Parede { baixo = true });
             linha8.Add(new Parede { baixo = true });
             linha8.Add(new Parede { topo = true, baixo = true, direita = true });
@@ -125,7 +125,30 @@ namespace MeuRPGZinCore
 
         public override bool TemItem(int x, int y, Feiticeira bia)
         {
-            throw new NotImplementedException();
+            bool pegouItem = false;
+            PocaoFortalecedora pocao_fortalecedora = new PocaoFortalecedora();
+            Pirlimpimpim po_pirlimpimpim = new Pirlimpimpim();
+            PocaoWhey whey = new PocaoWhey();
+
+            if(x == 1 && y == 7 ) //verifica se o item é a poção fortalecedora
+            {
+                pegouItem = true;
+                bia.mochila.AddItem(pocao_fortalecedora, bia.mochila.bagFortalecedora);
+            }
+
+            else if (x == 3 && y == 7) //verifica se o item é a poção fortalecedora
+            {
+                pegouItem = true;
+                bia.mochila.AddItem(whey, bia.mochila.bagWhey);
+            }
+
+            else if (x == 7 && y == 8) //verifica se o item é a poção fortalecedora
+            {
+                pegouItem = true;
+                bia.mochila.AddItem(po_pirlimpimpim, bia.mochila.bagPirlimpimpim);
+            }
+
+            return pegouItem;
         }
     }
 }
