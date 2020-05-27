@@ -9,6 +9,7 @@ namespace MeuRPGZinTest
         Personagem Atacante;
         Personagem Inimigo;
         Personagem User;
+        PocaoWhey Whey;
 
         [SetUp]
         public void Setup()
@@ -18,7 +19,8 @@ namespace MeuRPGZinTest
             Inimigo = new Feiticeira { Forca = 20, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50 };
 
             //Para teste de Itens
-            User = new Feiticeira { Forca=10, PerdaEstamina = 0.1, GanhoEstamnina=0.1 };
+            User = new Feiticeira { Forca=10, PerdaEstamina = 0.1, GanhoEstamnina=0.1, Escudo = 10 };
+            Whey = new PocaoWhey();
         }
 
         [Test]
@@ -49,5 +51,7 @@ namespace MeuRPGZinTest
             Assert.AreEqual(10, Inimigo.Escudo);
             Assert.AreEqual(0.8, Atacante.Estamina);
         }
+
+
     }
 }

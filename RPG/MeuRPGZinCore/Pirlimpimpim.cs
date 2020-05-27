@@ -35,7 +35,11 @@ namespace MeuRPGZinCore
             //essa função poderia ser colocada na classe mãe Item pois serve para todos
         }
         
-        public void utilizar(Feiticeira jogador)
+        /// <summary>
+        /// Aumenta a magia em 20%
+        /// </summary>
+        /// <param name="jogador"></param>
+        public void Utilizar(Feiticeira jogador)
         {
             aux = jogador.magia * 0.2;
             jogador.magia = aux;

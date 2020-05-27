@@ -8,6 +8,6 @@ namespace MeuRPGZinCore
 {
     interface ItemUtilizavel
     {
-        void utilizar(Feiticeira jogador);
+        void Utilizar(Feiticeira jogador);
     }
 }

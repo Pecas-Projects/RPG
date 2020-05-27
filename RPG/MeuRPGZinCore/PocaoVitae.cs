@@ -16,7 +16,11 @@ namespace MeuRPGZinCore
 
             }
 
-            public void utilizar(Feiticeira jogador) //aumenta a vida do jogador em 50%
+        /// <summary>
+        /// Aumenta 50% a vida do jogador
+        /// </summary>
+        /// <param name="jogador"></param>
+            public void Utilizar(Feiticeira jogador)
             {
                 jogador.Vida += jogador.Vida * 0.5;
                 this.utilizado = true;

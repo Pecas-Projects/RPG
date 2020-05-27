@@ -21,7 +21,11 @@ namespace MeuRPGZinCore
             jogador.mochila.RemoverItem(jogador.mochila.bagRadix);
         }
 
-        public void utilizar(Feiticeira jogador) //aumenta em 20% a força 
+        /// <summary>
+        /// Aumenta 20% da força
+        /// </summary>
+        /// <param name="jogador"></param>
+        public void Utilizar(Feiticeira jogador)
         {
             aux = jogador.Forca * 0.2;
             jogador.Forca += aux;
