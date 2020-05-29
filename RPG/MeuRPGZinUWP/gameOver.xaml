@@ -1,0 +1,46 @@
+﻿<Page
+    
+    x:Class="MeuRPGZinUWP.gameOver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="700" Width="1300"
+    
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas RenderTransformOrigin="0.47,0.441">
+            <TextBlock Width="282" Height="69"  FontSize ="50" Text="GAME OVER" Canvas.Left="507" Canvas.Top="10" ></TextBlock>
+
+            <TextBlock Width="835" Height="86" FontSize ="50" 
+            Text="Você falhou em atravessar o labirinto!" 
+             Canvas.Left="235" Canvas.Top="77"></TextBlock>
+
+            <TextBlock Width="1123" Height="94" FontSize ="50" 
+            Text="Todas as pecas e os itens coletados não irão para" 
+             Canvas.Left="103" Canvas.Top="149"></TextBlock>
+
+
+            <TextBlock Width="186" Height="73" FontSize ="50" 
+            Text="sua bag." 
+             Canvas.Left="552" Canvas.Top="216"></TextBlock>
+
+            <TextBlock Width="998" Height="86" FontSize ="50" 
+            Text="Clique em continuar para refazer o labirinto" 
+             Canvas.Left="170" Canvas.Top="296" ></TextBlock>
+
+            <Button x:Name="continuar" Background="BlueViolet" Width="500" Height="103" Canvas.Left="400"
+            Canvas.Top="536" Foreground="White" FontSize="50" Content="CONTINUAR" Click="handleClick" ></Button>
+
+            <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="103" Canvas.Top="438"></Image>
+            <Image Source="Assets/pedras_da_terra.png" Width="150" Height="150" Canvas.Left="333" Canvas.Top="363"></Image>
+            <Image Source="Assets/pedras_da_magia.png" Width="150" Height="150" Canvas.Left="602" Canvas.Top="350"></Image>
+            <Image Source="Assets/pedras_do_ar.png" Width="150" Height="150" Canvas.Left="1034" Canvas.Top="458"></Image>
+            <Image Source="Assets/pedras_do_fogo.png" Width="150" Height="150" Canvas.Left="843" Canvas.Top="368"></Image>
+        </Canvas>
+
+    </Grid>
+</Page>

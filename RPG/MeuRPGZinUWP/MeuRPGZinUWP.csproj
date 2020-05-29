@@ -128,6 +128,9 @@
     <Compile Include="Fase3.xaml.cs">
       <DependentUpon>Fase3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="gameOver.xaml.cs">
+      <DependentUpon>gameOver.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +145,11 @@
     <Content Include="Assets\lab_vulcao.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\moeda_front.png" />
+    <Content Include="Assets\pedras_da_magia.png" />
+    <Content Include="Assets\pedras_da_terra.png" />
+    <Content Include="Assets\pedras_do_ar.png" />
+    <Content Include="Assets\pedras_do_fogo.png" />
+    <Content Include="Assets\pedra_da_agua.png" />
     <Content Include="Assets\pocao_fortalecedora.png" />
     <Content Include="Assets\pocao_radix.png" />
     <Content Include="Assets\pocao_vitae.png" />
@@ -169,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Fase3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gameOver.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

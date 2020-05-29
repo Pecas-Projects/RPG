@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Timers;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -20,16 +21,30 @@ namespace MeuRPGZinUWP
 {
     public sealed partial class Fase3 : Page
     {
+        DispatcherTimer dispatcherTimer;
+        DateTimeOffset startTime;
+        DateTimeOffset lastTime;
+        DateTimeOffset stopTime;
+        int timesTicked = 1;
+        int timesToTick = 50;
+        int tempoTotal = 50;
+
         int feiticeiraX = 9, feiticeiraY = 5;
+
         public Labirinto3 l;
+
         public Feiticeira bia = new Feiticeira();
+
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
+        public int contMoedas = 0;
+        public bool Fort, _Pirlim, Whey;
 
         public Fase3()
         {
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto3();
+            DispatcherTimerSetup();
 
             //setando coordenadas das imagens dos itens no labirinto
             matrizImg[9, 6] = moeda0;
@@ -41,8 +56,8 @@ namespace MeuRPGZinUWP
             matrizImg[5, 4] = moeda6;
             matrizImg[5, 6] = moeda7;
             matrizImg[5, 7] = moeda8;
-            matrizImg[1, 1] = moeda9;
-            matrizImg[1, 2] = moeda10;
+            matrizImg[1, 2] = moeda9;
+            matrizImg[1, 1] = moeda10;
             matrizImg[1, 7] = fortalecedora;
             matrizImg[3, 7] = whey;
             matrizImg[7, 8] = pirlimpimpim;
@@ -64,6 +79,8 @@ namespace MeuRPGZinUWP
                    }
                } */
 
+
+        
         protected override void OnKeyUp(KeyRoutedEventArgs e)
         {
             base.OnKeyUp(e);
@@ -95,9 +112,14 @@ namespace MeuRPGZinUWP
                 Image Item = matrizImg[feiticeiraX, feiticeiraY];
                 canvasMap.Children.Remove(Item); //remove visualmente o item
 
+                if (feiticeiraX == 1 && feiticeiraY == 7) Fort = true;
+                else if (feiticeiraX == 3 && feiticeiraY == 7) Whey = true;
+                else if (feiticeiraX == 7 && feiticeiraY == 8) _Pirlim = true;
+
             }
             if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
             {
+                ++contMoedas;
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
                 canvasMap.Children.Remove(moeda); //remove visualmente a moeda
                 //Console.WriteLine(bia.moedas);
@@ -150,6 +172,46 @@ namespace MeuRPGZinUWP
 
             }
         }
-    
+
+        public void DispatcherTimerSetup()
+        {
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += dispatcherTimer_Tick;
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            //IsEnabled defaults to false
+           
+            startTime = DateTimeOffset.Now;
+            lastTime = startTime;
+            
+            dispatcherTimer.Start();
+            //IsEnabled should now be true after calling start
+           
+        }
+
+        void dispatcherTimer_Tick(object sender, object e)
+        {
+            DateTimeOffset time = DateTimeOffset.Now;
+            TimeSpan span = time - lastTime;
+            lastTime = time;
+            //Time since last tick should be very very close to Interval
+            tempoTotal = timesToTick - timesTicked;
+            tempo.Text = "TEMPO RESTANTE: " + tempoTotal.ToString();
+            timesTicked++;
+            if (timesTicked > timesToTick) //quando ot empo terminar
+            {
+                stopTime = time;
+                dispatcherTimer.Stop();
+                span = stopTime - startTime;
+
+                //deleta tudo que o jogador coletou no labirinto se ele perder
+                if (Fort) bia.mochila.RemoverItem(bia.mochila.bagFortalecedora);
+                if (Whey) bia.mochila.RemoverItem(bia.mochila.bagWhey);
+                if (_Pirlim) bia.mochila.RemoverItem(bia.mochila.bagPirlimpimpim);
+                bia.moedas -= contMoedas;
+
+                tempo.Text = "GAME OVER";
+                this.Frame.Navigate(typeof(gameOver));
+            }
+        }
     }
 }

@@ -38,8 +38,9 @@ namespace MeuRPGZinCore
             linha2.Add(new Parede { esquerda = true, topo = true });
             linha2.Add(new Parede { topo = true, direita = true });
             linha2.Add(new Parede { esquerda = true, direita = true });
+            linha2.Add(new Parede { esquerda = true,  direita = true });
             linha2.Add(new Parede { esquerda = true, baixo = true, direita = true });
-            linha2.Add(new Parede { esquerda = true, topo = true });
+            linha2.Add(new Parede { topo = true, esquerda = true });
             linha2.Add(new Parede { topo = true, baixo = true });
             linha2.Add(new Parede { direita = true });
 
