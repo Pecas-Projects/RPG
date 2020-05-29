@@ -32,6 +32,7 @@
             <TextBlock x:Name="contVitae" Height="34" Canvas.Left="589" Canvas.Top="188" FontSize="30" TextWrapping="Wrap" Width="512"><Run Text="Poção "/><Run Text="Vitae"/><Run Text=": "/></TextBlock>
             <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="1005" Canvas.Top="189" Text="Você tem:" FontSize="40" TextWrapping="Wrap" Width="397"/>
             <Button x:Name="voltarParaMochila" Content="Voltar para mochila" FontSize="30" Height="68" Canvas.Left="589" Canvas.Top="552" Width="360" Click="IrparaMochila"/>
+            <Image  Source="Assets/mercadora.png" Canvas.Top="274" Canvas.Left="1055" Width="435" Height="416" />
 
         </Canvas>
 

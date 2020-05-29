@@ -32,17 +32,53 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Primeiro metodo executado ao renderizar a pagina
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            feiticeira = e.Parameter as Feiticeira;
+            AtualizarContItens();
+        }
+
+        public void AtualizarContItens()
+        {
+            contFortalecedora.Text = "Poção Fortalecedora: " + feiticeira.mochila.bagFortalecedora.Count;
+            contPirlimpimpim.Text = "Pó de Pirlimpimpim: " + feiticeira.mochila.bagPirlimpimpim.Count;
+            contRadix.Text = "Poção Radix: " + feiticeira.mochila.bagRadix.Count;
+            contVitae.Text = "Poção Vitae: " + feiticeira.mochila.bagVitae.Count;
+            contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
+            contPecas.Text = "Você tem " + feiticeira.moedas + " moedas";
+        }
+
+        /// <summary>
+        /// Integração para a batalha
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void paginaDaBatalha(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(TesteBatalha2),feiticeira);
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        /// <summary>
+        /// Integração pagina da loja
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void paginaDaLoja(object sender, RoutedEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            feiticeira = e.Parameter as Feiticeira;
+            this.Frame.Navigate(typeof(Loja), feiticeira);
         }
 
+
+        /// <summary>
+        /// Selecio o Whey como item de batalha
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LevarWhey(object sender, RoutedEventArgs e)
         {
             feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagWhey);
@@ -57,6 +93,11 @@ namespace MeuRPGZinUWP
 
         }
 
+        /// <summary>
+        /// Retira o Whey como item de batalha
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RetirarWhey(object sender, RoutedEventArgs e)
         {
             PocaoWhey whey = new PocaoWhey();

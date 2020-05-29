@@ -16,21 +16,23 @@ namespace MeuRPGZinCore
 
             }
 
-            public override void Utilizar(Feiticeira jogador) //aumenta a vida do jogador em 50%
+        /// <summary>
+        /// Aumenta 30 pontos 
+        /// </summary>
+        /// <param name="jogadora"></param>
+            public override void Utilizar(Feiticeira jogadora) //aumenta a vida do jogador em 50%
             {
-            if(jogadora.Vida < 100)
-            {
-                jogadora.Vida += 30;
-                this.utilizado = true;
-                jogadora.mochila.RemoverItem(jogadora.mochila.bagVitae);
-
-                if(jogadora.Vida > 100)
+                if(jogadora.Vida < 100)
                 {
-                    jogadora.Vida = 100;
-                }
-            }
+                    jogadora.Vida += 30;
+                    this.utilizado = true;
+                    jogadora.mochila.RemoverItem(jogadora.mochila.bagVitae);
 
-                jogador.mochila.RemoverItem(jogador.mochila.bagVitae);
+                    if(jogadora.Vida > 100)
+                    {
+                        jogadora.Vida = 100;
+                    }
+                }
             }
         }
 }

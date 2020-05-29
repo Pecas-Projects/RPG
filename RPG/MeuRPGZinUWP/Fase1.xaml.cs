@@ -26,7 +26,7 @@ namespace MeuRPGZinUWP
     {
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
-        public Feiticeira bia = new Feiticeira();
+        public Feiticeira feiticeira = new Feiticeira();
 
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
@@ -88,7 +88,7 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            l.TemItem(feiticeiraX, feiticeiraY, bia);
+            l.TemItem(feiticeiraX, feiticeiraY, feiticeira);
 
         }
 
@@ -120,17 +120,22 @@ namespace MeuRPGZinUWP
                 }
             }
 
-            public void Right()
+        public void Right()
+        {
+
+            if (feiticeiraX == 1 && feiticeiraY == 8)
             {
-                if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
-                {
-                    feiticeiraMovimento.X += 80;
-                    feiticeiraY += 1;
-
-                }
+                this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
             }
+            if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
+            {
+                feiticeiraMovimento.X += 80;
+                feiticeiraY += 1;
 
-            public void Left()
+            }
+        }
+
+        public void Left()
             {
                 if (l.TemParedeEsquerda(feiticeiraX, feiticeiraY) == false)
                 {

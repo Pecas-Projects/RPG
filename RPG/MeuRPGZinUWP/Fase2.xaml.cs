@@ -26,7 +26,7 @@ namespace MeuRPGZinUWP
     {
         int feiticeiraX = 9, feiticeiraY = 8;
         public Labirinto2 l;
-        public Feiticeira bia = new Feiticeira();
+        public Feiticeira feiticeira = new Feiticeira();
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
         public Fase2()
@@ -91,14 +91,14 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            if (l.TemItem(feiticeiraX, feiticeiraY, bia))
+            if (l.TemItem(feiticeiraX, feiticeiraY, feiticeira))
             {
                
                 Image Item = matrizImg[feiticeiraX, feiticeiraY];
                 canvasMap.Children.Remove(Item); //remove visualmente o item
               
             }
-            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
+            if (l.TemPeca(feiticeiraX, feiticeiraY, feiticeira)) //remove visualmente a moeda
             {
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
                 canvasMap.Children.Remove(moeda); //remove visualmente a moeda
