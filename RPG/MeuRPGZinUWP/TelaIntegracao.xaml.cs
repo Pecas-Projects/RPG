@@ -62,13 +62,13 @@ namespace MeuRPGZinUWP
         private void LevarWhey(object sender, RoutedEventArgs e)
         {
             feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagWhey);
-            if(Item_mochila.Source.Equals("Assets/interrogacao.png"))
+            if(((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
             {
-                //Mudar a imagem para Whey
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
             }
-            else if (Item_mochila2.Source.Equals("Assets/interrogacao.png"))
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
             {
-                //Mudar imagem para Whey
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
             }
 
         }
@@ -77,13 +77,13 @@ namespace MeuRPGZinUWP
         {
             PocaoWhey whey = new PocaoWhey();
             feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagWhey, whey);
-            if (Item_mochila2.Source.Equals("Assets/pocao_whey.png"))
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
             {
-                //Mudar imagem para "?"
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
             }
-            else if (Item_mochila.Source.Equals("Assets/pocao_whey.png"))
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
             {
-                //Mudar imagem para "?"
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
             }
         }
 

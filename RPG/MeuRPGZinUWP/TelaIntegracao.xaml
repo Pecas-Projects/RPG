@@ -7,6 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700"
+    Width="1300"
+    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
@@ -19,7 +21,7 @@
         </Grid.ColumnDefinitions>
         <Canvas RenderTransformOrigin="0.525,0.452" Margin="0,0,10,0" Grid.RowSpan="2" >
 
-            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="100" Canvas.Left="1156" Canvas.Top="568" Width="325" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="100" Canvas.Left="1070" Canvas.Top="574" Width="210" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
             <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="30" Height="90" Canvas.Left="39" Canvas.Top="84" Width="309" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaLoja" RenderTransformOrigin="0.074,-1.387" />
             <TextBlock Height="108" Canvas.Left="560" Canvas.Top="41" Text="Você está na Bag" FontSize="80" TextWrapping="Wrap" Width="652"/>
             <TextBlock x:Name="contPirlimpimpim" Height="80" Canvas.Left="97" Canvas.Top="212" Text="Pó de Pirlimpimpim: " FontSize="35" TextWrapping="Wrap" Width="512"/>
@@ -33,14 +35,14 @@
             <TextBlock Height="46" Canvas.Left="759" Canvas.Top="547" Text="Mochila: " FontSize="40" TextWrapping="Wrap" Width="247"/>
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
             <Image Source="Assets/po_pirlimpimpim.png" Canvas.Left="563" Canvas.Top="235" Height="89" Width="160" />
-            <Image Source="Assets/pocao_whey.png" Canvas.Left="1263" Canvas.Top="235" Height="89" Width="160" />
+            <Image Source="Assets/pocao_whey.png" Canvas.Left="1130" Canvas.Top="235" Height="89" Width="160" />
             <Image Source="Assets/pocao_fortalecedora.png" Height="89" Width="160" Canvas.Left="563" Canvas.Top="380" />
             <Image Source="Assets/pocao_vitae.png" Height="89" Width="160" Canvas.Left="563" Canvas.Top="536" />
-            <Image Source="Assets/pocao_radix.png" Height="89" Width="160" Canvas.Left="1263" Canvas.Top="404" />
+            <Image Source="Assets/pocao_radix.png" Height="89" Width="160" Canvas.Left="1130" Canvas.Top="357" />
 
             <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="890" Canvas.Top="614" Height="80" Width="180" />
             <Image x:Name="Item_mochila" Source="Assets/interrogacao.png" Canvas.Left="728" Canvas.Top="614" Height="80" Width="180" />
-            
+
 
 
 
