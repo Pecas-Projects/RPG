@@ -161,6 +161,10 @@ namespace MeuRPGZinUWP
 
         public void Left()
         {
+            if (feiticeiraX == 1 && feiticeiraY == 0)
+            {
+                this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+            }
             if (l.TemParedeEsquerda(feiticeiraX, feiticeiraY) == false)
             {
                 feiticeiraMovimento.X -= 80;
