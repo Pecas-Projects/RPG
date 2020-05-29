@@ -19,12 +19,12 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Canvas Grid.Row="0" x:Name="canvasMap">
-            <TextBlock x:Name="tempo" Foreground="Coral" Text="TEMPO RESTANTE: 100" Width="481" Height="50" FontSize="35" FontFamily="roboto" TextWrapping="Wrap"></TextBlock>
+            <TextBlock x:Name="tempo" Foreground="Coral" Text="TEMPO RESTANTE: 50s" Width="481" Height="50" FontSize="35" FontFamily="roboto" TextWrapping="Wrap"></TextBlock>
 
             <Image x:Name="lab2" Stretch="UniformToFill" Source="Assets/lab_vulcao.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="49">
             </Image>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="683" Canvas.Left="400" >
+            <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="683" Canvas.Left="400" >
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="feiticeiraMovimento"/>
                 </Image.RenderTransform>
