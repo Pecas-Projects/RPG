@@ -34,7 +34,7 @@ namespace MeuRPGZinUWP
 
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
-        public Feiticeira bia = new Feiticeira();
+        public Feiticeira feiticeira = new Feiticeira();
         public int contMoedas = 0;
         public bool Whey = false;
 
@@ -100,14 +100,14 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            if (l.TemItem(feiticeiraX, feiticeiraY, bia))
+            if (l.TemItem(feiticeiraX, feiticeiraY, feiticeira))
             {
                 Whey = true;
                 Image Item = matrizImg[feiticeiraX, feiticeiraY];
                 canvasMap.Children.Remove(Item); //remove visualmente o item
 
             }
-            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
+            if (l.TemPeca(feiticeiraX, feiticeiraY, feiticeira)) //remove visualmente a moeda
             {
                 ++contMoedas;
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
@@ -144,8 +144,14 @@ namespace MeuRPGZinUWP
                 }
             }
 
+           
             public void Right()
             {
+
+                if (feiticeiraX == 1 && feiticeiraY == 8)
+                {
+                    //this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+                }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
                 {
                     feiticeiraMovimento.X += 80;
@@ -153,6 +159,7 @@ namespace MeuRPGZinUWP
 
                 }
             }
+        
 
             public void Left()
             {
@@ -195,8 +202,8 @@ namespace MeuRPGZinUWP
                 span = stopTime - startTime;
 
                 //deleta tudo que o jogador coletou no labirinto se ele perder
-                if (Whey) bia.mochila.RemoverItem(bia.mochila.bagWhey);
-                bia.moedas -= contMoedas;
+                if (Whey) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
+                feiticeira.moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";
                 this.Frame.Navigate(typeof(gameOver));

@@ -24,7 +24,7 @@
             <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fase1.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="48">
             </Image>
 
-            <Image x:Name="feiticeira" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="683" Canvas.Left="10" >
+            <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="683" Canvas.Left="10" >
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="feiticeiraMovimento"/>
                 </Image.RenderTransform>

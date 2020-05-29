@@ -34,7 +34,7 @@ namespace MeuRPGZinUWP
 
         int feiticeiraX = 9, feiticeiraY = 8;
         public Labirinto2 l;
-        public Feiticeira bia = new Feiticeira();
+        public Feiticeira feiticeira = new Feiticeira();
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
         public int contMoedas = 0;
         public bool Vitae, Radix;
@@ -103,7 +103,7 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            if (l.TemItem(feiticeiraX, feiticeiraY, bia))
+            if (l.TemItem(feiticeiraX, feiticeiraY, feiticeira))
             {
                
                 Image Item = matrizImg[feiticeiraX, feiticeiraY];
@@ -113,7 +113,7 @@ namespace MeuRPGZinUWP
                 else if (feiticeiraX == 7 && feiticeiraY == 0) Radix = true;
 
             }
-            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
+            if (l.TemPeca(feiticeiraX, feiticeiraY, feiticeira)) //remove visualmente a moeda
             {
                 ++contMoedas;
                 Image moeda = matrizImg[feiticeiraX, feiticeiraY];
@@ -200,9 +200,9 @@ namespace MeuRPGZinUWP
                 span = stopTime - startTime;
 
                 //deleta tudo que o jogador coletou no labirinto se ele perder
-                if (Radix) bia.mochila.RemoverItem(bia.mochila.bagRadix);
-                if (Vitae) bia.mochila.RemoverItem(bia.mochila.bagVitae);
-                bia.moedas -= contMoedas;
+                if (Radix) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagRadix);
+                if (Vitae) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagVitae);
+                feiticeira.moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";
                 this.Frame.Navigate(typeof(gameOver));
