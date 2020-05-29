@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    interface ItemDesativado
+    public interface ItemDesativado
     {
         void DesativarItem(Feiticeira jogador);
     }

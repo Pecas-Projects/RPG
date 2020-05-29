@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    public class PocaoFortalecedora : Item, ItemDesativado, ItemUtilizavel
+    public class PocaoFortalecedora : Item, ItemDesativado
     {
         double aux;
         public PocaoFortalecedora()
@@ -23,7 +23,7 @@ namespace MeuRPGZinCore
             jogador.mochila.RemoverItem(jogador.mochila.bagFortalecedora);
         }
 
-        public void Utilizar(Feiticeira jogador) //aumenta 15% da forca
+        public override void Utilizar(Feiticeira jogador) //aumenta 15% da forca
         {
             aux = jogador.Forca * 0.15;
             jogador.Forca = aux;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-   public class PocaoWhey : Item, ItemUtilizavel
+   public class PocaoWhey : Item
     {
         public PocaoWhey()
         {
@@ -14,10 +14,11 @@ namespace MeuRPGZinCore
             this.utilizado = false;
             this.preco = 3;
         }
-        public void Utilizar(Feiticeira jogador) //aumenta 30% da estamina
+        public override void Utilizar(Feiticeira jogador) //aumenta 30% da estamina
         {
             jogador.Estamina += jogador.Estamina * 0.3;
             this.utilizado = true;
         }
+
     }
 }

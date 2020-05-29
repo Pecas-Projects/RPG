@@ -97,9 +97,14 @@ namespace MeuRPGZinCore
 
         }
 
-        public void UsarItemNaBatalha(Feiticeira jogadora, ItemUtilizavel item)
+        public void UsarItemUtilizavel(Feiticeira jogadora, Item item)
         {
             item.Utilizar(jogadora);
+        }
+
+        public void DesativarItemDesativavel(Feiticeira jogadora, ItemDesativado item)
+        {
+            item.DesativarItem(jogadora);
         }
 
 

@@ -214,5 +214,12 @@ namespace MeuRPGZinUWP
         {
             this.Frame.Navigate(typeof(pagina4),p);
         }
+
+        private void UsarItemNaBatalha(object sender, RoutedEventArgs e)
+        {
+            
+            Item item = p.ItemdeBatalha[0] as Item;
+            Controller.UsarItemUtilizavel(p, item);
+        }
     }
 }

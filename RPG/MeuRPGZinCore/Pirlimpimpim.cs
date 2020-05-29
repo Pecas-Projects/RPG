@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    public class Pirlimpimpim : Item, ItemDesativado, ItemUtilizavel
+    public class Pirlimpimpim : Item, ItemDesativado
     {
         double aux;
 
@@ -36,7 +36,7 @@ namespace MeuRPGZinCore
             //essa função poderia ser colocada na classe mãe Item pois serve para todos
         }
         
-        public void Utilizar(Feiticeira jogador)
+        public override void Utilizar(Feiticeira jogador)
         {
             aux = jogador.magia * 0.2;
             jogador.magia = aux;
