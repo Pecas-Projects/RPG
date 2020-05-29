@@ -41,7 +41,7 @@ namespace MeuRPGZinCore
                         //Caso o personagem seja atacado com o escudo ativo, o escudo se desgasta
                         inimigo.Escudo -= (this.Forca * this.Estamina) * 0.35;
                     }
-                    else
+                    else if (dano > 0)
                     {
                         inimigo.Vida -= dano;
                         inimigo.Escudo -= (this.Forca * this.Estamina) * 0.25;
