@@ -212,7 +212,7 @@ namespace MeuRPGZinUWP
 
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(pagina4), feiticeira);
+            this.Frame.Navigate(typeof(Fase2), feiticeira);
         }
 
         private void UsarItemNaBatalha(object sender, RoutedEventArgs e)
