@@ -9,7 +9,7 @@ namespace MeuRPGZinCore
 {
     public class Mochila
     {
-       public  ArrayList bagPirlimpimpim = new ArrayList();
+       public ArrayList bagPirlimpimpim = new ArrayList();
        public ArrayList bagFortalecedora = new ArrayList();
        public ArrayList bagVitae = new ArrayList();
        public ArrayList bagRadix = new ArrayList();
