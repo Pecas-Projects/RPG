@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    interface ItemUtilizavel
+    public interface ItemUtilizavel
     {
         void Utilizar(Feiticeira jogador);
     }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    public class PocaoRadix : Item, ItemDesativado, ItemUtilizavel
+    public class PocaoRadix : Item, ItemDesativado
     {
         double aux;
         public PocaoRadix()
         {
             this.nome = "Poção Radix";
             this.utilizado = false;
+            this.preco = 4;
         }
 
         public void DesativarItem(Feiticeira jogador)
@@ -21,11 +22,7 @@ namespace MeuRPGZinCore
             jogador.mochila.RemoverItem(jogador.mochila.bagRadix);
         }
 
-        /// <summary>
-        /// Aumenta 20% da força
-        /// </summary>
-        /// <param name="jogador"></param>
-        public void Utilizar(Feiticeira jogador)
+        public override void Utilizar(Feiticeira jogador) //aumenta em 20% a força 
         {
             aux = jogador.Forca * 0.2;
             jogador.Forca += aux;

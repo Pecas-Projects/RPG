@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MeuRPGZinCore
 {
 
-       public class PocaoVitae : Item, ItemUtilizavel
+        public class PocaoVitae : Item
         {
             public PocaoVitae() //era um construtor que se tentava fazer?
             {
@@ -16,11 +16,7 @@ namespace MeuRPGZinCore
 
             }
 
-        /// <summary>
-        /// Da 50 pontos de vida a jogadora
-        /// </summary>
-        /// <param name="jogador"></param>
-            public void Utilizar(Feiticeira jogadora)
+            public override void Utilizar(Feiticeira jogador) //aumenta a vida do jogador em 50%
             {
             if(jogadora.Vida < 100)
             {
@@ -34,6 +30,7 @@ namespace MeuRPGZinCore
                 }
             }
 
-        }
+                jogador.mochila.RemoverItem(jogador.mochila.bagVitae);
+            }
         }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-    public class Pirlimpimpim : Item, ItemDesativado, ItemUtilizavel
+    public class Pirlimpimpim : Item, ItemDesativado
     {
         double aux;
 
@@ -15,6 +15,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
+            this.preco = 10;
         }
         /// <summary>
         /// decidir se o item é utilizado durante toda batalha
@@ -35,13 +36,10 @@ namespace MeuRPGZinCore
             //essa função poderia ser colocada na classe mãe Item pois serve para todos
         }
         
-        /// <summary>
-        /// Aumenta a magia em 20%
-        /// </summary>
-        /// <param name="jogador"></param>
-        public void Utilizar(Feiticeira jogador)
+        public override void Utilizar(Feiticeira jogador)
         {
-            jogador.magia += jogador.magia * 0.2;
+            aux = jogador.magia * 0.2;
+            jogador.magia = aux;
             this.utilizado = true;
         }
 

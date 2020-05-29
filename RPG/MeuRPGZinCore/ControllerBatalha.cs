@@ -34,8 +34,6 @@ namespace MeuRPGZinCore
             {
                 return null;
             }
-
-
         }
 
         public void RecargaEstamina(Personagem jogadora, Personagem inimigo)
@@ -97,6 +95,16 @@ namespace MeuRPGZinCore
 
             return this.Vencedor(jogadora, inimigo);
 
+        }
+
+        public void UsarItemUtilizavel(Feiticeira jogadora, Item item)
+        {
+            item.Utilizar(jogadora);
+        }
+
+        public void DesativarItemDesativavel(Feiticeira jogadora, ItemDesativado item)
+        {
+            item.DesativarItem(jogadora);
         }
 
 

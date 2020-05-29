@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
@@ -24,6 +25,7 @@ namespace MeuRPGZinUWP
     public sealed partial class TelaIntegracao : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
+        public Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
 
         public TelaIntegracao()
         {
@@ -40,5 +42,34 @@ namespace MeuRPGZinUWP
             base.OnNavigatedTo(e);
             feiticeira = e.Parameter as Feiticeira;
         }
+
+        private void LevarWhey(object sender, RoutedEventArgs e)
+        {
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagWhey);
+            if(((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
+            }
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
+            }
+
+        }
+
+        private void RetirarWhey(object sender, RoutedEventArgs e)
+        {
+            PocaoWhey whey = new PocaoWhey();
+            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagWhey, whey);
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+            }
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+            }
+        }
+
     }
 }
