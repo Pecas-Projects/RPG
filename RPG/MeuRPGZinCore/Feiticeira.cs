@@ -59,17 +59,30 @@ namespace MeuRPGZinCore
         {
             if (this.moedas >= preco)
             {
-                mochila.AddItem(itemGenerico, bag);
+                this.mochila.AddItem(itemGenerico, bag);
                 this.moedas -= preco;
             }
         }
 
         public void EscolherItemdeBatalha(ArrayList bag)
         {
-            if ( ItemdeBatalha.Count < 2)
+            if ( this.ItemdeBatalha.Count < 2)
             {
                 if (bag.Count > 0){
-                    ItemdeBatalha.Add(bag[(bag.Count)-1]);
+                    this.ItemdeBatalha.Add(bag[(bag.Count)-1]);
+                }
+            }
+        }
+
+        public void RetirarItemdeBatalha(ArrayList bag, Item item)
+        {
+            foreach(Item i in this.ItemdeBatalha)
+            {
+                if(i.GetType() == item.GetType())
+                {
+                    this.ItemdeBatalha.Remove(i);
+                    bag.Add(i);
+                    break;
                 }
             }
         }
