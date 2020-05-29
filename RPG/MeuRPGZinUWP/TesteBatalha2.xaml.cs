@@ -23,7 +23,7 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TesteBatalha2 : Page
     {
-        public Feiticeira p = new Feiticeira();
+        public Feiticeira feiticeira = new Feiticeira();
         //public Personagem inimigoTroll;
         public SereianosNPC s = new SereianosNPC();
         public ControllerBatalha Controller = new ControllerBatalha();
@@ -36,15 +36,15 @@ namespace MeuRPGZinUWP
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            p = e.Parameter as Feiticeira;
+            feiticeira = e.Parameter as Feiticeira;
            //((PersonagemNPC)p).Inteligencia(p);
         }
 
         public void AtualizarStatus()
         {
-            feiticeiraVida.Text = "Vida: " + p.Vida;
-            feiticeiraEscudo.Text = "Escudo: " + p.Escudo;
-            feiticeiraEstamina.Text = "Estamina: " + p.Estamina;
+            feiticeiraVida.Text = "Vida: " + feiticeira.Vida;
+            feiticeiraEscudo.Text = "Escudo: " + feiticeira.Escudo;
+            feiticeiraEstamina.Text = "Estamina: " + feiticeira.Estamina;
 
             sereianoVida.Text = "Vida: " + s.Vida;
             sereianoEscudo.Text = "Escudo: " + s.Escudo;
@@ -82,7 +82,7 @@ namespace MeuRPGZinUWP
 
         private void batalhaInicio(object sender, RoutedEventArgs e)
         {
-            if(p != null && s != null)
+            if(feiticeira != null && s != null)
             {
                 AtualizarStatus();
             }
@@ -90,33 +90,43 @@ namespace MeuRPGZinUWP
 
         private void Ataque(object sender, RoutedEventArgs e)
         {
-            int acaoInimigo;
-            acaoInimigo = s.Inteligencia(p);
-            p.atacar(s);
-
-            if (Controller.FimDeTurno(p, s, 1, acaoInimigo) != null)
+            if(feiticeira.Estamina >= feiticeira.PerdaEstamina)
             {
-                AtualizarStatus();
-                //acabar o jogo aqui e mostrar o vencedor
-                //tudo some, fica só uma imagem de ganhador
-                //botões de 1px, feiticeira feliz ou triste
-                //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                Fim_BTN.Height = 71;
-                Fim_BTN.Width = 419;
-                Inicio_BTN.Height = 0;
-                Inicio_BTN.Width = 0;
-                usarEscudo.Width = 0;
-                usarEscudo.Height = 0;
-                ataque.Width = 0;
-                ataque.Height = 0;
-                descancar.Width = 0;
-                descancar.Height = 0;
+                int acaoInimigo;
+                acaoInimigo = s.Inteligencia(feiticeira);
+                feiticeira.atacar(s);
+
+                if (Controller.FimDeTurno(feiticeira, s, 1, acaoInimigo) != null)
+                {
+                    AtualizarStatus();
+                    //acabar o jogo aqui e mostrar o vencedor
+                    //tudo some, fica só uma imagem de ganhador
+                    //botões de 1px, feiticeira feliz ou triste
+                    //um botão que era de 1px fica grande falando pra pular para a próxima fase
+                    Fim_BTN.Height = 71;
+                    Fim_BTN.Width = 419;
+                    Inicio_BTN.Height = 0;
+                    Inicio_BTN.Width = 0;
+                    usarEscudo.Width = 0;
+                    usarEscudo.Height = 0;
+                    ataque.Width = 0;
+                    ataque.Height = 0;
+                    descancar.Width = 0;
+                    descancar.Height = 0;
+                }
+                else
+                {
+                    RegistraAcoes(1, acaoInimigo);
+                    AtualizarStatus();
+                }
+
+
             }
             else
             {
-                RegistraAcoes(1, acaoInimigo);
-                AtualizarStatus();
+                //algo no fronte falando que não pode atacar 
             }
+            
 
             
             
@@ -125,13 +135,13 @@ namespace MeuRPGZinUWP
         private void usarEscudoBrabo(object sender, RoutedEventArgs e)
         {
             
-            if(p.Escudo > 0)
+            if(feiticeira.Escudo > 0)
             {
                 int acaoInimigo;
-                p.usarEscudo();
-                acaoInimigo = s.Inteligencia(p);
+                feiticeira.usarEscudo();
+                acaoInimigo = s.Inteligencia(feiticeira);
 
-                if(Controller.FimDeTurno(p, s, 0, acaoInimigo) != null)
+                if(Controller.FimDeTurno(feiticeira, s, 0, acaoInimigo) != null)
                 {
                     AtualizarStatus();
                     //acabar o jogo aqui e mostrar o vencedor
@@ -167,11 +177,11 @@ namespace MeuRPGZinUWP
         private void DescancarTroll(object sender, RoutedEventArgs e)
         {
             int acaoInimigo;
-            acaoInimigo = s.Inteligencia(p);
-            p.descansar();
+            acaoInimigo = s.Inteligencia(feiticeira);
+            feiticeira.descansar();
             
 
-            if (Controller.FimDeTurno(p, s, -1, acaoInimigo) != null)
+            if (Controller.FimDeTurno(feiticeira, s, -1, acaoInimigo) != null)
             {
                 AtualizarStatus();
                 //acabar o jogo aqui e mostrar o vencedor
@@ -202,14 +212,18 @@ namespace MeuRPGZinUWP
 
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(pagina4),p);
+            this.Frame.Navigate(typeof(pagina4), feiticeira);
         }
 
         private void UsarItemNaBatalha(object sender, RoutedEventArgs e)
         {
-            
-            Item item = p.ItemdeBatalha[0] as Item;
-            Controller.UsarItemUtilizavel(p, item);
+            Item item = feiticeira.ItemdeBatalha[0] as Item;
+            if(item != null)
+            {
+
+            }
+            Controller.UsarItemUtilizavel(feiticeira, item);
+
         }
     }
 }
