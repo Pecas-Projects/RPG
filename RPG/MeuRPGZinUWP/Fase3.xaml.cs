@@ -37,7 +37,7 @@ namespace MeuRPGZinUWP
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
         public int contMoedas = 0;
-        public bool Fort, _Pirlim, Whey;
+        public bool Fort = false, _Pirlim= false, Whey=false;
 
         public Fase3()
         {
@@ -195,7 +195,7 @@ namespace MeuRPGZinUWP
             lastTime = time;
             //Time since last tick should be very very close to Interval
             tempoTotal = timesToTick - timesTicked;
-            tempo.Text = "TEMPO RESTANTE: " + tempoTotal.ToString();
+            tempo.Text = "TEMPO RESTANTE: " + tempoTotal.ToString() + "s";
             timesTicked++;
             if (timesTicked > timesToTick) //quando ot empo terminar
             {

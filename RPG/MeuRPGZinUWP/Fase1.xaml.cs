@@ -24,9 +24,19 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class Fase1 : Page
     {
+        DispatcherTimer dispatcherTimer;
+        DateTimeOffset startTime;
+        DateTimeOffset lastTime;
+        DateTimeOffset stopTime;
+        int timesTicked = 1;
+        int timesToTick = 50;
+        int tempoTotal = 50;
+
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
         public Feiticeira bia = new Feiticeira();
+        public int contMoedas = 0;
+        public bool Whey = false;
 
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
@@ -36,6 +46,8 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
             butao.Focus(FocusState.Programmatic);
             l = new Labirinto1();
+            DispatcherTimerSetup();
+
             matrizImg[1, 4] = moeda0;
             matrizImg[1, 5] = moeda1;
             matrizImg[1, 7] = moeda2;
@@ -88,8 +100,20 @@ namespace MeuRPGZinUWP
                 Left();
             }
 
-            l.TemItem(feiticeiraX, feiticeiraY, bia);
+            if (l.TemItem(feiticeiraX, feiticeiraY, bia))
+            {
+                Whey = true;
+                Image Item = matrizImg[feiticeiraX, feiticeiraY];
+                canvasMap.Children.Remove(Item); //remove visualmente o item
 
+            }
+            if (l.TemPeca(feiticeiraX, feiticeiraY, bia)) //remove visualmente a moeda
+            {
+                ++contMoedas;
+                Image moeda = matrizImg[feiticeiraX, feiticeiraY];
+                canvasMap.Children.Remove(moeda); //remove visualmente a moeda
+                //Console.WriteLine(bia.moedas);
+            }
         }
 
             public void Down()
@@ -140,12 +164,49 @@ namespace MeuRPGZinUWP
                 }
             }
 
+        public void DispatcherTimerSetup()
+        {
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += dispatcherTimer_Tick;
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            //IsEnabled defaults to false
 
+            startTime = DateTimeOffset.Now;
+            lastTime = startTime;
 
-
-   
+            dispatcherTimer.Start();
+            //IsEnabled should now be true after calling start
 
         }
+
+        void dispatcherTimer_Tick(object sender, object e)
+        {
+            DateTimeOffset time = DateTimeOffset.Now;
+            TimeSpan span = time - lastTime;
+            lastTime = time;
+            //Time since last tick should be very very close to Interval
+            tempoTotal = timesToTick - timesTicked;
+            tempo.Text = "TEMPO RESTANTE: " + tempoTotal.ToString() + "s";
+            timesTicked++;
+            if (timesTicked > timesToTick) //quando ot empo terminar
+            {
+                stopTime = time;
+                dispatcherTimer.Stop();
+                span = stopTime - startTime;
+
+                //deleta tudo que o jogador coletou no labirinto se ele perder
+                if (Whey) bia.mochila.RemoverItem(bia.mochila.bagWhey);
+                bia.moedas -= contMoedas;
+
+                tempo.Text = "GAME OVER";
+                this.Frame.Navigate(typeof(gameOver));
+            }
+        }
+
+
+
+
+    }
     }
 
 
