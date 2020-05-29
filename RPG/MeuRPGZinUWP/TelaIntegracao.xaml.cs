@@ -24,6 +24,7 @@ namespace MeuRPGZinUWP
     public sealed partial class TelaIntegracao : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
+        public Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
 
         public TelaIntegracao()
         {
@@ -55,6 +56,78 @@ namespace MeuRPGZinUWP
         private void paginaDaLoja(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Loja), feiticeira);
+        }
+
+        private void Levar_Pirlimpimpim(object sender, RoutedEventArgs e)
+        {
+           
+           feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagPirlimpimpim); 
+           selectPirlimpimpim.Content = "Retirar da mochila";
+          /*  if (feiticeira.ItemdeBatalha.Count == 1)
+            {
+                Pirlimpimpim_Mochila.Width = 162;
+                Pirlimpimpim_Mochila.Height = 76;
+            }
+            else if (feiticeira.ItemdeBatalha.Count == 2)
+            {
+                Pirlimpimpim_Mochila2.Width = 162;
+                Pirlimpimpim_Mochila2.Height = 76;
+            }*/
+        }
+
+        private void Levar_Whey(object sender, RoutedEventArgs e)
+        {
+            if(selectWhey.Content.Equals("Levar para a batalha"))
+            {
+                contWhey.Text = "Poção Whey: " + (feiticeira.mochila.bagWhey.Count- 1) ;
+                selectWhey.Content = "Retirar da mochila";
+                feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagWhey);
+               /* if (feiticeira.ItemdeBatalha.Count == 1)
+                {
+                    Whey_Mochila.Width = 162;
+                    Whey_Mochila.Height = 76;
+                }
+                else if (feiticeira.ItemdeBatalha.Count == 2)
+                {
+                    Whey_Mochila2.Width = 162;
+                    Whey_Mochila2.Height = 76;
+                }
+            }
+            else
+            {
+                contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
+                selectWhey.Content = "Levar para a batalha";
+                feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagWhey);
+                if (feiticeira.ItemdeBatalha[0] == feiticeira.mochila.bagWhey)
+                {
+                    Whey_Mochila.Width = 1;
+                    Whey_Mochila.Height = 1;
+                }
+                else if (feiticeira.ItemdeBatalha[1] == feiticeira.mochila.bagWhey)
+                {
+                    Whey_Mochila2.Width = 1;
+                    Whey_Mochila2.Height = 1;
+                }*/
+            }
+           
+        }
+
+        private void Levar_Fortalecedora(object sender, RoutedEventArgs e)
+        {
+            selectFortalecedora.Content = "Retirar da mochila";
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagFortalecedora);
+        }
+
+        private void Levar_Radix(object sender, RoutedEventArgs e)
+        {
+            selectRadix.Content = "Retirar da mochila";
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagRadix);
+        }
+
+        private void Levar_Vitae(object sender, RoutedEventArgs e)
+        {
+            selectVitae.Content = "Retirar da mochila";
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagVitae);
         }
     }
 }
