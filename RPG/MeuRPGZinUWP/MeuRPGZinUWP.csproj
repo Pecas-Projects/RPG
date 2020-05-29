@@ -137,6 +137,9 @@
     <Compile Include="TesteBatalha2.xaml.cs">
       <DependentUpon>TesteBatalha2.xaml</DependentUpon>
     </Compile>
+     <Compile Include="Loja.xaml.cs">
+      <DependentUpon>Loja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +198,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TesteBatalha2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+     <Page Include="Loja.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
