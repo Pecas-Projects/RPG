@@ -28,11 +28,8 @@
             <TextBlock x:Name="contRadix" Height="80" Canvas.Left="745" Canvas.Top="357" Text="Poção Radix: " FontSize="35" TextWrapping="Wrap" Width="512"/>
             <TextBlock x:Name="contVitae" Height="80" Canvas.Left="97" Canvas.Top="495" FontSize="35" TextWrapping="Wrap" Width="512"><Run Text="Poção "/><Run Text="Vitae"/><Run Text=": "/></TextBlock>
             <TextBlock x:Name="contPecas"  Height="45" Canvas.Left="39" Canvas.Top="23" Text="Você tem:" FontSize="40" TextWrapping="Wrap" Width="397"/>
-            <Button x:Name="selectWhey" Content="Levar para a batalha" Height="76" FontSize="30" Canvas.Left="746" Canvas.Top="264" Width="325" Click="Levar_Whey"/>
-            <Button x:Name="selectRadix" Content="Levar para a batalha" Height="76" FontSize="30" Canvas.Left="745" Canvas.Top="410" Width="325" Click="Levar_Radix"/>
-            <Button x:Name="selectPirlimpimpim" Content="Levar para a batalha" Height="76" FontSize="30" Canvas.Left="90" Canvas.Top="264" Width="325" Click="Levar_Pirlimpimpim"/>
-            <Button x:Name="selectFortalecedora" Content="Levar para a batalha" Height="76" FontSize="30" Canvas.Left="97" Canvas.Top="410" Width="325" Click="Levar_Fortalecedora"/>
-            <Button x:Name="selectVitae" Content="Levar para a batalha" Height="76" FontSize="30" Canvas.Left="97" Canvas.Top="552" Width="325" Click="Levar_Vitae"/>
+            <Button x:Name="selectWhey" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="746" Canvas.Top="264" Width="162" Click="LevarWhey"/>
+            <Button x:Name="removeWhey" Content="Remover" Height="76" FontSize="30" Canvas.Left="947" Canvas.Top="264" Width="162" Click="RetirarWhey"/>
             <TextBlock Height="46" Canvas.Left="759" Canvas.Top="547" Text="Mochila: " FontSize="40" TextWrapping="Wrap" Width="247"/>
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
             <Image Source="Assets/po_pirlimpimpim.png" Canvas.Left="563" Canvas.Top="235" Height="89" Width="160" />
