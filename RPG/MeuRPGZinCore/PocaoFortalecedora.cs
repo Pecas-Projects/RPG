@@ -26,10 +26,9 @@ namespace MeuRPGZinCore
         /// Aumenta 15% da força
         /// </summary>
         /// <param name="jogador"></param>
-        public void Utilizar(Feiticeira jogador)
+        public void Utilizar(Feiticeira jogadora)
         {
-            aux = jogador.Forca * 0.15;
-            jogador.Forca = aux;
+            jogadora.Forca += jogadora.Forca * 0.15;
             this.utilizado = true;
         }
 

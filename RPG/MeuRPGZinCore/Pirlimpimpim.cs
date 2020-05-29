@@ -41,8 +41,7 @@ namespace MeuRPGZinCore
         /// <param name="jogador"></param>
         public void Utilizar(Feiticeira jogador)
         {
-            aux = jogador.magia * 0.2;
-            jogador.magia = aux;
+            jogador.magia += jogador.magia * 0.2;
             this.utilizado = true;
         }
 
