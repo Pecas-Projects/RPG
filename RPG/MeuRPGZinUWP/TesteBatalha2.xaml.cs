@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using MeuRPGZinCore;
+using System.Security.Cryptography.X509Certificates;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,7 +25,7 @@ namespace MeuRPGZinUWP
     public sealed partial class TesteBatalha2 : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
-       // public Personagem inimigoTroll;
+        public ControllerBatalha controller = new ControllerBatalha();
         public SereianosNPC s = new SereianosNPC();
         public ControllerBatalha Controller = new ControllerBatalha();
 
@@ -36,7 +37,11 @@ namespace MeuRPGZinUWP
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            feiticeira = e.Parameter as Feiticeira;
+            controller = e.Parameter as ControllerBatalha;
+            if (controller.Fase == 1)
+            {
+                
+            }
             //((PersonagemNPC)p).Inteligencia(p);
         }
 

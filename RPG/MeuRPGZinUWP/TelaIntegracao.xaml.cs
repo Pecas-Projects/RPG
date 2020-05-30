@@ -24,6 +24,7 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TelaIntegracao : Page
     {
+        public ControllerBatalha controller = new ControllerBatalha();
         public Feiticeira feiticeira = new Feiticeira();
         public Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
 
@@ -39,7 +40,8 @@ namespace MeuRPGZinUWP
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            feiticeira = e.Parameter as Feiticeira;
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
             AtualizarContItens();
         }
 
@@ -70,7 +72,7 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void paginaDaLoja(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Loja), feiticeira);
+            this.Frame.Navigate(typeof(Loja), controller);
         }
 
 
