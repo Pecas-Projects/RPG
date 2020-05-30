@@ -39,6 +39,8 @@ namespace MeuRPGZinUWP
         public bool Whey = false;
         public ControllerBatalha controller = new ControllerBatalha();
 
+        public Parametro parametros = new Parametro();
+
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
@@ -151,8 +153,9 @@ namespace MeuRPGZinUWP
 
                 if (feiticeiraX == 1 && feiticeiraY == 8)
                 {
-                     dispatcherTimer.Stop();
-                    controller.Fase = 1;
+                    dispatcherTimer.Stop();
+               // parametros.Feiticeira = feiticeira;
+                //parametros.Inimigo = 
                      this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)

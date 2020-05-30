@@ -24,7 +24,7 @@ namespace MeuRPGZinUWP
     public sealed partial class TesteBatalha2 : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
-        //public Personagem inimigoTroll;
+       // public Personagem inimigoTroll;
         public SereianosNPC s = new SereianosNPC();
         public ControllerBatalha Controller = new ControllerBatalha();
 
@@ -37,7 +37,7 @@ namespace MeuRPGZinUWP
         {
             base.OnNavigatedTo(e);
             feiticeira = e.Parameter as Feiticeira;
-           //((PersonagemNPC)p).Inteligencia(p);
+            //((PersonagemNPC)p).Inteligencia(p);
         }
 
         public void AtualizarStatus()
