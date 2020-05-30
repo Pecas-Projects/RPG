@@ -37,6 +37,7 @@ namespace MeuRPGZinUWP
         public Feiticeira feiticeira = new Feiticeira();
         public int contMoedas = 0;
         public bool Whey = false;
+        public ControllerBatalha controller = new ControllerBatalha();
 
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
@@ -151,6 +152,7 @@ namespace MeuRPGZinUWP
                 if (feiticeiraX == 1 && feiticeiraY == 8)
                 {
                      dispatcherTimer.Stop();
+                    controller.Fase = 1;
                      this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)

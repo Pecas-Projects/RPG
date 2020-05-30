@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,6 +20,7 @@ namespace MeuRPGZinCore
         public int ContAtaqueInimigo { get; set; } = 0;
         public int ContDescancarFeiticeira { get; set; } = 0;
         public int ContDescancarInimigo { get; set; } = 0;
+        public int Fase { get; set; } = 0;
 
         public Personagem Vencedor(Personagem jogadora, Personagem inimigo)
         {
