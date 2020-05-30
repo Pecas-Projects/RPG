@@ -71,6 +71,7 @@ namespace MeuRPGZinCore
             {
                 if (bag.Count > 0){
                     this.ItemdeBatalha.Add(bag[(bag.Count)-1]);
+                    this.mochila.RemoverItem(bag);
                 }
             }
         }

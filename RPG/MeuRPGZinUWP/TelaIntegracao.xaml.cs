@@ -85,10 +85,12 @@ namespace MeuRPGZinUWP
             if(((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
             {
                 Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
+                AtualizarContItens();
             }
             else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
             {
                 Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_whey.png"));
+                AtualizarContItens();
             }
 
         }
@@ -105,10 +107,12 @@ namespace MeuRPGZinUWP
             if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
             {
                 Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
             }
             else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_whey.png"))
             {
                 Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
             }
         }
 
