@@ -13,7 +13,6 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção Fortalecedora";
             this.utilizado = false;
-            this.preco = 8;
         }
 
         public void DesativarItem(Feiticeira jogador)
@@ -23,10 +22,13 @@ namespace MeuRPGZinCore
             jogador.mochila.RemoverItem(jogador.mochila.bagFortalecedora);
         }
 
-        public override void Utilizar(Feiticeira jogador) //aumenta 15% da forca
+        /// <summary>
+        /// Aumenta 15% da força
+        /// </summary>
+        /// <param name="jogador"></param>
+        public override void Utilizar(Feiticeira jogadora)
         {
-            aux = jogador.Forca * 0.15;
-            jogador.Forca = aux;
+            jogadora.Forca += jogadora.Forca * 0.15;
             this.utilizado = true;
         }
 

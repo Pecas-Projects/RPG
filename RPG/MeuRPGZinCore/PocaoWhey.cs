@@ -12,13 +12,25 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção de Whey";
             this.utilizado = false;
-            this.preco = 3;
-        }
-        public override void Utilizar(Feiticeira jogador) //aumenta 30% da estamina
-        {
-            jogador.Estamina += jogador.Estamina * 0.3;
-            this.utilizado = true;
         }
 
+        /// <summary>
+        /// Aumenta 30% da estamina Total da feiticeira
+        /// </summary>
+        /// <param name="jogador"></param>
+        public override void Utilizar(Feiticeira jogadora)
+        {
+            if(jogadora.Estamina < 1)
+            {
+                jogadora.Estamina += 0.30;
+                this.utilizado = true;
+                jogadora.mochila.RemoverItem(jogadora.mochila.bagWhey);
+                if (jogadora.Estamina > 1)
+                {
+                    jogadora.Estamina = 1;
+                }
+            }
+
+        }
     }
 }

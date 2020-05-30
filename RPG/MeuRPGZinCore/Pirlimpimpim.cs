@@ -15,7 +15,6 @@ namespace MeuRPGZinCore
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
-            this.preco = 10;
         }
         /// <summary>
         /// decidir se o item é utilizado durante toda batalha
@@ -36,10 +35,13 @@ namespace MeuRPGZinCore
             //essa função poderia ser colocada na classe mãe Item pois serve para todos
         }
         
+        /// <summary>
+        /// Aumenta a magia em 20%
+        /// </summary>
+        /// <param name="jogador"></param>
         public override void Utilizar(Feiticeira jogador)
         {
-            aux = jogador.magia * 0.2;
-            jogador.magia = aux;
+            jogador.magia += jogador.magia * 0.2;
             this.utilizado = true;
         }
 
