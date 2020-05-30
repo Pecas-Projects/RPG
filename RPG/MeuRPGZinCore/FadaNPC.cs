@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
-    class FadaNPC : Personagem, PersonagemNPC
+    public class FadaNPC : Personagem, PersonagemNPC
     {
         public FadaNPC()
         {

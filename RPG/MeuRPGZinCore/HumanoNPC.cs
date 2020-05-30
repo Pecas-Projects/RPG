@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
-    class HumanoNPC : Personagem, PersonagemNPC
+    public class HumanoNPC : Personagem, PersonagemNPC
     {
 
         public HumanoNPC()
