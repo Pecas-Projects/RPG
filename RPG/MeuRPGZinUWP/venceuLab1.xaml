@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.venceuLab1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="700" Width="1300"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Canvas>
+
+            <Image Source="Assets/underwater_blur.png" Height="700" Width="1300" Canvas.Top="-10"/>
+
+            <TextBlock Height="100" FontSize="50" 
+        Text="Parabéns feiticeira, você venceu o primeiro labirinto!" Canvas.Left="81" Canvas.Top="69"/>
+
+            <TextBlock Height="100"  FontSize="45" 
+        Text="Porém sua jornada pelo reino Aequor, ainda não chegou ao" Canvas.Left="54" Canvas.Top="165" RenderTransformOrigin="0.451,0.69"/>
+
+            <TextBlock Height="100"  FontSize="45" 
+        Text=" fim. Para recuperar a pedra da Água do Rei sereiano, será" Canvas.Left="54" Canvas.Top="230"/>
+
+            <TextBlock Height="100"  FontSize="45" 
+        Text="necessário batalhar com o Rei dos Sereianos. " Canvas.Left="183" Canvas.Top="290"/>
+
+            <TextBlock Height="100"  FontSize="45" 
+        Text="Está na hora de provar que pode libertar suas irmãs" Canvas.Left="135" Canvas.Top="401"/>
+
+            <TextBlock Height="100"  FontSize="45" 
+        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="27" Canvas.Top="461"/>
+
+            <Button x:Name="irBatalha" Width="233" Height="106" Canvas.Left="225" Canvas.Top="543" >
+                <Image Source="Assets/botoao iniciar 2.png" Canvas.Top="600" Margin="-161,-6,-160,-28"/>
+            </Button>
+
+            <Image Source="Assets/pedra_da_agua.png" Width="160" Canvas.Top="521" Height="145" Canvas.Left="552" ></Image>
+
+            <Button x:Name="irBag" Width="300" Height="100" Canvas.Left="772" Canvas.Top="549" FontSize="40" Foreground="Black"
+            Background="Gray" Content="Selecionar itens"></Button>
+
+
+
+        </Canvas>
+    </Grid>
+</Page>

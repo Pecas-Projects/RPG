@@ -29,11 +29,13 @@
              Canvas.Left="552" Canvas.Top="216"></TextBlock>
 
             <TextBlock Width="998" Height="86" FontSize ="50" 
-            Text="Clique em continuar para refazer o labirinto" 
-             Canvas.Left="170" Canvas.Top="296" ></TextBlock>
+            Text="Clique em Iniciar labirinto para o refazer" 
+             Canvas.Left="202" Canvas.Top="296" ></TextBlock>
 
-            <Button x:Name="continuar" Background="BlueViolet" Width="500" Height="103" Canvas.Left="400"
-            Canvas.Top="536" Foreground="White" FontSize="50" Content="CONTINUAR" Click="handleClick" ></Button>
+            <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="507"
+            Canvas.Top="533"   Click="handleClick" >
+                <Image Source="Assets/botao iniciar2.png" Margin="-38,-19,-38,-21"/>
+            </Button>
 
             <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="103" Canvas.Top="438"></Image>
             <Image Source="Assets/pedras_da_terra.png" Width="150" Height="150" Canvas.Left="333" Canvas.Top="363"></Image>
