@@ -21,6 +21,7 @@ namespace MeuRPGZinCore
             this.PerdaEstamina = 0.25;
             this.GanhoEstamnina = 0.15;
             this.Escudo = 50;
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/rei_sereiano.png");
         }
 
         /// <summary>

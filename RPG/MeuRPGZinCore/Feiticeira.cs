@@ -24,12 +24,12 @@ namespace MeuRPGZinCore
 
         public double magia { get; set; }
 
-        public ArrayList ItemdeBatalha = new ArrayList();
+        public List<Item> ItemdeBatalha = new List<Item>();
         
         public Feiticeira()
         {
             this.mochila = new Mochila();
-
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
             //implementar valores default para a feiticeira
             this.Forca = 20;
             this.PerdaEstamina = 0.30;
@@ -37,7 +37,8 @@ namespace MeuRPGZinCore
             this.Escudo = 50;
             this.magia = 1.2;
             this.ItemdeBatalha.Capacity = 2;
-           
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
+
         }
 
         /// <summary>
@@ -70,7 +71,7 @@ namespace MeuRPGZinCore
             if ( this.ItemdeBatalha.Count < 2)
             {
                 if (bag.Count > 0){
-                    this.ItemdeBatalha.Add(bag[(bag.Count)-1]);
+                    this.ItemdeBatalha.Add((Item)bag[(bag.Count)-1]);
                     this.mochila.RemoverItem(bag);
                 }
             }

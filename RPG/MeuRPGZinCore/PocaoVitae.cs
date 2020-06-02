@@ -13,8 +13,8 @@ namespace MeuRPGZinCore
             {
                 this.nome = "Poção Vitae";
                 this.utilizado = false;
-
-            }
+                this.ImagemItem = new Uri("ms-appx:///Assets/pocao_vitae.png");
+        }
 
         /// <summary>
         /// Da 50 pontos de vida a jogadora

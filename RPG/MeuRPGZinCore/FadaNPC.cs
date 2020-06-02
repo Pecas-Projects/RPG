@@ -13,6 +13,7 @@ namespace MeuRPGZinCore
             this.PerdaEstamina = 0.2;
             this.GanhoEstamnina = 0.3;
             this.Escudo = 60;
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/fada_de_chapeu.png");
         }
 
         public override void ataqueEspecial(Personagem inimigo)

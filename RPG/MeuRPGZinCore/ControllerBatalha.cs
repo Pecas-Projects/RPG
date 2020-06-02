@@ -23,10 +23,6 @@ namespace MeuRPGZinCore
         public int Fase { get; set; } = 0;
 
         public Feiticeira Feiticeira { get; set; }
-        public SereianosNPC Sereiano { get; set; }
-        public FadaNPC Fada { get; set; }
-        public BarbaroNPC Barbaro { get; set; }
-        public HumanoNPC Humano { get; set; }
 
 
         public Personagem Vencedor(Personagem jogadora, Personagem inimigo)

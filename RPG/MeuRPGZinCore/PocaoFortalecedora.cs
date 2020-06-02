@@ -13,6 +13,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção Fortalecedora";
             this.utilizado = false;
+            this.ImagemItem = new Uri("ms-appx:///Assets/pocao_fortalecedora.png");
         }
 
         public void DesativarItem(Feiticeira jogador)

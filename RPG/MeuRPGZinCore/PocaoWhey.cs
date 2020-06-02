@@ -12,6 +12,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção de Whey";
             this.utilizado = false;
+            this.ImagemItem = new Uri("ms-appx:///Assets/pocao_whey.png");
         }
 
         /// <summary>
@@ -24,7 +25,7 @@ namespace MeuRPGZinCore
             {
                 jogadora.Estamina += 0.30;
                 this.utilizado = true;
-                jogadora.mochila.RemoverItem(jogadora.mochila.bagWhey);
+                //jogadora.mochila.RemoverItem(jogadora.mochila.bagWhey);
                 if (jogadora.Estamina > 1)
                 {
                     jogadora.Estamina = 1;

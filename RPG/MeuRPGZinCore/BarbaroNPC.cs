@@ -12,6 +12,7 @@ namespace MeuRPGZinCore
             this.PerdaEstamina = 0.3;
             this.GanhoEstamnina = 0.2;
             this.Escudo = 70;
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/barbaro_front.png");
         }
 
         public override void ataqueEspecial(Personagem inimigo)

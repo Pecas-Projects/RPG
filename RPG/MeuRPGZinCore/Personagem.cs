@@ -11,6 +11,8 @@ namespace MeuRPGZinCore
         public double Forca { get; set; }
         public double Vida { get; set; } = 100;
 
+        public Uri ImagemPersonagem { get; set; }
+
         /// <summary>
         /// ATENÇÃO: A estamina é um numero entre 0 e 1
         /// </summary>

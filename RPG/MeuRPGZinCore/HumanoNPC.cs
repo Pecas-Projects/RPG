@@ -13,6 +13,7 @@ namespace MeuRPGZinCore
             this.PerdaEstamina = 0.2;
             this.GanhoEstamnina = 0.1;
             this.Escudo = 40;
+            this.ImagemPersonagem = new Uri("ms-appx:///Assets/humano.png");
         }
 
         /// <summary>

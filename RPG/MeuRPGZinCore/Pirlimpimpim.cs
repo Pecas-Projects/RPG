@@ -15,6 +15,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
+            this.ImagemItem = new Uri("ms-appx:///Assets/po_pirlimpimpim.png");
         }
         /// <summary>
         /// decidir se o item é utilizado durante toda batalha

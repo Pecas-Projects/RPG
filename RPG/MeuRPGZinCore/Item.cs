@@ -11,6 +11,7 @@ namespace MeuRPGZinCore
         public String nome { get; set; }
         public int preco { get; set; }
         public bool utilizado { get; set; } // se o item já foi utiilzado ele não deveria ser removido da mochila?
+        public Uri ImagemItem { get; set; }
 
          public abstract void Utilizar(Feiticeira jogador);
     }
