@@ -39,7 +39,7 @@
             <TextBlock x:Name="feiticeiraEscudo" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="427" Canvas.Left="447" Canvas.Top="145" />
             <TextBlock x:Name="feiticeiraEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="440" Canvas.Left="447" Canvas.Top="226"/>
 
-            <Image x:Name="sereianoImg" Source="Assets/rei_sereiano.png" Canvas.Top="298" Canvas.Left="932" Width="300" Height="300" />
+            <Image x:Name="inimigoImg" Source="Assets/rei_sereiano.png" Canvas.Top="298" Canvas.Left="932" Width="300" Height="300" />
             <TextBlock x:Name="sereianoVida" Height="64" FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="461" Canvas.Left="932" Canvas.Top="83" />
             <TextBlock x:Name="sereianoEscudo" Height="59"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="475" Canvas.Left="932" Canvas.Top="158" />
             <TextBlock x:Name="sereianoEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="496" Canvas.Left="932" Canvas.Top="226" />

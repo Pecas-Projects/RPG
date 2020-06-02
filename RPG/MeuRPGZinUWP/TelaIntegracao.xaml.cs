@@ -62,7 +62,8 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void paginaDaBatalha(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(TesteBatalha2),feiticeira);
+            controller.Feiticeira = feiticeira;
+            this.Frame.Navigate(typeof(TesteBatalha2), controller);
         }
 
         /// <summary>

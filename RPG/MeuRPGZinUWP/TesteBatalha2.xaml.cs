@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using MeuRPGZinCore;
 using System.Security.Cryptography.X509Certificates;
+using Windows.UI.Xaml.Media.Imaging;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,7 +27,7 @@ namespace MeuRPGZinUWP
     {
         public Feiticeira feiticeira = new Feiticeira();
         public ControllerBatalha controller = new ControllerBatalha();
-        public SereianosNPC s = new SereianosNPC();
+        public Personagem Inimigo { get; set; }
         public ControllerBatalha Controller = new ControllerBatalha();
 
         public TesteBatalha2()
@@ -38,11 +39,17 @@ namespace MeuRPGZinUWP
         {
             base.OnNavigatedTo(e);
             controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
             if (controller.Fase == 1)
             {
+                Inimigo = new SereianosNPC();
                 
             }
-            //((PersonagemNPC)p).Inteligencia(p);
+            else if(controller.Fase == 2)
+            {
+                Inimigo = new FadaNPC();
+            }
+            inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
         }
 
         public void AtualizarStatus()
@@ -51,9 +58,9 @@ namespace MeuRPGZinUWP
             feiticeiraEscudo.Text = "Escudo: " + feiticeira.Escudo;
             feiticeiraEstamina.Text = "Estamina: " + feiticeira.Estamina;
 
-            sereianoVida.Text = "Vida: " + s.Vida;
-            sereianoEscudo.Text = "Escudo: " + s.Escudo;
-            sereianoEstamina.Text = "Estamina: " + s.Estamina;
+            sereianoVida.Text = "Vida: " + Inimigo.Vida;
+            sereianoEscudo.Text = "Escudo: " + Inimigo.Escudo;
+            sereianoEstamina.Text = "Estamina: " + Inimigo.Estamina;
         }
 
         public void RegistraAcoes (int jogadora, int inimigo)
@@ -87,7 +94,7 @@ namespace MeuRPGZinUWP
 
         private void batalhaInicio(object sender, RoutedEventArgs e)
         {
-            if(feiticeira != null && s != null)
+            if(feiticeira != null && Inimigo != null)
             {
                 AtualizarStatus();
             }
@@ -98,10 +105,10 @@ namespace MeuRPGZinUWP
             if(feiticeira.Estamina >= feiticeira.PerdaEstamina)
             {
                 int acaoInimigo;
-                acaoInimigo = s.Inteligencia(feiticeira);
-                feiticeira.atacar(s);
+                acaoInimigo = ((PersonagemNPC)Inimigo).Inteligencia(feiticeira);
+                feiticeira.atacar(Inimigo);
 
-                if (Controller.FimDeTurno(feiticeira, s, 1, acaoInimigo) != null)
+                if (Controller.FimDeTurno(feiticeira, Inimigo, 1, acaoInimigo) != null)
                 {
                     AtualizarStatus();
                     //acabar o jogo aqui e mostrar o vencedor
@@ -144,9 +151,9 @@ namespace MeuRPGZinUWP
             {
                 int acaoInimigo;
                 feiticeira.usarEscudo();
-                acaoInimigo = s.Inteligencia(feiticeira);
+                acaoInimigo = ((PersonagemNPC)Inimigo).Inteligencia(feiticeira);
 
-                if(Controller.FimDeTurno(feiticeira, s, 0, acaoInimigo) != null)
+                if(Controller.FimDeTurno(feiticeira, Inimigo, 0, acaoInimigo) != null)
                 {
                     AtualizarStatus();
                     //acabar o jogo aqui e mostrar o vencedor
@@ -182,11 +189,11 @@ namespace MeuRPGZinUWP
         private void DescancarTroll(object sender, RoutedEventArgs e)
         {
             int acaoInimigo;
-            acaoInimigo = s.Inteligencia(feiticeira);
+            acaoInimigo = ((PersonagemNPC)Inimigo).Inteligencia(feiticeira);
             feiticeira.descansar();
             
 
-            if (Controller.FimDeTurno(feiticeira, s, -1, acaoInimigo) != null)
+            if (Controller.FimDeTurno(feiticeira, Inimigo, -1, acaoInimigo) != null)
             {
                 AtualizarStatus();
                 //acabar o jogo aqui e mostrar o vencedor
@@ -228,7 +235,7 @@ namespace MeuRPGZinUWP
 
             }
             Controller.UsarItemUtilizavel(feiticeira, item);
-
+            AtualizarStatus();
         }
     }
 }
