@@ -19,7 +19,7 @@ namespace MeuRPGZinTest
         public void Setup()
         {
             //Para testes de Ataque e uso de Escudo
-            Atacante = new Feiticeira { Forca = 20, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50};
+            Atacante = new Feiticeira { Forca = 20, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50 };
             Inimigo = new Feiticeira { Forca = 20, PerdaEstamina = 0.2, GanhoEstamnina = 0.1, Escudo = 50 };
 
             //Para teste de Itens
