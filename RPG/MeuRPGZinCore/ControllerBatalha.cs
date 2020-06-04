@@ -116,10 +116,10 @@ namespace MeuRPGZinCore
 
         public void ControleAtaqueEspecialFeiticeira(Feiticeira jogadora, Personagem inimigo)
         {
-            if(ContDefesaInimigo >= 3)
+            if(this.ContDefesaInimigo >= 3)
             {
                 jogadora.ataqueEspecial(inimigo);
-                ContDefesaInimigo = 0;
+                this.ContDefesaInimigo = 0;
             }
         }
 

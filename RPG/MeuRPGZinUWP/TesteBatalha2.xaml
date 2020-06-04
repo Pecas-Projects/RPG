@@ -57,7 +57,7 @@
             <Image x:Name="Item1_Img" Height="85" Canvas.Left="42" Source="Assets/interrogacao.pngg" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
             <Button x:Name="Item2_Batalha" Content="usar" FontSize="40" Height="78" Canvas.Left="216" Canvas.Top="593" Width="133" RenderTransformOrigin="0.503,0.282" Click="UsarItem2NaBatalha"/>
             <Image x:Name="Item2_Img" Height="85" Canvas.Left="230" Source="Assets/interrogacao.png" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
-            <Button Content="Ataque esp" FontSize="30" Height="69" Canvas.Left="159" Canvas.Top="41" Width="172">
+            <Button Content="Ataque esp" FontSize="30" Height="69" Canvas.Left="159" Canvas.Top="41" Width="172" Click="AtaqueEspecial">
                 
             </Button>
 

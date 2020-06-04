@@ -49,6 +49,7 @@ namespace MeuRPGZinCore
         public override void ataqueEspecial(Personagem inimigo)
         {
             inimigo.Vida -= this.Forca * this.Estamina * magia;
+            
         }
 
 

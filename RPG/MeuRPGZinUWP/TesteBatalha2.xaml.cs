@@ -76,6 +76,7 @@ namespace MeuRPGZinUWP
             if (inimigo == -1)
             {
                 acaoInimigo.Text = "Ação: Descançou";
+                controller.ContDescancarInimigo++;
             }
             else if (inimigo == 0)
             {
@@ -250,11 +251,12 @@ namespace MeuRPGZinUWP
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
-            if(controller.Fase == 2)
+
+            if(controller.Fase == 1)
             {
                 this.Frame.Navigate(typeof(Fase2), controller);
             }
-            else if(controller.Fase == 3)
+            else if(controller.Fase == 2)
             {
                 this.Frame.Navigate(typeof(Fase3), controller);
             }
