@@ -15,6 +15,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Pó de Pirlimpimpim";
             this.utilizado = false;
+            this.preco = 4;
             this.ImagemItem = new Uri("ms-appx:///Assets/po_pirlimpimpim.png");
         }
         /// <summary>

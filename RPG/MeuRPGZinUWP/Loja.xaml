@@ -20,35 +20,54 @@
         </Grid.ColumnDefinitions>
         <Canvas RenderTransformOrigin="0.525,0.452" Margin="0,0,10,0" Grid.RowSpan="2" >
             <Image Source="Assets/lojinha.png" Width="1300" Height="700" />
-            <Image Source="Assets/po_pirlimpimpim.png" Width="100" Height="100" Canvas.Left="170" Canvas.Top="80"/>
-            <Image Source="Assets/pocao_whey.png" Width="100" Height="100" Canvas.Left="465" Canvas.Top="85"/>
-            <Image Source="Assets/pocao_vitae.png" Width="100" Height="100" Canvas.Left="170" Canvas.Top="400"/>
-            <Image Source="Assets/pocao_fortalecedora.png" Width="100" Height="100" Canvas.Left="350" Canvas.Top="400"/>
-            <Image Source="Assets/pocao_radix.png" Width="100" Height="100" Canvas.Left="520" Canvas.Top="400"/>
-            <Button x:Name="comprarPirlimpimpim" Canvas.Left="107" Canvas.Top="180" Width="150" Height="60" Click="ComprarPoPirlimpimpim">
-                <Image Source="Assets/botao_comprar1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <Image Source="Assets/po_pirlimpimpim.png" Width="100" Height="100" Canvas.Left="167" Canvas.Top="50" RenderTransformOrigin="0.58,0.08"/>
+            <Image Source="Assets/pocao_whey.png" Width="100" Height="100" Canvas.Left="465" Canvas.Top="50"/>
+            <Image Source="Assets/pocao_vitae.png" Width="100" Height="100" Canvas.Left="95" Canvas.Top="380"/>
+            <Image Source="Assets/pocao_fortalecedora.png" Width="100" Height="100" Canvas.Left="304" Canvas.Top="380" RenderTransformOrigin="0.42,0.52"/>
+            <Image Source="Assets/pocao_radix.png" Width="100" Height="100" Canvas.Left="523" Canvas.Top="378"/>
+
+            <Button x:Name="comprarPirlimpimpim" Canvas.Left="142" Canvas.Top="150" Width="150" Height="60" Click="ComprarPoPirlimpimpim">
+                <Image Source="Assets/botao_comprar1.png" Width="180" Height="70" Stretch="Fill" Margin="-35,-21,-35,-12" />
             </Button>
-            <Button x:Name="comprarWhey" Height="60" Canvas.Left="107" Canvas.Top="475" Width="150" RenderTransformOrigin="3.222,-1.681" Click="ComprarPocaoWhey">
-                <Image Source="Assets/botao_comprar1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <TextBlock x:Name="contPirlimpimpim" Height="54" Canvas.Left="129" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="57" RenderTransformOrigin="0.211,0.13"/>
+            <TextBlock x:Name="precoPirlimpimpim" Height="42" Canvas.Left="179" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="37" RenderTransformOrigin="1.162,0.571"/>
+
+
+            <Button x:Name="comprarWhey" Height="60" Canvas.Left="415" Canvas.Top="150" Width="150" RenderTransformOrigin="3.222,-1.681" Click="ComprarPocaoWhey">
+                <Image Source="Assets/botao_comprar1.png" Width="180" Height="70" Stretch="Fill" Margin="-20,-16,-50,-17" />
             </Button>
-            <Button x:Name="comprarVitae" Height="60" Canvas.Left="420" Canvas.Top="180" Width="150" RenderTransformOrigin="-1.878,-0.116" Click="ComprarPocaoVitae">
-                <Image Source="Assets/botao_comprar1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <TextBlock x:Name="contWhey" Height="51" Canvas.Left="434" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="54"/>
+            <TextBlock x:Name="precoWhey" Height="42" Canvas.Left="458" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="32"/>
+
+            <Button x:Name="comprarVitae" Height="60" Canvas.Left="70" Canvas.Top="474" Width="150" RenderTransformOrigin="-1.878,-0.116" Click="ComprarPocaoVitae">
+                <Image Source="Assets/botao_comprar1.png" Width="180" Height="70" Stretch="Fill" Margin="-22,-11,-23,-12" />
             </Button>
-            <Button x:Name="comprarFortalecedora" Height="60" Canvas.Left="325" Canvas.Top="475" Width="150" RenderTransformOrigin="0.389,0.739" Click="ComprarPocaoFortalecedora">
-                <Image Source="Assets/botao_comprar1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <TextBlock x:Name="contVitae" Height="52" Canvas.Left="70" Canvas.Top="398" FontSize="30" TextWrapping="Wrap" Width="29" RenderTransformOrigin="0.612,1.038"><Run Text="0"/><Run Text=""/><Run Text=""/></TextBlock>
+            <TextBlock x:Name="precoVitae"  Height="39" Canvas.Left="95" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+
+
+            <Button x:Name="comprarFortalecedora" Height="60" Canvas.Left="273" Canvas.Top="474" Width="161" RenderTransformOrigin="0.389,0.739" Click="ComprarPocaoFortalecedora">
+                <Image Source="Assets/botao_comprar1.png" Width="180" Height="70" Stretch="Fill" Margin="-25,-11,-25,-12" />
             </Button>
-            <Button x:Name="comprarRadix" Height="60" Canvas.Left="480" Canvas.Top="475" Width="150" RenderTransformOrigin="0.389,0.739" Click="ComprarPocaoRadix">
-                <Image Source="Assets/botao_comprar1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <TextBlock x:Name="contFortalecedora" Height="44" Canvas.Left="276" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="52" RenderTransformOrigin="0.558,0.523"/>
+            <TextBlock x:Name="precoFortalecedora"  Height="39" Canvas.Left="304" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+
+
+            <Button x:Name="comprarRadix" Height="60" Canvas.Left="490" Canvas.Top="475" Width="150" RenderTransformOrigin="0.389,0.739" Click="ComprarPocaoRadix">
+                <Image Source="Assets/botao_comprar1.png" Width="180" Height="70" Stretch="Fill" Margin="-35,-21,-35,-12" />
             </Button>
-            <TextBlock x:Name="contPirlimpimpim" Height="80" Canvas.Left="107" Canvas.Top="181" Text="" FontSize="30" TextWrapping="Wrap" Width="512"/>
-            <TextBlock x:Name="contWhey" Height="80" Canvas.Left="98" Canvas.Top="339" Text="" FontSize="30" TextWrapping="Wrap" Width="512"/>
-            <TextBlock x:Name="contFortalecedora" Height="44" Canvas.Left="589" Canvas.Top="339" Text="" FontSize="30" TextWrapping="Wrap" Width="512"/>
-            <TextBlock x:Name="contRadix" Height="80" Canvas.Left="93" Canvas.Top="506" Text="" FontSize="30" TextWrapping="Wrap" Width="512"/>
-            <TextBlock x:Name="contVitae" Height="34" Canvas.Left="589" Canvas.Top="188" FontSize="30" TextWrapping="Wrap" Width="512"><Run Text=""/><Run Text=""/><Run Text=""/></TextBlock>
-            <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="900" Canvas.Top="189" Text="Você tem:" FontFamily="Cardinal" FontSize="40" TextWrapping="Wrap" Width="397" />
+            <TextBlock x:Name="contRadix" Height="39" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58"/>
+            <TextBlock x:Name="precoRadix"  Height="39" Canvas.Left="515" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+            
+            <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="696" Canvas.Top="505" Text="Você tem: " FontFamily="Cardinal" FontSize="40" TextWrapping="Wrap" Width="397" />
             <Button x:Name="voltarParaMochila" Height="60" Canvas.Left="720" Canvas.Top="600" Width="150" Click="IrparaMochila">
                 <Image Source="Assets/botao_mochila1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
             </Button>
+            
+
+
+
+
 
         </Canvas>
 

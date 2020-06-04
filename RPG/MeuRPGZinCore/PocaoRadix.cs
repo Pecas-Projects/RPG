@@ -13,6 +13,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção Radix";
             this.utilizado = false;
+            this.preco = 6;
             this.ImagemItem = new Uri("ms-appx:///Assets/pocao_radix.png");
         }
 

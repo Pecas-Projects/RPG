@@ -13,7 +13,8 @@ namespace MeuRPGZinCore
             {
                 this.nome = "Poção Vitae";
                 this.utilizado = false;
-                this.ImagemItem = new Uri("ms-appx:///Assets/pocao_vitae.png");
+            this.preco = 8;
+            this.ImagemItem = new Uri("ms-appx:///Assets/pocao_vitae.png");
         }
 
         /// <summary>

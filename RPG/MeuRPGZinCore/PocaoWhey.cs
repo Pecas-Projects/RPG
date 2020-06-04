@@ -12,6 +12,7 @@ namespace MeuRPGZinCore
         {
             this.nome = "Poção de Whey";
             this.utilizado = false;
+            this.preco = 2;
             this.ImagemItem = new Uri("ms-appx:///Assets/pocao_whey.png");
         }
 

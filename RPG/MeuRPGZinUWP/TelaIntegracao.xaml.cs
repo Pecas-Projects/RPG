@@ -73,6 +73,7 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void paginaDaLoja(object sender, RoutedEventArgs e)
         {
+            controller.Feiticeira = feiticeira;
             this.Frame.Navigate(typeof(Loja), controller);
         }
 

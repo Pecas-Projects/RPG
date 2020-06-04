@@ -23,7 +23,13 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class Loja : Page
     {
+        public ControllerBatalha controller = new ControllerBatalha();
         public Feiticeira feiticeira = new Feiticeira();
+        public PocaoWhey Whey = new PocaoWhey();
+        public PocaoFortalecedora Fortalecedora = new PocaoFortalecedora();
+        public PocaoRadix Radix = new PocaoRadix();
+        public PocaoVitae Vitae = new PocaoVitae();
+        public Pirlimpimpim Pirlimpimpim = new Pirlimpimpim();
 
         public Loja()
         {
@@ -32,18 +38,25 @@ namespace MeuRPGZinUWP
 
         public void AtualizarContItens()
         {
-            contFortalecedora.Text = "Poção Fortalecedora: " + feiticeira.mochila.bagFortalecedora.Count;
-            contPirlimpimpim.Text = "Pó de Pirlimpimpim: " + feiticeira.mochila.bagPirlimpimpim.Count;
-            contRadix.Text = "Poção Radix: " + feiticeira.mochila.bagRadix.Count;
-            contVitae.Text = "Poção Vitae: " + feiticeira.mochila.bagVitae.Count;
-            contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
-            contPecas.Text = "Você tem " + feiticeira.moedas + " moedas";
+            contFortalecedora.Text = "" + feiticeira.mochila.bagFortalecedora.Count;
+            contPirlimpimpim.Text = "" + feiticeira.mochila.bagPirlimpimpim.Count;
+            contRadix.Text = "" + feiticeira.mochila.bagRadix.Count;
+            contVitae.Text = "" + feiticeira.mochila.bagVitae.Count;
+            contWhey.Text = "" + feiticeira.mochila.bagWhey.Count;
+            contPecas.Text = "Você tem: " + feiticeira.moedas + " moedas";
+
+            precoFortalecedora.Text = "" + Fortalecedora.preco;
+            precoPirlimpimpim.Text = "" + Pirlimpimpim.preco;
+            precoRadix.Text = "" + Radix.preco;
+            precoVitae.Text = "" + Vitae.preco;
+            precoWhey.Text = "" + Whey.preco;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            feiticeira = e.Parameter as Feiticeira;
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
             AtualizarContItens();
         }
 
@@ -57,37 +70,34 @@ namespace MeuRPGZinUWP
 
         private void ComprarPocaoWhey(object sender, RoutedEventArgs e)
         {
-            PocaoWhey produto = new PocaoWhey();
-            feiticeira.ComprarItem(produto, feiticeira.mochila.bagWhey, produto.preco);
+            feiticeira.ComprarItem(Whey, feiticeira.mochila.bagWhey, Whey.preco);
             AtualizarContItens();
         }
 
         private void ComprarPocaoRadix(object sender, RoutedEventArgs e)
         {
-            PocaoRadix produto = new PocaoRadix();
-            feiticeira.ComprarItem(produto, feiticeira.mochila.bagRadix, produto.preco);
+            feiticeira.ComprarItem(Radix, feiticeira.mochila.bagRadix, Radix.preco);
             AtualizarContItens();
 
         }
 
         private void ComprarPocaoVitae(object sender, RoutedEventArgs e)
         {
-            PocaoVitae produto = new PocaoVitae();
-            feiticeira.ComprarItem(produto, feiticeira.mochila.bagVitae, produto.preco);
+            feiticeira.ComprarItem(Vitae, feiticeira.mochila.bagVitae, Vitae.preco);
             AtualizarContItens();
 
         }
 
         private void ComprarPocaoFortalecedora(object sender, RoutedEventArgs e)
         {
-            PocaoFortalecedora produto = new PocaoFortalecedora();
-            feiticeira.ComprarItem(produto, feiticeira.mochila.bagFortalecedora, produto.preco);
+            feiticeira.ComprarItem(Fortalecedora, feiticeira.mochila.bagFortalecedora, Fortalecedora.preco);
             AtualizarContItens();
         }
 
         private void IrparaMochila(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+            controller.Feiticeira = feiticeira;
+            this.Frame.Navigate(typeof(TelaIntegracao), controller);
             AtualizarContItens();
         }
     }
