@@ -58,12 +58,12 @@
             </Button>
             <TextBlock x:Name="contRadix" Height="39" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58"/>
             <TextBlock x:Name="precoRadix"  Height="39" Canvas.Left="515" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
-            
-            <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="696" Canvas.Top="505" Text="Você tem: " FontFamily="Cardinal" FontSize="40" TextWrapping="Wrap" Width="397" />
+
+            <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="676" Canvas.Top="505" Text="Você tem: " FontFamily="Cardinal" FontSize="40" TextWrapping="Wrap" Width="237" />
             <Button x:Name="voltarParaMochila" Height="60" Canvas.Left="720" Canvas.Top="600" Width="150" Click="IrparaMochila">
                 <Image Source="Assets/botao_mochila1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
             </Button>
-            
+
 
 
 
