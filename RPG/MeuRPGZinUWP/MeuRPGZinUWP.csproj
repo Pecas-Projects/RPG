@@ -134,6 +134,23 @@
     <Compile Include="gameOver.xaml.cs">
       <DependentUpon>gameOver.xaml</DependentUpon>
     </Compile>
+
+    <Compile Include="TelaInicio.xaml.cs">
+      <DependentUpon>TelaInicio.xaml</DependentUpon>
+    </Compile>
+
+    <Compile Include="telaInicio2.xaml.cs">
+      <DependentUpon>telaInicio2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Instrucoes.xaml.cs">
+      <DependentUpon>Instrucoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="venceuBatalha3.xaml.cs">
+      <DependentUpon>venceuBatalha3.xaml</DependentUpon>
+    </Compile>
+
+
+
     <Compile Include="TelaIntegracao.xaml.cs">
       <DependentUpon>TelaIntegracao.xaml</DependentUpon>
     </Compile>
@@ -235,6 +252,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+
+    <Page Include="TelaInicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+
+    <Page Include="telaInicio2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+
+    <Page Include="Instrucoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="venceuBatalha3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+
+
     <Page Include="TelaIntegracao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
