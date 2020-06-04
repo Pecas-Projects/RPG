@@ -20,31 +20,11 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class venceuLab1 : Page
+    public sealed partial class venceuBtalha2 : Page
     {
-        public venceuLab1()
+        public venceuBtalha2()
         {
             this.InitializeComponent();
-        }
-
-        private void irBag_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ajuda_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void irBatalha_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void pedraAgua_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

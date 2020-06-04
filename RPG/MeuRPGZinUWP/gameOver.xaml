@@ -9,39 +9,36 @@
     mc:Ignorable="d"
     Height="700" Width="1300"
     
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Gray">
 
     <Grid>
         <Canvas RenderTransformOrigin="0.47,0.441">
-            <TextBlock Width="282" Height="69"  FontSize ="50" Text="GAME OVER" Canvas.Left="507" Canvas.Top="10" ></TextBlock>
+            <TextBlock Width="379" Height="69"  FontSize ="55" Text="GAME OVER" Canvas.Left="487" Canvas.Top="37" FontFamily="Cardinal" ></TextBlock>
 
-            <TextBlock Width="835" Height="86" FontSize ="50" 
+            <TextBlock Width="927" Height="86" FontSize ="65" FontFamily="Cardinal"
             Text="Você falhou em atravessar o labirinto!" 
-             Canvas.Left="235" Canvas.Top="77"></TextBlock>
+             Canvas.Left="197" Canvas.Top="117"></TextBlock>
 
-            <TextBlock Width="1123" Height="94" FontSize ="50" 
-            Text="Todas as pecas e os itens coletados não irão para" 
-             Canvas.Left="103" Canvas.Top="149"></TextBlock>
+            <TextBlock Width="1123" Height="94" FontSize ="65" FontFamily="Cardinal"
+            Text="Todo o seu prgresso nessa fase será perdido" 
+             Canvas.Left="143" Canvas.Top="203"></TextBlock>
 
 
-            <TextBlock Width="186" Height="73" FontSize ="50" 
-            Text="sua bag." 
-             Canvas.Left="552" Canvas.Top="216"></TextBlock>
 
-            <TextBlock Width="998" Height="86" FontSize ="50" 
-            Text="Clique em Iniciar labirinto para o refazer" 
-             Canvas.Left="202" Canvas.Top="296" ></TextBlock>
+            <TextBlock Width="909" Height="86" FontSize ="60" FontFamily="Cardinal"
+            Text="Clique em Continuar para refazer o labirinto" 
+             Canvas.Left="209" Canvas.Top="291" ></TextBlock>
 
-            <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="507"
-            Canvas.Top="533"   Click="handleClick" >
-                <Image Source="Assets/botao iniciar2.png" Margin="-38,-19,-38,-21"/>
+            <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="507" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
+            Canvas.Top="539"   Click="handleClick" Background="DarkGray" Content="Continuar">
+
             </Button>
 
-            <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="103" Canvas.Top="438"></Image>
-            <Image Source="Assets/pedras_da_terra.png" Width="150" Height="150" Canvas.Left="333" Canvas.Top="363"></Image>
-            <Image Source="Assets/pedras_da_magia.png" Width="150" Height="150" Canvas.Left="602" Canvas.Top="350"></Image>
-            <Image Source="Assets/pedras_do_ar.png" Width="150" Height="150" Canvas.Left="1034" Canvas.Top="458"></Image>
-            <Image Source="Assets/pedras_do_fogo.png" Width="150" Height="150" Canvas.Left="843" Canvas.Top="368"></Image>
+            <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="197" Canvas.Top="492"></Image>
+            <Image Source="Assets/pedras_da_terra.png" Width="150" Height="150" Canvas.Left="357" Canvas.Top="389"></Image>
+            <Image Source="Assets/pedras_da_magia.png" Width="150" Height="150" Canvas.Left="582" Canvas.Top="368"></Image>
+            <Image Source="Assets/pedras_do_ar.png" Width="150" Height="150" Canvas.Left="967" Canvas.Top="492"></Image>
+            <Image Source="Assets/pedras_do_fogo.png" Width="150" Height="150" Canvas.Left="812" Canvas.Top="383"></Image>
         </Canvas>
 
     </Grid>

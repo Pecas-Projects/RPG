@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\venceuBatalha3.xaml.cs">
+      <DependentUpon>venceuBatalha3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fase2.xaml.cs">
       <DependentUpon>Fase2.xaml</DependentUpon>
     </Compile>
@@ -141,8 +144,20 @@
       <DependentUpon>Loja.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="venceuBatalha1.xaml.cs">
+      <DependentUpon>venceuBatalha1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="venceuBtalha2.xaml.cs">
+      <DependentUpon>venceuBtalha2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="venceuLab1.xaml.cs">
       <DependentUpon>venceuLab1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="venceuLab2.xaml.cs">
+      <DependentUpon>venceuLab2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="venceuLab3.xaml.cs">
+      <DependentUpon>venceuLab3.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -151,12 +166,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\barbaro_front.png" />
     <Content Include="Assets\botao iniciar2.png" />
     <Content Include="Assets\botao_comprar.png" />
     <Content Include="Assets\botao_comprar1.png" />
     <Content Include="Assets\botao_mochila.png" />
     <Content Include="Assets\botao_mochila1.png" />
     <Content Include="Assets\botoao iniciar 2.png" />
+    <Content Include="Assets\fada_king_front.png" />
     <Content Include="Assets\feiticeira_front.png" />
     <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
@@ -190,6 +207,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\venceuBatalha3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Fase2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -218,7 +239,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="venceuBatalha1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="venceuBtalha2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="venceuLab1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="venceuLab2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="venceuLab3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.telaInicio2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="700" Width="1300"
+    Background="Gray"
+   >
+
+    <Grid>
+
+        <Canvas>
+
+            <TextBlock Width="1192" Height="88" Text="Ápos descobrir a verdade sobre a história de Ardens Missus, e ter seu" 
+             Canvas.Left="69" Canvas.Top="45" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <TextBlock Width="1192" Height="88" Text="trono roubado, a princesa do Reino Savi foge para a floresta com a Pedra" 
+             Canvas.Left="69" Canvas.Top="111" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <TextBlock Width="169" Height="88" Text="da Terra." 
+             Canvas.Left="580" Canvas.Top="177" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <TextBlock Width="1221" Height="88" Text="Na floresta ela encontra uma Anciã que fala para a princesa aceitar seu herança" 
+             Canvas.Left="48" Canvas.Top="289" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <TextBlock Width="1222" Height="88" Text="como feiticeira e aceitar seu destino de resgatar todas as pedras e acbar com a" 
+             Canvas.Left="47" Canvas.Top="355" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <TextBlock Width="1225" Height="88" Text="escravidão das feiticeiras. Sua jornada tem início no labirinto do Reino Aequor" 
+             Canvas.Left="43" Canvas.Top="421" FontSize="45" FontFamily="Cardinal"></TextBlock>
+
+            <Button x:Name="pedraTerra" Width="158" Height="134" Canvas.Left="580" Canvas.Top="538" Background="Transparent">
+                <Image Source="Assets/pedras_da_terra.png" Canvas.Left="590" Canvas.Top="225" Margin="-17,-20,-17,3"/>
+            </Button>
+
+            <Button x:Name="instrucoes"  Width="300" Height="103" Canvas.Left="204" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
+            Canvas.Top="554"   Click="instrucoes_handleClick" Background="DarkGray" Content="Instruções"></Button>
+
+
+            <Button x:Name="jogo"  Width="300" Height="103" Canvas.Left="804" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
+            Canvas.Top="554"   Click="iniciar_handleClick" Background="DarkGray" Content="Iniciar Jogo"></Button>
+
+
+
+        </Canvas>
+
+    </Grid>
+</Page>

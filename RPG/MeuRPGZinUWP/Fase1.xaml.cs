@@ -39,7 +39,7 @@ namespace MeuRPGZinUWP
         public bool Whey = false;
         public ControllerBatalha controller = new ControllerBatalha();
 
-        public Parametro parametros = new Parametro();
+       // public Parametro parametros = new Parametro();
 
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto

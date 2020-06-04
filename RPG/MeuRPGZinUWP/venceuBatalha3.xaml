@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.venceuBatalha3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="700" Width="1300"
+    Background="Gray">
+
+    <Grid>
+        <Canvas >
+
+            <Image Source="Assets/moeda_front.png" Width="81" Height="81" Canvas.Left="1114" Canvas.Top="277" RenderTransformOrigin="0.084,0.528"></Image>
+            <Image Source="Assets/barbaro_front.png" Width="200" Height="200" Canvas.Left="1095" RenderTransformOrigin="0.759,0.519"/>
+
+            <TextBlock Height="97" FontSize="55" Foreground="Black" FontFamily="Cardinal"
+        Text="Parabéns feiticeira, você derrotou o Rei dos Bárbaro!" Canvas.Left="39" Canvas.Top="35" Width="1061"/>
+
+            <TextBlock Height="64"  FontSize="50" Foreground="Black" FontFamily="Cardinal"
+        Text="Agora a Pedra do Fogo está em sua posse, aumentando sua" Canvas.Left="38" Canvas.Top="134" RenderTransformOrigin="0.451,0.69"/>
+
+            <TextBlock Height="73"  FontSize="50" Foreground="Black" FontFamily="Cardinal"
+        Text="característicaX. Use seus poderes sabiamente." Canvas.Left="200" Canvas.Top="208"/>
+
+
+            <TextBlock Height="100"  FontSize="55" Foreground="Black" FontFamily="Cardinal"
+        Text="Como recompensa por sua vitória você receberá " Canvas.Left="130" Canvas.Top="280" Width="884"/>
+
+            <TextBlock Width="80" Height="80" Text="X" FontFamily="Cardinal" FontSize="70" Canvas.Left="1041" Canvas.Top="281" RenderTransformOrigin="0.387,0.398">
+            </TextBlock>
+
+
+            <TextBlock Height="70"  FontSize="42" Foreground="Black" FontFamily="Cardinal"
+        Text=" Você atingiu o final de sua jornada, o Reino dos Humanos não possui labirinto, o Rei" Canvas.Left="10" Canvas.Top="363" Width="1267"/>
+
+            <TextBlock Height="61"  FontSize="42" Foreground="Black" FontFamily="Cardinal"
+        Text="pensa que você não é capaz de vence-lô, prove que ele está errado e recupere " Canvas.Left="89" Canvas.Top="414" Width="1124"/>
+
+            <TextBlock Height="61"  FontSize="42" Foreground="Black" FontFamily="Cardinal"
+        Text=" a Pedra da Magia. Inicie a batlha ou selecione os itens para batalhar." Canvas.Left="130" Canvas.Top="476" Width="1027"/>
+
+
+            <Button x:Name="irBatalha"  Canvas.Left="225" Canvas.Top="559"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="irBatalha_Click">
+            </Button>
+
+
+            <Button x:Name="itens"  Canvas.Left="786" Canvas.Top="563"  Content="Selecionar Itens" FontSize="50" Foreground="Black"
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="itens_Click">
+            </Button>
+
+            <Button x:Name="pedraFogo" Width="160" Height="160" Canvas.Left="570" Canvas.Top="533" Background="Transparent" Click="pedraFogo_Click">
+                <Image Source="Assets/pedras_do_fogo.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="0,-16,-20,3" ></Image>
+            </Button>
+
+            <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
+                    FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black" Click="ajuda_Click"></Button>
+
+        </Canvas>
+    </Grid>
+</Page>
