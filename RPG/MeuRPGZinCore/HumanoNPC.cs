@@ -16,6 +16,11 @@ namespace MeuRPGZinCore
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/humano.png");
         }
 
+        public int Acao(Feiticeira inimiga, ControllerBatalha controller)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Caso o a estamida seja maior que 80% ele pode desativar o escudo da feiticeira
         /// e dar um "Contra-Ataque"

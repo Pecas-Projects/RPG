@@ -24,6 +24,20 @@ namespace MeuRPGZinCore
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/rei_sereiano.png");
         }
 
+
+        public int Acao(Feiticeira inimiga, ControllerBatalha controller)
+        {
+            if (controller.ContTurnos % 4 == 0)
+            {
+                this.ataqueEspecial(inimiga);
+                return 2;
+            }
+            else
+            {
+                return this.Inteligencia(inimiga);
+            }
+        }
+
         /// <summary>
         /// A cada quatro rodadas zera a estamina do seu oponente porem precisa
         /// estar com a sua estamina em no minimo 85% 
@@ -38,13 +52,7 @@ namespace MeuRPGZinCore
             }
         }
 
-        /// <summary>
-        /// Se for ataque return 1
-        /// Se for escudo return 0
-        /// Se for descanço return -1
-        /// </summary>
-        /// <param name="inimiga"></param>
-        /// <returns></returns>
+
         public int Inteligencia(Feiticeira inimiga)
         {
             //Sorteia os numeros para a inteligencia 

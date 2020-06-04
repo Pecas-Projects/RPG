@@ -21,7 +21,6 @@ namespace MeuRPGZinCore
         /// uma barra adicional que só a feiticeira tem
         /// e controla seu ataque especial
         /// </summary>
-
         public double magia { get; set; }
 
         public List<Item> ItemdeBatalha = new List<Item>();
@@ -47,12 +46,9 @@ namespace MeuRPGZinCore
         /// O ataque especial ignora o escudo do inimigo
         /// </summary>
         /// <param name="inimigo"></param>
-        
         public override void ataqueEspecial(Personagem inimigo)
         {
-            //Colocar if para contar as defesas, na classe controladora da batalha
             inimigo.Vida -= this.Forca * this.Estamina * magia;
-
         }
 
 

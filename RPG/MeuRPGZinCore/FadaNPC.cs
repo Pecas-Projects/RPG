@@ -16,6 +16,11 @@ namespace MeuRPGZinCore
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/fada_de_chapeu.png");
         }
 
+        public int Acao(Feiticeira inimiga, ControllerBatalha controller)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void ataqueEspecial(Personagem inimigo)
         {
             if(this.Estamina > 0.6)

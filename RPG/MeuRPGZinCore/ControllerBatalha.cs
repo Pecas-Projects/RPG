@@ -20,6 +20,7 @@ namespace MeuRPGZinCore
         public int ContAtaqueInimigo { get; set; } = 0;
         public int ContDescancarFeiticeira { get; set; } = 0;
         public int ContDescancarInimigo { get; set; } = 0;
+        public int ContTurnos { get; set; } =  0;
         public int Fase { get; set; } = 0;
 
         public Feiticeira Feiticeira { get; set; }
@@ -85,8 +86,9 @@ namespace MeuRPGZinCore
             {
                 this.ContAtaqueFeiticeira++;
             }
-        }
 
+            this.ContTurnos++;
+        }
 
 
         public Personagem FimDeTurno(Personagem jogadora, Personagem inimigo, int acaoJogadora, int acaoInimigo)
@@ -112,6 +114,14 @@ namespace MeuRPGZinCore
             item.DesativarItem(jogadora);
         }
 
+        public void ControleAtaqueEspecialFeiticeira(Feiticeira jogadora, Personagem inimigo)
+        {
+            if(ContDefesaInimigo >= 3)
+            {
+                jogadora.ataqueEspecial(inimigo);
+                ContDefesaInimigo = 0;
+            }
+        }
 
 
     }

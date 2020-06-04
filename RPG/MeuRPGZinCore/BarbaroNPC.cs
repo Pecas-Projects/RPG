@@ -15,6 +15,11 @@ namespace MeuRPGZinCore
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/barbaro_front.png");
         }
 
+        public int Acao(Feiticeira inimiga, ControllerBatalha controller)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void ataqueEspecial(Personagem inimigo)
         {
             throw new NotImplementedException();
