@@ -27,9 +27,10 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            if (controller.ContTurnos % 4 == 0)
+            if (controller.ContTurnos == 4)
             {
                 this.ataqueEspecial(inimiga);
+                controller.ContTurnos = 0;
                 return 2;
             }
             else

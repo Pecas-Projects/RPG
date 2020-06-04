@@ -113,9 +113,15 @@ namespace MeuRPGZinUWP
             if(feiticeira != null && Inimigo != null)
             {
                 AtualizarStatus();
-                Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
-                Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
+                if(feiticeira.ItemdeBatalha.Count == 1)
+                {
+                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
+                }
 
+                if (feiticeira.ItemdeBatalha.Count == 2)
+                {
+                    Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
+                }
             }
         }
 
@@ -244,34 +250,45 @@ namespace MeuRPGZinUWP
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
-            this.Frame.Navigate(typeof(Fase2), controller);
+            if(controller.Fase == 2)
+            {
+                this.Frame.Navigate(typeof(Fase2), controller);
+            }
+            else if(controller.Fase == 3)
+            {
+                this.Frame.Navigate(typeof(Fase3), controller);
+            }
+            
         }
 
         private void UsarItem1NaBatalha(object sender, RoutedEventArgs e)
         {
-            
-            if(feiticeira.ItemdeBatalha[0].utilizado == false)
+            if (feiticeira.ItemdeBatalha.Count == 1)
             {
-                Item item = feiticeira.ItemdeBatalha[0] as Item;
-                Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[0]);
-                AtualizarStatus();
-                feiticeira.ItemdeBatalha[0].utilizado = true;
-                Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-            }   
+                if (feiticeira.ItemdeBatalha[0].utilizado == false)
+                {
+                    Item item = feiticeira.ItemdeBatalha[0] as Item;
+                    Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[0]);
+                    AtualizarStatus();
+                    feiticeira.ItemdeBatalha[0].utilizado = true;
+                    Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                }
+            }              
         }
 
         private void UsarItem2NaBatalha(object sender, RoutedEventArgs e)
         {
-
-            if (feiticeira.ItemdeBatalha[1].utilizado == false)
+            if(feiticeira.ItemdeBatalha.Count == 2)
             {
-                Item item = feiticeira.ItemdeBatalha[1] as Item;
-                Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[1]);
-                AtualizarStatus();
-                feiticeira.ItemdeBatalha[1].utilizado = true;
-                Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-
-            }
+                if (feiticeira.ItemdeBatalha[1].utilizado == false)
+                {
+                    Item item = feiticeira.ItemdeBatalha[1] as Item;
+                    Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[1]);
+                    AtualizarStatus();
+                    feiticeira.ItemdeBatalha[1].utilizado = true;
+                    Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                }
+            }      
         }
 
         private void AtaqueEspecial(object sender, RoutedEventArgs e)
