@@ -20,18 +20,17 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class gameOver : Page
+    public sealed partial class Instrucoes : Page
     {
-        public gameOver()
+        public Instrucoes()
         {
             this.InitializeComponent();
         }
 
-        private void handleClick(object sender, RoutedEventArgs e)
+        private void voltar_handleClick(object sender, RoutedEventArgs e)
         {
+
             this.Frame.GoBack();
         }
-
-       
     }
 }

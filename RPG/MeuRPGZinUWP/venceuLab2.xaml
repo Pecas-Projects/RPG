@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.venceuLab2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="700" Width="1300"
+    Background="Gray">
+
+    <Grid>
+        <Canvas>
+
+            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"
+        Text="Parabéns feiticeira, você venceu o segundo labirinto!" Canvas.Left="117" Canvas.Top="49"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+        Text="Porém sua jornada pelo Reino Caeli, ainda não chegou ao" Canvas.Left="89" Canvas.Top="156" RenderTransformOrigin="0.451,0.69"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+        Text=" fim. Para recuperar a Pedra do Ar será necessário batalhar" Canvas.Left="59" Canvas.Top="215"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+        Text="com o Rei das Fadas. " Canvas.Left="393" Canvas.Top="275"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+        Text="Está na hora de provar que pode libertar suas irmãs" Canvas.Left="139" Canvas.Top="377"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="27" Canvas.Top="430"/>
+
+            <Button x:Name="irBatalha"  Canvas.Left="227" Canvas.Top="549"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
+            Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="300" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="irBatalha_Click">
+            </Button>
+
+            <Button x:Name="pedraAr" Width="160" Height="160" Canvas.Left="592" Canvas.Top="526" Background="Transparent" Click="pedraAr_Click">
+                <Image Source="Assets/pedras_do_ar.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="0,-16,-20,3" ></Image>
+            </Button>
+
+
+            <Button x:Name="irBag" Width="300" Height="100" Canvas.Left="824" Canvas.Top="549" FontSize="50" Foreground="Black"
+           Background="DarkGray" Content="Selecionar itens" Click="irBag_Click" FontFamily="Cardinal" BorderBrush="Black"></Button>
+
+            <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
+                    FontSize="85" Canvas.Left="39" Canvas.Top="554" BorderBrush="Black" Click="ajuda_Click"></Button>
+
+
+        </Canvas>
+
+    </Grid>
+</Page>

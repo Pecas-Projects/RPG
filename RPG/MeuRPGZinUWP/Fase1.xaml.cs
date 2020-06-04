@@ -40,6 +40,7 @@ namespace MeuRPGZinUWP
         public ControllerBatalha controller = new ControllerBatalha();
 
 
+
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
 
         public Fase1()
