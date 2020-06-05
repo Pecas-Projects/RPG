@@ -161,7 +161,7 @@ namespace MeuRPGZinCore
         {
             if(this.ContDefesaInimigo >= 4)
             {
-                jogadora.ataqueEspecial(inimigo);
+                jogadora.AtaqueEspecial(inimigo);
                 this.ContDefesaInimigo = 0;
             }
         }

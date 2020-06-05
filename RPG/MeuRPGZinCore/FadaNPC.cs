@@ -5,8 +5,19 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    ///Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
+    /// </summary>
     public class FadaNPC : Personagem, PersonagemNPC
     {
+        /// <summary>
+        /// Função que cria Fada.
+        /// Ela inicia o jogo com:
+        /// Forca = 25; 
+        /// PerdaEstamina = 0.2; 
+        /// GanhoEstamnina = 0.3; 
+        /// Escudo = 60;  
+        /// </summary>
         public FadaNPC()
         {
             this.Forca = 25;
@@ -21,7 +32,7 @@ namespace MeuRPGZinCore
             throw new NotImplementedException();
         }
 
-        public override void ataqueEspecial(Personagem inimigo)
+        public override void AtaqueEspecial(Personagem inimigo)
         {
             if(this.Estamina > 0.6)
             {

@@ -260,7 +260,7 @@ namespace MeuRPGZinCore
             {
                 if (moedas[i].X == x && moedas[i].Y == y)
                 {
-                    bia.moedas++;
+                    bia.Moedas++;
                     moedas.Remove(moedas[i]);
                     return true;
                 }

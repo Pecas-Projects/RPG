@@ -43,7 +43,7 @@ namespace MeuRPGZinUWP
             contRadix.Text = "" + feiticeira.mochila.bagRadix.Count;
             contVitae.Text = "" + feiticeira.mochila.bagVitae.Count;
             contWhey.Text = "" + feiticeira.mochila.bagWhey.Count;
-            contPecas.Text = "Você tem: " + feiticeira.moedas + " moedas";
+            contPecas.Text = "Você tem: " + feiticeira.Moedas + " moedas";
 
             precoFortalecedora.Text = "" + Fortalecedora.preco;
             precoPirlimpimpim.Text = "" + Pirlimpimpim.preco;

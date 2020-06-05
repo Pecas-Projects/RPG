@@ -34,7 +34,7 @@ namespace MeuRPGZinTest
         [Test]
         public void Ataque_SemEscudoAtivo()
         {
-            Atacante.atacar(Inimigo);
+            Atacante.Atacar(Inimigo);
             Assert.AreEqual(0.8, Atacante.Estamina);
             Assert.AreEqual(80, Inimigo.Vida);
             
@@ -43,8 +43,8 @@ namespace MeuRPGZinTest
         [Test]
         public void Ataque_EscudoAtivoEDanoNegativo() 
         { 
-            Inimigo.usarEscudo();
-            Atacante.atacar(Inimigo);
+            Inimigo.UsarEscudo();
+            Atacante.Atacar(Inimigo);
             Assert.AreEqual(43, Inimigo.Escudo);
             Assert.AreEqual(0.8, Atacante.Estamina);
         }
@@ -52,9 +52,9 @@ namespace MeuRPGZinTest
         [Test]
         public void Ataque_EscudoAtivoEDanoPositivo()
         {
-            Inimigo.usarEscudo();
+            Inimigo.UsarEscudo();
             Inimigo.Escudo = 15;
-            Atacante.atacar(Inimigo);
+            Atacante.Atacar(Inimigo);
             
             Assert.AreEqual(95, Inimigo.Vida);
             Assert.AreEqual(10, Inimigo.Escudo);
@@ -117,7 +117,7 @@ namespace MeuRPGZinTest
         {
             User.mochila.AddItem((Item)Pirlimpimpim, User.mochila.bagPirlimpimpim);
             Pirlimpimpim.Utilizar(User);
-            Assert.AreEqual(1.44, User.magia);
+            Assert.AreEqual(1.44, User.Magia);
         }
 
     }

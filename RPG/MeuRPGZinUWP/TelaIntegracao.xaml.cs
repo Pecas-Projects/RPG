@@ -52,7 +52,7 @@ namespace MeuRPGZinUWP
             contRadix.Text = "Poção Radix: " + feiticeira.mochila.bagRadix.Count;
             contVitae.Text = "Poção Vitae: " + feiticeira.mochila.bagVitae.Count;
             contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
-            contPecas.Text = "Você tem " + feiticeira.moedas + " moedas";
+            contPecas.Text = "Você tem " + feiticeira.Moedas + " moedas";
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace MeuRPGZinUWP
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void paginaDaBatalha(object sender, RoutedEventArgs e)
+        private void PaginaDaBatalha(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
             this.Frame.Navigate(typeof(TesteBatalha2), controller);
@@ -71,7 +71,7 @@ namespace MeuRPGZinUWP
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void paginaDaLoja(object sender, RoutedEventArgs e)
+        private void PaginaDaLoja(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
             this.Frame.Navigate(typeof(Loja), controller);

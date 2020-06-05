@@ -212,7 +212,7 @@ namespace MeuRPGZinUWP
                 if (Fort) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagFortalecedora);
                 if (Whey) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
                 if (_Pirlim) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagPirlimpimpim);
-                feiticeira.moedas -= contMoedas;
+                feiticeira.Moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";
                 this.Frame.Navigate(typeof(gameOver));

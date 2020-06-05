@@ -26,8 +26,8 @@ namespace MeuRPGZinCore
         /// <param name="jogador"></param>
         public void DesativarItem(Feiticeira jogador)
         {
-            aux = jogador.magia / 0.2;
-            jogador.magia = aux;
+            aux = jogador.Magia / 0.2;
+            jogador.Magia = aux;
 
             jogador.mochila.RemoverItem(jogador.mochila.bagPirlimpimpim); 
             //sujestão de como ir usando e removendo, 
@@ -43,7 +43,7 @@ namespace MeuRPGZinCore
         /// <param name="jogador"></param>
         public override void Utilizar(Feiticeira jogador)
         {
-            jogador.magia += jogador.magia * 0.2;
+            jogador.Magia += jogador.Magia * 0.2;
             this.utilizado = true;
         }
 

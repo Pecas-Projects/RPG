@@ -4,8 +4,19 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    ///Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
+    /// </summary>
     public class BarbaroNPC : Personagem, PersonagemNPC
     {
+        /// <summary>
+        /// Função que cria Bárbaro.
+        /// Ela inicia o jogo com:
+        /// Forca = 35; 
+        /// PerdaEstamina = 0.30; 
+        /// GanhoEstamnina = 0.2; 
+        /// Escudo = 70;  
+        /// </summary>
         public BarbaroNPC()
         {
             this.Forca = 35;
@@ -20,7 +31,7 @@ namespace MeuRPGZinCore
             throw new NotImplementedException();
         }
 
-        public override void ataqueEspecial(Personagem inimigo)
+        public override void AtaqueEspecial(Personagem inimigo)
         {
             throw new NotImplementedException();
         }

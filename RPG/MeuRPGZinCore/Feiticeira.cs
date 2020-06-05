@@ -10,21 +10,40 @@ namespace MeuRPGZinCore
     /// <summary>
     /// Determinada, inesperiente, criativa, esperta,
     /// ambiciosa
+    /// -Classe filha de Personagem
+    /// -Personagem principal do jogo, é o avatar do usuário
     /// </summary>
     public class Feiticeira : Personagem
     {
-        public int moedas { get; set; }
+        public int Moedas { get; set; }
+
+        /// <summary>
+        /// a feiticeira possui uma mochila, que é onde 
+        /// os seus itens são guardados.
+        /// </summary>
         public Mochila mochila;
 
         /// <summary>
-        /// a magia será utilizada na batalha de turno, 
-        /// uma barra adicional que só a feiticeira tem
-        /// e controla seu ataque especial
+        /// A magia será utilizada na batalha de turno, 
+        /// uma barra adicional que só a feiticeira tem,
+        /// e controla o seu ataqueEspecial.
         /// </summary>
-        public double magia { get; set; }
+        public double Magia { get; set; }
 
+        /// <summary>
+        /// Lista de Itens que serão levados para a batalha.
+        /// </summary>
         public List<Item> ItemdeBatalha = new List<Item>();
-        
+
+        /// <summary>
+        /// Função que cria feiticeira.
+        /// Ela inicia o jogo com:
+        /// Forca = 20; 
+        /// PerdaEstamina = 0.30; 
+        /// GanhoEstamnina = 0.12; 
+        /// Escudo = 50; 
+        /// Magia = 1.2; 
+        /// </summary>
         public Feiticeira()
         {
             this.mochila = new Mochila();
@@ -34,35 +53,48 @@ namespace MeuRPGZinCore
             this.PerdaEstamina = 0.30;
             this.GanhoEstamnina = 0.12;
             this.Escudo = 50;
-            this.magia = 1.2;
+            this.Magia = 1.2;
             this.ItemdeBatalha.Capacity = 2;
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
 
         }
 
         /// <summary>
-        /// Apos o oponente se defender 3 vezes libera o ataque especial
-        /// A força da feiticeira almenta em 20% 
-        /// O ataque especial ignora o escudo do inimigo
+        /// Apos o oponente se defender 3 vezes o ataque especial é liberado .
+        /// A força da feiticeira almenta em 20% .
+        /// O ataque especial ignora o escudo do inimigo.
         /// </summary>
         /// <param name="inimigo"></param>
-        public override void ataqueEspecial(Personagem inimigo)
+        public override void AtaqueEspecial(Personagem inimigo)
         {
-            inimigo.Vida -= this.Forca * this.Estamina * magia;
+            inimigo.Vida -= this.Forca * this.Estamina * Magia;
             
         }
 
-
+        /// <summary>
+        /// A feiticeira pode comprar itens da classe "Item",
+        /// caso possua moedas suficientes.
+        /// O item é adicionado a sua mochila.
+        /// </summary>
+        /// <param name="itemGenerico"></param>
+        /// <param name="bag"></param>
+        /// <param name="preco"></param>
         public void ComprarItem(Item itemGenerico, ArrayList bag,int preco)
         {
-            if (this.moedas >= preco)
+            if (this.Moedas >= preco)
             {
                 this.mochila.AddItem(itemGenerico, bag);
-                this.moedas -= preco;
+                this.Moedas -= preco;
 
             }
         }
 
+        /// <summary>
+        /// A feiticeira pode escolher dois itens da sua mochila para utilizar
+        /// durante a batalha, ao colocá-los no "ItemdeBatalha".
+        /// No máximo dois itens podem ser levados
+        /// </summary>
+        /// <param name="bag"></param>
         public void EscolherItemdeBatalha(ArrayList bag)
         {
             if ( this.ItemdeBatalha.Count < 2)
@@ -74,6 +106,11 @@ namespace MeuRPGZinCore
             }
         }
 
+        /// <summary>
+        /// A feiticeira pode retirar um item do "ItemdeBatalha"
+        /// </summary>
+        /// <param name="bag"></param>
+        /// <param name="item"></param>
         public void RetirarItemdeBatalha(ArrayList bag, Item item)
         {
             foreach(Item i in this.ItemdeBatalha)

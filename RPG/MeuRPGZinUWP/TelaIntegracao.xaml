@@ -21,8 +21,8 @@
         </Grid.ColumnDefinitions>
         <Canvas RenderTransformOrigin="0.525,0.452" Margin="0,0,10,0" Grid.RowSpan="2" >
 
-            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="100" Canvas.Left="1070" Canvas.Top="574" Width="210" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
-            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="30" Height="90" Canvas.Left="39" Canvas.Top="84" Width="309" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaLoja" RenderTransformOrigin="0.074,-1.387" />
+            <Button x:Name="vaiParaBatalha" Content="Você que lute"  FontSize="30" Height="100" Canvas.Left="1070" Canvas.Top="574" Width="210" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="PaginaDaBatalha" RenderTransformOrigin="0.025,0.286" />
+            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="30" Height="90" Canvas.Left="39" Canvas.Top="84" Width="309" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="PaginaDaLoja" RenderTransformOrigin="0.074,-1.387" />
             <TextBlock Height="108" Canvas.Left="560" Canvas.Top="41" Text="Você está na Bag" FontSize="80" TextWrapping="Wrap" Width="652"/>
             <TextBlock x:Name="contPirlimpimpim" Height="80" Canvas.Left="97" Canvas.Top="212" Text="Pó de Pirlimpimpim: " FontSize="35" TextWrapping="Wrap" Width="512"/>
             <Button x:Name="selectPirlimpimpim" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="80" Canvas.Top="274" Width="162" Click="LevarPirlimpimpim" />

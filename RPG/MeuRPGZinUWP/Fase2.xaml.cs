@@ -214,7 +214,7 @@ namespace MeuRPGZinUWP
                 //deleta tudo que o jogador coletou no labirinto se ele perder
                 if (Radix) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagRadix);
                 if (Vitae) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagVitae);
-                feiticeira.moedas -= contMoedas;
+                feiticeira.Moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";
                 this.Frame.Navigate(typeof(gameOver));

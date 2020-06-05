@@ -10,12 +10,21 @@ namespace MeuRPGZinCore
 {
 
     /// <summary>
-    /// Arrogante, sorrateiro, cuidadoso e sabio
-    /// O personagem SAGAZ
+    /// Arrogante, sorrateiro, cuidadoso e sabio.
+    /// O personagem SAGAZ.
+    /// Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
     /// </summary>
-   public class SereianosNPC : Personagem, PersonagemNPC
+    public class SereianosNPC : Personagem, PersonagemNPC
     {
-       public SereianosNPC()
+        /// <summary>
+        /// Função que cria Sereiano.
+        /// Ele inicia o jogo com:
+        /// Forca = 20; 
+        /// PerdaEstamina = 0.25; 
+        /// GanhoEstamnina = 0.15; 
+        /// Escudo = 50;  
+        /// </summary>
+        public SereianosNPC()
         {
             this.Forca = 20;
             this.PerdaEstamina = 0.25;
@@ -29,7 +38,7 @@ namespace MeuRPGZinCore
         {
             if (controller.ContTurnos == 8 && this.Estamina >=0.85)
             {
-                this.ataqueEspecial(((Personagem)inimiga));
+                this.AtaqueEspecial(((Personagem)inimiga));
                 controller.ContTurnos = 0;
                 return 2;
             }
@@ -40,12 +49,11 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// A cada oito rodadas zera a estamina do seu oponente porem precisa
-        /// estar com a sua estamina em no minimo 85% 
-        /// FALTA TER O CONTROLE DOS TURNOS PARA COLOCAR COMO CONDIÇÃO DO ATAQUE!!
+        /// A cada oito rodadas zera a estamina do seu oponente, porém precisa
+        /// estar com a sua estamina em no minimo 85% .
         /// </summary>
         /// <param name="inimigo"></param>
-        public override void ataqueEspecial(Personagem inimiga)
+        public override void AtaqueEspecial(Personagem inimiga)
         {
             if(this.Estamina >= 0.85)
             {
@@ -72,7 +80,7 @@ namespace MeuRPGZinCore
                     //Verifica se ele tem escudo
                     if(this.Escudo > 0)
                     {
-                        usarEscudo();
+                        UsarEscudo();
                         return 0;
                     }
                     //Verifica se é vantajoso atacar
@@ -80,19 +88,19 @@ namespace MeuRPGZinCore
                     {
                         if( decisao == 0 || decisao == 1)
                         {
-                                atacar(inimiga);
+                                Atacar(inimiga);
                                 return 1;
                         }
                         else
                         {
-                            descansar();
+                            Descansar();
                             return -1;
                         }
                     }
                     //Caso nao tenha nenhuma alternativa
                     else
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
                 }
@@ -102,18 +110,18 @@ namespace MeuRPGZinCore
                     //verifica se ele tem estamina
                     if( this.Estamina >= this.PerdaEstamina)
                     {
-                        atacar(inimiga);
+                        Atacar(inimiga);
                         return 1;
                     }
                     else
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
                 }
                 else
                 {
-                    descansar();
+                    Descansar();
                     return -1;
                 }
             }
@@ -126,7 +134,7 @@ namespace MeuRPGZinCore
                     //verifica estamina
                     if(this.Estamina >= this.PerdaEstamina)
                     {
-                        atacar(inimiga);
+                        Atacar(inimiga);
                         return 1;
                     }
                     else
@@ -136,18 +144,18 @@ namespace MeuRPGZinCore
                         {
                             if( this.Escudo > 0)
                             {
-                                usarEscudo();
+                                UsarEscudo();
                                 return 0;
                             }
                             else
                             {
-                                descansar();
+                                Descansar();
                                 return -1;
                             }
                         }
                         else
                         {
-                            descansar();
+                            Descansar();
                             return -1;
                         }
                     }
@@ -157,18 +165,18 @@ namespace MeuRPGZinCore
                 {
                     if(this.Escudo > 0)
                     {
-                        usarEscudo();
+                        UsarEscudo();
                         return 0;
                     }
                     else
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
                 }
                 else
                 {
-                    descansar();
+                    Descansar();
                     return -1;
                 }
             }
@@ -181,18 +189,18 @@ namespace MeuRPGZinCore
                     //verifica se ele tem escudo
                     if(this.Escudo > 0)
                     {
-                        usarEscudo();
+                        UsarEscudo();
                         return 0;
                     }
                     //caso nao tenha ele verifica a estamina e ataca
                     else if( this.Estamina >= this.PerdaEstamina)
                     {
-                        atacar(inimiga);
+                        Atacar(inimiga);
                         return 1;
                     }
                     else
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
                 }
@@ -202,17 +210,17 @@ namespace MeuRPGZinCore
                     //verifica se ele tem estamina
                     if( this.Estamina >= this.PerdaEstamina)
                     {
-                        atacar(inimiga);
+                        Atacar(inimiga);
                         return 1;
                     }
                     else if(this.Escudo > 0)
                     {
-                        usarEscudo();
+                        UsarEscudo();
                         return 0;
                     }
                     else
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
 
@@ -223,17 +231,17 @@ namespace MeuRPGZinCore
                     //Confere se vale a pena descansar
                     if( this.Estamina <= 0.7)
                     {
-                        descansar();
+                        Descansar();
                         return -1;
                     }
                     else if( this.Escudo > 15)
                     {
-                        usarEscudo();
+                        UsarEscudo();
                         return 0;
                     }
                     else
                     {
-                        atacar(inimiga);
+                        Atacar(inimiga);
                         return -1;
                     }
                 }

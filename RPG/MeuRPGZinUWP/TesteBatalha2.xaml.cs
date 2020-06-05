@@ -161,7 +161,7 @@ namespace MeuRPGZinUWP
             {
                 int acaoInimigo;
                 acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
-                feiticeira.atacar(Inimigo);
+                feiticeira.Atacar(Inimigo);
                 controller.RelatorioTurno(1, acaoInimigo);
 
                 if (Controller.FimDeTurno(feiticeira, Inimigo, 1, acaoInimigo) != null)
@@ -187,7 +187,7 @@ namespace MeuRPGZinUWP
             if(feiticeira.Escudo > 0)
             {
                 int acaoInimigo;
-                feiticeira.usarEscudo();
+                feiticeira.UsarEscudo();
                 acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
                 controller.RelatorioTurno(0, acaoInimigo);
 
@@ -214,7 +214,7 @@ namespace MeuRPGZinUWP
         {
             int acaoInimigo;
             acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
-            feiticeira.descansar();
+            feiticeira.Descansar();
             controller.RelatorioTurno(-1, acaoInimigo);
 
             if (Controller.FimDeTurno(feiticeira, Inimigo, -1, acaoInimigo) != null)

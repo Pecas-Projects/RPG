@@ -4,9 +4,19 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    ///Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
+    /// </summary>
     public class HumanoNPC : Personagem, PersonagemNPC
     {
-
+        /// <summary>
+        /// Função que cria Humano.
+        /// Ele inicia o jogo com:
+        /// Forca = 30; 
+        /// PerdaEstamina = 0.2; 
+        /// GanhoEstamnina = 0.1; 
+        /// Escudo = 40;  
+        /// </summary>
         public HumanoNPC()
         {
             this.Forca = 30;
@@ -26,12 +36,12 @@ namespace MeuRPGZinCore
         /// e dar um "Contra-Ataque"
         /// </summary>
         /// <param name="inimigo"></param>
-        public override void ataqueEspecial(Personagem inimigo)
+        public override void AtaqueEspecial(Personagem inimigo)
         {
             if (this.Estamina > 0.8)
             {
                 inimigo.EscudoAtivo = false;
-                this.atacar(inimigo);
+                this.Atacar(inimigo);
             }
         }
 
