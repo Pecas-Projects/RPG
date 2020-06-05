@@ -36,11 +36,11 @@ namespace MeuRPGZinCore
         /// <returns></returns>
         public Personagem Vencedor(Personagem jogadora, Personagem inimigo)
         {
-            if (jogadora.EstaMorto())
+            if (jogadora.EstaMorto() && jogadora.Vida<inimigo.Vida)
             {
                 return inimigo;
             }
-            else if(inimigo.EstaMorto())
+            else if(inimigo.EstaMorto() && inimigo.Vida <= jogadora.Vida) 
             {
                 return jogadora;
             }

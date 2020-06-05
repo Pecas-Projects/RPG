@@ -76,6 +76,7 @@ namespace MeuRPGZinUWP
             feiticeira.Vida = 100;
             feiticeira.Estamina = 1;
             feiticeira.Escudo = 50;
+            controller.Feiticeira = feiticeira;
         }
 
         /// <summary>
@@ -102,17 +103,19 @@ namespace MeuRPGZinUWP
                 controller.Feiticeira = feiticeira;
                 this.Frame.Navigate(typeof(gameOverBatalha));
             }
-
-            Fim_BTN.Height = 71;
-            Fim_BTN.Width = 419;
-            Inicio_BTN.Height = 0;
-            Inicio_BTN.Width = 0;
-            usarEscudo.Width = 0;
-            usarEscudo.Height = 0;
-            ataque.Width = 0;
-            ataque.Height = 0;
-            descancar.Width = 0;
-            descancar.Height = 0;    
+            else if(Inimigo.Vida <= 0)
+            {
+                Fim_BTN.Height = 71;
+                Fim_BTN.Width = 419;
+                Inicio_BTN.Height = 0;
+                Inicio_BTN.Width = 0;
+                usarEscudo.Width = 0;
+                usarEscudo.Height = 0;
+                ataque.Width = 0;
+                ataque.Height = 0;
+                descancar.Width = 0;
+                descancar.Height = 0;
+            }    
         }
 
         /// <summary>

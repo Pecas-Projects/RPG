@@ -27,5 +27,10 @@ namespace MeuRPGZinUWP
         {
             this.InitializeComponent();
         }
+
+        private void HandleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
     }
 }
