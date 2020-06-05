@@ -25,7 +25,14 @@ namespace MeuRPGZinCore
 
         public Feiticeira Feiticeira { get; set; }
 
-
+        /// <summary>
+        /// Metodo para identificar o vencedor da Batalha
+        /// Caso um dos personagens seja identificado como morto, o metodo retornara o vencedor
+        /// caso ninguem esteja morto retorna null
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
+        /// <returns></returns>
         public Personagem Vencedor(Personagem jogadora, Personagem inimigo)
         {
             if (jogadora.EstaMorto())
@@ -42,6 +49,11 @@ namespace MeuRPGZinCore
             }
         }
 
+        /// <summary>
+        /// Controla a recarga de Estamina apos cada turno
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
         public void RecargaEstamina(Personagem jogadora, Personagem inimigo)
         {
             jogadora.Estamina += jogadora.GanhoEstamnina;
@@ -59,6 +71,11 @@ namespace MeuRPGZinCore
 
         }
 
+        /// <summary>
+        /// Registra de forma quantitativa as ações feitas durante a batalha
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
         public void RelatorioTurno(int jogadora, int inimigo)
         {
             if(inimigo == -1)
@@ -90,7 +107,18 @@ namespace MeuRPGZinCore
             this.ContTurnos++;
         }
 
-
+        /// <summary>
+        /// Realiza as atualizações de status apos o fim do turno da batalha
+        /// Recarga estamina;
+        /// Registra o relatorio;
+        /// Desativa os escudos;
+        /// Verifica se ha algum vencedor
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
+        /// <param name="acaoJogadora"></param>
+        /// <param name="acaoInimigo"></param>
+        /// <returns></returns>
         public Personagem FimDeTurno(Personagem jogadora, Personagem inimigo, int acaoJogadora, int acaoInimigo)
         {
             this.RecargaEstamina(jogadora, inimigo);
@@ -104,16 +132,31 @@ namespace MeuRPGZinCore
 
         }
 
+        /// <summary>
+        /// Faz com que a feiticeira use o item escolhido para a batalha
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="item"></param>
         public void UsarItemUtilizavel(Feiticeira jogadora, Item item)
         {
             item.Utilizar(jogadora);
         }
 
+        /// <summary>
+        /// Desativa os efeitos do item utilizado
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="item"></param>
         public void DesativarItemDesativavel(Feiticeira jogadora, ItemDesativado item)
         {
             item.DesativarItem(jogadora);
         }
 
+        /// <summary>
+        /// Verifica as condições de ataque especial da Feiticeira
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
         public void ControleAtaqueEspecialFeiticeira(Feiticeira jogadora, Personagem inimigo)
         {
             if(this.ContDefesaInimigo >= 3)
