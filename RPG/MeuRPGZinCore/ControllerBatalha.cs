@@ -6,11 +6,13 @@ using System.Text;
 namespace MeuRPGZinCore
 {
     /// <summary>
-    /// Morde dos personagens,
-    /// Vencedor de uma Batalha,
-    /// Turnos,
-    /// Relatorio de turnos (quantitativo)
-    /// Controle de estamina
+    /// Classe que controla a Batalha de turnos:
+    /// Morte dos personagens, 
+    /// Vencedor de uma Batalha, 
+    /// Turnos, 
+    /// Relatorio de turnos (quantitativo), 
+    /// Controle de estamina dos personagens,
+    /// Fase em que ocorre a batalha.
     /// </summary>
     public class ControllerBatalha
     {
@@ -22,13 +24,12 @@ namespace MeuRPGZinCore
         public int ContDescancarInimigo { get; set; } = 0;
         public int ContTurnos { get; set; } =  0;
         public int Fase { get; set; } = 0;
-
         public Feiticeira Feiticeira { get; set; }
 
         /// <summary>
         /// Metodo para identificar o vencedor da Batalha
-        /// Caso um dos personagens seja identificado como morto, o metodo retornara o vencedor
-        /// caso ninguem esteja morto retorna null
+        /// caso um dos personagens seja identificado como morto, o metodo retornara o vencedor.
+        /// Caso ninguem esteja morto, retorna null.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="inimigo"></param>
@@ -50,7 +51,7 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Controla a recarga de Estamina apos cada turno
+        /// Controla a recarga de Estamina dos personagens após cada turno.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="inimigo"></param>
@@ -68,11 +69,11 @@ namespace MeuRPGZinCore
             {
                 inimigo.Estamina = 1;
             }
-
         }
 
         /// <summary>
-        /// Registra de forma quantitativa as ações feitas durante a batalha
+        /// Registra de forma quantitativa as ações realizadas durante um turno da batalha.
+        /// Registra o número de turnos que ocorreram na batalha.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="inimigo"></param>
@@ -108,11 +109,11 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Realiza as atualizações de status apos o fim do turno da batalha
+        /// Realiza as atualizações de status apos o fim do turno da batalha: 
         /// Recarga estamina;
         /// Registra o relatorio;
         /// Desativa os escudos;
-        /// Verifica se ha algum vencedor
+        /// Verifica se ha algum vencedor.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="inimigo"></param>
@@ -133,7 +134,7 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Faz com que a feiticeira use o item escolhido para a batalha
+        /// Faz com que a feiticeira use um item escolhido para a batalha.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="item"></param>
@@ -143,7 +144,8 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Desativa os efeitos do item utilizado
+        /// Desativa os efeitos do item utilizado, caso ele implemente a interface
+        /// "ItemDesativado"
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="item"></param>
@@ -153,7 +155,7 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Verifica as condições de ataque especial da Feiticeira
+        /// Verifica as condições de ataque especial da Feiticeira.
         /// </summary>
         /// <param name="jogadora"></param>
         /// <param name="inimigo"></param>
