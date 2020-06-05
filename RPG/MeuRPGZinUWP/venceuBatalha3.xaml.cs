@@ -19,7 +19,12 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página que aparece quando o usuário vence a batalha da fase 3.
+    /// Apartir dessa página, usuário pode:
+    /// Ir direto para a próxima batalha,
+    /// Ir para a página da Mochila,
+    /// Ir para a página de Instruções,
+    /// Ir para a página com a história da Pedra Do Fogo.
     /// </summary>
     public sealed partial class venceuBatalha3 : Page
     {
@@ -36,24 +41,24 @@ namespace MeuRPGZinUWP
             controller = e.Parameter as ControllerBatalha;
         }
 
-        private void irBatalha_Click(object sender, RoutedEventArgs e)
+        private void IrBatalha_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 4;
             this.Frame.Navigate(typeof(TesteBatalha2), controller);
         }
 
-        private void itens_Click(object sender, RoutedEventArgs e)
+        private void Itens_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 4;
             this.Frame.Navigate(typeof(TelaIntegracao), controller);
         }
 
-        private void ajuda_Click(object sender, RoutedEventArgs e)
+        private void Ajuda_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Instrucoes));
         }
 
-        private void pedraFogo_Click(object sender, RoutedEventArgs e)
+        private void PedraFogo_Click(object sender, RoutedEventArgs e)
         {
 
         }

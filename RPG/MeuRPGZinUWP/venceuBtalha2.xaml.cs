@@ -19,8 +19,11 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
-    /// </summary>
+    /// Página que aparece quando o usuário vence a batalha da fase 2.
+    /// Apartir dessa página, usuário pode:
+    /// Ir direto para o Labirinto da fase 3,
+    /// Ir para a página de Instruções,
+    /// </summary>>
     public sealed partial class venceuBtalha2 : Page
     {
         ControllerBatalha controller = new ControllerBatalha();

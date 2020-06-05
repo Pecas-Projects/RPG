@@ -30,19 +30,19 @@
         Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="58" Canvas.Top="440"/>
 
             <Button x:Name="irBatalha"  Canvas.Left="227" Canvas.Top="549"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
-            Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="300" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="irBatalha_Click">
+            Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="300" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrBatalha_Click">
             </Button>
 
-            <Button x:Name="pedraFogo" Width="160" Height="160" Canvas.Left="592" Canvas.Top="526" Background="Transparent" Click="pedraFogo_Click">
+            <Button x:Name="pedraFogo" Width="160" Height="160" Canvas.Left="592" Canvas.Top="526" Background="Transparent" Click="PedraFogo_Click">
                 <Image Source="Assets/pedras_do_fogo.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="0,-16,-20,3" ></Image>
             </Button>
 
 
             <Button x:Name="irBag" Width="300" Height="100" Canvas.Left="824" Canvas.Top="549" FontSize="50" Foreground="Black"
-           Background="DarkGray" Content="Selecionar itens" Click="irBag_Click" FontFamily="Cardinal" BorderBrush="Black"></Button>
+           Background="DarkGray" Content="Selecionar itens" Click="IrBag_Click" FontFamily="Cardinal" BorderBrush="Black"></Button>
 
             <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
-                    FontSize="85" Canvas.Left="39" Canvas.Top="554" BorderBrush="Black" Click="ajuda_Click"></Button>
+                    FontSize="85" Canvas.Left="39" Canvas.Top="554" BorderBrush="Black" Click="Ajuda_Click"></Button>
 
 
         </Canvas>

@@ -37,15 +37,15 @@
         Text="Sua jornada agora a levará ao labirinto do Reino Caeli." Canvas.Left="117" Canvas.Top="420" Width="1155"/>
 
             <Button x:Name="irLab"  Canvas.Left="596" Canvas.Top="559"  Content="Iniciar Labirinto" FontSize="50" Foreground="Black"
-             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="irLab_Click">
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrLab_Click">
             </Button>
 
-            <Button x:Name="pedraAgua" Width="160" Height="160" Canvas.Left="380" Canvas.Top="526" Background="Transparent" Click="pedraAgua_Click">
+            <Button x:Name="pedraAgua" Width="160" Height="160" Canvas.Left="380" Canvas.Top="526" Background="Transparent" Click="PedraAgua_Click">
                 <Image Source="Assets/pedra_da_agua.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="-10,-16,-10,3" ></Image>
             </Button>
 
             <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
-                    FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black" Click="ajuda_Click"></Button>
+                    FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black" Click="Ajuda_Click"></Button>
 
         </Canvas>
 

@@ -18,11 +18,11 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Tela que aparece quendo o usuário vence o jogo.
     /// </summary>
-    public sealed partial class venceuJogo : Page
+    public sealed partial class VenceuJogo : Page
     {
-        public venceuJogo()
+        public VenceuJogo()
         {
             this.InitializeComponent();
         }

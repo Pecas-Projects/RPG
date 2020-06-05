@@ -18,11 +18,11 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP.Assets
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página que aparece quando o usuário vence a batalha da fase 3.
     /// </summary>
-    public sealed partial class venceuBatalha3 : Page
+    public sealed partial class VenceuBatalha3 : Page
     {
-        public venceuBatalha3()
+        public VenceuBatalha3()
         {
             this.InitializeComponent();
         }

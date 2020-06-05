@@ -43,20 +43,20 @@
 
 
             <Button x:Name="irBatalha"  Canvas.Left="225" Canvas.Top="559"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
-             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="irBatalha_Click">
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrBatalha_Click">
             </Button>
 
 
             <Button x:Name="itens"  Canvas.Left="786" Canvas.Top="563"  Content="Selecionar Itens" FontSize="50" Foreground="Black"
-             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="itens_Click">
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="Itens_Click">
             </Button>
 
-            <Button x:Name="pedraFogo" Width="160" Height="160" Canvas.Left="570" Canvas.Top="533" Background="Transparent" Click="pedraFogo_Click">
+            <Button x:Name="pedraFogo" Width="160" Height="160" Canvas.Left="570" Canvas.Top="533" Background="Transparent" Click="PedraFogo_Click">
                 <Image Source="Assets/pedras_do_fogo.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="0,-16,-20,3" ></Image>
             </Button>
 
             <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
-                    FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black" Click="ajuda_Click"></Button>
+                    FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black" Click="Ajuda_Click"></Button>
 
         </Canvas>
     </Grid>

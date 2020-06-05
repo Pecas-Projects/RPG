@@ -19,13 +19,18 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página que aparece quando o usuário vence o Labirinto da fase 1.
+    /// Apartir dessa página, usuário pode:
+    /// Ir direto para a próxima batalha,
+    /// Ir para a página da Mochila,
+    /// Ir para a página de Instruções,
+    /// Ir para a página com a história da Pedra Da Água.
     /// </summary>
-    public sealed partial class venceuLab1 : Page
+    public sealed partial class VenceuLab1 : Page
     {
         ControllerBatalha controller = new ControllerBatalha();
 
-        public venceuLab1()
+        public VenceuLab1()
         {
             this.InitializeComponent();
         }
@@ -36,24 +41,24 @@ namespace MeuRPGZinUWP
             controller = e.Parameter as ControllerBatalha;
         }
 
-        private void irBag_Click(object sender, RoutedEventArgs e)
+        private void IrBag_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 1;
             this.Frame.Navigate(typeof(TelaIntegracao), controller);
         }
 
-        private void ajuda_Click(object sender, RoutedEventArgs e)
+        private void Ajuda_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Instrucoes));
         }
 
-        private void irBatalha_Click(object sender, RoutedEventArgs e)
+        private void IrBatalha_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 1;
             this.Frame.Navigate(typeof(TesteBatalha2), controller);
         }
 
-        private void pedraAgua_Click(object sender, RoutedEventArgs e)
+        private void PedraAgua_Click(object sender, RoutedEventArgs e)
         {
             //tela da história do reino
         }

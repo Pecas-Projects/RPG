@@ -248,7 +248,7 @@ namespace MeuRPGZinUWP
             }
             else if (controller.Fase == 4)
             {
-                this.Frame.Navigate(typeof(venceuJogo), controller);
+                this.Frame.Navigate(typeof(VenceuJogo), controller);
             }
 
         }
