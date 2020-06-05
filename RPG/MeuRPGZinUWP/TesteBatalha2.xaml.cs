@@ -349,7 +349,7 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void AtaqueEspecial(object sender, RoutedEventArgs e)
         {
-            if (controller.ContDefesaInimigo == 4)
+            if (controller.ContDefesaInimigo >= 4)
             {
                 int acaoInimigo;
                 acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);

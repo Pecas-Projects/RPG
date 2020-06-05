@@ -37,6 +37,7 @@ namespace MeuRPGZinUWP
         public Labirinto3 l;
 
         public Feiticeira feiticeira = new Feiticeira();
+        public ControllerBatalha controller = new ControllerBatalha();
 
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
         public int contMoedas = 0;
@@ -66,24 +67,29 @@ namespace MeuRPGZinUWP
             matrizImg[7, 8] = pirlimpimpim;
         }
 
-            /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
+        /*protected override async void OnKeyDown(KeyRoutedEventArgs e)
+           {
+               base.OnKeyDown(e);
+               if (e.Key == Windows.System.VirtualKey.Down)
                {
-                   base.OnKeyDown(e);
-                   if (e.Key == Windows.System.VirtualKey.Down)
-                   {
 
-                   }
-                   else if (e.Key == Windows.System.VirtualKey.Up)
-                   {
-                       BitmapImage img1 = new BitmapImage();
-                       Uri url2 = new Uri(this.BaseUri, "Assets/feiticeira_right_2.png");
-                       img1.UriSource = url2;
-                       ImgBestFriend.Source = img1;
-                   }
-               } */
+               }
+               else if (e.Key == Windows.System.VirtualKey.Up)
+               {
+                   BitmapImage img1 = new BitmapImage();
+                   Uri url2 = new Uri(this.BaseUri, "Assets/feiticeira_right_2.png");
+                   img1.UriSource = url2;
+                   ImgBestFriend.Source = img1;
+               }
+           } */
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
+        }
 
-        
         protected override void OnKeyUp(KeyRoutedEventArgs e)
         {
             base.OnKeyUp(e);
@@ -171,7 +177,7 @@ namespace MeuRPGZinUWP
             if (feiticeiraX == 1 && feiticeiraY == 0)
             {
                 dispatcherTimer.Stop();
-                this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+                this.Frame.Navigate(typeof(venceuLab3), controller);
             }
             if (l.TemParedeEsquerda(feiticeiraX, feiticeiraY) == false)
             {
