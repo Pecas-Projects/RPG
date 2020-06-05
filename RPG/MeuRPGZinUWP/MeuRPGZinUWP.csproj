@@ -137,11 +137,9 @@
     <Compile Include="gameOverBatalha.xaml.cs">
       <DependentUpon>gameOverBatalha.xaml</DependentUpon>
     </Compile>
-
     <Compile Include="TelaInicio.xaml.cs">
       <DependentUpon>TelaInicio.xaml</DependentUpon>
     </Compile>
-
     <Compile Include="telaInicio2.xaml.cs">
       <DependentUpon>telaInicio2.xaml</DependentUpon>
     </Compile>
@@ -154,9 +152,6 @@
     <Compile Include="venceuJogo.xaml.cs">
       <DependentUpon>venceuJogo.xaml</DependentUpon>
     </Compile>
-
-
-
     <Compile Include="TelaIntegracao.xaml.cs">
       <DependentUpon>TelaIntegracao.xaml</DependentUpon>
     </Compile>
@@ -189,24 +184,24 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\balao.png" />
     <Content Include="Assets\barbaro_front.png" />
-
     <Content Include="Assets\botao iniciar2.png" />
     <Content Include="Assets\botao_comprar.png" />
     <Content Include="Assets\botao_comprar1.png" />
     <Content Include="Assets\botao_mochila.png" />
     <Content Include="Assets\botao_mochila1.png" />
-
     <Content Include="Assets\escudo_dourado.png" />
     <Content Include="Assets\espada girando.png" />
     <Content Include="Assets\fada_de_chapeu.png" />
-
     <Content Include="Assets\botoao iniciar 2.png" />
     <Content Include="Assets\fada_king_front.png" />
     <Content Include="Assets\feiticeira_front.png" />
+    <Content Include="Assets\feiticeira_morta.png" />
     <Content Include="Assets\humano.png" />
     <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
+    <Content Include="Assets\lab_fundo_do_mar.png" />
     <Content Include="Assets\lab_vulcao.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\lojinha.png" />
@@ -262,17 +257,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
     <Page Include="TelaInicio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
     <Page Include="telaInicio2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
     <Page Include="Instrucoes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -285,8 +277,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
-
     <Page Include="TelaIntegracao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

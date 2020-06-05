@@ -125,7 +125,6 @@ namespace MeuRPGZinCore
         {
             if (this.Vida <= 0) return true;
             else return false;
-            //ALGUMA COISA COM EVENTO NO FRONT
         }
     }
 }

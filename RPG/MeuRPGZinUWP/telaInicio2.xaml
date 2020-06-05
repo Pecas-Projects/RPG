@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700" Width="1300"
-    Background="Gray"
+    Background="Black"
    >
 
     <Grid>
 
-        <Canvas>
+        <Canvas Background="Gray">
 
             <TextBlock Width="1192" Height="88" Text="Ápos descobrir a verdade sobre a história de Ardens Missus, e ter seu" 
              Canvas.Left="69" Canvas.Top="45" FontSize="45" FontFamily="Cardinal"></TextBlock>

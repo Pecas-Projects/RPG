@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700" Width="1300"
-    Background="Gray">
+    Background="Black">
 
     <Grid>
 
-        <Canvas >
+        <Canvas Background="Gray">
 
             <Image Source="Assets/moeda_front.png" Width="81" Height="81" Canvas.Left="1109" Canvas.Top="314" RenderTransformOrigin="0.084,0.528"></Image>
             <Image Source="Assets/rei_sereiano.png" Width="200" Height="200" Canvas.Left="1090" Canvas.Top="10" RenderTransformOrigin="0.759,0.519"></Image>

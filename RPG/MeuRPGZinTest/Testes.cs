@@ -101,7 +101,7 @@ namespace MeuRPGZinTest
         {
             User.mochila.AddItem((Item)Radix, User.mochila.bagRadix);
             Radix.Utilizar(User);
-            Assert.AreEqual(12, User.Forca);
+            Assert.AreEqual(25, User.Escudo);
         }
 
         [Test]

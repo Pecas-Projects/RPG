@@ -7,10 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700" Width="1300"
-    Background="Gray">
+    Background="Black">
 
     <Grid>
-        <Canvas>
+        <Canvas Background="Gray">
             <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"
         Text="Parabéns feiticeira, você venceu o terceiro labirinto!" Canvas.Left="81" Canvas.Top="69"/>
 

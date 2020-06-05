@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700" Width="1300"
-    Background="Gray"
+    Background="Black"
     >
 
     <Grid>
 
-        <Canvas>
+        <Canvas Background="Gray">
             <TextBlock Width="1144" Height="82" Canvas.Left="63" Canvas.Top="57" FontSize="50" FontFamily="Cardinal"
             Text="Parabéns Feiticeira, você venceu todos os obstáculos e chegou ao"></TextBlock>
 

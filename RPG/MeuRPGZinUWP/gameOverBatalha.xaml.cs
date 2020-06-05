@@ -18,8 +18,7 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Página de GameOver de uma batalha de turnos, 
-    /// A mesma batalha deve ser iniciada novamente.
+    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
     public sealed partial class gameOverBatalha : Page
     {
@@ -28,7 +27,7 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-        private void HandleClick(object sender, RoutedEventArgs e)
+        private void handleClick(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
         }

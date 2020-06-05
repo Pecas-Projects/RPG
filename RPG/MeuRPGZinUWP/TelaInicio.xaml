@@ -6,13 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
      Height="700" Width="1300"
-    Background="Gray"
+    Background="Black"
     mc:Ignorable="d"
     >
 
     <Grid>
 
-        <Canvas>
+        <Canvas Background="Gray">
 
             <TextBlock Width="1045" Height="100" Canvas.Left="129" Canvas.Top="45" Text="Uma jornada por Ardens Missus"
              FontSize="80" FontFamily="Cardinal"

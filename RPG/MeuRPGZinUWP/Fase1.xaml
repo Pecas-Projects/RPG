@@ -21,7 +21,7 @@
         <Canvas Grid.Row="0" x:Name="canvasMap">
             <TextBlock x:Name="tempo" Foreground="DarkTurquoise" Text="TEMPO RESTANTE: 50s" Width="481" Height="50" FontSize="35" FontFamily="roboto" TextWrapping="Wrap">
             </TextBlock>
-            <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fase1.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="48">
+            <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fundo_do_mar.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="48">
             </Image>
 
             <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png"  Height="56" Width="56" Canvas.Top="683" Canvas.Left="10" >
@@ -30,23 +30,23 @@
                 </Image.RenderTransform>
             </Image>
 
-            <Image x:Name="moeda0" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="98" Canvas.Left="350" Stretch="Fill" >
+            <Image x:Name="moeda0" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="80" Canvas.Left="350" Stretch="Fill" >
 
             </Image>
 
-            <Image x:Name="moeda1" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="98" Canvas.Left="425" Stretch="Fill" >
+            <Image x:Name="moeda1" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="78" Canvas.Left="425" Stretch="Fill" >
 
             </Image>
 
-            <Image x:Name="moeda2" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="98" Canvas.Left="567" Stretch="Fill" >
+            <Image x:Name="moeda2" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="98" Canvas.Left="571" Stretch="Fill" >
 
             </Image>
 
-            <Image x:Name="moeda3" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="175" Canvas.Left="567" Stretch="Fill" >
+            <Image x:Name="moeda3" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="175" Canvas.Left="571" Stretch="Fill" >
 
             </Image>
 
-            <Image x:Name="moeda4" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="255" Canvas.Left="567" Stretch="Fill" >
+            <Image x:Name="moeda4" Source="Assets/moeda_front.png"  Height="36" Width="36" Canvas.Top="255" Canvas.Left="571" Stretch="Fill" >
 
             </Image>
 
@@ -62,7 +62,7 @@
 
             </Image>
 
-            <Image x:Name="whey" Source="Assets/pocao_whey.png"  Height="36" Width="36" Canvas.Top="98" Canvas.Left="178" Stretch="Fill" />
+            <Image x:Name="whey" Source="Assets/pocao_whey.png"  Height="36" Width="36" Canvas.Top="76" Canvas.Left="178" Stretch="Fill" />
 
 
         </Canvas>
