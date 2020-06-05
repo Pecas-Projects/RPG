@@ -18,7 +18,8 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Tela que mostras as instruções do jogo.
+    /// O usuário pode retornar para a página anterior.
     /// </summary>
     public sealed partial class Instrucoes : Page
     {
@@ -27,7 +28,7 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-        private void voltar_handleClick(object sender, RoutedEventArgs e)
+        private void Voltar_handleClick(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
         }

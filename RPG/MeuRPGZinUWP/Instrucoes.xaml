@@ -39,7 +39,7 @@
              Canvas.Left="89" Canvas.Top="483" FontSize="36" FontFamily="Cardinal"></TextBlock>
 
             <Button x:Name="voltar"  Width="297" Height="80" Canvas.Left="36" FontFamily="Cardinal" FontSize="55" BorderBrush="Black"
-            Canvas.Top="591"   Click="voltar_handleClick" Background="DarkGray" Content="Voltar"></Button>
+            Canvas.Top="591"   Click="Voltar_handleClick" Background="DarkGray" Content="Voltar"></Button>
 
 
         </Canvas>
