@@ -38,6 +38,7 @@
         Text="Sua jornada agora a levará ao labirinto do Reino Ignis." Canvas.Left="117" Canvas.Top="420" Width="1155"/>
 
             <Button x:Name="irLab"  Canvas.Left="596" Canvas.Top="559"  Content="Iniciar Labirinto" FontSize="50" Foreground="Black"
+                    Click="IrLab_handleClick"
              Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black">
             </Button>
 
@@ -46,6 +47,7 @@
             </Button>
 
             <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"
+                    Click="Ajuda_handleClick"
                     FontSize="85" Canvas.Left="39" Canvas.Top="559" BorderBrush="Black"></Button>
 
         </Canvas>

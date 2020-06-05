@@ -22,6 +22,7 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TelaInicio : Page
     {
+        
         public TelaInicio()
         {
             this.InitializeComponent();
@@ -34,7 +35,7 @@ namespace MeuRPGZinUWP
 
         private void iniciarjogo_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof (telaInicio2));
         }
     }
 }

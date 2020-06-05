@@ -29,7 +29,6 @@ namespace MeuRPGZinUWP
 
         private void voltar_handleClick(object sender, RoutedEventArgs e)
         {
-
             this.Frame.GoBack();
         }
     }

@@ -38,6 +38,7 @@ namespace MeuRPGZinUWP
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
         public int contMoedas = 0;
         public bool Vitae, Radix;
+        public ControllerBatalha controller = new ControllerBatalha();
 
         public Fase2()
         {
@@ -77,6 +78,12 @@ namespace MeuRPGZinUWP
                        ImgBestFriend.Source = img1;
                    }
                } */
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
+        }
 
         protected override void OnKeyUp(KeyRoutedEventArgs e)
         {
@@ -164,7 +171,7 @@ namespace MeuRPGZinUWP
             if (feiticeiraX == 1 && feiticeiraY == 0)
             {
                 dispatcherTimer.Stop();
-                this.Frame.Navigate(typeof(TelaIntegracao), feiticeira);
+                this.Frame.Navigate(typeof(venceuLab2), controller);
             }
             if (l.TemParedeEsquerda(feiticeiraX, feiticeiraY) == false)
             {
