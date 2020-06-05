@@ -19,7 +19,9 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página da Loja.
+    /// O usuário pode comprar itens.
+    /// O usuário pode voltar para a tela da Mochila.
     /// </summary>
     public sealed partial class Loja : Page
     {
