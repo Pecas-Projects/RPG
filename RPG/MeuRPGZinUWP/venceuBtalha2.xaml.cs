@@ -48,5 +48,10 @@ namespace MeuRPGZinUWP
         {
             this.Frame.Navigate(typeof(Instrucoes));
         }
+
+        private void pedraAr_handleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaCaeli));
+        }
     }
 }

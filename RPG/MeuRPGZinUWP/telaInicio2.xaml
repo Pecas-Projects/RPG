@@ -32,8 +32,8 @@
             <TextBlock Width="1225" Height="88" Text="escravidão das feiticeiras. Sua jornada tem início no labirinto do Reino Aequor" 
              Canvas.Left="43" Canvas.Top="421" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <Button x:Name="pedraTerra" Width="158" Height="134" Canvas.Left="580" Canvas.Top="538" Background="Transparent">
-                <Image Source="Assets/pedras_da_terra.png" Canvas.Left="590" Canvas.Top="225" Margin="-17,-20,-17,3"/>
+            <Button x:Name="pedraTerra" Click="pedraTerra_handleClick" Width="158" Height="134" Canvas.Left="580" Canvas.Top="538" Background="Transparent">
+                <Image Source="Assets/pedras_da_terra.png" Canvas.Left="590" Canvas.Top="225" Margin="-27,-20,-7,3" />
             </Button>
 
             <Button x:Name="instrucoes"  Width="300" Height="103" Canvas.Left="204" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"

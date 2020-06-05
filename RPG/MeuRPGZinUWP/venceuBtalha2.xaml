@@ -42,8 +42,8 @@
              Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="318" Height="100" FontFamily="Cardinal" BorderBrush="Black">
             </Button>
 
-            <Button x:Name="pedraAgua" Width="160" Height="160" Canvas.Left="380" Canvas.Top="526" Background="Transparent">
-                <Image Source="Assets/pedras_do_ar.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="-10,-16,-10,3" ></Image>
+            <Button x:Name="pedraAra" Width="160" Click="pedraAr_handleClick" Height="160" Canvas.Left="380" Canvas.Top="526" Background="Transparent">
+                <Image Source="Assets/pedras_do_ar.png" Width="160" Canvas.Top="521" Height="160" Canvas.Left="552" Margin="0,-16,-20,3" ></Image>
             </Button>
 
             <Button x:Name="ajuda"  Content="?" Width="100" Height="100" FontFamily="Cardinal" Background="LightSteelBlue"

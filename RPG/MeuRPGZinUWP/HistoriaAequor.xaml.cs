@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Tela da história do reino Aequor.
     /// </summary>
     public sealed partial class HistoriaAequor : Page
     {

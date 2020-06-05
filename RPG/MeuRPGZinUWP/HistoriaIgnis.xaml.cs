@@ -18,11 +18,11 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Tela da história de Ardens Missus.
+    /// Tela da história do reino Ignis.
     /// </summary>
-    public sealed partial class historia : Page
+    public sealed partial class HistoriaIgnis : Page
     {
-        public historia()
+        public HistoriaIgnis()
         {
             this.InitializeComponent();
         }

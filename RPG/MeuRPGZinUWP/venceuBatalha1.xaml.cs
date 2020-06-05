@@ -53,7 +53,7 @@ namespace MeuRPGZinUWP
 
         private void PedraAgua_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(HistoriaAequor));
         }
     }
 }

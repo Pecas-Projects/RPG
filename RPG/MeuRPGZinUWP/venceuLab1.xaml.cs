@@ -60,7 +60,7 @@ namespace MeuRPGZinUWP
 
         private void PedraAgua_Click(object sender, RoutedEventArgs e)
         {
-            //tela da história do reino
+            this.Frame.Navigate(typeof(HistoriaAequor));
         }
     }
 }

@@ -38,5 +38,10 @@ namespace MeuRPGZinUWP
         {
             this.Frame.Navigate(typeof(Instrucoes));
         }
+
+        private void pedraTerra_handleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaSavi));
+        }
     }
 }
