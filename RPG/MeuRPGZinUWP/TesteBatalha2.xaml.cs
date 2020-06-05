@@ -71,12 +71,35 @@ namespace MeuRPGZinUWP
             inimigoEstamina.Text = "Estamina: " + Inimigo.Estamina;
         }
 
+        public void FinalDeJogo()
+        {
+            Fim_BTN.Height = 71;
+            Fim_BTN.Width = 419;
+            Inicio_BTN.Height = 0;
+            Inicio_BTN.Width = 0;
+            usarEscudo.Width = 0;
+            usarEscudo.Height = 0;
+            ataque.Width = 0;
+            ataque.Height = 0;
+            descancar.Width = 0;
+            descancar.Height = 0;
+            controller.ContAtaqueFeiticeira =  0;
+            controller.ContAtaqueInimigo = 0;
+            controller.ContDefesaFeiticeira = 0;
+            controller.ContDefesaInimigo = 0;
+            controller.ContDescancarFeiticeira = 0;
+            controller.ContDescancarInimigo = 0;
+            controller.ContTurnos = 0;
+            feiticeira.Vida = 100;
+            feiticeira.Estamina = 1;
+            feiticeira.Escudo = 50;
+        }
+
         public void RegistraAcoes (int jogadora, int inimigo)
         {
             if (inimigo == -1)
             {
                 acaoInimigo.Text = "Ação: Descançou";
-                controller.ContDescancarInimigo++;
             }
             else if (inimigo == 0)
             {
@@ -133,24 +156,12 @@ namespace MeuRPGZinUWP
                 int acaoInimigo;
                 acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
                 feiticeira.atacar(Inimigo);
+                controller.RelatorioTurno(1, acaoInimigo);
 
                 if (Controller.FimDeTurno(feiticeira, Inimigo, 1, acaoInimigo) != null)
                 {
                     AtualizarStatus();
-                    //acabar o jogo aqui e mostrar o vencedor
-                    //tudo some, fica só uma imagem de ganhador
-                    //botões de 1px, feiticeira feliz ou triste
-                    //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                    Fim_BTN.Height = 71;
-                    Fim_BTN.Width = 419;
-                    Inicio_BTN.Height = 0;
-                    Inicio_BTN.Width = 0;
-                    usarEscudo.Width = 0;
-                    usarEscudo.Height = 0;
-                    ataque.Width = 0;
-                    ataque.Height = 0;
-                    descancar.Width = 0;
-                    descancar.Height = 0;
+                    FinalDeJogo();
                 }
                 else
                 {
@@ -178,24 +189,12 @@ namespace MeuRPGZinUWP
                 int acaoInimigo;
                 feiticeira.usarEscudo();
                 acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
+                controller.RelatorioTurno(0, acaoInimigo);
 
                 if (Controller.FimDeTurno(feiticeira, Inimigo, 0, acaoInimigo) != null)
                 {
                     AtualizarStatus();
-                    //acabar o jogo aqui e mostrar o vencedor
-                    //tudo some, fica só uma imagem de ganhador
-                    //botões de 1px, feiticeira feliz ou triste
-                    //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                    Fim_BTN.Height = 71;
-                    Fim_BTN.Width = 419;
-                    Inicio_BTN.Height = 0;
-                    Inicio_BTN.Width = 0;
-                    usarEscudo.Width = 0;
-                    usarEscudo.Height = 0;
-                    ataque.Width = 0;
-                    ataque.Height = 0;
-                    descancar.Width = 0;
-                    descancar.Height = 0;
+                    FinalDeJogo();
                 }
                 else
                 {
@@ -217,25 +216,12 @@ namespace MeuRPGZinUWP
             int acaoInimigo;
             acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
             feiticeira.descansar();
-            
-            //ZERAR CONTS DO CONTROLLER
+            controller.RelatorioTurno(-1, acaoInimigo);
+
             if (Controller.FimDeTurno(feiticeira, Inimigo, -1, acaoInimigo) != null)
             {
                 AtualizarStatus();
-                //acabar o jogo aqui e mostrar o vencedor
-                //tudo some, fica só uma imagem de ganhador
-                //botões de 1px, feiticeira feliz ou triste
-                //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                Fim_BTN.Height = 71;
-                Fim_BTN.Width = 419;
-                Inicio_BTN.Height = 0;
-                Inicio_BTN.Width = 0;
-                usarEscudo.Width = 0;
-                usarEscudo.Height = 0;
-                ataque.Width = 0;
-                ataque.Height = 0;
-                descancar.Width = 0;
-                descancar.Height = 0;
+                FinalDeJogo();
 
             }
             else
@@ -302,36 +288,31 @@ namespace MeuRPGZinUWP
 
         private void AtaqueEspecial(object sender, RoutedEventArgs e)
         {
-            int acaoInimigo;
-            acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
-            controller.ControleAtaqueEspecialFeiticeira(feiticeira, Inimigo);
-
-
-            if (Controller.FimDeTurno(feiticeira, Inimigo, 2, acaoInimigo) != null)
+            if (controller.ContDefesaInimigo == 4)
             {
-                AtualizarStatus();
-                //acabar o jogo aqui e mostrar o vencedor
-                //tudo some, fica só uma imagem de ganhador
-                //botões de 1px, feiticeira feliz ou triste
-                //um botão que era de 1px fica grande falando pra pular para a próxima fase
-                Fim_BTN.Height = 71;
-                Fim_BTN.Width = 419;
-                Inicio_BTN.Height = 0;
-                Inicio_BTN.Width = 0;
-                usarEscudo.Width = 0;
-                usarEscudo.Height = 0;
-                ataque.Width = 0;
-                ataque.Height = 0;
-                descancar.Width = 0;
-                descancar.Height = 0;
+                int acaoInimigo;
+                acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
+                controller.ControleAtaqueEspecialFeiticeira(feiticeira, Inimigo);
+                controller.RelatorioTurno(2, acaoInimigo);
 
+                if (Controller.FimDeTurno(feiticeira, Inimigo, 2, acaoInimigo) != null)
+                {
+                    AtualizarStatus();
+                    FinalDeJogo();
+
+                }
+                else
+                {
+                    RegistraAcoes(2, acaoInimigo);
+                    AtualizarStatus();
+
+                }
             }
             else
             {
-                RegistraAcoes(2, acaoInimigo);
-                AtualizarStatus();
-
+                //Algo no front
             }
+            
 
 
         }
