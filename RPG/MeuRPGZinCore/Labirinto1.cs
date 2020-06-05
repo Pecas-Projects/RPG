@@ -5,11 +5,12 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
-    
-    public class Labirinto1 : Labirinto
-    { /// <summary>
-    /// essa classe corresponde ao labirinto da primeira fase
+    /// <summary>
+    /// Classe filha de Labirinto. 
+    /// Classe que corresponde ao labirinto da primeira fase.
     /// </summary>
+    public class Labirinto1 : Labirinto
+    { 
 
         public Labirinto1()
         {
@@ -120,24 +121,6 @@ namespace MeuRPGZinCore
 
         }
 
-       
-
-        /// <summary>
-        /// verifica se tem moeda na coordenada desejada retorna true caso possua
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="bia"></param>
-       
-
-        /// <summary>
-        /// verifica se tem item na coordenada desejada retorna caso
-        /// </summary>
-        /// <param name="x"> coordenada x </param>
-        /// <param name="y"> coordenada y </param>
-        /// <param name="bia"></param>
-        /// <param name="item"></param>
-        /// 
         public override bool TemItem(int x, int y, Feiticeira bia)
         {
             bool pegou = false;

@@ -6,6 +6,10 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    /// Classe filha de Labirinto. 
+    /// Classe que corresponde ao labirinto da terceira fase.
+    /// </summary>
     public class Labirinto3 : Labirinto
     {
         public Labirinto3()

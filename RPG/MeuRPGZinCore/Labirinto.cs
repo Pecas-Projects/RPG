@@ -4,12 +4,15 @@ using System.Text;
 
 namespace MeuRPGZinCore
 {
-    public abstract class Labirinto
-    {   /// <summary>
-    /// as listas equivalem às linhas do mapeamento do labirinto
-    /// cada elemento delas equivalem a uma coluna
-    /// a combinação de seus elementos é uma coordenada
+    /// <summary>
+    /// Classe abstrata que define um Labirinto.
+    /// As listas equivalem às linhas do mapeamento do labirinto.
+    /// Cada elemento delas equivale a uma coluna.
+    /// A combinação de seus elementos é uma coordenada.
+    /// Possui a função abstrata "TemItem".
     /// </summary>
+    public abstract class Labirinto
+    {   
         public List<Parede> linha1 = new List<Parede>();
         public List<Parede> linha2 = new List<Parede>();
         public List<Parede> linha3 = new List<Parede>();
@@ -20,7 +23,10 @@ namespace MeuRPGZinCore
         public List<Parede> linha8 = new List<Parede>();
         public List<Parede> linha9 = new List<Parede>();
 
-        public List<Moeda> moedas = new List<Moeda>(); //moedas que aparecerão nessa fase
+        /// <summary>
+        /// Lista de Moedas que aparecerão na fase.
+        /// </summary>
+        public List<Moeda> moedas = new List<Moeda>();
 
         public bool TemParedeTopo(int x, int y)
         {
@@ -254,13 +260,19 @@ namespace MeuRPGZinCore
 
         }
 
-        public bool TemPeca(int x, int y, Feiticeira bia)
+        /// <summary>
+        /// Verifica se tem Moeda na coordenada desejada retorna true caso possua
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="bia"></param>
+        public bool TemPeca(int x, int y, Feiticeira feiticeira)
         {
             for (int i = 0; i < moedas.Count; ++i)
             {
                 if (moedas[i].X == x && moedas[i].Y == y)
                 {
-                    bia.Moedas++;
+                    feiticeira.Moedas++;
                     moedas.Remove(moedas[i]);
                     return true;
                 }
@@ -270,7 +282,16 @@ namespace MeuRPGZinCore
 
         }
 
-        public abstract bool TemItem(int x, int y, Feiticeira bia);
+        /// <summary>
+        /// Função abstrata que determina se existe um item em uma coordenada de um labirinto.
+        /// Cada labirinto possui itens diferente.
+        /// Define se o item foi pego pea feiticeira.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="feiticeira"></param>
+        /// <returns></returns>
+        public abstract bool TemItem(int x, int y, Feiticeira feiticeira);
 
     }
 }
