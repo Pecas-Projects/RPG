@@ -120,5 +120,128 @@ namespace MeuRPGZinUWP
             }
         }
 
+        private void LevarPirlimpimpim(object sender, RoutedEventArgs e)
+        {
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagPirlimpimpim);
+            if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void RetirarPirlimpimpim(object sender, RoutedEventArgs e)
+        {
+            Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
+            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagPirlimpimpim, pirlimpimpim);
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/po_pirlimpimpim.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/po_pirlimpimpim.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void LevarFortalecedora(object sender, RoutedEventArgs e)
+        {
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagFortalecedora);
+            if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_fortalecedora.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_fortalecedora.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void RetirarFortalecedora(object sender, RoutedEventArgs e)
+        {
+            PocaoFortalecedora fortalecedora = new PocaoFortalecedora();
+            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagFortalecedora, fortalecedora);
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_fortalecedora.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_fortalecedora.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void LevarRadix(object sender, RoutedEventArgs e)
+        {
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagRadix);
+            if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_radix.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_radix.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void RetirarRadix(object sender, RoutedEventArgs e)
+        {
+            PocaoRadix radix = new PocaoRadix();
+            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagRadix, radix);
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_radix.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_radix.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void LevarVitae(object sender, RoutedEventArgs e)
+        {
+            feiticeira.EscolherItemdeBatalha(feiticeira.mochila.bagVitae);
+            if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_vitae.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/interrogacao.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/pocao_vitae.png"));
+                AtualizarContItens();
+            }
+        }
+
+        private void RetirarVitae(object sender, RoutedEventArgs e)
+        {
+            PocaoVitae vitae = new PocaoVitae();
+            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagVitae, vitae);
+            if (((BitmapImage)Item_mochila2.Source).UriSource.AbsolutePath == ("/Assets/pocao_vitae.png"))
+            {
+                Item_mochila2.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
+                AtualizarContItens();
+            }
+            else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_vitae.png"))
+            {
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                AtualizarContItens();
+            }
+        }
     }
 }
