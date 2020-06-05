@@ -38,6 +38,7 @@ namespace MeuRPGZinUWP
 
         private void irBag_Click(object sender, RoutedEventArgs e)
         {
+            controller.Fase = 1;
             this.Frame.Navigate(typeof(TelaIntegracao), controller);
         }
 
@@ -48,6 +49,7 @@ namespace MeuRPGZinUWP
 
         private void irBatalha_Click(object sender, RoutedEventArgs e)
         {
+            controller.Fase = 1;
             this.Frame.Navigate(typeof(TesteBatalha2), controller);
         }
 
