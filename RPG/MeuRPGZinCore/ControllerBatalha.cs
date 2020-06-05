@@ -129,8 +129,23 @@ namespace MeuRPGZinCore
             jogadora.EscudoAtivo = false;
             inimigo.EscudoAtivo = false;
 
+            if (((Feiticeira)jogadora).ItemdeBatalha[0].Utilizado == true)
+            {
+               PocaoFortalecedora pocao = new PocaoFortalecedora();
+               if (((Feiticeira)jogadora).ItemdeBatalha[0].GetType() == pocao.GetType())
+                {
+                    this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[0]);
+                }
+            }
+            if (((Feiticeira)jogadora).ItemdeBatalha[1].Utilizado == true)
+            {
+                PocaoFortalecedora pocao = new PocaoFortalecedora();
+                if (((Feiticeira)jogadora).ItemdeBatalha[1].GetType() == pocao.GetType())
+                {
+                    this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[1]);
+                }
+            }
             return this.Vencedor(jogadora, inimigo);
-
         }
 
         /// <summary>

@@ -177,7 +177,7 @@ namespace MeuRPGZinUWP
             }
             else if (((BitmapImage)Item_mochila.Source).UriSource.AbsolutePath == ("/Assets/pocao_fortalecedora.png"))
             {
-                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/po_pirlimpimpim.png"));
+                Item_mochila.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
                 AtualizarContItens();
             }
         }
