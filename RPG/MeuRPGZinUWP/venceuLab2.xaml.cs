@@ -43,11 +43,13 @@ namespace MeuRPGZinUWP
 
         private void irBatalha_Click(object sender, RoutedEventArgs e)
         {
+            controller.Fase = 2;
             this.Frame.Navigate(typeof(TesteBatalha2), controller);
         }
 
         private void irBag_Click(object sender, RoutedEventArgs e)
         {
+            controller.Fase = 2;
             this.Frame.Navigate(typeof(TelaIntegracao), controller);
         }
 

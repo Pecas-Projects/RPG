@@ -38,6 +38,7 @@ namespace MeuRPGZinUWP
 
         private void irLab_Click(object sender, RoutedEventArgs e)
         {
+            
             this.Frame.Navigate(typeof(Fase2), controller);
         }
 

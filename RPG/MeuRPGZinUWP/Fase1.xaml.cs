@@ -154,7 +154,6 @@ namespace MeuRPGZinUWP
                 {
                     dispatcherTimer.Stop();
                     controller.Feiticeira = feiticeira;
-                    controller.Fase = 1;
                     this.Frame.Navigate(typeof(venceuLab1), controller);
                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
