@@ -27,9 +27,9 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            if (controller.ContTurnos == 4)
+            if (controller.ContTurnos == 8)
             {
-                this.ataqueEspecial(inimiga);
+                this.ataqueEspecial(((Personagem)inimiga));
                 controller.ContTurnos = 0;
                 return 2;
             }
@@ -40,16 +40,17 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// A cada quatro rodadas zera a estamina do seu oponente porem precisa
+        /// A cada oito rodadas zera a estamina do seu oponente porem precisa
         /// estar com a sua estamina em no minimo 85% 
         /// FALTA TER O CONTROLE DOS TURNOS PARA COLOCAR COMO CONDIÇÃO DO ATAQUE!!
         /// </summary>
         /// <param name="inimigo"></param>
-        public override void ataqueEspecial(Personagem inimigo)
+        public override void ataqueEspecial(Personagem inimiga)
         {
             if(this.Estamina >= 0.85)
             {
-                inimigo.Estamina = 0;
+                inimiga.Estamina = 0;
+
             }
         }
 

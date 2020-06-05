@@ -77,13 +77,6 @@ namespace MeuRPGZinUWP
                    }
                } */
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            controller = e.Parameter as ControllerBatalha;
-            feiticeira = controller.Feiticeira;
-        }
-
         protected override void OnKeyUp(KeyRoutedEventArgs e)
         {
             base.OnKeyUp(e);
