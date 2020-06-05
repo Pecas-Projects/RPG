@@ -19,6 +19,9 @@ using System.Timers;
 
 namespace MeuRPGZinUWP
 {
+    /// <summary>
+    /// Página do Labirinto da Fase3.
+    /// </summary>
     public sealed partial class Fase3 : Page
     {
         DispatcherTimer dispatcherTimer;

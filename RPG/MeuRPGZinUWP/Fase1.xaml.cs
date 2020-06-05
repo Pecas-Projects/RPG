@@ -20,7 +20,7 @@ namespace MeuRPGZinUWP
 {
 
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página do Labirinto da Fase1.
     /// </summary>
     public sealed partial class Fase1 : Page
     {
