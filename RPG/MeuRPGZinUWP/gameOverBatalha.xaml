@@ -29,7 +29,7 @@
                        FontFamily="Cardinal" FontSize="50" Canvas.Left="93" Canvas.Top="489"></TextBlock>
 
             <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="486" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
-            Canvas.Top="573"   Click="handleClick" Background="DarkGray" Content="Continuar">
+            Canvas.Top="573"   Click="HandleClick" Background="DarkGray" Content="Continuar">
 
             </Button>
 

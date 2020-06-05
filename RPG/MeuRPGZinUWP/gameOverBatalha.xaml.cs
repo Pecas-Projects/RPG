@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MeuRPGZinCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,14 +23,22 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class gameOverBatalha : Page
     {
+        ControllerBatalha controller = new ControllerBatalha();
+
         public gameOverBatalha()
         {
             this.InitializeComponent();
         }
 
-        private void handleClick(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            this.Frame.GoBack();
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+        }
+
+        private void HandleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TelaIntegracao), controller);
         }
     }
 }

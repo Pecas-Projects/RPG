@@ -66,6 +66,7 @@ namespace MeuRPGZinUWP
             }
             inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
 
+            controller.ConfereItemBatalha(feiticeira);
             controller.ContAtaqueFeiticeira = 0;
             controller.ContAtaqueInimigo = 0;
             controller.ContDefesaFeiticeira = 0;
@@ -76,6 +77,7 @@ namespace MeuRPGZinUWP
             feiticeira.Vida = 100;
             feiticeira.Estamina = 1;
             feiticeira.Escudo = 50;
+            
             controller.Feiticeira = feiticeira;
         }
 
@@ -101,7 +103,7 @@ namespace MeuRPGZinUWP
             if (feiticeira.Vida <= 0)
             {
                 controller.Feiticeira = feiticeira;
-                this.Frame.Navigate(typeof(gameOverBatalha));
+                this.Frame.Navigate(typeof(gameOverBatalha), controller);
             }
             else if(Inimigo.Vida <= 0)
             {

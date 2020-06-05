@@ -130,22 +130,30 @@ namespace MeuRPGZinCore
             jogadora.EscudoAtivo = false;
             inimigo.EscudoAtivo = false;
 
-            if (((Feiticeira)jogadora).ItemdeBatalha[0].Utilizado == true)
+            if (((Feiticeira)jogadora).ItemdeBatalha.Count >= 1)
             {
-               PocaoFortalecedora pocao = new PocaoFortalecedora();
-               if (((Feiticeira)jogadora).ItemdeBatalha[0].GetType() == pocao.GetType())
+                if (((Feiticeira)jogadora).ItemdeBatalha[0].Utilizado == true)
                 {
-                    this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[0]);
+                    PocaoFortalecedora pocao = new PocaoFortalecedora();
+                    if (((Feiticeira)jogadora).ItemdeBatalha[0].GetType() == pocao.GetType())
+                    {
+                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[0]);
+                    }
                 }
             }
-            if (((Feiticeira)jogadora).ItemdeBatalha[1].Utilizado == true)
+
+            if (((Feiticeira)jogadora).ItemdeBatalha.Count == 2)
             {
-                PocaoFortalecedora pocao = new PocaoFortalecedora();
-                if (((Feiticeira)jogadora).ItemdeBatalha[1].GetType() == pocao.GetType())
+                if (((Feiticeira)jogadora).ItemdeBatalha[1].Utilizado == true)
                 {
-                    this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[1]);
+                    PocaoFortalecedora pocao = new PocaoFortalecedora();
+                    if (((Feiticeira)jogadora).ItemdeBatalha[1].GetType() == pocao.GetType())
+                    {
+                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[1]);
+                    }
                 }
             }
+            
             return this.Vencedor(jogadora, inimigo);
         }
 
@@ -184,6 +192,23 @@ namespace MeuRPGZinCore
             }
         }
 
+        public void ConfereItemBatalha(Feiticeira jogadora)
+        {
+            if (jogadora.ItemdeBatalha.Count >= 1)
+            {
+                if (jogadora.ItemdeBatalha[0].Utilizado)
+                {
+                    jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[0]);
+                }
+            }
 
+            if (jogadora.ItemdeBatalha.Count == 2)
+            {
+                if (jogadora.ItemdeBatalha[1].Utilizado)
+                {
+                    jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[1]);
+                }
+            }
+        }
     }
 }
