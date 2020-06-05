@@ -28,17 +28,19 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            throw new NotImplementedException();
+            //fazer
+            return 9999;
         }
 
         public override void AtaqueEspecial(Personagem inimigo)
         {
-            throw new NotImplementedException();
+            //fazer
         }
 
         public int Inteligencia(Feiticeira inimiga)
         {
-            throw new NotImplementedException();
+            //fazer
+            return 9999;
         }
     }
 }

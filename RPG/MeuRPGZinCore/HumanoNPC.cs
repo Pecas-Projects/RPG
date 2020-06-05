@@ -28,7 +28,8 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            throw new NotImplementedException();
+            //fazer
+            return 9999;
         }
 
         /// <summary>
@@ -47,7 +48,8 @@ namespace MeuRPGZinCore
 
         public int Inteligencia(Feiticeira inimiga)
         {
-            throw new NotImplementedException();
+            //fazer
+            return 9999;
         }
     }
 }
