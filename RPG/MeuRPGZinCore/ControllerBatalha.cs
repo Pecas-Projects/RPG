@@ -24,6 +24,7 @@ namespace MeuRPGZinCore
         public int ContDescancarInimigo { get; set; } = 0;
         public int ContTurnos { get; set; } =  0;
         public int Fase { get; set; } = 0;
+
         public Feiticeira Feiticeira { get; set; }
 
         /// <summary>

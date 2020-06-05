@@ -30,7 +30,6 @@ namespace MeuRPGZinCore
         public void AddItem(Item generico, ArrayList bag)
         {
             bag.Add(generico);
-
         }
 
         /// <summary>

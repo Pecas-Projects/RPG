@@ -55,7 +55,7 @@ namespace MeuRPGZinCore
             this.Escudo = 50;
             this.Magia = 1.2;
             this.ItemdeBatalha.Capacity = 2;
-            this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
+           // this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
 
         }
 
@@ -67,8 +67,7 @@ namespace MeuRPGZinCore
         /// <param name="inimigo"></param>
         public override void AtaqueEspecial(Personagem inimigo)
         {
-            inimigo.Vida -= this.Forca * this.Estamina * Magia;
-            
+            inimigo.Vida -= this.Forca * this.Estamina * Magia; 
         }
 
         /// <summary>
