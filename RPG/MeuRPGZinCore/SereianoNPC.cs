@@ -27,7 +27,7 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            if (controller.ContTurnos == 8)
+            if (controller.ContTurnos == 8 && this.Estamina >=0.85)
             {
                 this.ataqueEspecial(((Personagem)inimiga));
                 controller.ContTurnos = 0;
