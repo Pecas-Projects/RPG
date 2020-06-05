@@ -30,12 +30,12 @@ namespace MeuRPGZinUWP
 
         private void iniciar_handleClick(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Fase1));
         }
 
         private void instrucoes_handleClick(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Instrucoes));
         }
     }
 }

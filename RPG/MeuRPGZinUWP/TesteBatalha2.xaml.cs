@@ -218,7 +218,7 @@ namespace MeuRPGZinUWP
             acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
             feiticeira.descansar();
             
-
+            //ZERAR CONTS DO CONTROLLER
             if (Controller.FimDeTurno(feiticeira, Inimigo, -1, acaoInimigo) != null)
             {
                 AtualizarStatus();
@@ -251,16 +251,23 @@ namespace MeuRPGZinUWP
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
-
             if(controller.Fase == 1)
             {
-                this.Frame.Navigate(typeof(Fase2), controller);
+                this.Frame.Navigate(typeof(venceuBatalha1), controller);
             }
-            else if(controller.Fase == 2)
+            else if (controller.Fase == 2)
             {
-                this.Frame.Navigate(typeof(Fase3), controller);
+                this.Frame.Navigate(typeof(venceuBtalha2), controller);
             }
-            
+            else if (controller.Fase == 3)
+            {
+                this.Frame.Navigate(typeof(venceuBatalha3), controller);
+            }
+            else if (controller.Fase == 4)
+            {
+                this.Frame.Navigate(typeof(venceuJogo), controller);
+            }
+
         }
 
         private void UsarItem1NaBatalha(object sender, RoutedEventArgs e)

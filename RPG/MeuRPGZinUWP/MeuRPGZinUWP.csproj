@@ -148,6 +148,9 @@
     <Compile Include="venceuBatalha3.xaml.cs">
       <DependentUpon>venceuBatalha3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="venceuJogo.xaml.cs">
+      <DependentUpon>venceuJogo.xaml</DependentUpon>
+    </Compile>
 
 
 
@@ -268,6 +271,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="venceuBatalha3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="venceuJogo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

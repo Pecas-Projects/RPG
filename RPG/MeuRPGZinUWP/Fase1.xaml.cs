@@ -77,6 +77,13 @@ namespace MeuRPGZinUWP
                    }
                } */
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
+        }
+
         protected override void OnKeyUp(KeyRoutedEventArgs e)
         {
             base.OnKeyUp(e);
@@ -155,7 +162,7 @@ namespace MeuRPGZinUWP
                     dispatcherTimer.Stop();
                     controller.Feiticeira = feiticeira;
                     controller.Fase = 1;
-                    this.Frame.Navigate(typeof(TelaIntegracao), controller);
+                    this.Frame.Navigate(typeof(venceuLab1), controller);
                 }
                 if (l.TemParedeDireita(feiticeiraX, feiticeiraY) == false)
                 {
