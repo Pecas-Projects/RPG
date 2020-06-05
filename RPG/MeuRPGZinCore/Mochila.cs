@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    /// A Mochila guarda os itens da feiticeira.
+    /// Dentro da mochila existe um ArrayList para cada tipo de item, chamados de "bag + nome do item".
+    /// Um item é guandado dentro da mochila dentro da sua respectiva bag.
+    /// </summary>
     public class Mochila
     {
        public ArrayList bagPirlimpimpim = new ArrayList();
@@ -16,26 +21,26 @@ namespace MeuRPGZinCore
        public ArrayList bagWhey= new ArrayList();
 
         // temos que decidir se a pessoa pode comprar mais de um do mesmo item , pq ai vamos precisar contar quanto de cada ela tem
-
+        
+        /// <summary>
+        /// Método que adiciona um item a sua respectiva bag.
+        /// </summary>
+        /// <param name="generico"></param>
+        /// <param name="bag"></param>
         public void AddItem(Item generico, ArrayList bag)
         {
             bag.Add(generico);
 
         }
 
+        /// <summary>
+        /// Método que remove um item de uma bag.
+        /// </summary>
+        /// <param name="bag"></param>
         public void RemoverItem(ArrayList bag)
         {
             bag.Remove(bag[bag.Count-1]);
         }
-        
-
-        //sugestão de contador de itens por tipo
-        //fazer um cont para cada tipo de item
-        //essa função seria chamada antes de cada batalha
-        //ela iria contar quantos itens de cada tipo estão na mochila
-        //e alteraria o contador correspondente
-        //essa informação seria interessante apenas para saber quantos itens de cada o jogador tem
-        //e informar se ele pode escolher usar esse item na batalha ou não
 
     }
 }

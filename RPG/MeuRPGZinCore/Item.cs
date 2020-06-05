@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    /// Classe abstrata, que define um Item, e possui a sua função de uso.
+    /// Cada item possui um preço específico e uma imagem, que são definidos nas classes filhas.
+    /// </summary>
    public abstract class Item
     {
-        public String nome { get; set; }
-        public int preco { get; set; }
-        public bool utilizado { get; set; } // se o item já foi utiilzado ele não deveria ser removido da mochila?
+        public int Preco { get; set; }
+
+        /// <summary>
+        /// Variável que controla o uso de um item durante a batalha de turnos.
+        /// </summary>
+        public bool Utilizado { get; set; }
         public Uri ImagemItem { get; set; }
 
+         /// <summary>
+         /// Método que define com um item é utilizado pela feiticeira.
+         /// </summary>
+         /// <param name="jogador"></param>
          public abstract void Utilizar(Feiticeira jogador);
     }
 

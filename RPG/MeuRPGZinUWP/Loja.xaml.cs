@@ -45,11 +45,11 @@ namespace MeuRPGZinUWP
             contWhey.Text = "" + feiticeira.mochila.bagWhey.Count;
             contPecas.Text = "Você tem: " + feiticeira.Moedas + " moedas";
 
-            precoFortalecedora.Text = "" + Fortalecedora.preco;
-            precoPirlimpimpim.Text = "" + Pirlimpimpim.preco;
-            precoRadix.Text = "" + Radix.preco;
-            precoVitae.Text = "" + Vitae.preco;
-            precoWhey.Text = "" + Whey.preco;
+            precoFortalecedora.Text = "" + Fortalecedora.Preco;
+            precoPirlimpimpim.Text = "" + Pirlimpimpim.Preco;
+            precoRadix.Text = "" + Radix.Preco;
+            precoVitae.Text = "" + Vitae.Preco;
+            precoWhey.Text = "" + Whey.Preco;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -63,34 +63,34 @@ namespace MeuRPGZinUWP
         private void ComprarPoPirlimpimpim(object sender, RoutedEventArgs e)
         {
             Pirlimpimpim produto = new Pirlimpimpim();
-            feiticeira.ComprarItem(produto, feiticeira.mochila.bagPirlimpimpim, produto.preco);
+            feiticeira.ComprarItem(produto, feiticeira.mochila.bagPirlimpimpim, produto.Preco);
             AtualizarContItens();
 
         }
 
         private void ComprarPocaoWhey(object sender, RoutedEventArgs e)
         {
-            feiticeira.ComprarItem(Whey, feiticeira.mochila.bagWhey, Whey.preco);
+            feiticeira.ComprarItem(Whey, feiticeira.mochila.bagWhey, Whey.Preco);
             AtualizarContItens();
         }
 
         private void ComprarPocaoRadix(object sender, RoutedEventArgs e)
         {
-            feiticeira.ComprarItem(Radix, feiticeira.mochila.bagRadix, Radix.preco);
+            feiticeira.ComprarItem(Radix, feiticeira.mochila.bagRadix, Radix.Preco);
             AtualizarContItens();
 
         }
 
         private void ComprarPocaoVitae(object sender, RoutedEventArgs e)
         {
-            feiticeira.ComprarItem(Vitae, feiticeira.mochila.bagVitae, Vitae.preco);
+            feiticeira.ComprarItem(Vitae, feiticeira.mochila.bagVitae, Vitae.Preco);
             AtualizarContItens();
 
         }
 
         private void ComprarPocaoFortalecedora(object sender, RoutedEventArgs e)
         {
-            feiticeira.ComprarItem(Fortalecedora, feiticeira.mochila.bagFortalecedora, Fortalecedora.preco);
+            feiticeira.ComprarItem(Fortalecedora, feiticeira.mochila.bagFortalecedora, Fortalecedora.Preco);
             AtualizarContItens();
         }
 

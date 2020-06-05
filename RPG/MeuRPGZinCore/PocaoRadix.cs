@@ -6,32 +6,33 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
+    /// <summary>
+    /// Classe filha de "Item".
+    /// Implementa a interface "ItemDesativado".
+    /// Aumenta a força da Feiticeira em 20%.
+    /// </summary>
     public class PocaoRadix : Item, ItemDesativado
     {
-        double aux;
         public PocaoRadix()
         {
-            this.nome = "Poção Radix";
-            this.utilizado = false;
-            this.preco = 6;
+            //this.Nome = "Poção Radix";
+            this.Utilizado = false;
+            this.Preco = 6;
             this.ImagemItem = new Uri("ms-appx:///Assets/pocao_radix.png");
         }
 
-        public void DesativarItem(Feiticeira jogador)
+        public void DesativarItem(Feiticeira jogadora)
         {
-            jogador.Forca -= aux;
-            jogador.mochila.RemoverItem(jogador.mochila.bagRadix);
+            double aux = jogadora.Forca * 0.2;
+            jogadora.Forca -= aux;
+            //jogador.mochila.RemoverItem(jogador.mochila.bagRadix);
         }
-
-        /// <summary>
-        /// Aumenta 20% da força
-        /// </summary>
-        /// <param name="jogador"></param>
-        public override void Utilizar(Feiticeira jogador)
+     
+        public override void Utilizar(Feiticeira jogadora)
         {
-            aux = jogador.Forca * 0.2;
-            jogador.Forca += aux;
-            this.utilizado = true;
+            double aux = jogadora.Forca * 0.2;
+            jogadora.Forca += aux;
+            this.Utilizado = true;
         }
     }
 }

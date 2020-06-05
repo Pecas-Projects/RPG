@@ -257,12 +257,12 @@ namespace MeuRPGZinUWP
         {
             if (feiticeira.ItemdeBatalha.Count == 1)
             {
-                if (feiticeira.ItemdeBatalha[0].utilizado == false)
+                if (feiticeira.ItemdeBatalha[0].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[0] as Item;
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[0]);
                     AtualizarStatus();
-                    feiticeira.ItemdeBatalha[0].utilizado = true;
+                    feiticeira.ItemdeBatalha[0].Utilizado = true;
                     Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
                 }
             }              
@@ -272,12 +272,12 @@ namespace MeuRPGZinUWP
         {
             if(feiticeira.ItemdeBatalha.Count == 2)
             {
-                if (feiticeira.ItemdeBatalha[1].utilizado == false)
+                if (feiticeira.ItemdeBatalha[1].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[1] as Item;
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[1]);
                     AtualizarStatus();
-                    feiticeira.ItemdeBatalha[1].utilizado = true;
+                    feiticeira.ItemdeBatalha[1].Utilizado = true;
                     Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
                 }
             }      

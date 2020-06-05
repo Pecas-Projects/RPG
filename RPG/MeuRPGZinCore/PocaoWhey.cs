@@ -6,26 +6,25 @@ using System.Threading.Tasks;
 
 namespace MeuRPGZinCore
 {
-   public class PocaoWhey : Item
+    /// <summary>
+    /// Classe filha de "Item".
+    /// Aumenta em 0.3 a estamina total da feiticeira.
+    /// </summary>
+    public class PocaoWhey : Item
     {
         public PocaoWhey()
         {
-            this.nome = "Poção de Whey";
-            this.utilizado = false;
-            this.preco = 2;
+            this.Utilizado = false;
+            this.Preco = 2;
             this.ImagemItem = new Uri("ms-appx:///Assets/pocao_whey.png");
         }
 
-        /// <summary>
-        /// Aumenta 30% da estamina Total da feiticeira
-        /// </summary>
-        /// <param name="jogador"></param>
         public override void Utilizar(Feiticeira jogadora)
         {
             if(jogadora.Estamina < 1)
             {
                 jogadora.Estamina += 0.30;
-                this.utilizado = true;
+                this.Utilizado = true;
                 //jogadora.mochila.RemoverItem(jogadora.mochila.bagWhey);
                 if (jogadora.Estamina > 1)
                 {
