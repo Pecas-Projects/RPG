@@ -73,6 +73,12 @@ namespace MeuRPGZinUWP
 
         public void FinalDeJogo()
         {
+            if (feiticeira.Vida <= 0)
+            {
+                controller.Feiticeira = feiticeira;
+                this.Frame.Navigate(typeof(gameOverBatalha));
+            }
+
             Fim_BTN.Height = 71;
             Fim_BTN.Width = 419;
             Inicio_BTN.Height = 0;
@@ -92,7 +98,7 @@ namespace MeuRPGZinUWP
             controller.ContTurnos = 0;
             feiticeira.Vida = 100;
             feiticeira.Estamina = 1;
-            feiticeira.Escudo = 50;
+            feiticeira.Escudo = 50;  
         }
 
         public void RegistraAcoes (int jogadora, int inimigo)
@@ -168,17 +174,11 @@ namespace MeuRPGZinUWP
                     RegistraAcoes(1, acaoInimigo);
                     AtualizarStatus();
                 }
-
-
             }
             else
             {
                 //algo no fronte falando que não pode atacar 
-            }
-            
-
-            
-            
+            }           
         }
 
         private void usarEscudoBrabo(object sender, RoutedEventArgs e)
@@ -201,8 +201,7 @@ namespace MeuRPGZinUWP
                     RegistraAcoes(0, acaoInimigo);
                     AtualizarStatus();
                    
-                }
-                
+                }               
             }
             else
             {
@@ -229,9 +228,7 @@ namespace MeuRPGZinUWP
                 RegistraAcoes(-1, acaoInimigo);
                 AtualizarStatus();
                 
-            }
-
-          
+            } 
         }
 
         private void ProximaFase(object sender, RoutedEventArgs e)
@@ -305,7 +302,6 @@ namespace MeuRPGZinUWP
                 {
                     RegistraAcoes(2, acaoInimigo);
                     AtualizarStatus();
-
                 }
             }
             else
