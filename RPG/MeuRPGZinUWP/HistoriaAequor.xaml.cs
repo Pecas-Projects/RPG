@@ -26,5 +26,11 @@ namespace MeuRPGZinUWP
         {
             this.InitializeComponent();
         }
+
+        private void Voltar_handleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
     }
+    
 }
