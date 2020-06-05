@@ -25,19 +25,27 @@
             <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="30" Height="90" Canvas.Left="39" Canvas.Top="84" Width="309" FocusVisualPrimaryBrush="#FF28629C" Background="#33660666" Click="paginaDaLoja" RenderTransformOrigin="0.074,-1.387" />
             <TextBlock Height="108" Canvas.Left="560" Canvas.Top="41" Text="Você está na Bag" FontSize="80" TextWrapping="Wrap" Width="652"/>
             <TextBlock x:Name="contPirlimpimpim" Height="80" Canvas.Left="97" Canvas.Top="212" Text="Pó de Pirlimpimpim: " FontSize="35" TextWrapping="Wrap" Width="512"/>
+            <Button x:Name="selectPirlimpimpim" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="80" Canvas.Top="274" Width="162" Click="LevarPirlimpimpim" />
+            <Button x:Name="removePirlimpimpim" Content="Remover" Height="76" FontSize="30" Canvas.Left="281" Canvas.Top="274" Width="162" Click="RetirarPirlimpimpim" />
             <TextBlock x:Name="contWhey" Height="80" Canvas.Left="745" Canvas.Top="212" Text="Poção Whey: " FontSize="35" TextWrapping="Wrap" Width="512"/>
             <TextBlock x:Name="contFortalecedora" Height="80" Canvas.Left="97" Canvas.Top="357" Text="Poção Fortalecedora: " FontSize="35" TextWrapping="Wrap" Width="512"/>
+            <Button x:Name="selectFortalecedora" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="80" Canvas.Top="414" Width="162" Click="LevarFortalecedora" />
+            <Button x:Name="removeFortalecedora" Content="Remover" Height="76" FontSize="30" Canvas.Left="281" Canvas.Top="414" Width="162" Click="RetirarFortalecedora" />
             <TextBlock x:Name="contRadix" Height="80" Canvas.Left="745" Canvas.Top="357" Text="Poção Radix: " FontSize="35" TextWrapping="Wrap" Width="512"/>
+            <Button x:Name="selectRadix" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="757" Canvas.Top="414" Width="162" Click="LevarRadix" />
+            <Button x:Name="removeRadix" Content="Remover" Height="76" FontSize="30" Canvas.Left="963" Canvas.Top="414" Width="162" Click="RetirarRadix" />
             <TextBlock x:Name="contVitae" Height="80" Canvas.Left="97" Canvas.Top="495" FontSize="35" TextWrapping="Wrap" Width="512"><Run Text="Poção "/><Run Text="Vitae"/><Run Text=": "/></TextBlock>
+            <Button x:Name="selectVitae" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="80" Canvas.Top="550" Width="162" Click="LevarVitae" />
+            <Button x:Name="removeVitae" Content="Remover" Height="76" FontSize="30" Canvas.Left="280" Canvas.Top="550" Width="162" Click="RetirarVitae" />
             <TextBlock x:Name="contPecas"  Height="45" Canvas.Left="39" Canvas.Top="23" Text="Você tem:" FontSize="40" TextWrapping="Wrap" Width="397"/>
-            <Button x:Name="selectWhey" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="746" Canvas.Top="264" Width="162" Click="LevarWhey"/>
-            <Button x:Name="removeWhey" Content="Remover" Height="76" FontSize="30" Canvas.Left="947" Canvas.Top="264" Width="162" Click="RetirarWhey"/>
+            <Button x:Name="selectWhey" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="757" Canvas.Top="274" Width="162" Click="LevarWhey"/>
+            <Button x:Name="removeWhey" Content="Remover" Height="76" FontSize="30" Canvas.Left="963" Canvas.Top="274" Width="162" Click="RetirarWhey"/>
             <TextBlock Height="46" Canvas.Left="759" Canvas.Top="547" Text="Mochila: " FontSize="40" TextWrapping="Wrap" Width="247"/>
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
-            <Image Source="Assets/po_pirlimpimpim.png" Canvas.Left="563" Canvas.Top="235" Height="89" Width="160" />
+            <Image Source="Assets/po_pirlimpimpim.png" Canvas.Left="537" Canvas.Top="235" Height="89" Width="160" />
             <Image Source="Assets/pocao_whey.png" Canvas.Left="1130" Canvas.Top="235" Height="89" Width="160" />
-            <Image Source="Assets/pocao_fortalecedora.png" Height="89" Width="160" Canvas.Left="563" Canvas.Top="380" />
-            <Image Source="Assets/pocao_vitae.png" Height="89" Width="160" Canvas.Left="563" Canvas.Top="536" />
+            <Image Source="Assets/pocao_fortalecedora.png" Height="89" Width="160" Canvas.Left="537" Canvas.Top="380" />
+            <Image Source="Assets/pocao_vitae.png" Height="89" Width="160" Canvas.Left="537" Canvas.Top="536" />
             <Image Source="Assets/pocao_radix.png" Height="89" Width="160" Canvas.Left="1130" Canvas.Top="357" />
 
             <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="890" Canvas.Top="614" Height="80" Width="180" />
