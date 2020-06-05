@@ -18,7 +18,9 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Página de Game Over de um Labirinto. Aparece caso o labirinto não seja finalizado
+    /// antes de acabar o tempo.
+    /// O usuário pode retornar para o labirinto que perdeu.
     /// </summary>
     public sealed partial class gameOver : Page
     {
@@ -27,7 +29,7 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-        private void handleClick(object sender, RoutedEventArgs e)
+        private void HandleClick(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
         }
