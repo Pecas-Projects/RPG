@@ -12,7 +12,7 @@
     <Grid>
         <Canvas Background="Gray">
 
-            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"
+            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal" 
         Text="Parabéns feiticeira, você venceu o segundo labirinto!" Canvas.Left="117" Canvas.Top="49"/>
 
             <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
