@@ -18,22 +18,23 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Tela que aparece antes do primeiro laberinto, contextualizando a história da fase 1.
+    /// A partir dessa tela, o usuário pode ir para a página do labirinto 1 ou ir para a página de instruções.
     /// </summary>
-    public sealed partial class telaInicio2 : Page
+    public sealed partial class TelaInicio2 : Page
     {
-        public telaInicio2()
+        public TelaInicio2()
         {
             this.InitializeComponent();
         }
 
 
-        private void iniciar_handleClick(object sender, RoutedEventArgs e)
+        private void Iniciar_handleClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Fase1));
         }
 
-        private void instrucoes_handleClick(object sender, RoutedEventArgs e)
+        private void Instrucoes_handleClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Instrucoes));
         }

@@ -23,11 +23,11 @@
              ></TextBlock>
 
             <Button x:Name="historia"  Canvas.Left="198" Canvas.Top="536"  Content="História" FontSize="60" Foreground="Black"
-             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="381" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="historia_Click">
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="381" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="Historia_Click">
             </Button>
 
             <Button x:Name="iniciarjogo"  Canvas.Left="730" Canvas.Top="536"  Content="Iniciar Jogo" FontSize="60" Foreground="Black"
-             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="363" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="iniciarjogo_Click">
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="363" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="Iniciarjogo_Click">
             </Button>
 
             <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="101" Canvas.Top="314"></Image>

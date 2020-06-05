@@ -18,7 +18,9 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Primeira tela que é exibida no jogo.
+    /// Apartir dessa tela, o usuário pode ir para a tela com a história completa, ou
+    /// iniciar o jogo.
     /// </summary>
     public sealed partial class TelaInicio : Page
     {
@@ -28,14 +30,14 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
-        private void historia_Click(object sender, RoutedEventArgs e)
+        private void Historia_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void iniciarjogo_Click(object sender, RoutedEventArgs e)
+        private void Iniciarjogo_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof (telaInicio2));
+            this.Frame.Navigate(typeof (TelaInicio2));
         }
     }
 }
