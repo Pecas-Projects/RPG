@@ -135,7 +135,7 @@
       <DependentUpon>gameOver.xaml</DependentUpon>
     </Compile>
     <Compile Include="gameOverBatalha.xaml.cs">
-      <DependentUpon>gameOver.xaml</DependentUpon>
+      <DependentUpon>gameOverBatalha.xaml</DependentUpon>
     </Compile>
 
     <Compile Include="TelaInicio.xaml.cs">
