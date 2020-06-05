@@ -19,8 +19,20 @@
             <TextBlock Width="349" Height="82" Canvas.Left="459" Canvas.Top="130" FontSize="50" FontFamily="Cardinal"
             Text="fim da sua jornada."></TextBlock>
 
-            <TextBlock Width="1144" Height="82" Canvas.Left="63" Canvas.Top="282" FontSize="50" FontFamily="Cardinal"
-            Text=""></TextBlock>
+            <TextBlock Width="1243" Height="82" Canvas.Left="100" Canvas.Top="248" FontSize="50" FontFamily="Cardinal"
+            Text="Agora em posse de todas a pedras você poderá libertar todas as"></TextBlock>
+
+            <TextBlock Width="1144" Height="82" Canvas.Left="205" Canvas.Top="316" FontSize="50" FontFamily="Cardinal"
+            Text="feiticeiras e restaurar a paz em Ardens Missus"></TextBlock>
+
+            <Image Source="Assets/pedra_da_agua.png" Width="150" Height="150" Canvas.Left="63" Canvas.Top="503"></Image>
+            <Image Source="Assets/pedras_da_terra.png" Width="150" Height="150" Canvas.Left="300" Canvas.Top="455"></Image>
+            <Image Source="Assets/pedras_da_magia.png" Width="150" Height="150" Canvas.Left="586" Canvas.Top="428"></Image>
+            <Image Source="Assets/pedras_do_ar.png" Width="150" Height="150" Canvas.Left="1061" Canvas.Top="485"></Image>
+            <Image Source="Assets/pedras_do_fogo.png" Width="150" Height="150" Canvas.Left="844" Canvas.Top="455"></Image>
+
+
+
 
         </Canvas>
 
