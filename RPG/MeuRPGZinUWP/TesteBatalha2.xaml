@@ -26,7 +26,7 @@
 
             </Button>
 
-            <Button x:Name="usarEscudo" Background="Transparent" FontSize="30" Height="100" Margin="59,425,0,0" Width="100" Click="usarEscudoBrabo" Canvas.Left="26" Canvas.Top="-276" RenderTransformOrigin="2.295,0.875">
+            <Button x:Name="usarEscudo" Background="Transparent" FontSize="30" Height="100" Margin="59,425,0,0" Width="100" Click="UsarEscudoBrabo" Canvas.Left="26" Canvas.Top="-276" RenderTransformOrigin="2.295,0.875">
                 <Image Source="Assets/escudo_dourado.png" Margin="-65,-47,-66,-21"/>
             </Button>
             <Button x:Name="descancar" Background="Transparent" FontSize="30" Height="100" Margin="59,614,0,0" Width="132" Click="DescancarTroll" Canvas.Top="-335" Canvas.Left="13" >
@@ -47,7 +47,7 @@
             <TextBlock x:Name="inimigoEscudo" Height="59"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="475" Canvas.Left="932" Canvas.Top="158" />
             <TextBlock x:Name="inimigoEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="496" Canvas.Left="932" Canvas.Top="226" />
 
-            <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="74" Margin="58,58,0,0" Width="214" Click="batalhaInicio" Canvas.Top="272" Canvas.Left="628"/>
+            <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="74" Margin="58,58,0,0" Width="214" Click="BatalhaInicio" Canvas.Top="272" Canvas.Left="628"/>
             <TextBlock x:Name="acaoFeiticeira" FontSize="40" Height="71" Text="Ação: " TextWrapping="Wrap" Width="419"  Canvas.Left="447" Canvas.Top="628"/>
             <TextBlock x:Name="acaoInimigo" FontSize="40" Height="71"  Text="Ação: " TextWrapping="Wrap" Width="419" Canvas.Left="919" Canvas.Top="628"/>
             <Button x:Name="Fim_BTN" Content="fim " FontSize="30" Height="0" Margin="58,58,0,0" Width="0" Click="ProximaFase" Canvas.Left="701" Canvas.Top="397" RenderTransformOrigin="2.309,9.857"/>

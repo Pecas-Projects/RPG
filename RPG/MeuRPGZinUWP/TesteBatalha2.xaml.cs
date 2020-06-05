@@ -21,7 +21,9 @@ using Windows.UI.Xaml.Media.Imaging;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
+    /// Tela da batalha.
+    /// Todas as batalhas ocorrem nessa tela, mas os inimigos e o plano de fundo, 
+    /// são trocados de acordo com a fase em que o usuário está.
     /// </summary>
     public sealed partial class TesteBatalha2 : Page
     {
@@ -35,6 +37,11 @@ namespace MeuRPGZinUWP
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Método que escolhe o inimigo e o plano de fundo da fase correspondente.
+        /// Prepara a feiticeira e o controller para começar uma nova batalha.
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -58,8 +65,22 @@ namespace MeuRPGZinUWP
                 Inimigo = new HumanoNPC();
             }
             inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
+
+            controller.ContAtaqueFeiticeira = 0;
+            controller.ContAtaqueInimigo = 0;
+            controller.ContDefesaFeiticeira = 0;
+            controller.ContDefesaInimigo = 0;
+            controller.ContDescancarFeiticeira = 0;
+            controller.ContDescancarInimigo = 0;
+            controller.ContTurnos = 0;
+            feiticeira.Vida = 100;
+            feiticeira.Estamina = 1;
+            feiticeira.Escudo = 50;
         }
 
+        /// <summary>
+        /// Método que atualiza na tela os Status da Feiticeira e seu inimigo.
+        /// </summary>
         public void AtualizarStatus()
         {
             feiticeiraVida.Text = "Vida: " + feiticeira.Vida;
@@ -71,6 +92,9 @@ namespace MeuRPGZinUWP
             inimigoEstamina.Text = "Estamina: " + Inimigo.Estamina;
         }
 
+        /// <summary>
+        /// Método que exibe a tela de Game Over da batalha ou permite que o usuário vá para a próxima fase.
+        /// </summary>
         public void FinalDeJogo()
         {
             if (feiticeira.Vida <= 0)
@@ -88,19 +112,15 @@ namespace MeuRPGZinUWP
             ataque.Width = 0;
             ataque.Height = 0;
             descancar.Width = 0;
-            descancar.Height = 0;
-            controller.ContAtaqueFeiticeira =  0;
-            controller.ContAtaqueInimigo = 0;
-            controller.ContDefesaFeiticeira = 0;
-            controller.ContDefesaInimigo = 0;
-            controller.ContDescancarFeiticeira = 0;
-            controller.ContDescancarInimigo = 0;
-            controller.ContTurnos = 0;
-            feiticeira.Vida = 100;
-            feiticeira.Estamina = 1;
-            feiticeira.Escudo = 50;  
+            descancar.Height = 0;    
         }
 
+        /// <summary>
+        /// Método que exibe na página quais foram as ações realizadas 
+        /// pela feiticeira e seu inimigo em um turno.
+        /// </summary>
+        /// <param name="jogadora"></param>
+        /// <param name="inimigo"></param>
         public void RegistraAcoes (int jogadora, int inimigo)
         {
             if (inimigo == -1)
@@ -138,7 +158,13 @@ namespace MeuRPGZinUWP
             }
         }
 
-        private void batalhaInicio(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Método associado ao botão de iniciar a batalha.
+        /// Exibe os itens que a feitceira levou para a batalha, e o status da feiticeira e do seu inimigo.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BatalhaInicio(object sender, RoutedEventArgs e)
         {
             if(feiticeira != null && Inimigo != null)
             {
@@ -155,6 +181,11 @@ namespace MeuRPGZinUWP
             }
         }
 
+        /// <summary>
+        /// Botão de Ataque da feiticeira, chama o método "Atacar" da classe Personagem.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Ataque(object sender, RoutedEventArgs e)
         {
             if(feiticeira.Estamina >= feiticeira.PerdaEstamina)
@@ -181,7 +212,12 @@ namespace MeuRPGZinUWP
             }           
         }
 
-        private void usarEscudoBrabo(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Botão de usar escudo. Chama o método "UsarEscudo" da classe Personagem.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void UsarEscudoBrabo(object sender, RoutedEventArgs e)
         {
             
             if(feiticeira.Escudo > 0)
@@ -210,6 +246,11 @@ namespace MeuRPGZinUWP
             
         }
 
+        /// <summary>
+        /// Botão de Descansar. Chama o método "Descansar" da classe Personagem.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DescancarTroll(object sender, RoutedEventArgs e)
         {
             int acaoInimigo;
@@ -231,6 +272,11 @@ namespace MeuRPGZinUWP
             } 
         }
 
+        /// <summary>
+        /// Método do botão que encaminha o usuário para a tela de vitória correspondente.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProximaFase(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
@@ -253,6 +299,11 @@ namespace MeuRPGZinUWP
 
         }
 
+        /// <summary>
+        /// Método do botão associado ao uso do primeiro Item da List "ItemBatalha" da feiticeira.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UsarItem1NaBatalha(object sender, RoutedEventArgs e)
         {
             if (feiticeira.ItemdeBatalha.Count == 1)
@@ -268,6 +319,11 @@ namespace MeuRPGZinUWP
             }              
         }
 
+        /// <summary>
+        /// Método do botão associado ao uso do segundo Item da List "ItemBatalha" da feiticeira.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UsarItem2NaBatalha(object sender, RoutedEventArgs e)
         {
             if(feiticeira.ItemdeBatalha.Count == 2)
@@ -283,6 +339,11 @@ namespace MeuRPGZinUWP
             }      
         }
 
+        /// <summary>
+        /// Botão de Ataque Especial. Chama o método "ControleAtaqueEspecialFeiticeira" da classe ControllerBatalha.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AtaqueEspecial(object sender, RoutedEventArgs e)
         {
             if (controller.ContDefesaInimigo == 4)
@@ -309,8 +370,6 @@ namespace MeuRPGZinUWP
                 //Algo no front
             }
             
-
-
-        }
+       }
     }
 }
