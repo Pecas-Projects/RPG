@@ -130,7 +130,20 @@ namespace MeuRPGZinCore
             jogadora.EscudoAtivo = false;
             inimigo.EscudoAtivo = false;
 
-            if (((Feiticeira)jogadora).ItemdeBatalha.Count >= 1)
+            PocaoFortalecedora pocao = new PocaoFortalecedora();
+            Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
+            foreach (Item i in ((Feiticeira)jogadora).ItemdeBatalha)
+            {
+                if(i.GetType() == pocao.GetType() || i.GetType() == pirlimpimpim.GetType())
+                {
+                    if (i.Utilizado)
+                    {
+                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)i);
+                    }
+                }
+            }
+
+          /*  if (((Feiticeira)jogadora).ItemdeBatalha.Count >= 1)
             {
                 if (((Feiticeira)jogadora).ItemdeBatalha[0].Utilizado == true)
                 {
@@ -152,7 +165,7 @@ namespace MeuRPGZinCore
                         this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[1]);
                     }
                 }
-            }
+            }*/
             
             return this.Vencedor(jogadora, inimigo);
         }
