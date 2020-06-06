@@ -207,21 +207,100 @@ namespace MeuRPGZinCore
 
         public void ConfereItemBatalha(Feiticeira jogadora)
         {
-            if (jogadora.ItemdeBatalha.Count >= 1)
+            PocaoFortalecedora fortalecedora = new PocaoFortalecedora();
+            Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
+            PocaoRadix radix = new PocaoRadix();
+            PocaoVitae vitae = new PocaoVitae();
+            PocaoWhey whey = new PocaoWhey();
+
+            foreach (Item i in jogadora.ItemdeBatalha)
             {
-                if (jogadora.ItemdeBatalha[0].Utilizado)
+                if (i.Utilizado)
                 {
-                    jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[0]);
+                    jogadora.ItemdeBatalha.Remove(i);
+                    break;
+                }
+                else
+                {
+                    if(i.GetType() == fortalecedora.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
+                        break;
+                    }
+                    else if (i.GetType() == pirlimpimpim.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
+                        break;
+                    }
+                    else if (i.GetType() == radix.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
+                        break;
+                    }
+                    else if (i.GetType() == vitae.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
+                        break;
+                    }
+                    else if (i.GetType() == whey.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
+                        break;
+                    }
+                }
+            }
+            foreach (Item i in jogadora.ItemdeBatalha)
+            {
+                if (i.Utilizado)
+                {
+                    jogadora.ItemdeBatalha.Remove(i);
+                    break;
+                }
+                else
+                {
+                    if (i.GetType() == fortalecedora.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
+                        break;
+                    }
+                    else if (i.GetType() == pirlimpimpim.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
+                        break;
+                    }
+                    else if (i.GetType() == radix.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
+                        break;
+                    }
+                    else if (i.GetType() == vitae.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
+                        break;
+                    }
+                    else if (i.GetType() == whey.GetType())
+                    {
+                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
+                        break;
+                    }
                 }
             }
 
-            if (jogadora.ItemdeBatalha.Count == 2)
-            {
-                if (jogadora.ItemdeBatalha[1].Utilizado)
-                {
-                    jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[1]);
-                }
-            }
+            /* if (jogadora.ItemdeBatalha.Count >= 1)
+             {
+                 if (jogadora.ItemdeBatalha[0].Utilizado)
+                 {
+                     jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[0]);
+                 }
+             }
+
+             if (jogadora.ItemdeBatalha.Count == 2)
+             {
+                 if (jogadora.ItemdeBatalha[1].Utilizado)
+                 {
+                     jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[1]);
+                 }
+             }*/
         }
     }
 }
