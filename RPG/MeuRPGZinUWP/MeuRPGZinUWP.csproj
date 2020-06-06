@@ -152,8 +152,8 @@
     <Compile Include="venceuJogo.xaml.cs">
       <DependentUpon>venceuJogo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TelaIntegracao.xaml.cs">
-      <DependentUpon>TelaIntegracao.xaml</DependentUpon>
+    <Compile Include="Mochila.xaml.cs">
+      <DependentUpon>Mochila.xaml</DependentUpon>
     </Compile>
     <Compile Include="Batalha.xaml.cs">
       <DependentUpon>Batalha.xaml</DependentUpon>
@@ -275,7 +275,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TelaIntegracao.xaml">
+    <Page Include="Mochila.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
