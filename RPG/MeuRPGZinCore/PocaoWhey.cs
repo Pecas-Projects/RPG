@@ -25,7 +25,7 @@ namespace MeuRPGZinCore
             {
                 jogadora.Estamina += 0.30;
                 this.Utilizado = true;
-                //jogadora.mochila.RemoverItem(jogadora.mochila.bagWhey);
+
                 if (jogadora.Estamina > 1)
                 {
                     jogadora.Estamina = 1;

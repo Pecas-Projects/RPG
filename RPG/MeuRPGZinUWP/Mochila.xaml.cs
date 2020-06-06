@@ -55,6 +55,80 @@ namespace MeuRPGZinUWP
             contPecas.Text = "Você tem " + feiticeira.Moedas + " moedas";
         }
 
+        public void RetirarItensDeBatalha()
+        {
+            PocaoWhey whey = new PocaoWhey();
+            Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
+            PocaoVitae vitae = new PocaoVitae();
+            PocaoRadix radix = new PocaoRadix();
+            PocaoFortalecedora fortalecedora = new PocaoFortalecedora();
+
+            if (feiticeira.ItemdeBatalha.Count > 0)
+            {
+                foreach(Item i in feiticeira.ItemdeBatalha)
+                {
+                        if (i.GetType() == whey.GetType())
+                        {
+                            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagWhey, whey);
+                        break;
+                        }
+                        else if (i.GetType() == pirlimpimpim.GetType())
+                        {
+                            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagPirlimpimpim, pirlimpimpim);
+                        break;
+                    }
+                        else if (i.GetType() == vitae.GetType())
+                        {
+                            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagVitae, vitae);
+                        break;
+                    }
+                        else if (i.GetType() == radix.GetType())
+                        {
+                            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagRadix, radix);
+                        break;
+                    }
+                        else if (i.GetType() == fortalecedora.GetType())
+                        {
+                            feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagFortalecedora, fortalecedora);
+                        break;
+                    }
+                }
+               
+            }
+            if (feiticeira.ItemdeBatalha.Count > 0)
+            {
+                foreach (Item i in feiticeira.ItemdeBatalha)
+                {
+                    if (i.GetType() == whey.GetType())
+                    {
+                        feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagWhey, whey);
+                        break;
+                    }
+                    else if (i.GetType() == pirlimpimpim.GetType())
+                    {
+                        feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagPirlimpimpim, pirlimpimpim);
+                        break;
+                    }
+                    else if (i.GetType() == vitae.GetType())
+                    {
+                        feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagVitae, vitae);
+                        break;
+                    }
+                    else if (i.GetType() == radix.GetType())
+                    {
+                        feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagRadix, radix);
+                        break;
+                    }
+                    else if (i.GetType() == fortalecedora.GetType())
+                    {
+                        feiticeira.RetirarItemdeBatalha(feiticeira.mochila.bagFortalecedora, fortalecedora);
+                        break;
+                    }
+                }
+
+            }
+        }
+
         /// <summary>
         /// Integração para a batalha
         /// </summary>
@@ -73,6 +147,8 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void PaginaDaLoja(object sender, RoutedEventArgs e)
         {
+            RetirarItensDeBatalha();
+            AtualizarContItens();
             controller.Feiticeira = feiticeira;
             this.Frame.Navigate(typeof(Loja), controller);
         }
@@ -243,5 +319,7 @@ namespace MeuRPGZinUWP
                 AtualizarContItens();
             }
         }
+
+
     }
 }
