@@ -182,6 +182,7 @@ namespace MeuRPGZinUWP
 
                 if (feiticeira.ItemdeBatalha.Count == 2)
                 {
+                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
                     Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
                 }
             }
@@ -312,8 +313,6 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void UsarItem1NaBatalha(object sender, RoutedEventArgs e)
         {
-            if (feiticeira.ItemdeBatalha.Count == 1)
-            {
                 if (feiticeira.ItemdeBatalha[0].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[0] as Item;
@@ -321,8 +320,7 @@ namespace MeuRPGZinUWP
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[0].Utilizado = true;
                     Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-                }
-            }              
+                }                     
         }
 
         /// <summary>
@@ -332,8 +330,7 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void UsarItem2NaBatalha(object sender, RoutedEventArgs e)
         {
-            if(feiticeira.ItemdeBatalha.Count == 2)
-            {
+
                 if (feiticeira.ItemdeBatalha[1].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[1] as Item;
@@ -341,8 +338,7 @@ namespace MeuRPGZinUWP
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[1].Utilizado = true;
                     Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-                }
-            }      
+                }    
         }
 
         /// <summary>
