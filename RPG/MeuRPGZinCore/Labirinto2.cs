@@ -56,7 +56,7 @@ namespace MeuRPGZinCore
             linha3.Add(new Parede { esquerda = true, direita = true });
             linha3.Add(new Parede { esquerda = true, direita = true });
             linha3.Add(new Parede { esquerda = true, direita = true });
-            linha3.Add(new Parede { direita = true, baixo = true });
+            linha3.Add(new Parede { direita = true, baixo = true, esquerda = true });
 
             //linha4
             linha4.Add(new Parede { topo = true, esquerda = true });
