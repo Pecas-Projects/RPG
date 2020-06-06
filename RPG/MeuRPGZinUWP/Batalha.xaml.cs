@@ -25,14 +25,14 @@ namespace MeuRPGZinUWP
     /// Todas as batalhas ocorrem nessa tela, mas os inimigos e o plano de fundo, 
     /// são trocados de acordo com a fase em que o usuário está.
     /// </summary>
-    public sealed partial class TesteBatalha2 : Page
+    public sealed partial class Batalha : Page
     {
         public Feiticeira feiticeira = new Feiticeira();
         public ControllerBatalha controller = new ControllerBatalha();
         public Personagem Inimigo { get; set; }
         public ControllerBatalha Controller = new ControllerBatalha();
 
-        public TesteBatalha2()
+        public Batalha()
         {
             this.InitializeComponent();
         }

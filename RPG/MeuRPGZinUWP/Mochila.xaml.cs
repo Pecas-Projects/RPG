@@ -22,13 +22,13 @@ namespace MeuRPGZinUWP
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
-    public sealed partial class TelaIntegracao : Page
+    public sealed partial class Mochila : Page
     {
         public ControllerBatalha controller = new ControllerBatalha();
         public Feiticeira feiticeira = new Feiticeira();
         public Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
 
-        public TelaIntegracao()
+        public Mochila()
         {
             this.InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace MeuRPGZinUWP
         private void PaginaDaBatalha(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
-            this.Frame.Navigate(typeof(TesteBatalha2), controller);
+            this.Frame.Navigate(typeof(Batalha), controller);
         }
 
         /// <summary>

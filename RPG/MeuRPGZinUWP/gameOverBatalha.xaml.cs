@@ -38,7 +38,7 @@ namespace MeuRPGZinUWP
 
         private void HandleClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(TelaIntegracao), controller);
+            this.Frame.Navigate(typeof(Mochila), controller);
         }
     }
 }

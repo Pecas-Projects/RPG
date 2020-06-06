@@ -155,8 +155,8 @@
     <Compile Include="TelaIntegracao.xaml.cs">
       <DependentUpon>TelaIntegracao.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TesteBatalha2.xaml.cs">
-      <DependentUpon>TesteBatalha2.xaml</DependentUpon>
+    <Compile Include="Batalha.xaml.cs">
+      <DependentUpon>Batalha.xaml</DependentUpon>
     </Compile>
     <Compile Include="Loja.xaml.cs">
       <DependentUpon>Loja.xaml</DependentUpon>
@@ -279,7 +279,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TesteBatalha2.xaml">
+    <Page Include="Batalha.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

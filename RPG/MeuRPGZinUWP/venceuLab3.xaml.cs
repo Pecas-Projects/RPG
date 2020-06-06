@@ -50,7 +50,7 @@ namespace MeuRPGZinUWP
         private void IrBatalha_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 3;
-            this.Frame.Navigate(typeof(TesteBatalha2), controller);
+            this.Frame.Navigate(typeof(Batalha), controller);
         }
 
         private void PedraFogo_Click(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace MeuRPGZinUWP
         private void IrBag_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 3;
-            this.Frame.Navigate(typeof(TelaIntegracao), controller);
+            this.Frame.Navigate(typeof(Mochila), controller);
         }
     }
 }

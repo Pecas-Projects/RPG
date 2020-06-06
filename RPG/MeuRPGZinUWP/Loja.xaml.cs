@@ -99,7 +99,7 @@ namespace MeuRPGZinUWP
         private void IrparaMochila(object sender, RoutedEventArgs e)
         {
             controller.Feiticeira = feiticeira;
-            this.Frame.Navigate(typeof(TelaIntegracao), controller);
+            this.Frame.Navigate(typeof(Mochila), controller);
             AtualizarContItens();
         }
     }
