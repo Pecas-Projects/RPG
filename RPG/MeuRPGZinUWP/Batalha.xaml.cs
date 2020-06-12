@@ -78,20 +78,34 @@ namespace MeuRPGZinUWP
             feiticeira.Escudo = 50;
             
             controller.Feiticeira = feiticeira;
-        }
+
+           
+               AtualizarStatus();
+                if (feiticeira.ItemdeBatalha.Count == 1)
+                {
+                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
+                }
+
+                if (feiticeira.ItemdeBatalha.Count == 2)
+                {
+                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
+                    Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
+                }
+            }
+        
 
         /// <summary>
         /// Método que atualiza na tela os Status da Feiticeira e seu inimigo.
         /// </summary>
         public void AtualizarStatus()
         {
-            feiticeiraVida.Text = "Vida: " + feiticeira.Vida;
-            feiticeiraEscudo.Text = "Escudo: " + feiticeira.Escudo;
-            feiticeiraEstamina.Text = "Estamina: " + feiticeira.Estamina;
+            feiticeiraVida.Text = "vida: " + feiticeira.Vida;
+            feiticeiraEscudo.Text = "escudo: " + feiticeira.Escudo;
+            feiticeiraEstamina.Text = "estamina: " + feiticeira.Estamina;
 
-            inimigoVida.Text = "Vida: " + Inimigo.Vida;
-            inimigoEscudo.Text = "Escudo: " + Inimigo.Escudo;
-            inimigoEstamina.Text = "Estamina: " + Inimigo.Estamina;
+            inimigoVida.Text = "vida: " + Inimigo.Vida;
+            inimigoEscudo.Text = "escudo: " + Inimigo.Escudo;
+            inimigoEstamina.Text = "estamina: " + Inimigo.Estamina;
         }
 
         /// <summary>
@@ -110,8 +124,6 @@ namespace MeuRPGZinUWP
                 controller.ConfereItemBatalha(feiticeira);
                 Fim_BTN.Height = 71;
                 Fim_BTN.Width = 419;
-                Inicio_BTN.Height = 0;
-                Inicio_BTN.Width = 0;
                 usarEscudo.Width = 0;
                 usarEscudo.Height = 0;
                 ataque.Width = 0;
@@ -131,36 +143,36 @@ namespace MeuRPGZinUWP
         {
             if (inimigo == -1)
             {
-                acaoInimigo.Text = "Ação: Descançou";
+                acaoInimigo.Text = "Descançou";
             }
             else if (inimigo == 0)
             {
-                acaoInimigo.Text = "Ação: Usou escudo";
+                acaoInimigo.Text = "Usou escudo";
             }
             else if (inimigo == 1)
             {
-                acaoInimigo.Text = "Ação: Atacou";
+                acaoInimigo.Text = "Atacou";
             }
             else
             {
-                acaoInimigo.Text = "Ação: Ataque Especial";
+                acaoInimigo.Text = "Ataque Especial";
             }
 
             if (jogadora == -1)
             {
-                acaoFeiticeira.Text = "Ação: Descançou";
+                acaoFeiticeira.Text = "Descançou";
             }
             else if (jogadora == 0)
             {
-                acaoFeiticeira.Text = "Ação: Usou escudo";
+                acaoFeiticeira.Text = "Usou escudo";
             }
             else if (jogadora == 1)
             {
-                acaoFeiticeira.Text = "Ação: Atacou";
+                acaoFeiticeira.Text = "Atacou";
             }
             else
             {
-                acaoFeiticeira.Text = "Ação: Ataque Especial";
+                acaoFeiticeira.Text = "Ataque Especial";
             }
         }
 
@@ -170,23 +182,7 @@ namespace MeuRPGZinUWP
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void BatalhaInicio(object sender, RoutedEventArgs e)
-        {
-            if(feiticeira != null && Inimigo != null)
-            {
-                AtualizarStatus();
-                if(feiticeira.ItemdeBatalha.Count == 1)
-                {
-                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
-                }
 
-                if (feiticeira.ItemdeBatalha.Count == 2)
-                {
-                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
-                    Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
-                }
-            }
-        }
 
         /// <summary>
         /// Botão de Ataque da feiticeira, chama o método "Atacar" da classe Personagem.

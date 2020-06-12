@@ -30,12 +30,15 @@
             Canvas.Top="291" Foreground="White"></TextBlock>
 
             <TextBlock Width="1154" Height="73" Text="- Consiste em turnos onde cada participante vai escolher um movimento podendo ser: ataque, " 
-             Canvas.Left="84" Canvas.Top="395" FontSize="36" FontFamily="Cardinal"></TextBlock>
+             Canvas.Left="84" Canvas.Top="395" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
             <TextBlock Width="1201" Height="46" Text=" defesa, descanso ou o ataque especial." 
              Canvas.Left="77" Canvas.Top="444" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
-            <TextBlock Width="1024" Height="55" Text="" 
+            <Image Source="Assets/espada girando.png" Height="80" Width="80" Canvas.Left="84" Canvas.Top="489"></Image>
+            <Image Source="escudo_dourado.png"  Height="80" Width="80"></Image>
+
+            <TextBlock Width="1159" Height="55" Text="        Ataque               Defesa               Descansar              Ataque especial" 
              Canvas.Left="89" Canvas.Top="489" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
             <Button x:Name="voltar"  Width="297" Height="80" Canvas.Left="77" FontFamily="Cardinal" FontSize="55" BorderBrush="Black"
