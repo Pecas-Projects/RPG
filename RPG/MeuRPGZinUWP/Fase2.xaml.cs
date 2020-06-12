@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using MeuRPGZinCore;
+using Windows.UI.Xaml.Media.Imaging;
 
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
@@ -137,7 +138,7 @@ namespace MeuRPGZinUWP
             {
                 feiticeiraMovimento.Y += 80;
                 feiticeiraX += 1;
-
+                feiticeiraImg.Source = new BitmapImage(feiticeira.ImagemPersonagem);
 
             }
 
@@ -151,7 +152,7 @@ namespace MeuRPGZinUWP
             {
                 feiticeiraMovimento.Y -= 80;
                 feiticeiraX -= 1;
-
+                feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraCostas);
 
             }
         }
@@ -162,7 +163,7 @@ namespace MeuRPGZinUWP
             {
                 feiticeiraMovimento.X += 80;
                 feiticeiraY += 1;
-
+                feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraDireita);
             }
         }
 
@@ -177,7 +178,7 @@ namespace MeuRPGZinUWP
             {
                 feiticeiraMovimento.X -= 80;
                 feiticeiraY -= 1;
-
+                feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraEsquerda);
             }
         }
 

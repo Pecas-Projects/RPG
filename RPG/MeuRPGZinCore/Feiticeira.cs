@@ -16,6 +16,10 @@ namespace MeuRPGZinCore
     public class Feiticeira : Personagem
     {
         public int Moedas { get; set; }
+        public Uri FeiticeiraCostas { get; set; }
+        public Uri FeiticeiraFrente { get; set; }
+        public Uri FeiticeiraDireita { get; set; }
+        public Uri FeiticeiraEsquerda { get; set; }
 
         /// <summary>
         /// a feiticeira possui uma mochila, que é onde 
@@ -48,6 +52,10 @@ namespace MeuRPGZinCore
         {
             this.mochila = new Mochila();
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
+            this.FeiticeiraCostas = new Uri("ms-appx:///Assets/feiticeira_back.png");
+            this.FeiticeiraDireita = new Uri("ms-appx:///Assets/feiticeira_right_2.png");
+            this.FeiticeiraEsquerda = new Uri("ms-appx:///Assets/feiticeira_left_2.png");
+
             //implementar valores default para a feiticeira
             this.Forca = 20;
             this.PerdaEstamina = 0.30;
@@ -55,7 +63,6 @@ namespace MeuRPGZinCore
             this.Escudo = 50;
             this.Magia = 1.2;
             this.ItemdeBatalha.Capacity = 2;
-           // this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
 
         }
 
