@@ -50,19 +50,22 @@ namespace MeuRPGZinUWP
             if (controller.Fase == 1)
             {
                 Inimigo = new SereianosNPC();
-                //Colocar back
+                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/underwater_blur.png"));
             }
             else if(controller.Fase == 2)
             {
                 Inimigo = new FadaNPC();
+                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/ceu_desfocado.png"));
             }
             else if (controller.Fase == 3)
             {
                 Inimigo = new BarbaroNPC();
+                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/vulcao_gaussiano.png"));
             }
             else if(controller.Fase == 4)
             {
                 Inimigo = new HumanoNPC();
+                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/underwater_blur.png"));
             }
             inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
 

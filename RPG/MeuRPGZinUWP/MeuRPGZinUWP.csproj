@@ -207,6 +207,7 @@
     <Content Include="Assets\botao_comprar1.png" />
     <Content Include="Assets\botao_mochila.png" />
     <Content Include="Assets\botao_mochila1.png" />
+    <Content Include="Assets\ceu_desfocado.png" />
     <Content Include="Assets\escudo_dourado.png" />
     <Content Include="Assets\espada girando.png" />
     <Content Include="Assets\fada_de_chapeu.png" />
@@ -245,6 +246,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\underwater_blur.png" />
+    <Content Include="Assets\vulcao_gaussiano.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\ZZZ.png" />
     <Content Include="Properties\Default.rd.xml" />
