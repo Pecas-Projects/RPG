@@ -7,6 +7,7 @@ namespace MeuRPGZinCore
 {
     /// <summary>
     ///Mal carater, ladra, ozada, convencida e malandra
+    ///Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
     /// </summary>
     public class FadaNPC : Personagem, PersonagemNPC
     {

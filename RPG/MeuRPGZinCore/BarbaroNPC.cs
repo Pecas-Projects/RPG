@@ -6,6 +6,7 @@ namespace MeuRPGZinCore
 {
     /// <summary>
     ///Burro, forte, so quer saber de batata doce e Narcisista
+    ///Implementa a classe abstrata "Personagem" e a interface "PersonagemNPC".
     /// </summary>
     public class BarbaroNPC : Personagem, PersonagemNPC
     {
