@@ -66,7 +66,7 @@
             <Image x:Name="Item2_Img" Height="85" Canvas.Left="230" Source="Assets/interrogacao.png" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
 
             <Button  FontSize="30" Height="150" Canvas.Left="218" Canvas.Top="120" Width="160" Click="AtaqueEspecial" Background="Transparent">
-                <Image Source="Assets/bomba_before.png" Width="160" Height="150"></Image>
+                <Image x:Name="AtaqueEspecial_Btn" Source="Assets/bomba_before.png" Width="160" Height="150"></Image>
             </Button>
 
         </Canvas>

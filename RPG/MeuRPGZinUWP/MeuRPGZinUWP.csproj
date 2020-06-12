@@ -201,6 +201,7 @@
   <ItemGroup>
     <Content Include="Assets\barbaro_front.png" />
     <Content Include="Assets\bomba_after.png" />
+    <Content Include="Assets\bomba_before.png" />
     <Content Include="Assets\botao iniciar2.png" />
     <Content Include="Assets\botao_comprar.png" />
     <Content Include="Assets\botao_comprar1.png" />

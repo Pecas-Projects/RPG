@@ -109,7 +109,17 @@ namespace MeuRPGZinUWP
             inimigoVida.Text = "vida: " + Inimigo.Vida;
             inimigoEscudo.Text = "escudo: " + Inimigo.Escudo;
             inimigoEstamina.Text = "estamina: " + Inimigo.Estamina;
+
+            if (controller.ContDefesaInimigo >= 4)
+            {
+                AtaqueEspecial_Btn.Source = new BitmapImage(new Uri("ms-appx:///Assets/bomba_before.png"));
+            }
+            else
+            {
+                AtaqueEspecial_Btn.Source = new BitmapImage(new Uri("ms-appx:///Assets/bomba_after.png"));
+            }
         }
+
 
         /// <summary>
         /// Método que exibe a tela de Game Over da batalha ou permite que o usuário vá para a próxima fase.

@@ -67,7 +67,7 @@ namespace MeuRPGZinCore
         }
 
         /// <summary>
-        /// Apos o oponente se defender 3 vezes o ataque especial é liberado .
+        /// Apos o oponente se defender 4 vezes o ataque especial é liberado .
         /// A força da feiticeira almenta em 20% .
         /// O ataque especial ignora o escudo do inimigo.
         /// </summary>
