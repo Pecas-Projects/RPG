@@ -33,7 +33,7 @@ namespace MeuRPGZinCore
             if (controller.ContAtaqueFeiticeira == 8 &&this.Escudo <= 30 && inimiga.Escudo > 0)
             {
                 this.AtaqueEspecial(((Personagem)inimiga));
-                controller.ContTurnos = 0;
+                controller.ContAtaqueFeiticeira = 0;
                 return 2;
             }
             else
