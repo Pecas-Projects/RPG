@@ -137,6 +137,21 @@
     <Compile Include="gameOverBatalha.xaml.cs">
       <DependentUpon>gameOverBatalha.xaml</DependentUpon>
     </Compile>
+    <Compile Include="historia.xaml.cs">
+      <DependentUpon>historia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriaAequor.xaml.cs">
+      <DependentUpon>HistoriaAequor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriaCaeli.xaml.cs">
+      <DependentUpon>HistoriaCaeli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriaIgnis.xaml.cs">
+      <DependentUpon>HistoriaIgnis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriaSavi.xaml.cs">
+      <DependentUpon>HistoriaSavi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicio.xaml.cs">
       <DependentUpon>TelaInicio.xaml</DependentUpon>
     </Compile>
@@ -252,6 +267,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="gameOverBatalha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="historia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoriaAequor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoriaCaeli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoriaIgnis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoriaSavi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

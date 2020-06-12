@@ -7,39 +7,42 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="700" Width="1300"
-    Background="Gray"
+    Background="Black"
     >
 
     <Grid>
 
-        <Canvas>
+        <Canvas Background="Gray">
 
-            <TextBlock Width="433" Height="100" Text="Instruções Labirinto" Canvas.Left="435" FontFamily="Cardinal" FontSize="60"
-            Canvas.Top="42"></TextBlock>
+            <TextBlock Width="433" Height="100" Text="Instruções Labirinto" Canvas.Left="435" FontFamily="Cardinal" FontSize="60" Foreground="White"
+            Canvas.Top="19"></TextBlock>
 
-            <TextBlock Width="895" Height="73" Text="- Para se movimentar no labirinto utilize as setas do teclado." 
+            <TextBlock Width="895" Height="73" Text="- Para se movimentar no labirinto utilize as setas do teclado." Foreground="White"
              Canvas.Left="84" Canvas.Top="128" FontSize="36" FontFamily="Cardinal"></TextBlock>
 
             <TextBlock Width="1201" Height="55" Text="- Você terá um tempo específico para completar o labirinto, se o tempo acabar antes de chegar " 
-             Canvas.Left="77" Canvas.Top="177" FontSize="36" FontFamily="Cardinal"></TextBlock>
+             Canvas.Left="77" Canvas.Top="177" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
             <TextBlock Width="1024" Height="52" Text=" ao final, todas as pecas e os itens coletados serão perdidos." 
-             Canvas.Left="89" Canvas.Top="226" FontSize="36" FontFamily="Cardinal"></TextBlock>
+             Canvas.Left="89" Canvas.Top="226" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
             <TextBlock Width="433" Height="82" Text="Instruções Batalha" Canvas.Left="435" FontFamily="Cardinal" FontSize="60"
-            Canvas.Top="291"></TextBlock>
+            Canvas.Top="291" Foreground="White"></TextBlock>
 
-            <TextBlock Width="895" Height="73" Text="- Para se movimentar no labirinto utilize as setas do teclado." 
+            <TextBlock Width="1154" Height="73" Text="- Consiste em turnos onde cada participante vai escolher um movimento podendo ser: ataque, " 
              Canvas.Left="84" Canvas.Top="395" FontSize="36" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="1201" Height="46" Text="- Você terá um tempo específico para completar o labirinto, se o tempo acabar ates" 
-             Canvas.Left="77" Canvas.Top="444" FontSize="36" FontFamily="Cardinal"></TextBlock>
+            <TextBlock Width="1201" Height="46" Text=" defesa, descanso ou o ataque especial." 
+             Canvas.Left="77" Canvas.Top="444" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
-            <TextBlock Width="1024" Height="55" Text="de chegar ao final, todas as pecas e os itens coletados serão perdidos." 
-             Canvas.Left="89" Canvas.Top="483" FontSize="36" FontFamily="Cardinal"></TextBlock>
+            <TextBlock Width="1024" Height="55" Text="" 
+             Canvas.Left="89" Canvas.Top="489" FontSize="36" FontFamily="Cardinal" Foreground="White"></TextBlock>
 
-            <Button x:Name="voltar"  Width="297" Height="80" Canvas.Left="36" FontFamily="Cardinal" FontSize="55" BorderBrush="Black"
-            Canvas.Top="591"   Click="Voltar_handleClick" Background="DarkGray" Content="Voltar"></Button>
+            <Button x:Name="voltar"  Width="297" Height="80" Canvas.Left="77" FontFamily="Cardinal" FontSize="55" BorderBrush="Black"
+            Canvas.Top="591"   Click="Voltar_handleClick" Background="DarkGray" Content="Voltar" Foreground="Black" ></Button>
+
+            <Button x:Name="historia"  Width="297" Height="80" Canvas.Left="925" FontFamily="Cardinal" FontSize="55" BorderBrush="Black"
+            Canvas.Top="591"   Click="historia_handleClick" Background="DarkGray" Content="história" Foreground="Black" ></Button>
 
 
         </Canvas>

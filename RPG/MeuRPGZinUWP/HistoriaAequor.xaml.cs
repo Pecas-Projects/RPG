@@ -18,26 +18,19 @@ using Windows.UI.Xaml.Navigation;
 namespace MeuRPGZinUWP
 {
     /// <summary>
-    /// Primeira tela que é exibida no jogo.
-    /// Apartir dessa tela, o usuário pode ir para a tela com a história completa, ou
-    /// iniciar o jogo.
+    /// Tela da história do reino Aequor.
     /// </summary>
-    public sealed partial class TelaInicio : Page
+    public sealed partial class HistoriaAequor : Page
     {
-        
-        public TelaInicio()
+        public HistoriaAequor()
         {
             this.InitializeComponent();
         }
 
-        private void Historia_Click(object sender, RoutedEventArgs e)
+        private void Voltar_handleClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(historia));
-        }
-
-        private void Iniciarjogo_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof (TelaInicio2));
+            this.Frame.GoBack();
         }
     }
+    
 }

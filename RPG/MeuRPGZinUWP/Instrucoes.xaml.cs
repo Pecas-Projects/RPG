@@ -32,5 +32,10 @@ namespace MeuRPGZinUWP
         {
             this.Frame.GoBack();
         }
+
+        private void historia_handleClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(historia));
+        }
     }
 }

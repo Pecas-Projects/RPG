@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="MeuRPGZinUWP.historia"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MeuRPGZinUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black"
+    Width="1300" Height="700">
+
+    <Grid>
+
+        <Canvas Background="Gray">
+
+            <Image Source="Assets/pedra_da_agua.png" Width="80" Height ="80" Canvas.Left="113" Canvas.Top="10"></Image>
+            <Image Source="Assets/pedras_da_terra.png"  Width="80" Height ="80" Canvas.Left="359" Canvas.Top="10"></Image>
+            <Image Source="Assets/pedras_do_ar.png"  Width="80" Height ="80" Canvas.Left="1115" Canvas.Top="10"></Image>
+            <Image Source="Assets/pedras_do_fogo.png" Width="80" Height ="80" Canvas.Left="869" Canvas.Top="10"></Image>
+
+            <TextBlock Width="190" Height="100" Foreground="White" Text="história" FontFamily="Cardinal" FontSize="70" Canvas.Left="591" Canvas.Top="5"></TextBlock>
+
+            <RichTextBlock FontSize="21" Width="1228"  FontFamily="Cardinal" Canvas.Left="38" Canvas.Top="105" Height="598" Foreground="White">
+                <Paragraph>
+                    Em um futuro pos apocalíptico, após a grande guerra nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades. 
+                    As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa.
+                    Eles descobriram em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anulava o efeito da outra, mas separadas tinham um enorme poder.
+                    Assim a Imperium Liberium (pedra da magia) enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor,
+                    uma gargantilha com essa pedra, aprisionando-a.
+                </Paragraph>
+
+                <Paragraph>
+                    <LineBreak></LineBreak>
+                    Quando ele consegue enfraquecer a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, 
+                    assim, tomando o poder. Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes 
+                    enfraquecidos apenas para servi-los, sem conhecer a verdadeira historia e impossibilitadas de explorar seu verdadeiro potencial.
+                </Paragraph>
+
+                <Paragraph>
+                    <LineBreak></LineBreak>
+                    1000 anos depois da queda das feiticeiras, um rei dos humanos se apaixona por uma feiteceira e decide torná-la sua rainha, 
+                    contudo como feiticeiras são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder 
+                    continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse 
+                    mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta
+                    à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomam o poder e matam tanto a feiticeira, quanto o antigo rei.
+                    Assim, a garota começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus uma das pedras elementais para acabar 
+                    com o controle sobre as feiticeiras, além de descobrir algo sobre seu verdadeiro eu e derrubar tantos anos de opressão...
+                </Paragraph>
+
+
+            </RichTextBlock>
+
+
+            <Button x:Name="voltar"  Width="236" Height="74" Canvas.Left="38" FontFamily="Cardinal" FontSize="52" BorderBrush="Black"
+            Canvas.Top="610"   Click="Voltar_handleClick" Background="DarkGray" Content="Voltar" Foreground="Black" ></Button>
+
+        </Canvas>
+
+    </Grid>
+</Page>
