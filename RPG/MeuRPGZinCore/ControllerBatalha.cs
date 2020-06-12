@@ -134,7 +134,14 @@ namespace MeuRPGZinCore
             Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
             foreach (Item i in ((Feiticeira)jogadora).ItemdeBatalha)
             {
-                if(i.GetType() == pocao.GetType() || i.GetType() == pirlimpimpim.GetType())
+                if(i.GetType() == pocao.GetType())
+                {
+                    if (i.Utilizado)
+                    {
+                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)i);
+                    }
+                }
+                if(i.GetType() == pirlimpimpim.GetType())
                 {
                     if (i.Utilizado)
                     {
@@ -143,29 +150,6 @@ namespace MeuRPGZinCore
                 }
             }
 
-          /*  if (((Feiticeira)jogadora).ItemdeBatalha.Count >= 1)
-            {
-                if (((Feiticeira)jogadora).ItemdeBatalha[0].Utilizado == true)
-                {
-                    PocaoFortalecedora pocao = new PocaoFortalecedora();
-                    if (((Feiticeira)jogadora).ItemdeBatalha[0].GetType() == pocao.GetType())
-                    {
-                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[0]);
-                    }
-                }
-            }
-
-            if (((Feiticeira)jogadora).ItemdeBatalha.Count == 2)
-            {
-                if (((Feiticeira)jogadora).ItemdeBatalha[1].Utilizado == true)
-                {
-                    PocaoFortalecedora pocao = new PocaoFortalecedora();
-                    if (((Feiticeira)jogadora).ItemdeBatalha[1].GetType() == pocao.GetType())
-                    {
-                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)((Feiticeira)jogadora).ItemdeBatalha[1]);
-                    }
-                }
-            }*/
             
             return this.Vencedor(jogadora, inimigo);
         }
@@ -213,94 +197,86 @@ namespace MeuRPGZinCore
             PocaoVitae vitae = new PocaoVitae();
             PocaoWhey whey = new PocaoWhey();
 
-            foreach (Item i in jogadora.ItemdeBatalha)
+            if(jogadora.ItemdeBatalha.Count > 0)
             {
-                if (i.Utilizado)
+                foreach (Item i in jogadora.ItemdeBatalha)
                 {
-                    jogadora.ItemdeBatalha.Remove(i);
-                    break;
-                }
-                else
-                {
-                    if(i.GetType() == fortalecedora.GetType())
+                    if (i.Utilizado)
                     {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
+                        jogadora.ItemdeBatalha.Remove(i);
                         break;
                     }
-                    else if (i.GetType() == pirlimpimpim.GetType())
+                    else
                     {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
-                        break;
-                    }
-                    else if (i.GetType() == radix.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
-                        break;
-                    }
-                    else if (i.GetType() == vitae.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
-                        break;
-                    }
-                    else if (i.GetType() == whey.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
-                        break;
-                    }
-                }
-            }
-            foreach (Item i in jogadora.ItemdeBatalha)
-            {
-                if (i.Utilizado)
-                {
-                    jogadora.ItemdeBatalha.Remove(i);
-                    break;
-                }
-                else
-                {
-                    if (i.GetType() == fortalecedora.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
-                        break;
-                    }
-                    else if (i.GetType() == pirlimpimpim.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
-                        break;
-                    }
-                    else if (i.GetType() == radix.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
-                        break;
-                    }
-                    else if (i.GetType() == vitae.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
-                        break;
-                    }
-                    else if (i.GetType() == whey.GetType())
-                    {
-                        jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
-                        break;
+                        if (i.GetType() == fortalecedora.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
+                            break;
+                        }
+                        else if (i.GetType() == pirlimpimpim.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
+                            break;
+                        }
+                        else if (i.GetType() == radix.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
+                            break;
+                        }
+                        else if (i.GetType() == vitae.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
+                            break;
+                        }
+                        else if (i.GetType() == whey.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
+                            break;
+                        }
                     }
                 }
             }
 
-            /* if (jogadora.ItemdeBatalha.Count >= 1)
-             {
-                 if (jogadora.ItemdeBatalha[0].Utilizado)
-                 {
-                     jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[0]);
-                 }
-             }
+            if (jogadora.ItemdeBatalha.Count > 0)
+            {
+                foreach (Item i in jogadora.ItemdeBatalha)
+                {
+                    if (i.Utilizado)
+                    {
+                        jogadora.ItemdeBatalha.Remove(i);
+                        break;
+                    }
+                    else
+                    {
+                        if (i.GetType() == fortalecedora.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagFortalecedora, i);
+                            break;
+                        }
+                        else if (i.GetType() == pirlimpimpim.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagPirlimpimpim, i);
+                            break;
+                        }
+                        else if (i.GetType() == radix.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagRadix, i);
+                            break;
+                        }
+                        else if (i.GetType() == vitae.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagVitae, i);
+                            break;
+                        }
+                        else if (i.GetType() == whey.GetType())
+                        {
+                            jogadora.RetirarItemdeBatalha(jogadora.mochila.bagWhey, i);
+                            break;
+                        }
+                    }
+                }
+            }
 
-             if (jogadora.ItemdeBatalha.Count == 2)
-             {
-                 if (jogadora.ItemdeBatalha[1].Utilizado)
-                 {
-                     jogadora.ItemdeBatalha.Remove(jogadora.ItemdeBatalha[1]);
-                 }
-             }*/
         }
     }
 }
