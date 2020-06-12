@@ -22,8 +22,8 @@ namespace MeuRPGZinCore
         public FadaNPC()
         {
             this.Forca = 25;
-            this.PerdaEstamina = 0.2;
-            this.GanhoEstamnina = 0.3;
+            this.PerdaEstamina = 0.3;
+            this.GanhoEstamnina = 0.18;
             this.Escudo = 55;
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/fada_de_chapeu.png");
 

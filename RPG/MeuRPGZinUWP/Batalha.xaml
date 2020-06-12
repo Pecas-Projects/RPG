@@ -55,12 +55,12 @@
             <Button x:Name="Fim_BTN" Content="fim " FontSize="30" Height="0" Margin="58,58,0,0" Width="0" Click="ProximaFase" Canvas.Left="701" Canvas.Top="397" RenderTransformOrigin="2.309,9.857"/>
 
 
-            <Button x:Name="Item1_Batalha" Content="Usar" FontSize="40" FontFamily="cardinal" Height="78" Canvas.Left="42" Foreground="White"
-             Background="Gray" BorderBrush="White" Canvas.Top="593" Width="133" RenderTransformOrigin="0.503,0.282" Click="UsarItem1NaBatalha"/>
+            <Button x:Name="Item1_Batalha" Content="Usar" FontSize="40" FontFamily="cardinal" Height="0" Canvas.Left="42" Foreground="White"
+             Background="Gray" BorderBrush="White" Canvas.Top="593" Width="0" RenderTransformOrigin="0.503,0.282" Click="UsarItem1NaBatalha"/>
 
             <Image x:Name="Item1_Img" Height="85" Canvas.Left="42" Source="Assets/interrogacao.pngg" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
 
-            <Button x:Name="Item2_Batalha" Content="Usar" FontSize="40" Height="78" Canvas.Left="246" Canvas.Top="593" Width="133" FontFamily="cardinal" Foreground="White"
+            <Button x:Name="Item2_Batalha" Content="Usar" FontSize="40" Height="0" Canvas.Left="246" Canvas.Top="593" Width="0" FontFamily="cardinal" Foreground="White"
              Background="Gray" BorderBrush="White" RenderTransformOrigin="0.503,0.282" Click="UsarItem2NaBatalha"/>
 
             <Image x:Name="Item2_Img" Height="85" Canvas.Left="230" Source="Assets/interrogacao.png" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>

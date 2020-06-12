@@ -78,20 +78,23 @@ namespace MeuRPGZinUWP
             feiticeira.Escudo = 50;
             
             controller.Feiticeira = feiticeira;
-
-           
-               AtualizarStatus();
-                if (feiticeira.ItemdeBatalha.Count == 1)
-                {
-                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
-                }
-
-                if (feiticeira.ItemdeBatalha.Count == 2)
-                {
-                    Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
-                    Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
-                }
+            AtualizarStatus();
+            if (feiticeira.ItemdeBatalha.Count >= 1)
+            {
+                Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
+                Item1_Batalha.Height= 78;
+                Item1_Batalha.Width = 133;
+                
             }
+
+            if (feiticeira.ItemdeBatalha.Count == 2)
+            {
+                Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
+                Item2_Batalha.Height = 78;
+                Item2_Batalha.Width = 133;
+            }
+
+        }
         
 
         /// <summary>
@@ -299,7 +302,6 @@ namespace MeuRPGZinUWP
             {
                 this.Frame.Navigate(typeof(VenceuJogo), controller);
             }
-
         }
 
         /// <summary>
@@ -309,6 +311,8 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void UsarItem1NaBatalha(object sender, RoutedEventArgs e)
         {
+            if(feiticeira.ItemdeBatalha.Count >= 1)
+            {
                 if (feiticeira.ItemdeBatalha[0].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[0] as Item;
@@ -316,7 +320,11 @@ namespace MeuRPGZinUWP
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[0].Utilizado = true;
                     Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-                }                     
+                    Item1_Batalha.Height = 0;
+                    Item1_Batalha.Width = 0;
+                }
+            }
+                                    
         }
 
         /// <summary>
@@ -326,7 +334,8 @@ namespace MeuRPGZinUWP
         /// <param name="e"></param>
         private void UsarItem2NaBatalha(object sender, RoutedEventArgs e)
         {
-
+            if(feiticeira.ItemdeBatalha.Count == 2)
+            {
                 if (feiticeira.ItemdeBatalha[1].Utilizado == false)
                 {
                     Item item = feiticeira.ItemdeBatalha[1] as Item;
@@ -334,7 +343,12 @@ namespace MeuRPGZinUWP
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[1].Utilizado = true;
                     Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
-                }    
+                    Item2_Batalha.Height = 0;
+                    Item2_Batalha.Width = 0;
+                }
+
+            }
+                   
         }
 
         /// <summary>
