@@ -216,6 +216,10 @@
     <Content Include="Assets\feiticeira_back2.png" />
     <Content Include="Assets\feiticeira_front.png" />
     <Content Include="Assets\feiticeira_morta.png" />
+    <Content Include="Assets\feiticeira_back.png" />
+    <Content Include="Assets\feiticeira_front.png" />
+    <Content Include="Assets\feiticeira_left_2.png" />
+    <Content Include="Assets\feiticeira_right_2.png" />
     <Content Include="Assets\humano.png" />
     <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
