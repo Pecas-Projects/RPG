@@ -12,23 +12,25 @@
     <Grid>
         <Canvas Background="Gray">
 
-            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal" 
+            <Image Source="Assets/ceu_desfocado.png" Height="700" Width="1300" Stretch="UniformToFill" ></Image>
+
+            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal" Foreground="White"
         Text="Parabéns feiticeira, você venceu o segundo labirinto!" Canvas.Left="117" Canvas.Top="49"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal" Foreground="White"
         Text="Porém sua jornada pelo Reino Caeli, ainda não chegou ao" Canvas.Left="89" Canvas.Top="156" RenderTransformOrigin="0.451,0.69"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal" Foreground="White"
         Text=" fim. Para recuperar a Pedra do Ar será necessário batalhar" Canvas.Left="59" Canvas.Top="215"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal" Foreground="White"
         Text="com o Rei das Fadas. " Canvas.Left="393" Canvas.Top="275"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal" Foreground="White"
         Text="Está na hora de provar que pode libertar suas irmãs" Canvas.Left="139" Canvas.Top="377"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
-        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="27" Canvas.Top="430"/>
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal" Foreground="White"
+        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="68" Canvas.Top="446"/>
 
             <Button x:Name="irBatalha"  Canvas.Left="227" Canvas.Top="549"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="300" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrBatalha_Click">

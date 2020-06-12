@@ -13,25 +13,25 @@
 
         <Canvas Background="Gray">
 
-            <Image Source="Assets/underwater_blur.png" Height="700" Width="1300" Canvas.Top="-10"/>
+            <Image Source="Assets/underwater_blur.png" Stretch="UniformToFill" Height="700" Width="1300" />
 
-            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"
+            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"  Foreground="White"
         Text="Parabéns feiticeira, você venceu o primeiro labirinto!" Canvas.Left="81" Canvas.Top="69"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="Porém sua jornada pelo Reino Aequor, ainda não chegou ao" Canvas.Left="54" Canvas.Top="165" RenderTransformOrigin="0.451,0.69"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text=" fim. Para recuperar a pedra da Água será necessário batalhar" Canvas.Left="39" Canvas.Top="225"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="com o Rei dos Sereianos. " Canvas.Left="385" Canvas.Top="290"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="Está na hora de provar que pode libertar suas irmãs" Canvas.Left="139" Canvas.Top="377"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
-        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="27" Canvas.Top="430"/>
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
+        Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="68" Canvas.Top="446"/>
 
             <Button x:Name="irBatalha"  Canvas.Left="227" Canvas.Top="549"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="300" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrBatalha_Click">
