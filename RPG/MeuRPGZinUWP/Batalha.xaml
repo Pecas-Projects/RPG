@@ -21,44 +21,52 @@
 
         <Canvas Grid.Row="0" x:Name="canvasMap">
 
-            <Button x:Name="ataque" FontSize="30" Height="73" Background="Transparent" Margin="58,231,0,0" Width="90" Click="Ataque" Canvas.Left="-36" Canvas.Top="-194" RenderTransformOrigin="0.5,0.5" Foreground="#33FFFFFF">
+            <Image  x:Name="fundo_batalha" Source="Assets/underwater_blur.png" Width="1300" Height="700" Stretch="UniformToFill"></Image>
+
+            <Button x:Name="ataque" FontSize="30" Height="130" Background="Transparent" Margin="58,231,0,0" Width="130" Click="Ataque" Canvas.Left="-16" Canvas.Top="-110" RenderTransformOrigin="0.5,0.5" Foreground="#33FFFFFF">
                 <Image Source="Assets/espada girando.png" Margin="-27,-18,-22,-19" />
 
             </Button>
 
-            <Button x:Name="usarEscudo" Background="Transparent" FontSize="30" Height="100" Margin="59,425,0,0" Width="100" Click="UsarEscudoBrabo" Canvas.Left="26" Canvas.Top="-276" RenderTransformOrigin="2.295,0.875">
-                <Image Source="Assets/escudo_dourado.png" Margin="-65,-47,-66,-21"/>
+            <TextBlock Text="Ações" Width="222" Height="100" FontSize="70" FontFamily="cardinal" Canvas.Left="137" Canvas.Top="10" Foreground="White"></TextBlock>
+
+            <Button x:Name="usarEscudo" Background="Transparent" FontSize="30" Height="100" Margin="59,425,0,0" Width="100" Click="UsarEscudoBrabo" Canvas.Left="10" Canvas.Top="-150" RenderTransformOrigin="0.532,0.419">
+                <Image Source="Assets/escudo_dourado.png" Margin="-65,-33,-66,-35"/>
             </Button>
-            <Button x:Name="descancar" Background="Transparent" FontSize="30" Height="100" Margin="59,614,0,0" Width="132" Click="DescancarTroll" Canvas.Top="-335" Canvas.Left="13" >
-                <Image Source="Assets/ZZZ.png" Margin="-16,-9,-9,-10" />
+            <Button x:Name="descancar" Background="Transparent" FontSize="30" Height="150" Margin="59,614,0,0" Width="150" Click="DescancarTroll" Canvas.Top="-350" Canvas.Left="170" >
+                <Image Source="Assets/ZZZ.png" Margin="0,-12,0,-7" Canvas.Top="-340" Canvas.Left="97" HorizontalAlignment="Left" Width="140" Height="140"/>
             </Button>
 
-            <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_front.png" Canvas.Top="293" Canvas.Left="381" Width="300" Height="300" />
-            <TextBlock x:Name="feiticeiraVida" Height="59"  FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="414" Canvas.Left="447.001" Canvas.Top="69.765" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-0.563"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock x:Name="feiticeiraEscudo" Height="58"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="427" Canvas.Left="447" Canvas.Top="145" />
-            <TextBlock x:Name="feiticeiraEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="440" Canvas.Left="447" Canvas.Top="226"/>
+            <Image x:Name="feiticeiraImg" Source="Assets/feiticeira_back2.png" Canvas.Top="264" Canvas.Left="456" Width="344" Height="334" />
+            <TextBlock x:Name="feiticeiraVida" Height="59"  FontSize="50" Text="vida:  " Foreground="White" TextWrapping="Wrap" Width="373" Canvas.Left="458" Canvas.Top="16" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="feiticeiraEscudo" Height="58"  FontSize="50" Text="escudo: " Foreground="White" TextWrapping="Wrap" Width="348" Canvas.Left="482" Canvas.Top="72" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="feiticeiraEstamina" Height="58"  FontSize="50" Text="estamina: " Foreground="White" TextWrapping="Wrap" Width="361" Canvas.Left="506" Canvas.Top="134" FontFamily="Berkahi Blackletter"/>
 
-            <Image x:Name="inimigoImg" Source="Assets/rei_sereiano.png" Canvas.Top="298" Canvas.Left="932" Width="300" Height="300" />
-            <TextBlock x:Name="inimigoVida" Height="64" FontSize="50" Text="Vida: " TextWrapping="Wrap" Width="461" Canvas.Left="932" Canvas.Top="83" />
-            <TextBlock x:Name="inimigoEscudo" Height="59"  FontSize="50" Text="Escudo: " TextWrapping="Wrap" Width="475" Canvas.Left="932" Canvas.Top="158" />
-            <TextBlock x:Name="inimigoEstamina" Height="58"  FontSize="50" Text="Estamina: " TextWrapping="Wrap" Width="496" Canvas.Left="932" Canvas.Top="226" />
+            <Image x:Name="inimigoImg" Source="Assets/rei_sereiano.png" Canvas.Top="239" Canvas.Left="899" Width="234" Height="264" RenderTransformOrigin="0.489,0.557"  />
+            <TextBlock x:Name="inimigoVida" Height="64" FontSize="50" Text="vida: " TextWrapping="Wrap" Width="373" Foreground="White" Canvas.Left="848" Canvas.Top="16" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="inimigoEscudo" Height="59"  FontSize="50" Text="escudo: " TextWrapping="Wrap" Width="367" Canvas.Left="872" Foreground="White" Canvas.Top="72" FontFamily="Berkahi Blackletter" />
+            <TextBlock x:Name="inimigoEstamina" Height="70"  FontSize="50" Text="estamina: " Foreground="White" TextWrapping="Wrap" Width="400" Canvas.Left="911" Canvas.Top="134" FontFamily="Berkahi Blackletter" />
 
-            <Button x:Name="Inicio_BTN" Content="Iniciar Batalha" FontSize="30" Height="74" Margin="58,58,0,0" Width="214" Click="BatalhaInicio" Canvas.Top="272" Canvas.Left="628"/>
-            <TextBlock x:Name="acaoFeiticeira" FontSize="40" Height="71" Text="Ação: " TextWrapping="Wrap" Width="419"  Canvas.Left="447" Canvas.Top="628"/>
-            <TextBlock x:Name="acaoInimigo" FontSize="40" Height="71"  Text="Ação: " TextWrapping="Wrap" Width="419" Canvas.Left="919" Canvas.Top="628"/>
+
+
+            <TextBlock x:Name="acaoFeiticeira" FontSize="50" Height="71" Text=" " Foreground="White" TextWrapping="Wrap" Width="290"  Canvas.Left="571" Canvas.Top="618" FontFamily="cardinal"/>
+            <TextBlock x:Name="acaoInimigo" FontSize="50" Height="71"  Text=" " Foreground="White" TextWrapping="Wrap" Width="310" Canvas.Left="956" Canvas.Top="618" FontFamily="cardinal"/>
+
             <Button x:Name="Fim_BTN" Content="fim " FontSize="30" Height="0" Margin="58,58,0,0" Width="0" Click="ProximaFase" Canvas.Left="701" Canvas.Top="397" RenderTransformOrigin="2.309,9.857"/>
 
 
-            <Button x:Name="Item1_Batalha" Content="usar" FontSize="40" Height="78" Canvas.Left="26" Canvas.Top="593" Width="133" RenderTransformOrigin="0.503,0.282" Click="UsarItem1NaBatalha"/>
+            <Button x:Name="Item1_Batalha" Content="Usar" FontSize="40" FontFamily="cardinal" Height="78" Canvas.Left="42" Foreground="White"
+             Background="Gray" BorderBrush="White" Canvas.Top="593" Width="133" RenderTransformOrigin="0.503,0.282" Click="UsarItem1NaBatalha"/>
+
             <Image x:Name="Item1_Img" Height="85" Canvas.Left="42" Source="Assets/interrogacao.pngg" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
-            <Button x:Name="Item2_Batalha" Content="usar" FontSize="40" Height="78" Canvas.Left="216" Canvas.Top="593" Width="133" RenderTransformOrigin="0.503,0.282" Click="UsarItem2NaBatalha"/>
+
+            <Button x:Name="Item2_Batalha" Content="Usar" FontSize="40" Height="78" Canvas.Left="246" Canvas.Top="593" Width="133" FontFamily="cardinal" Foreground="White"
+             Background="Gray" BorderBrush="White" RenderTransformOrigin="0.503,0.282" Click="UsarItem2NaBatalha"/>
+
             <Image x:Name="Item2_Img" Height="85" Canvas.Left="230" Source="Assets/interrogacao.png" Canvas.Top="473" Width="101" RenderTransformOrigin="0.455,1.071"/>
-            <Button Content="Ataque esp" FontSize="30" Height="69" Canvas.Left="159" Canvas.Top="41" Width="172" Click="AtaqueEspecial">
-                
+
+            <Button  FontSize="30" Height="150" Canvas.Left="218" Canvas.Top="120" Width="160" Click="AtaqueEspecial" Background="Transparent">
+                <Image Source="Assets/bomba_before.png" Width="160" Height="150"></Image>
             </Button>
 
         </Canvas>

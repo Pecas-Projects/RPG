@@ -14,21 +14,22 @@
 
         <Canvas Background="Gray">
 
-            <TextBlock Width="486" Height="100" Text="GAME OVER" FontFamily="Cardinal" FontSize="60" Canvas.Left="432" Canvas.Top="30"></TextBlock>
+            <TextBlock Width="486" Height="100" Text="GAME OVER" FontFamily="Cardinal" FontSize="60" Canvas.Left="432" Canvas.Top="12" Foreground="White"></TextBlock>
 
-            <Image Source="Assets/feiticeira_morta.png" Width="300" Height="300" Canvas.Left="376" Canvas.Top="189"></Image>
-            <Image Source="Assets/balao.png" Width="344" Height="295" Canvas.Left="614" Canvas.Top="111"></Image>
+            <Image Source="Assets/feiticeira_morta.png" Width="300" Height="300" Canvas.Left="432" Canvas.Top="150"></Image>
+            <Image Source="Assets/balao.png" Width="332" Height="286" Canvas.Left="650" Canvas.Top="71"></Image>
 
-            <TextBlock Width="183" Height="65" Text="UI UI UI" Foreground="Black" FontSize="50" Canvas.Left="699" 
-             Canvas.Top="156" RenderTransformOrigin="0.523,0.675"></TextBlock>
 
-            <TextBlock Width="149" Height="65" Text="morri" Foreground="Black" FontSize="50" Canvas.Left="725" 
-             Canvas.Top="200" RenderTransformOrigin="0.523,0.675"></TextBlock>
+            <TextBlock Width="181" Height="65" Text="ui ui ui" Foreground="Black" FontSize="50" Canvas.Left="756" 
+             Canvas.Top="116" RenderTransformOrigin="0.523,0.675" FontFamily="Berkahi Blackletter"></TextBlock>
+
+            <TextBlock Width="149" Height="65" Text="morri" Foreground="Black" FontSize="50" Canvas.Left="764" 
+             Canvas.Top="166" RenderTransformOrigin="0.523,0.675" FontFamily="Berkahi Blackletter" ></TextBlock>
 
             <TextBlock Width="1114" Height="64" Text="Você foi derrotada! Clique em continuar para batalhar novamente" 
-                       FontFamily="Cardinal" FontSize="50" Canvas.Left="93" Canvas.Top="489"></TextBlock>
+                       FontFamily="Cardinal" FontSize="50" Canvas.Left="93" Canvas.Top="489" Foreground="White"></TextBlock>
 
-            <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="486" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
+            <Button x:Name="continuar"  Width="300" Height="103" Canvas.Left="486" FontFamily="Cardinal" FontSize="60" BorderBrush="Black" Foreground="Black"
             Canvas.Top="573"   Click="HandleClick" Background="DarkGray" Content="Continuar">
 
             </Button>
