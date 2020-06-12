@@ -11,22 +11,25 @@
 
     <Grid>
         <Canvas Background="Gray">
-            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"
-        Text="Parabéns feiticeira, você venceu o terceiro labirinto!" Canvas.Left="81" Canvas.Top="69"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <Image Source="Assets/vulcao_gaussiano.png" Width="1300" Height="700"></Image>
+            
+            <TextBlock Height="100" FontSize="60" FontFamily="Cardinal"  Foreground="White"
+        Text="Parabéns feiticeira, você venceu o terceiro labirinto!" Canvas.Left="136" Canvas.Top="41"/>
+
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="Porém sua jornada pelo Reino Ignis, ainda não chegou ao" Canvas.Left="104" Canvas.Top="163" RenderTransformOrigin="0.451,0.69"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text=" fim. Para recuperar a Pedra do Fogo será necessário batalhar" Canvas.Left="39" Canvas.Top="225"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="com o Rei dos Bárbaros. " Canvas.Left="385" Canvas.Top="290"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="Está na hora de provar que pode libertar suas irmãs" Canvas.Left="139" Canvas.Top="377"/>
 
-            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"
+            <TextBlock Height="100"  FontSize="55" FontFamily="Cardinal"  Foreground="White"
         Text="da escravidão. Selecione itens para batalhar ou inicie a batalha." Canvas.Left="58" Canvas.Top="440"/>
 
             <Button x:Name="irBatalha"  Canvas.Left="227" Canvas.Top="549"  Content="Iniciar Batalha" FontSize="50" Foreground="Black"
