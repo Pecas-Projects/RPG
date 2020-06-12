@@ -278,5 +278,29 @@ namespace MeuRPGZinCore
             }
 
         }
+
+        public void RecompencaBatalha()
+        {
+            PocaoFortalecedora fortalecedora = new PocaoFortalecedora();
+            PocaoVitae vitae = new PocaoVitae();
+            if (this.Fase == 1)
+            {
+                this.Feiticeira.PerdaEstamina = 0.2;
+                this.Feiticeira.GanhoEstamnina = 0.18;
+                this.Feiticeira.Moedas += 10;
+            }
+            else if(this.Fase == 2)
+            {
+                this.Feiticeira.Escudo = 60;
+                this.Feiticeira.mochila.AddItem(fortalecedora, this.Feiticeira.mochila.bagFortalecedora);
+                this.Feiticeira.Moedas += 5;
+            }
+            else if(this.Fase == 3)
+            {
+                this.Feiticeira.Forca = 25;
+                this.Feiticeira.mochila.AddItem(vitae, this.Feiticeira.mochila.bagVitae);
+            }
+        }
     }
+
 }

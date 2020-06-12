@@ -42,7 +42,7 @@ namespace MeuRPGZinUWP
 
         private void IrLab_Click(object sender, RoutedEventArgs e)
         {
-            
+            controller.RecompencaBatalha();
             this.Frame.Navigate(typeof(Fase2), controller);
         }
 
