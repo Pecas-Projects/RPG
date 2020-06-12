@@ -44,6 +44,7 @@ namespace MeuRPGZinUWP
         private void IrBatalha_Click(object sender, RoutedEventArgs e)
         {
             controller.Fase = 4;
+            controller.RecompencaBatalha();
             this.Frame.Navigate(typeof(Batalha), controller);
         }
 
