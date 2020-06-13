@@ -88,6 +88,7 @@ namespace MeuRPGZinUWP
             }
             else
             {
+                
                 titulo = "Pecas Insuficientes!";
                 textoCaixaDialogo2.FontSize = 25;
                 texto = "Você não possui Pecas suficientes!";

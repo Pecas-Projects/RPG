@@ -41,8 +41,9 @@
                 <Image x:Name="RadixImg" Source="Assets/pocao_radix.png" Width="100" Height="100" Stretch="Fill" />
             </Button>
 
-            <ContentDialog Background="Black" x:Name="CaixaDeDialogo" >
+            <ContentDialog  x:Name="CaixaDeDialogo" >
                 <Canvas Width="2000" Height="150">
+                    <Image Source="Assets/placa.png" Width="2000" Height="150" />
                     <TextBlock x:Name="NomeDoItem" FontFamily="Cardinal" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
                     <Image x:Name="NewItemImg" Source="Assets/pocao_radix.png" Width="40" Height="40" Canvas.Left="10"/>
                     <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
@@ -56,6 +57,7 @@
                     <Image x:Name="PECA" Visibility="Collapsed" Source="Assets/moeda_front.png" Width="60" Height="60" Canvas.Left="120" Canvas.Top="-20" />
                     <TextBlock x:Name="textoCaixaDialogo2" FontWeight="Light" FontSize="30px" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Top="45" Canvas.Left="0"/>
                     <Button x:Name="fecharButton2" FontSize="25" Content="Fechar" Background="Gray" Canvas.Top="100" Canvas.Left="100"  Height="50" Width="100" FontFamily="Cardinal" Click="FecharContent2"/>
+                    <Image Source="Assets/placa.png" Width="2000" Height="150" />
                 </Canvas>
             </ContentDialog>
 

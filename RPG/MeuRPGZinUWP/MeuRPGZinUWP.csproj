@@ -234,6 +234,7 @@
     <Content Include="Assets\pedras_do_ar.png" />
     <Content Include="Assets\pedras_do_fogo.png" />
     <Content Include="Assets\pedra_da_agua.png" />
+    <Content Include="Assets\placa.png" />
     <Content Include="Assets\pocao_fortalecedora.png" />
     <Content Include="Assets\pocao_radix.png" />
     <Content Include="Assets\pocao_vitae.png" />
