@@ -82,6 +82,7 @@ namespace MeuRPGZinUWP
             
             controller.Feiticeira = feiticeira;
             AtualizarStatus();
+
             if (feiticeira.ItemdeBatalha.Count >= 1)
             {
                 Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
@@ -92,6 +93,9 @@ namespace MeuRPGZinUWP
 
             if (feiticeira.ItemdeBatalha.Count == 2)
             {
+                Item1_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[0].ImagemItem);
+                Item1_Batalha.Height = 78;
+                Item1_Batalha.Width = 133;
                 Item2_Img.Source = new BitmapImage(feiticeira.ItemdeBatalha[1].ImagemItem);
                 Item2_Batalha.Height = 78;
                 Item2_Batalha.Width = 133;
@@ -305,7 +309,7 @@ namespace MeuRPGZinUWP
             }
             else if (controller.Fase == 2)
             {
-                this.Frame.Navigate(typeof(venceuBtalha2), controller);
+                this.Frame.Navigate(typeof(venceuBatalha2), controller);
             }
             else if (controller.Fase == 3)
             {

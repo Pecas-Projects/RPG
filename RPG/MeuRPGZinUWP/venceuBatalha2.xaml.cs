@@ -24,11 +24,11 @@ namespace MeuRPGZinUWP
     /// Ir direto para o Labirinto da fase 3,
     /// Ir para a página de Instruções,
     /// </summary>>
-    public sealed partial class venceuBtalha2 : Page
+    public sealed partial class venceuBatalha2 : Page
     {
         ControllerBatalha controller = new ControllerBatalha();
 
-        public venceuBtalha2()
+        public venceuBatalha2()
         {
             this.InitializeComponent();
         }

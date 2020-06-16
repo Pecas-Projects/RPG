@@ -31,7 +31,7 @@
             <TextBlock Height="100"  FontSize="55" Foreground="White" FontFamily="Cardinal"
         Text="Como recompensa por sua vitória você receberá " Canvas.Left="130" Canvas.Top="320" Width="884"/>
 
-            <TextBlock Width="80" Height="80" Text="X" FontFamily="Cardinal" Foreground="White" FontSize="70" Canvas.Left="1041" Canvas.Top="314" RenderTransformOrigin="0.387,0.398">
+            <TextBlock Width="80" Height="80" Text="10" FontFamily="Cardinal" Foreground="White" FontSize="70" Canvas.Left="1041" Canvas.Top="314" RenderTransformOrigin="0.387,0.398">
             </TextBlock>
 
 

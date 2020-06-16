@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="MeuRPGZinUWP.venceuBtalha2"
+    x:Class="MeuRPGZinUWP.venceuBatalha2"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MeuRPGZinUWP"
@@ -23,16 +23,16 @@
         Text="Parabéns feiticeira, você derrotou o Rei das Fadas!" Canvas.Left="39" Canvas.Top="35" Width="1061"/>
 
             <TextBlock Height="64"  FontSize="50" Foreground="White" FontFamily="Cardinal"
-        Text="Agora a Pedra do Ar está em sua posse, aumentando sua" Canvas.Left="39" Canvas.Top="144" RenderTransformOrigin="0.451,0.69"/>
+        Text="Agora a Pedra do Ar está em sua posse, aumentando seu" Canvas.Left="39" Canvas.Top="144" RenderTransformOrigin="0.451,0.69"/>
 
             <TextBlock Height="73"  FontSize="50" Foreground="White" FontFamily="Cardinal"
-        Text="característicaX. Use seus poderes sabiamente." Canvas.Left="165" Canvas.Top="223"/>
+        Canvas.Left="165" Canvas.Top="223"><Run Text="escudo"/><Run Text=". Use seus poderes sabiamente."/></TextBlock>
 
 
             <TextBlock Height="100"  FontSize="55" Foreground="White" FontFamily="Cardinal"
         Text="Como recompensa por sua vitória você receberá " Canvas.Left="130" Canvas.Top="320" Width="884"/>
 
-            <TextBlock Width="80" Foreground="White" Height="80" Text="X" FontFamily="Cardinal" FontSize="70" Canvas.Left="1041" Canvas.Top="314" RenderTransformOrigin="0.387,0.398">
+            <TextBlock Width="80" Foreground="White" Height="80" Text="5" FontFamily="Cardinal" FontSize="70" Canvas.Left="1041" Canvas.Top="314" RenderTransformOrigin="0.5,0.5">
             </TextBlock>
 
 
