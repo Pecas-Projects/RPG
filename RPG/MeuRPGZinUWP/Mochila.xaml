@@ -126,8 +126,8 @@
             <Image x:Name="pedraAr" Width="60" Height="60" Canvas.Left="151" Canvas.Top="393"  ></Image>
             <Image x:Name="pedraFogo"  Width="60" Height="60" Canvas.Left="220" Canvas.Top="393"></Image>
 
-            <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="990" Canvas.Top="500" Height="80" Width="120" />
-            <Image x:Name="Item_mochila" Source="Assets/interrogacao.png" Canvas.Left="1116" Canvas.Top="500" Height="80" Width="120" />
+            <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="980" Canvas.Top="494" Height="80" Width="120" />
+            <Image x:Name="Item_mochila" Source="Assets/interrogacao.png" Canvas.Left="1110" Canvas.Top="492" Height="80" Width="120" />
             <Path Data="M320,162 L322,215" Fill="White" Height="504" Canvas.Left="340" Stretch="Fill" Stroke="White" Canvas.Top="162" UseLayoutRounding="False" Width="3"/>
 
         </Canvas>
