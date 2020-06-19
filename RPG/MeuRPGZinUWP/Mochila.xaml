@@ -52,7 +52,7 @@
             </Button>
 
 
-            <TextBlock x:Name="contWhey" Height="66" Canvas.Left="925" Canvas.Top="160" Text="Poção Whey: " FontSize="35" 
+            <TextBlock x:Name="contWhey" Height="66" Canvas.Left="925" Canvas.Top="160" Text="Taurus Rubber: " FontSize="35" 
             FontFamily="Berkahi Blackletter" Width="354" Foreground="White"/>
 
             <Button x:Name="selectWhey"  Height="80"  Canvas.Left="945" Canvas.Top="219" 
@@ -113,12 +113,37 @@
             <TextBlock Height="46" Canvas.Left="690" Canvas.Top="511" Text="Itens de Batalha" FontSize="40" TextWrapping="Wrap" 
             Foreground="White" FontFamily="Berkahi Blackletter" Width="300"/>
 
+           
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
-            <Image Source="Assets/po_pirlimpimpim.png" Canvas.Top="149" Height="66" Width="92" Canvas.Left="349" />
-            <Image Source="Assets/pocao_whey.png" Canvas.Left="833" Canvas.Top="150" Height="64" Width="98" />
-            <Image Source="Assets/pocao_fortalecedora.png" Height="74" Width="92" Canvas.Left="349" Canvas.Top="299" />
-            <Image Source="Assets/pocao_vitae.png" Height="80" Width="80" Canvas.Left="361" Canvas.Top="453" />
-            <Image Source="Assets/pocao_radix.png" Height="71" Width="98" Canvas.Left="838" Canvas.Top="301" />
+
+            <Button x:Name="PirlimpimpimButton" Width="125" Canvas.Top="130" Canvas.Left="340" Height="105" Background="Transparent" Click="ShowDialogItemClicked">
+                <Image x:Name="PirlimpimpimImg" Source="Assets/po_pirlimpimpim.png" Canvas.Top="149" Height="66" Width="92" Canvas.Left="349" />
+
+            </Button>
+
+            <Button x:Name="WheyButton" Width="100" Height="105" Canvas.Left="825" Canvas.Top="145" Background="Transparent" Click="ShowDialogItemClicked">
+                <Image x:Name="WheyImg" Source="Assets/pocao_whey.png" Canvas.Left="833" Canvas.Top="150" Height="64" Width="98" />
+            </Button>
+            <Button x:Name="FortalecedoraButton" Width="100" Height="105" Canvas.Left="340" Canvas.Top="290" Background="Transparent" Click="ShowDialogItemClicked">
+                <Image x:Name="FortalecedoraImg" Source="Assets/pocao_fortalecedora.png" Height="74" Width="92" Canvas.Left="349" Canvas.Top="299" />
+            </Button>
+            <Button x:Name="VitaeButton" Width="100" Height="105" Canvas.Left="355" Canvas.Top="445" Background="Transparent" Click="ShowDialogItemClicked">
+                <Image x:Name="VitaeImg" Source="Assets/pocao_vitae.png" Height="80" Width="80" Canvas.Left="361" Canvas.Top="453" />
+            </Button>
+            <Button x:Name="RadixButton" Width="100" Height="105" Canvas.Left="830" Canvas.Top="295" Background="Transparent" Click="ShowDialogItemClicked">
+                <Image x:Name="RadixImg" Source="Assets/pocao_radix.png" Height="71" Width="98" Canvas.Left="838" Canvas.Top="301" />
+            </Button>
+
+            <ContentDialog  x:Name="CaixaDeDialogo" >
+                <Canvas Width="2000" Height="150">
+                    <Image Source="Assets/placa.png" Width="2000" Height="150" />
+                    <TextBlock x:Name="NomeDoItem" FontFamily="Cardinal" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
+                    <Image x:Name="NewItemImg" Source="Assets/pocao_radix.png" Width="40" Height="40" Canvas.Left="10"/>
+                    <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
+                    <Button x:Name="fecharButton" Content="Fechar" Background="Gray" Height="50" Width="90" FontWeight="Black" Canvas.Top="100" Canvas.Left="200" FontFamily="Cardinal" FontSize="22" Click="FecharContent"/>
+                </Canvas>
+            </ContentDialog>
+
             <Image Source="Assets/moeda_front.png" Width="48" Height="40" Canvas.Left="18" Canvas.Top="626"></Image>
             <Image x:Name="ImgFeiticeira" Source="Assets/feiticeira_front.png" Width="160" Height="160" Canvas.Left="89" Canvas.Top="170"></Image>
             <Image Source="Assets/pedras_da_terra.png" Width="60" Height="60" Canvas.Left="20" Canvas.Top="393"></Image>

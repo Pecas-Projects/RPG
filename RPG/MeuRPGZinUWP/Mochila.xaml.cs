@@ -28,6 +28,7 @@ namespace MeuRPGZinUWP
         public Feiticeira feiticeira = new Feiticeira();
         public Pirlimpimpim pirlimpimpim = new Pirlimpimpim();
 
+
         public Mochila()
         {
             this.InitializeComponent();
@@ -146,6 +147,59 @@ namespace MeuRPGZinUWP
                 }
 
             }
+        }
+
+        private void FecharContent(object sender, RoutedEventArgs e)
+        {
+            CaixaDeDialogo.Hide();
+        }
+
+        private void ShowDialogItemClicked(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+
+            DisplayContentDialog(btn.Name);
+        }
+
+        private void DisplayContentDialog(string NomeItem)
+        {
+            string titulo = null, texto = null;
+            ImageSource address = null;
+            if (NomeItem == "PirlimpimpimButton")
+            {
+                titulo = "Pó de Pirlimpimpim";
+                texto = "Aumenta em 20% a sua magia!";
+                address = PirlimpimpimImg.Source;
+            }
+            else if (NomeItem == "WheyButton")
+            {
+                titulo = "Taurus Rubber";
+                texto = "Aumenta a sua estamina!";
+                address = WheyImg.Source;
+            }
+            else if (NomeItem == "VitaeButton")
+            {
+                titulo = "Poção Vitae";
+                texto = "Aumenta a sua vida em 50 pontos!";
+                address = VitaeImg.Source;
+            }
+            else if (NomeItem == "RadixButton")
+            {
+                titulo = "Poção Radix";
+                texto = "Recupera 15% de seu escudo atual!";
+                address = RadixImg.Source;
+            }
+            else if (NomeItem == "FortalecedoraButton")
+            {
+                titulo = "Poção Fortalecedora";
+                texto = "Aumenta a sua força em 15%!";
+                address = FortalecedoraImg.Source;
+            }
+
+            textoCaixaDialogo.Text = texto;
+            NomeDoItem.Text = titulo;
+            NewItemImg.Source = address;
+            CaixaDeDialogo.ShowAsync();
         }
 
         /// <summary>
