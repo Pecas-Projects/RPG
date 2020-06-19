@@ -43,6 +43,7 @@ namespace MeuRPGZinUWP
             controller = e.Parameter as ControllerBatalha;
             feiticeira = controller.Feiticeira;
             AtualizarContItens();
+          
         }
 
         public void AtualizarContItens()
@@ -52,7 +53,10 @@ namespace MeuRPGZinUWP
             contRadix.Text = "Poção Radix: " + feiticeira.mochila.bagRadix.Count;
             contVitae.Text = "Poção Vitae: " + feiticeira.mochila.bagVitae.Count;
             contWhey.Text = "Poção Whey: " + feiticeira.mochila.bagWhey.Count;
-            contPecas.Text = "Você tem " + feiticeira.Moedas + " moedas";
+            contPecas.Text = "Pecas: " + feiticeira.Moedas;
+            forca.Text = "Força: " + feiticeira.Forca;
+            escudo.Text = "Escudo: " + feiticeira.Escudo;
+            estamina.Text = "Estamina: " + feiticeira.Estamina;
         }
 
         public void RetirarItensDeBatalha()
@@ -320,6 +324,9 @@ namespace MeuRPGZinUWP
             }
         }
 
+        private void contFortalecedora_SelectionChanged(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }

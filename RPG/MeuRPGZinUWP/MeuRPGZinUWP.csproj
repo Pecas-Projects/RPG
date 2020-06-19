@@ -221,6 +221,7 @@
     <Content Include="Assets\feiticeira_left_2.png" />
     <Content Include="Assets\feiticeira_right_2.png" />
     <Content Include="Assets\humano.png" />
+    <Content Include="Assets\interrogacao.png" />
     <Content Include="Assets\lab_ceu.png" />
     <Content Include="Assets\lab_fase1.png" />
     <Content Include="Assets\lab_fundo_do_mar.png" />
@@ -228,6 +229,7 @@
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\lojinha.png" />
     <Content Include="Assets\mercadora.png" />
+    <Content Include="Assets\minus.png" />
     <Content Include="Assets\moeda_front.png" />
     <Content Include="Assets\pedras_da_magia.png" />
     <Content Include="Assets\pedras_da_terra.png" />
@@ -235,6 +237,7 @@
     <Content Include="Assets\pedras_do_fogo.png" />
     <Content Include="Assets\pedra_da_agua.png" />
     <Content Include="Assets\placa.png" />
+    <Content Include="Assets\plus-black-symbol.png" />
     <Content Include="Assets\pocao_fortalecedora.png" />
     <Content Include="Assets\pocao_radix.png" />
     <Content Include="Assets\pocao_vitae.png" />
