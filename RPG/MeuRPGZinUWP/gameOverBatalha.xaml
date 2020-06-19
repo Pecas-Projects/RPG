@@ -16,7 +16,7 @@
 
             <TextBlock Width="486" Height="100" Text="GAME OVER" FontFamily="Cardinal" FontSize="60" Canvas.Left="432" Canvas.Top="12" Foreground="White"></TextBlock>
 
-            <Image Source="Assets/feiticeira_morta.png" Width="300" Height="300" Canvas.Left="432" Canvas.Top="150"></Image>
+            <Image x:Name="feiticeiraMortaImg" Source="Assets/feiticeira_morta.png" Width="300" Height="300" Canvas.Left="432" Canvas.Top="150"></Image>
             <Image Source="Assets/balao.png" Width="332" Height="286" Canvas.Left="650" Canvas.Top="71"></Image>
 
 

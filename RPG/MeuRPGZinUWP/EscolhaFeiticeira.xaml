@@ -44,6 +44,8 @@
 
             <Button x:Name="contunuar" Content="Continuar" FontFamily="cardinal" FontSize="50" Background="DarkGray"
              Width="235" Height="80" Canvas.Left="1026" Canvas.Top="590" Foreground="Black" BorderBrush="Black" Click="contunuar_Click"></Button>
+            <TextBlock x:Name="escolhaFeiticeira" Text="" Width="732" Height="107" FontFamily="cardinal" FontSize="60" Foreground="White"
+                Canvas.Left="269" Canvas.Top="105"/>
 
         </Canvas>
 

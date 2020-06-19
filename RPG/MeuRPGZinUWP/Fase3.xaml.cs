@@ -89,6 +89,7 @@ namespace MeuRPGZinUWP
             base.OnNavigatedTo(e);
             controller = e.Parameter as ControllerBatalha;
             feiticeira = controller.Feiticeira;
+            feiticeiraImg.Source = new BitmapImage(feiticeira.ImagemPersonagem);
         }
 
         protected override void OnKeyUp(KeyRoutedEventArgs e)

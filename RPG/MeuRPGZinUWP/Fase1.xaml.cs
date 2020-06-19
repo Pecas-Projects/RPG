@@ -40,9 +40,15 @@ namespace MeuRPGZinUWP
         public bool Whey = false;
         public ControllerBatalha controller = new ControllerBatalha();
 
-
-
         Image[,] matrizImg = new Image[10, 10]; //matriz interna das imagens do labirinto
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+            feiticeira = controller.Feiticeira;
+            feiticeiraImg.Source = new BitmapImage(feiticeira.ImagemPersonagem);
+        }
 
         public Fase1()
         {

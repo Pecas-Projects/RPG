@@ -54,10 +54,6 @@ namespace MeuRPGZinCore
         public Feiticeira()
         {
             this.mochila = new Mochila();
-            this.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
-            this.FeiticeiraCostas = new Uri("ms-appx:///Assets/feiticeira_back.png");
-            this.FeiticeiraDireita = new Uri("ms-appx:///Assets/feiticeira_right_2.png");
-            this.FeiticeiraEsquerda = new Uri("ms-appx:///Assets/feiticeira_left_2.png");
 
             this.Pedras.Add(new Uri("ms-appx:///Assets/pedras_da_terra.png"));
 

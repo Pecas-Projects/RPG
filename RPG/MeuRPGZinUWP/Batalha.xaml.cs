@@ -47,6 +47,7 @@ namespace MeuRPGZinUWP
             base.OnNavigatedTo(e);
             controller = e.Parameter as ControllerBatalha;
             feiticeira = controller.Feiticeira;
+            feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraCostas);
             if (controller.Fase == 1)
             {
                 Inimigo = new SereianosNPC();

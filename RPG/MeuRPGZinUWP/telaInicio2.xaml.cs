@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MeuRPGZinCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,15 +24,22 @@ namespace MeuRPGZinUWP
     /// </summary>
     public sealed partial class TelaInicio2 : Page
     {
+        public ControllerBatalha controller = new ControllerBatalha();
+
         public TelaInicio2()
         {
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            controller = e.Parameter as ControllerBatalha;
+        }
 
         private void Iniciar_handleClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Fase1));
+            this.Frame.Navigate(typeof(Fase1), controller);
         }
 
         private void Instrucoes_handleClick(object sender, RoutedEventArgs e)
