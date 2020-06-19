@@ -27,7 +27,7 @@ namespace MeuRPGZinCore
             linha1.Add(new Parede { topo = true, baixo = true });
             linha1.Add(new Parede { topo = true, direita = true, baixo = true });
             linha1.Add(new Parede { topo = true, esquerda = true });
-            linha1.Add(new Parede { topo = true });
+            linha1.Add(new Parede { topo = true, baixo =true });
             linha1.Add(new Parede { topo = true });
             linha1.Add(new Parede { topo = true, direita = true});
             linha1.Add(new Parede { topo = true, esquerda = true });
@@ -37,7 +37,7 @@ namespace MeuRPGZinCore
             linha2.Add(new Parede { direita = true, topo = true });
             linha2.Add(new Parede { topo = true, esquerda = true });
             linha2.Add(new Parede()); //linha2[3] tem todas as opcoes livre
-            linha2.Add(new Parede { baixo = true, direita = true });
+            linha2.Add(new Parede { baixo = true, direita = true, topo = true });
             linha2.Add(new Parede { topo = true, esquerda = true });
             linha2.Add(new Parede { topo = true, direita = true });
             linha2.Add(new Parede { esquerda = true, direita = true });

@@ -65,7 +65,7 @@ namespace MeuRPGZinUWP
             else if(controller.Fase == 4)
             {
                 Inimigo = new HumanoNPC();
-                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/underwater_blur.png"));
+                fundo_batalha.Source = new BitmapImage(new Uri("ms-appx:///Assets/floresta_gaussian.png"));
             }
             inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
 
