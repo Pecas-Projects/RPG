@@ -24,7 +24,7 @@
             <TextBlock x:Name="escudo" Text="Escudo: " Width="286" Height="40" FontFamily="Berkahi Blackletter" Canvas.Left="20"
             FontSize="35" Canvas.Top="520" Foreground="White" ></TextBlock>
 
-            <TextBlock x:Name="estamina" Text="Estamina: " Width="260" Height="40" FontFamily="Berkahi Blackletter" 
+            <TextBlock Text="Estamina: 1" Width="260" Height="40" FontFamily="Berkahi Blackletter" 
              FontSize="35" Canvas.Left="20" Canvas.Top="565" Foreground="White"></TextBlock>
 
             <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" Canvas.Top="343"></TextBlock>
@@ -111,7 +111,7 @@
             FontSize="40" FontFamily="Berkahi Blackletter" TextWrapping="Wrap" Width="264" Foreground="White"/>
 
             <TextBlock Height="46" Canvas.Left="690" Canvas.Top="511" Text="Itens de Batalha" FontSize="40" TextWrapping="Wrap" 
-            Foreground="White" FontFamily="Berkahi Blackletter" Width="278"/>
+            Foreground="White" FontFamily="Berkahi Blackletter" Width="300"/>
 
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
             <Image Source="Assets/po_pirlimpimpim.png" Canvas.Top="149" Height="66" Width="92" Canvas.Left="349" />

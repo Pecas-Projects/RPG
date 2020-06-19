@@ -43,7 +43,22 @@ namespace MeuRPGZinUWP
             controller = e.Parameter as ControllerBatalha;
             feiticeira = controller.Feiticeira;
             AtualizarContItens();
-          
+            
+            if(controller.Feiticeira.Pedras.Count == 2)
+            {
+                pedraAgua.Source = new BitmapImage(controller.Feiticeira.Pedras[1]);
+            }
+            else if(controller.Feiticeira.Pedras.Count == 3)
+            {
+                pedraAgua.Source = new BitmapImage(controller.Feiticeira.Pedras[1]);
+                pedraAr.Source = new BitmapImage(controller.Feiticeira.Pedras[2]);
+            }
+            else if(controller.Feiticeira.Pedras.Count == 4)
+            {
+                pedraAgua.Source = new BitmapImage(controller.Feiticeira.Pedras[1]);
+                pedraAr.Source = new BitmapImage(controller.Feiticeira.Pedras[2]);
+                pedraFogo.Source = new BitmapImage(controller.Feiticeira.Pedras[3]);
+            }
         }
 
         public void AtualizarContItens()
@@ -56,7 +71,7 @@ namespace MeuRPGZinUWP
             contPecas.Text = "Pecas: " + feiticeira.Moedas;
             forca.Text = "Força: " + feiticeira.Forca;
             escudo.Text = "Escudo: " + feiticeira.Escudo;
-            estamina.Text = "Estamina: " + feiticeira.Estamina;
+
         }
 
         public void RetirarItensDeBatalha()
