@@ -20,6 +20,7 @@ namespace MeuRPGZinCore
         public Uri FeiticeiraFrente { get; set; }
         public Uri FeiticeiraDireita { get; set; }
         public Uri FeiticeiraEsquerda { get; set; }
+        public Uri feiticeiraMorta { get; set; }
 
         /// <summary>
         /// a feiticeira possui uma mochila, que é onde 

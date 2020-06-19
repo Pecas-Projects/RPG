@@ -122,6 +122,9 @@
     <Compile Include="Assets\venceuBatalha3.xaml.cs">
       <DependentUpon>venceuBatalha3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EscolhaFeiticeira.xaml.cs">
+      <DependentUpon>EscolhaFeiticeira.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fase2.xaml.cs">
       <DependentUpon>Fase2.xaml</DependentUpon>
     </Compile>
@@ -213,13 +216,17 @@
     <Content Include="Assets\fada_de_chapeu.png" />
     <Content Include="Assets\botoao iniciar 2.png" />
     <Content Include="Assets\fada_king_front.png" />
+    <Content Include="Assets\feiticeira_Ana.png" />
     <Content Include="Assets\feiticeira_back2.png" />
+    <Content Include="Assets\feiticeira_Fernanda.png" />
     <Content Include="Assets\feiticeira_front.png" />
+    <Content Include="Assets\feiticeira_Maria.png" />
     <Content Include="Assets\feiticeira_morta.png" />
     <Content Include="Assets\feiticeira_back.png" />
     <Content Include="Assets\feiticeira_front.png" />
     <Content Include="Assets\feiticeira_left_2.png" />
     <Content Include="Assets\feiticeira_right_2.png" />
+    <Content Include="Assets\floresta_gaussian.png" />
     <Content Include="Assets\humano.png" />
     <Content Include="Assets\interrogacao.png" />
     <Content Include="Assets\lab_ceu.png" />
@@ -261,6 +268,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Assets\venceuBatalha3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EscolhaFeiticeira.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
