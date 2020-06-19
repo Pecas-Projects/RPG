@@ -378,8 +378,8 @@ namespace MeuRPGZinUWP
             if (controller.ContDefesaInimigo >= 4)
             {
                 int acaoInimigo;
-                acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
                 controller.ControleAtaqueEspecialFeiticeira(feiticeira, Inimigo);
+                acaoInimigo = ((PersonagemNPC)Inimigo).Acao(feiticeira, controller);
                 controller.RelatorioTurno(2, acaoInimigo);
 
                 if (Controller.FimDeTurno(feiticeira, Inimigo, 2, acaoInimigo) != null)
