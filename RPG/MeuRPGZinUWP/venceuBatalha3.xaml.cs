@@ -43,6 +43,7 @@ namespace MeuRPGZinUWP
 
         private void IrBatalha_Click(object sender, RoutedEventArgs e)
         {
+            controller.Feiticeira.Pedras.Add(new Uri("ms-appx:///Assets/pedras_do_fogo.png"));
             controller.Fase = 4;
             controller.RecompencaBatalha();
             this.Frame.Navigate(typeof(Batalha), controller);

@@ -41,6 +41,7 @@ namespace MeuRPGZinUWP
 
         private void IrLab_handleClick(object sender, RoutedEventArgs e)
         {
+            controller.Feiticeira.Pedras.Add(new Uri("ms-appx:///Assets/pedras_do_ar.png"));
             controller.RecompencaBatalha();
             this.Frame.Navigate(typeof(Fase3), controller);
         }

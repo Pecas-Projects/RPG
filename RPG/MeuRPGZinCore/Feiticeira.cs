@@ -39,6 +39,8 @@ namespace MeuRPGZinCore
         /// </summary>
         public List<Item> ItemdeBatalha = new List<Item>();
 
+        public List<Uri> Pedras = new List<Uri>();
+
         /// <summary>
         /// Função que cria feiticeira.
         /// Ela inicia o jogo com:
@@ -55,6 +57,8 @@ namespace MeuRPGZinCore
             this.FeiticeiraCostas = new Uri("ms-appx:///Assets/feiticeira_back.png");
             this.FeiticeiraDireita = new Uri("ms-appx:///Assets/feiticeira_right_2.png");
             this.FeiticeiraEsquerda = new Uri("ms-appx:///Assets/feiticeira_left_2.png");
+
+            this.Pedras.Add(new Uri("ms-appx:///Assets/pedras_da_terra.png"));
 
             //implementar valores default para a feiticeira
             this.Forca = 20;
