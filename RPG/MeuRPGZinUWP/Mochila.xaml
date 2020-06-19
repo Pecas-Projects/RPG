@@ -13,59 +13,122 @@
 
     <Grid>
 
-        <Canvas Background="Gray" >
+        <Canvas Background= "#1a011b" >
 
-            <Button x:Name="vaiParaBatalha" Content="Iniciar Batalha"  FontSize="45" Height="87" Canvas.Left="990" Canvas.Top="598" Width="271" 
+            <TextBlock Text="Habilidades Feiticeira" Width="311" Height="44" Canvas.Left="20" FontSize="40" FontFamily="cardinal"
+            Canvas.Top="121" Foreground="White"></TextBlock>
+
+            <TextBlock x:Name="forca" Text="Força: " Width="296" Height="50" Canvas.Left="15" Canvas.Top="478" FontSize="35"
+            FontFamily="Berkahi Blackletter" Foreground="White"></TextBlock>
+
+            <TextBlock x:Name="escudo" Text="Escudo: " Width="286" Height="40" FontFamily="Berkahi Blackletter" Canvas.Left="20"
+            FontSize="35" Canvas.Top="520" Foreground="White" ></TextBlock>
+
+            <TextBlock x:Name="estamina" Text="Estamina: " Width="260" Height="40" FontFamily="Berkahi Blackletter" 
+             FontSize="35" Canvas.Left="20" Canvas.Top="565" Foreground="White"></TextBlock>
+
+            <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" Canvas.Top="343"></TextBlock>
+
+            <Button x:Name="vaiParaBatalha" Content="Iniciar Batalha"  FontSize="40" Height="70" Canvas.Left="690" Canvas.Top="614" Width="241" 
              Background="DarkGray" Click="PaginaDaBatalha" Foreground="Black"  BorderBrush="Black" FontFamily="cardinal"/>
 
-            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="43" Height="87" Canvas.Left="39" Canvas.Top="598" Width="322"  Background="DarkGray"
+            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="40" Height="70" Canvas.Left="950" Canvas.Top="614" Width="322"  Background="DarkGray"
              Click="PaginaDaLoja" FontFamily="cardinal" BorderBrush="Black" Foreground="Black"/>
 
             <TextBlock Height="93" Canvas.Left="446" Canvas.Top="23" Text="Você está na Bag" FontSize="60" 
-            Foreground="White" FontFamily="cardinal" Width="437"/>
+             FontFamily="cardinal" Width="437" Foreground="White"/>
 
-            <TextBlock x:Name="contPirlimpimpim" Height="64" Canvas.Left="107" Canvas.Top="108" Text="Pó de Pirlimpimpim: " 
-             FontSize="40" Width="512" Foreground="Black" FontFamily="cardinal"/>
+            <TextBlock x:Name="contPirlimpimpim" Height="53" Canvas.Left="440" Canvas.Top="160" Text="Pó de Pirlimpimpim: " 
+             FontSize="35" Width="402" Foreground="White" FontFamily="Berkahi Blackletter" RenderTransformOrigin="0.561,0.531"/>
 
-            <Button x:Name="selectPirlimpimpim"  Height="80"  Canvas.Left="133" Canvas.Top="179" 
+            <Button x:Name="selectPirlimpimpim"  Height="80"  Canvas.Left="446" Canvas.Top="219" 
             Width="80" Click="LevarPirlimpimpim" Background="DarkGray" BorderBrush="Black">
                 <Image Source="Assets/plus-black-symbol.png" Width="50" Height="50"></Image>
             </Button>
 
-            <Button x:Name="removePirlimpimpim"  Height="80" Canvas.Left="247" Canvas.Top="179" Width="80"
+            <Button x:Name="removePirlimpimpim"  Height="80" Canvas.Left="560" Canvas.Top="219" Width="80"
             Click="RetirarPirlimpimpim" Background="DarkGray" BorderBrush="Black">
                 <Image Source="Assets/minus.png" Width="50" Height="50"></Image>
             </Button>
 
 
-            <TextBlock x:Name="contWhey" Height="80" Canvas.Left="745" Canvas.Top="212" Text="Poção Whey: " FontSize="35" TextWrapping="Wrap" Width="512"/>
-            <TextBlock x:Name="contFortalecedora" Height="80" Canvas.Left="64" Canvas.Top="289" Text="Poção Fortalecedora: " FontSize="35" TextWrapping="Wrap" Width="512"/>
-            <Button x:Name="selectFortalecedora" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="64" Canvas.Top="317" Width="162" Click="LevarFortalecedora" />
-            <Button x:Name="removeFortalecedora" Content="Remover" Height="76" FontSize="30" Canvas.Left="257" Canvas.Top="326" Width="162" Click="RetirarFortalecedora" />
-            <TextBlock x:Name="contRadix" Height="80" Canvas.Left="745" Canvas.Top="357" Text="Poção Radix: " FontSize="35" TextWrapping="Wrap" Width="512"/>
-            <Button x:Name="selectRadix" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="757" Canvas.Top="414" Width="162" Click="LevarRadix" />
-            <Button x:Name="removeRadix" Content="Remover" Height="76" FontSize="30" Canvas.Left="963" Canvas.Top="414" Width="162" Click="RetirarRadix" />
-            <TextBlock x:Name="contVitae" Height="80" Canvas.Left="64" Canvas.Top="405" FontSize="35" TextWrapping="Wrap" Width="512"><Run Text="Poção "/><Run Text="Vitae"/><Run Text=": "/></TextBlock>
-            <Button x:Name="selectVitae" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="45" Canvas.Top="457" Width="162" Click="LevarVitae" />
-            <Button x:Name="removeVitae" Content="Remover" Height="76" FontSize="30" Canvas.Left="257" Canvas.Top="475" Width="162" Click="RetirarVitae" />
-            <TextBlock x:Name="contPecas"  Height="45" Canvas.Left="39" Canvas.Top="23" Text="Você tem:" FontSize="40" TextWrapping="Wrap" Width="397"/>
-            <Button x:Name="selectWhey" Content="Adicionar" Height="76" FontSize="30" Canvas.Left="757" Canvas.Top="274" Width="162" Click="LevarWhey"/>
-            <Button x:Name="removeWhey" Content="Remover" Height="76" FontSize="30" Canvas.Left="963" Canvas.Top="274" Width="162" Click="RetirarWhey"/>
-            <TextBlock Height="46" Canvas.Left="759" Canvas.Top="547" Text="Mochila: " FontSize="40" TextWrapping="Wrap" Width="247"/>
+            <TextBlock x:Name="contWhey" Height="66" Canvas.Left="925" Canvas.Top="160" Text="Poção Whey: " FontSize="35" 
+            FontFamily="Berkahi Blackletter" Width="354" Foreground="White"/>
+
+            <Button x:Name="selectWhey"  Height="80"  Canvas.Left="945" Canvas.Top="219" 
+            Width="80" Click="LevarWhey" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/plus-black-symbol.png" Width="50" Height="50"></Image>
+            </Button>
+
+            <Button x:Name="removeWhey"  Height="80" Canvas.Left="1060" Canvas.Top="219" Width="80"
+            Click="RetirarWhey" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/minus.png" Width="50" Height="50"></Image>
+            </Button>
+
+            <TextBlock x:Name="contFortalecedora" Height="64" Canvas.Left="435" Canvas.Top="317" Foreground="White" Text="Poção Fortalecedora: "
+            FontFamily="Berkahi Blackletter" FontSize="35" Width="472" SelectionChanged="contFortalecedora_SelectionChanged"/>
+
+            <Button x:Name="selectFortalecedora"  Height="80"  Canvas.Left="446" Canvas.Top="373" 
+            Width="80" Click="LevarFortalecedora" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/plus-black-symbol.png" Width="50" Height="50"></Image>
+            </Button>
+
+            <Button x:Name="removeFortalecedora"  Height="80" Canvas.Left="560" Canvas.Top="373" Width="80"
+            Click="RetirarFortalecedora" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/minus.png" Width="50" Height="50"></Image>
+            </Button>
+
+
+            <TextBlock x:Name="contRadix" Height="56" Canvas.Left="936" Canvas.Top="317" Text="Poção Radix: " FontSize="35"
+            FontFamily="Berkahi Blackletter" Width="358" Foreground="White"/>
+
+            <Button x:Name="selectRadix"  Height="80"  Canvas.Left="950" Canvas.Top="373" 
+            Width="80" Click="LevarRadix" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/plus-black-symbol.png" Width="50" Height="50"></Image>
+            </Button>
+
+            <Button x:Name="removeRadix"  Height="80" Canvas.Left="1060" Canvas.Top="373" Width="80"
+            Click="RetirarRadix" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/minus.png" Width="50" Height="50"></Image>
+            </Button>
+
+
+            <TextBlock x:Name="contVitae" Height="56" Canvas.Left="446" Canvas.Top="471" FontSize="35" TextWrapping="Wrap" FontFamily="Berkahi Blackletter" Foreground="White" Width="348"><Run Text="Poção "/>
+             <Run Text="Vitae"/><Run Text=": "/></TextBlock>
+
+            <Button x:Name="selectVitae"  Height="80"  Canvas.Left="446" Canvas.Top="525" 
+            Width="80" Click="LevarVitae" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/plus-black-symbol.png" Width="50" Height="50"></Image>
+            </Button>
+
+            <Button x:Name="removeVitae"  Height="80" Canvas.Left="560" Canvas.Top="525" Width="80"
+            Click="RetirarVitae" Background="DarkGray" BorderBrush="Black">
+                <Image Source="Assets/minus.png" Width="50" Height="50"></Image>
+            </Button>
+
+
+            <TextBlock x:Name="contPecas"  Height="45" Canvas.Left="71" Canvas.Top="619" Text="Pecas:"
+            FontSize="40" FontFamily="Berkahi Blackletter" TextWrapping="Wrap" Width="264" Foreground="White"/>
+
+            <TextBlock Height="46" Canvas.Left="690" Canvas.Top="511" Text="Itens de Batalha" FontSize="40" TextWrapping="Wrap" 
+            Foreground="White" FontFamily="Berkahi Blackletter" Width="278"/>
+
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
-            <Image Source="Assets/po_pirlimpimpim.png" Canvas.Top="96" Height="66" Width="92" Canvas.Left="10" />
-            <Image Source="Assets/pocao_whey.png" Canvas.Left="1130" Canvas.Top="235" Height="89" Width="160" />
-            <Image Source="Assets/pocao_fortalecedora.png" Height="89" Width="160" Canvas.Left="537" Canvas.Top="380" />
-            <Image Source="Assets/pocao_vitae.png" Height="89" Width="160" Canvas.Left="537" Canvas.Top="536" />
-            <Image Source="Assets/pocao_radix.png" Height="89" Width="160" Canvas.Left="1130" Canvas.Top="357" />
+            <Image Source="Assets/po_pirlimpimpim.png" Canvas.Top="149" Height="66" Width="92" Canvas.Left="349" />
+            <Image Source="Assets/pocao_whey.png" Canvas.Left="833" Canvas.Top="150" Height="64" Width="98" />
+            <Image Source="Assets/pocao_fortalecedora.png" Height="74" Width="92" Canvas.Left="349" Canvas.Top="299" />
+            <Image Source="Assets/pocao_vitae.png" Height="80" Width="80" Canvas.Left="361" Canvas.Top="453" />
+            <Image Source="Assets/pocao_radix.png" Height="71" Width="98" Canvas.Left="838" Canvas.Top="301" />
+            <Image Source="Assets/moeda_front.png" Width="48" Height="40" Canvas.Left="18" Canvas.Top="626"></Image>
+            <Image x:Name="ImgFeiticeira" Source="Assets/feiticeira_front.png" Width="160" Height="160" Canvas.Left="89" Canvas.Top="170"></Image>
+            <Image Source="Assets/pedras_da_terra.png" Width="60" Height="60" Canvas.Left="20" Canvas.Top="393"></Image>
+            <Image x:Name="pedraAgua"  Width="60" Height="60" Canvas.Left="85" Canvas.Top="393"></Image>
+            <Image x:Name="pedraAr" Width="60" Height="60" Canvas.Left="151" Canvas.Top="393"  ></Image>
+            <Image x:Name="pedraFogo"  Width="60" Height="60" Canvas.Left="220" Canvas.Top="393"></Image>
 
-            <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="890" Canvas.Top="614" Height="80" Width="180" />
-            <Image x:Name="Item_mochila" Source="Assets/interrogacao.png" Canvas.Left="728" Canvas.Top="614" Height="80" Width="180" />
-
-
-
-
-
+            <Image x:Name="Item_mochila2" Source="Assets/interrogacao.png" Canvas.Left="990" Canvas.Top="500" Height="80" Width="120" />
+            <Image x:Name="Item_mochila" Source="Assets/interrogacao.png" Canvas.Left="1116" Canvas.Top="500" Height="80" Width="120" />
+            <Path Data="M320,162 L322,215" Fill="White" Height="504" Canvas.Left="340" Stretch="Fill" Stroke="White" Canvas.Top="162" UseLayoutRounding="False" Width="3"/>
 
         </Canvas>
     </Grid>
