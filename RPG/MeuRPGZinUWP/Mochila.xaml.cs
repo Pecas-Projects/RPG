@@ -42,6 +42,7 @@ namespace MeuRPGZinUWP
         {
             base.OnNavigatedTo(e);
             controller = e.Parameter as ControllerBatalha;
+            controller.ComecaBatalha();
             feiticeira = controller.Feiticeira;
             ImgFeiticeira.Source = new BitmapImage(feiticeira.ImagemPersonagem);
             AtualizarContItens();
