@@ -143,14 +143,24 @@ namespace MeuRPGZinUWP
             else if(Inimigo.Vida <= 0)
             {
                 controller.ConfereItemBatalha(feiticeira);
-                Fim_BTN.Height = 71;
-                Fim_BTN.Width = 419;
-                usarEscudo.Width = 0;
-                usarEscudo.Height = 0;
-                ataque.Width = 0;
-                ataque.Height = 0;
-                descancar.Width = 0;
-                descancar.Height = 0;
+
+                controller.Feiticeira = feiticeira;
+                if (controller.Fase == 1)
+                {
+                    this.Frame.Navigate(typeof(venceuBatalha1), controller);
+                }
+                else if (controller.Fase == 2)
+                {
+                    this.Frame.Navigate(typeof(venceuBatalha2), controller);
+                }
+                else if (controller.Fase == 3)
+                {
+                    this.Frame.Navigate(typeof(venceuBatalha3), controller);
+                }
+                else if (controller.Fase == 4)
+                {
+                    this.Frame.Navigate(typeof(VenceuJogo), controller);
+                }
             }    
         }
 
@@ -296,31 +306,6 @@ namespace MeuRPGZinUWP
             } 
         }
 
-        /// <summary>
-        /// Método do botão que encaminha o usuário para a tela de vitória correspondente.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ProximaFase(object sender, RoutedEventArgs e)
-        {
-            controller.Feiticeira = feiticeira;
-            if(controller.Fase == 1)
-            {
-                this.Frame.Navigate(typeof(venceuBatalha1), controller);
-            }
-            else if (controller.Fase == 2)
-            {
-                this.Frame.Navigate(typeof(venceuBatalha2), controller);
-            }
-            else if (controller.Fase == 3)
-            {
-                this.Frame.Navigate(typeof(venceuBatalha3), controller);
-            }
-            else if (controller.Fase == 4)
-            {
-                this.Frame.Navigate(typeof(VenceuJogo), controller);
-            }
-        }
 
         /// <summary>
         /// Método do botão associado ao uso do primeiro Item da List "ItemBatalha" da feiticeira.
@@ -337,7 +322,6 @@ namespace MeuRPGZinUWP
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[0]);
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[0].Utilizado = true;
-                    Item1_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
                     Item1_Batalha.Height = 0;
                     Item1_Batalha.Width = 0;
                 }
@@ -360,7 +344,6 @@ namespace MeuRPGZinUWP
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[1]);
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[1].Utilizado = true;
-                    Item2_Img.Source = new BitmapImage(new Uri("ms-appx:///Assets/interrogacao.png"));
                     Item2_Batalha.Height = 0;
                     Item2_Batalha.Width = 0;
                 }

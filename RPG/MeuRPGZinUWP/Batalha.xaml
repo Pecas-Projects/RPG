@@ -52,9 +52,6 @@
             <TextBlock x:Name="acaoFeiticeira" FontSize="50" Height="71" Text=" " Foreground="White" TextWrapping="Wrap" Width="290"  Canvas.Left="571" Canvas.Top="618" FontFamily="cardinal"/>
             <TextBlock x:Name="acaoInimigo" FontSize="50" Height="71"  Text=" " Foreground="White" TextWrapping="Wrap" Width="310" Canvas.Left="956" Canvas.Top="618" FontFamily="cardinal"/>
 
-            <Button x:Name="Fim_BTN" Content="fim " FontSize="30" Height="0" Margin="58,58,0,0" Width="0" Click="ProximaFase" Canvas.Left="701" Canvas.Top="397" RenderTransformOrigin="2.309,9.857"/>
-
-
             <Button x:Name="Item1_Batalha" Content="Usar" FontSize="40" FontFamily="cardinal" Height="0" Canvas.Left="42" Foreground="White"
              Background="Gray" BorderBrush="White" Canvas.Top="593" Width="0" RenderTransformOrigin="0.503,0.282" Click="UsarItem1NaBatalha"/>
 

@@ -26,5 +26,10 @@ namespace MeuRPGZinUWP
         {
             this.InitializeComponent();
         }
+
+        private void Jogar_Novamente(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TelaInicio));
+        }
     }
 }
