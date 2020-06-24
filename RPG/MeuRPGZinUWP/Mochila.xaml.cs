@@ -56,7 +56,7 @@ namespace MeuRPGZinUWP
                 pedraAgua.Source = new BitmapImage(controller.Feiticeira.Pedras[1]);
                 pedraAr.Source = new BitmapImage(controller.Feiticeira.Pedras[2]);
             }
-            else if(controller.Feiticeira.Pedras.Count == 4)
+            else if(controller.Feiticeira.Pedras.Count > 3)
             {
                 pedraAgua.Source = new BitmapImage(controller.Feiticeira.Pedras[1]);
                 pedraAr.Source = new BitmapImage(controller.Feiticeira.Pedras[2]);
