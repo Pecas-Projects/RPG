@@ -27,7 +27,7 @@
             <TextBlock x:Name="estamina" Text="Estamina: " Width="260" Height="40" FontFamily="Berkahi Blackletter" 
              FontSize="30" Canvas.Left="16" Canvas.Top="540" Foreground="White"></TextBlock>
 
-            <TextBlock x:Name="magia" Text="Magia: " FontSize="30" FontFamily="Berkahi Blackletter" Width="260" Height="40" Canvas.Top="574" Canvas.Left="20"></TextBlock>
+            <TextBlock x:Name="magia" Text="Magia: " FontSize="30" FontFamily="Berkahi Blackletter" Width="260" Height="40" Canvas.Top="574" Canvas.Left="20" Foreground="White"></TextBlock>
 
             <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" 
                        Foreground="White" Canvas.Top="343"></TextBlock>

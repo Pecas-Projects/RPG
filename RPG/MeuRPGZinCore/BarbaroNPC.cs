@@ -21,7 +21,7 @@ namespace MeuRPGZinCore
         public BarbaroNPC()
         {
             this.Forca = 30;
-            this.PerdaEstamina = 0.3;
+            this.PerdaEstamina = 0.4;
             this.GanhoEstamnina = 0.2;
             this.Escudo = 70;
             this.ImagemPersonagem = new Uri("ms-appx:///Assets/barbaro_front.png");

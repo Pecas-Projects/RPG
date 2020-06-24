@@ -41,7 +41,7 @@
                 <Image x:Name="RadixImg" Source="Assets/pocao_radix.png" Width="100" Height="100" Stretch="Fill" />
             </Button>
 
-            <ContentDialog  x:Name="CaixaDeDialogo" >
+            <ContentDialog  x:Name="CaixaDeDialogo" Canvas.Top="6" >
                 <Canvas Width="2000" Height="150">
                     <Image Source="Assets/placa.png" Width="2000" Height="150" />
                     <TextBlock x:Name="NomeDoItem" FontFamily="Cardinal" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
@@ -52,37 +52,37 @@
                 </Canvas>
             </ContentDialog>
 
-            <ContentDialog x:Name="AposClick" Background="Black" FontFamily="Cardinal" >
+            <ContentDialog x:Name="AposClick" Background="White" FontFamily="Cardinal" Canvas.Left="10" Canvas.Top="9" >
                 <Canvas Height="150" Width="300">
                     <Image x:Name="PECA" Visibility="Collapsed" Source="Assets/moeda_front.png" Width="60" Height="60" Canvas.Left="120" Canvas.Top="-20" />
                     <TextBlock x:Name="textoCaixaDialogo2" FontWeight="Light" FontSize="30px" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Top="45" Canvas.Left="0"/>
-                    <Button x:Name="fecharButton2" FontSize="25" Content="Fechar" Background="Gray" Canvas.Top="100" Canvas.Left="100"  Height="50" Width="100" FontFamily="Cardinal" Click="FecharContent2"/>
+                    <Button x:Name="fecharButton2" FontSize="25" Content="Fechar" Background="Gray" Canvas.Top="50" Canvas.Left="100"  Height="50" Width="100" FontFamily="Cardinal" Click="FecharContent2"/>
                     <Image Source="Assets/placa.png" Width="2000" Height="150" />
                 </Canvas>
             </ContentDialog>
 
 
-            <TextBlock x:Name="contPirlimpimpim" Height="54" Canvas.Left="129" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="57" FontFamily="Berkahi Blackletter" RenderTransformOrigin="0.211,0.13"/>
+            <TextBlock x:Name="contPirlimpimpim" Height="54" Foreground="White" Canvas.Left="129" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="57" FontFamily="Berkahi Blackletter" RenderTransformOrigin="0.211,0.13"/>
             <TextBlock x:Name="precoPirlimpimpim" Height="42" Canvas.Left="179" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" FontFamily="Berkahi Blackletter" Width="37" RenderTransformOrigin="1.162,0.571"/>
 
-            <TextBlock x:Name="contWhey" Height="51" Canvas.Left="434" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="54" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="contWhey" Height="51" Foreground="White" Canvas.Left="434" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="54" FontFamily="Berkahi Blackletter"/>
             <TextBlock x:Name="precoWhey" Height="42" Canvas.Left="458" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="32" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contVitae" Height="52" Canvas.Left="70" Canvas.Top="398" FontSize="30" TextWrapping="Wrap" Width="29" RenderTransformOrigin="0.612,1.038" FontFamily="Berkahi Blackletter"><Run Text="0"/><Run Text=""/><Run Text=""/></TextBlock>
+            <TextBlock x:Name="contVitae" Height="52" Canvas.Left="70" Canvas.Top="398" FontSize="30" TextWrapping="Wrap" Width="29" RenderTransformOrigin="0.612,1.038" FontFamily="Berkahi Blackletter" Foreground="White"><Run Text="0"/><Run Text=""/><Run Text=""/></TextBlock>
             <TextBlock x:Name="precoVitae"  Height="39" Canvas.Left="95" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contFortalecedora" Height="44" Canvas.Left="276" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="52" RenderTransformOrigin="0.558,0.523" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="contFortalecedora" Foreground="White" Height="44" Canvas.Left="276" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="52" RenderTransformOrigin="0.558,0.523" FontFamily="Berkahi Blackletter"/>
             <TextBlock x:Name="precoFortalecedora"  Height="39" Canvas.Left="304" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contRadix" Height="39" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="contRadix" Height="39" Foreground="White" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58" FontFamily="Berkahi Blackletter"/>
             <TextBlock x:Name="precoRadix"  Height="39" Canvas.Left="515" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="780" Canvas.Top="485" Text="0" FontFamily="Berkahi Blackletter" FontSize="50" TextWrapping="Wrap" Width="158" />
+            <TextBlock x:Name="contPecas"  Height="69" Foreground="White"  Canvas.Left="780" Canvas.Top="499" Text="0" FontFamily="Berkahi Blackletter" FontSize="50" TextWrapping="Wrap" Width="158" />
 
-            <Image Source="Assets/moeda_front.png" Width="50" Height="50" Canvas.Left="720" Canvas.Top="494"></Image>
+            <Image Source="Assets/moeda_front.png" Width="50" Height="50" Canvas.Left="720" Canvas.Top="504"></Image>
 
-            <Button x:Name="voltarParaMochila" Height="60" Canvas.Left="720" Canvas.Top="600" Width="150" Click="IrparaMochila">
-                <Image Source="Assets/botao_mochila1.png" Width="200" Height="80" Stretch="Fill" Margin="-35,-16,-35,-17" />
+            <Button x:Name="voltarParaMochila"  Canvas.Left="654" Canvas.Top="576"  Content="Ir para mochila" FontSize="40" Foreground="Black"
+             Background="DarkGray" RenderTransformOrigin="0.344,0.519"  Width="250" Height="100" FontFamily="Cardinal" BorderBrush="Black" Click="IrparaMochila">
             </Button>
 
         </Canvas>

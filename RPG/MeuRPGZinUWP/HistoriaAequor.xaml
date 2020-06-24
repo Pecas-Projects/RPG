@@ -17,7 +17,7 @@
             <Image Source="Assets/rei_sereiano.png" Width="100" Height="100" Canvas.Left="1014" Canvas.Top="10"></Image>
 
             <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Aequor" Width="592" Height="100" 
-             Canvas.Left="373" Canvas.Top="10"></TextBlock>
+             Canvas.Left="373" Canvas.Top="19"></TextBlock>
 
             <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="45.57" Canvas.Top="144" Height="374" Foreground="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <RichTextBlock.RenderTransform>
