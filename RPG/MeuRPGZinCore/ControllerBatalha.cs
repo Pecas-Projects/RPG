@@ -279,12 +279,41 @@ namespace MeuRPGZinCore
 
         }
 
+        public void ComecaBatalha()
+        {
+            this.ContAtaqueFeiticeira = 0;
+            this.ContAtaqueInimigo = 0;
+            this.ContDefesaFeiticeira = 0;
+            this.ContDefesaInimigo = 0;
+            this.ContDescancarFeiticeira = 0;
+            this.ContDescancarInimigo = 0;
+            this.ContTurnos = 0;
+            this.Feiticeira.Vida = 100;
+            this.Feiticeira.Estamina = 1;
+            this.Feiticeira.Magia = 1.2;
+
+            if (this.Fase == 1)
+            {
+                this.Feiticeira.Escudo = 50;
+            }
+            else if( this.Fase == 2)
+            {
+                this.Feiticeira.Escudo = 60;
+            }
+            else
+            {
+                this.Feiticeira.Escudo = 65;
+            }
+            
+        }
+
         public void RecompencaBatalha()
         {
             PocaoFortalecedora fortalecedora = new PocaoFortalecedora();
             PocaoVitae vitae = new PocaoVitae();
             if (this.Fase == 1)
             {
+                this.Feiticeira.Escudo = 50;
                 this.Feiticeira.PerdaEstamina = 0.2;
                 this.Feiticeira.GanhoEstamnina = 0.18;
                 this.Feiticeira.Moedas += 10;
@@ -297,6 +326,7 @@ namespace MeuRPGZinCore
             }
             else if(this.Fase == 3)
             {
+                this.Feiticeira.Escudo = 65;
                 this.Feiticeira.Forca = 25;
                 this.Feiticeira.mochila.AddItem(vitae, this.Feiticeira.mochila.bagVitae);
             }

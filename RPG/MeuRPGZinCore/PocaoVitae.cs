@@ -8,7 +8,7 @@ namespace MeuRPGZinCore
 {
     /// <summary>
     /// Classe filha de "Item".
-    /// Da 50 pontos de vida a jogadora
+    /// Da 30 pontos de vida a jogadora
     /// </summary>
     public class PocaoVitae : Item
     {

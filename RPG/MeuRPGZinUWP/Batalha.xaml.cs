@@ -46,8 +46,7 @@ namespace MeuRPGZinUWP
         {
             base.OnNavigatedTo(e);
             controller = e.Parameter as ControllerBatalha;
-            feiticeira = controller.Feiticeira;
-            feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraCostas);
+            
             if (controller.Fase == 1)
             {
                 Inimigo = new SereianosNPC();
@@ -70,18 +69,9 @@ namespace MeuRPGZinUWP
             }
             inimigoImg.Source = new BitmapImage(Inimigo.ImagemPersonagem);
 
-            controller.ContAtaqueFeiticeira = 0;
-            controller.ContAtaqueInimigo = 0;
-            controller.ContDefesaFeiticeira = 0;
-            controller.ContDefesaInimigo = 0;
-            controller.ContDescancarFeiticeira = 0;
-            controller.ContDescancarInimigo = 0;
-            controller.ContTurnos = 0;
-            feiticeira.Vida = 100;
-            feiticeira.Estamina = 1;
-            feiticeira.Escudo = 50;
-            
-            controller.Feiticeira = feiticeira;
+            controller.ComecaBatalha();
+            feiticeira = controller.Feiticeira;
+            feiticeiraImg.Source = new BitmapImage(feiticeira.FeiticeiraCostas);
             AtualizarStatus();
 
             if (feiticeira.ItemdeBatalha.Count >= 1)
@@ -322,6 +312,8 @@ namespace MeuRPGZinUWP
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[0]);
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[0].Utilizado = true;
+                    Item1_Img.Height = 0;
+                    Item1_Img.Width = 0;
                     Item1_Batalha.Height = 0;
                     Item1_Batalha.Width = 0;
                 }
@@ -344,6 +336,8 @@ namespace MeuRPGZinUWP
                     Controller.UsarItemUtilizavel(feiticeira, feiticeira.ItemdeBatalha[1]);
                     AtualizarStatus();
                     feiticeira.ItemdeBatalha[1].Utilizado = true;
+                    Item2_Img.Height = 0;
+                    Item2_Img.Width = 0;
                     Item2_Batalha.Height = 0;
                     Item2_Batalha.Width = 0;
                 }
