@@ -32,10 +32,10 @@
             <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" 
                        Foreground="White" Canvas.Top="343"></TextBlock>
 
-            <Button x:Name="vaiParaBatalha" Content="Iniciar Batalha"  FontSize="40" Height="70" Canvas.Left="690" Canvas.Top="614" Width="241" 
+            <Button x:Name="vaiParaBatalha" Content="Iniciar Batalha"  FontSize="40" Height="70" Canvas.Left="1033" Canvas.Top="610" Width="241" 
              Background="DarkGray" Click="PaginaDaBatalha" Foreground="Black"  BorderBrush="Black" FontFamily="cardinal"/>
 
-            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="40" Height="70" Canvas.Left="950" Canvas.Top="614" Width="322"  Background="DarkGray"
+            <Button x:Name="vaiParaLoja" Content="Visitar Comerciante" FontSize="40" Height="70" Canvas.Left="668" Canvas.Top="610" Width="322"  Background="DarkGray"
              Click="PaginaDaLoja" FontFamily="cardinal" BorderBrush="Black" Foreground="Black"/>
 
             <TextBlock Height="93" Canvas.Left="446" Canvas.Top="23" Text="Você está na Bag" FontSize="60" 
