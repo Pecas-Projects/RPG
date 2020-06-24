@@ -12,6 +12,8 @@ namespace MeuRPGZinCore
     /// </summary>
     public interface ItemDesativado
     {
+        bool Desativado { get; set; }
+
         /// <summary>
         /// Desativa o benefício concedido por um Item.
         /// </summary>
