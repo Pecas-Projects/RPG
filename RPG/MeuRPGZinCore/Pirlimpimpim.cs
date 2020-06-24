@@ -20,20 +20,26 @@ namespace MeuRPGZinCore
             this.Utilizado = false;
             this.Preco = 4;
             this.ImagemItem = new Uri("ms-appx:///Assets/po_pirlimpimpim.png");
+            this.Desativado = false;
         }
-        
+
+        public bool Desativado { get; set; }
+
         public void DesativarItem(Feiticeira jogadora)
         {
-            double  aux = jogadora.Magia / 0.2;
-            jogadora.Magia = aux;
-            //jogadora.mochila.RemoverItem(jogador.mochila.bagPirlimpimpim); 
+            if (!this.Desativado)
+            {
+                jogadora.Magia = 1.2;
+                this.Desativado = true;
+            }
+
         }
         
         
         public override void Utilizar(Feiticeira jogadora)
         {
-            double aux = jogadora.Magia * 0.2;
-            jogadora.Magia += aux;
+            double aux = jogadora.Magia * 1.2;
+            jogadora.Magia = aux;
             this.Utilizado = true;
         }
 

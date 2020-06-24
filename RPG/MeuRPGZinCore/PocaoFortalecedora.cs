@@ -19,13 +19,20 @@ namespace MeuRPGZinCore
             this.Utilizado = false;
             this.Preco = 5;
             this.ImagemItem = new Uri("ms-appx:///Assets/pocao_fortalecedora.png");
+            this.Desativado = false;
         }
+
+        public bool Desativado { get; set; }
 
         public void DesativarItem(Feiticeira jogador)
         {
-            double aux = jogador.Forca * 0.15;
-            jogador.Forca -= aux;
-            //jogador.mochila.RemoverItem(jogador.mochila.bagFortalecedora);
+            if (!this.Desativado)
+            {
+                double aux = jogador.Forca * 0.15;
+                jogador.Forca -= aux;
+                this.Desativado = true;
+            }
+
         }
 
         public override void Utilizar(Feiticeira jogadora)
