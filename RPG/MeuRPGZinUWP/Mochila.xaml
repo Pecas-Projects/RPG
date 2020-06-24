@@ -18,14 +18,16 @@
             <TextBlock Text="Habilidades Feiticeira" Width="311" Height="44" Canvas.Left="20" FontSize="40" FontFamily="cardinal"
             Canvas.Top="121" Foreground="White"></TextBlock>
 
-            <TextBlock x:Name="forca" Text="Força: " Width="296" Height="50" Canvas.Left="15" Canvas.Top="478" FontSize="35"
+            <TextBlock x:Name="forca" Text="Força: " Width="296" Height="40" Canvas.Left="15" Canvas.Top="466" FontSize="30"
             FontFamily="Berkahi Blackletter" Foreground="White"></TextBlock>
 
-            <TextBlock x:Name="escudo" Text="Escudo: " Width="286" Height="40" FontFamily="Berkahi Blackletter" Canvas.Left="20"
-            FontSize="35" Canvas.Top="520" Foreground="White" ></TextBlock>
+            <TextBlock x:Name="escudo" Text="Escudo: " Width="286" Height="40" FontFamily="Berkahi Blackletter" Canvas.Left="16"
+            FontSize="30" Canvas.Top="503" Foreground="White" ></TextBlock>
 
-            <TextBlock Text="Estamina: 1" Width="260" Height="40" FontFamily="Berkahi Blackletter" 
-             FontSize="35" Canvas.Left="20" Canvas.Top="565" Foreground="White"></TextBlock>
+            <TextBlock x:Name="estamina" Text="Estamina: " Width="260" Height="40" FontFamily="Berkahi Blackletter" 
+             FontSize="30" Canvas.Left="16" Canvas.Top="540" Foreground="White"></TextBlock>
+
+            <TextBlock x:Name="magia" Text="Magia: " FontSize="30" FontFamily="Berkahi Blackletter" Width="260" Height="40" Canvas.Top="574" Canvas.Left="20"></TextBlock>
 
             <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" 
                        Foreground="White" Canvas.Top="343"></TextBlock>
@@ -114,7 +116,7 @@
             <TextBlock Height="46" Canvas.Left="690" Canvas.Top="511" Text="Itens de Batalha" FontSize="40" TextWrapping="Wrap" 
             Foreground="White" FontFamily="Berkahi Blackletter" Width="300"/>
 
-           
+
             <Image Source="Assets/bag_rpg.png" Canvas.Left="408" Canvas.Top="31" Height="116" Width="182" />
 
             <Button x:Name="PirlimpimpimButton" Width="125" Canvas.Top="130" Canvas.Left="340" Height="105" Background="Transparent" Click="ShowDialogItemClicked">
