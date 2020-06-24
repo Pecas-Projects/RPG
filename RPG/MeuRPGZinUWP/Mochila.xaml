@@ -27,7 +27,8 @@
             <TextBlock Text="Estamina: 1" Width="260" Height="40" FontFamily="Berkahi Blackletter" 
              FontSize="35" Canvas.Left="20" Canvas.Top="565" Foreground="White"></TextBlock>
 
-            <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" Canvas.Top="343"></TextBlock>
+            <TextBlock Text="Pedras conquistadas" FontSize="35" Width="286" Height="45" FontFamily="cardinal" Canvas.Left="40" 
+                       Foreground="White" Canvas.Top="343"></TextBlock>
 
             <Button x:Name="vaiParaBatalha" Content="Iniciar Batalha"  FontSize="40" Height="70" Canvas.Left="690" Canvas.Top="614" Width="241" 
              Background="DarkGray" Click="PaginaDaBatalha" Foreground="Black"  BorderBrush="Black" FontFamily="cardinal"/>

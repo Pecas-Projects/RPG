@@ -19,9 +19,16 @@
             <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Ignis" Width="592" Height="100" 
              Canvas.Left="395" Canvas.Top="29"></TextBlock>
 
-            <RichTextBlock FontSize="21" Width="1213"  FontFamily="Cardinal" Canvas.Left="53" Canvas.Top="105" Height="558" Foreground="White">
+            <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="57" Canvas.Top="138" Height="423" Foreground="White">
 
                 <Paragraph>
+                    O Reino Ignis é habitado pelos Bárbaros, localizado no Norte de Ardens Missus, antes da Grande Guerra Nuclear seu povo era
+                    composto de ferreiros que forjavam as melhores armas com o calor dos vulcões do Norte. Dessa forma, a radiação alterou o DNA 
+                    dos ferreiros, dando a eles uma enorme força física. O Rei dos Bárbaros é o guardião da Pedra do Fogo, sua natureza é impulsiva,
+                    e seu instinto é o ataque, não se surpreenda se esse for o resumo de seu combate. A fraqueza de seus inimigos o fortalece, assim
+                    , você precisa derrotá-lo o mais rápido possível. Provavelmente, só haverá uma chance para executar o seu melhor golpe, e ele
+                    precisa ser surpreendente.
+
 
                 </Paragraph>
 

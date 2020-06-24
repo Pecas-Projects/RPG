@@ -13,38 +13,52 @@
 
         <Canvas Background="Gray">
 
-            <Image Source="Assets/pedra_da_agua.png" Width="80" Height ="80" Canvas.Left="113" Canvas.Top="10"></Image>
-            <Image Source="Assets/pedras_da_terra.png"  Width="80" Height ="80" Canvas.Left="359" Canvas.Top="10"></Image>
-            <Image Source="Assets/pedras_do_ar.png"  Width="80" Height ="80" Canvas.Left="1115" Canvas.Top="10"></Image>
-            <Image Source="Assets/pedras_do_fogo.png" Width="80" Height ="80" Canvas.Left="869" Canvas.Top="10"></Image>
+            <Button x:Name="pedraAgua" Canvas.Left="106" Canvas.Top="4" Background="Transparent" Click="pedraAgua_Click">
+                <Image Source="Assets/pedra_da_agua.png" Width="80" Height ="80" Canvas.Left="113" Canvas.Top="10"></Image>
+            </Button>
 
-            <TextBlock Width="190" Height="100" Foreground="White" Text="história" FontFamily="Cardinal" FontSize="70" Canvas.Left="591" Canvas.Top="5"></TextBlock>
+            <Button x:Name="pedraTerra" Canvas.Left="340" Canvas.Top="4" Background="Transparent" Click="pedraTerra_Click">
+                <Image Source="Assets/pedras_da_terra.png"  Width="80" Height ="80" Canvas.Left="359" Canvas.Top="10"></Image>
+            </Button>
+
+            <Button x:Name="pedraAr" Canvas.Left="1086" Canvas.Top="4" Background="Transparent" Click="pedraAr_Click">
+                <Image Source="Assets/pedras_do_ar.png"  Width="80" Height ="80" Canvas.Left="1115" Canvas.Top="10"></Image>
+            </Button>
+
+            <Button x:Name="pedraFogo" Canvas.Left="862" Canvas.Top="4" Background="Transparent" Click="pedraFogo_Click">
+            <Image Source="Assets/pedras_do_fogo.png" Width="80" Height ="80" Canvas.Left="869" Canvas.Top="10"></Image>
+            </Button>
+
+            <TextBlock Width="190" Height="100" Foreground="White" Text="história" FontFamily="Cardinal" FontSize="70" Canvas.Left="564" Canvas.Top="10"></TextBlock>
 
             <RichTextBlock FontSize="21" Width="1228"  FontFamily="Cardinal" Canvas.Left="38" Canvas.Top="105" Height="598" Foreground="White">
                 <Paragraph>
-                    Em um futuro pos apocalíptico, após a grande guerra nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades. 
-                    As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa.
-                    Eles descobriram em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anulava o efeito da outra, mas separadas tinham um enorme poder.
-                    Assim a Imperium Liberium (pedra da magia) enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor,
+                    Em um futuro pós apocalíptico, após a Grande Guerra Nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades.
+                    As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas
+                    estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa. Eles descobriram 
+                    em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anula o efeito da outra, mas separadas tinham um enorme poder.
+                    Assim a Imperium Liberium, a Pedra da Magia, enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor, 
                     uma gargantilha com essa pedra, aprisionando-a.
+
                 </Paragraph>
 
                 <Paragraph>
                     <LineBreak></LineBreak>
-                    Quando ele consegue enfraquecer a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, 
-                    assim, tomando o poder. Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes 
-                    enfraquecidos apenas para servi-los, sem conhecer a verdadeira historia e impossibilitadas de explorar seu verdadeiro potencial.
+                    Quando ele enfraquece a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, assim, tomando o poder. 
+                    Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes enfraquecidos apenas para servi-los, 
+                    sem conhecer a verdade e impossibilitadas de explorar seu verdadeiro potencial.
+
                 </Paragraph>
 
                 <Paragraph>
                     <LineBreak></LineBreak>
-                    1000 anos depois da queda das feiticeiras, um rei dos humanos se apaixona por uma feiteceira e decide torná-la sua rainha, 
-                    contudo como feiticeiras são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder 
-                    continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse 
-                    mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta
-                    à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomam o poder e matam tanto a feiticeira, quanto o antigo rei.
-                    Assim, a garota começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus uma das pedras elementais para acabar 
-                    com o controle sobre as feiticeiras, além de descobrir algo sobre seu verdadeiro eu e derrubar tantos anos de opressão...
+                    1000 anos depois da queda, o Rei dos humanos se apaixona por uma feiticeira e decide torná-la sua rainha, contudo como elas são proibidas de assumir qualquer
+                    posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu
+                    segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir 
+                    para a floresta com a Pedra da Terra à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomaram o poder matando o Rei e a Rainha.
+                    Assim, a Princesa começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus as outras três Pedras Elementais, retornando ao seu
+                    reino para enfrentar o novo Rei dos Humanos, recuperar a Pedra da Magia e libertar as feiticeiras da escravidão.
+
                 </Paragraph>
 
 

@@ -30,8 +30,8 @@ namespace MeuRPGZinUWP
         DateTimeOffset lastTime;
         DateTimeOffset stopTime;
         int timesTicked = 1;
-        int timesToTick = 50;
-        int tempoTotal = 50;
+        int timesToTick = 30;
+        int tempoTotal = 30;
 
         int feiticeiraX = 9, feiticeiraY = 0;
         public Labirinto1 l;
@@ -201,7 +201,7 @@ namespace MeuRPGZinUWP
             lastTime = time;
             //Time since last tick should be very very close to Interval
             tempoTotal = timesToTick - timesTicked;
-            tempo.Text = "TEMPO RESTANTE: " + tempoTotal.ToString() + "s";
+            tempo.Text = "Tempo Restante: " + tempoTotal.ToString() + "s";
             timesTicked++;
             if (timesTicked > timesToTick) //quando ot empo terminar
             {

@@ -18,9 +18,13 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Canvas Grid.Row="0" x:Name="canvasMap">
-            <TextBlock x:Name="tempo" Foreground="DarkTurquoise" Text="TEMPO RESTANTE: 50s" Width="481" Height="50" FontSize="35" FontFamily="roboto" TextWrapping="Wrap">
+        <Canvas Grid.Row="0" x:Name="canvasMap" Background="CornflowerBlue">
+            <TextBlock x:Name="tempo" Foreground="LightGreen" Text="Tempo Restante: 30s" Width="481"
+                       FontFamily="Berkahi Blackletter" Height="50" FontSize="35" TextWrapping="Wrap" Canvas.Left="57">
             </TextBlock>
+
+            <Image Source="Assets/tempo.png" Width="42" Height="42" Canvas.Left="15" Canvas.Top="3"></Image>
+            
             <Image x:Name="lab1" Stretch="UniformToFill" Source="Assets/lab_fundo_do_mar.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="48">
             </Image>
 
