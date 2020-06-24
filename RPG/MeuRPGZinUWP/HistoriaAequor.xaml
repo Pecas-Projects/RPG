@@ -19,9 +19,20 @@
             <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Aequor" Width="592" Height="100" 
              Canvas.Left="373" Canvas.Top="10"></TextBlock>
 
-            <RichTextBlock FontSize="21" Width="1213"  FontFamily="Cardinal" Canvas.Left="53" Canvas.Top="105" Height="558" Foreground="White">
+            <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="45.57" Canvas.Top="144" Height="374" Foreground="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <RichTextBlock.RenderTransform>
+                    <CompositeTransform SkewX="1.088" TranslateX="2.981"/>
+                </RichTextBlock.RenderTransform>
 
                 <Paragraph>
+
+                    O Reino Aequor é habitado pelo povo Sereiano, localizado na parte litorânea de Ardens Missus, antes da Grande Guerra Nuclear 
+                    o Reino era composto por diversas vilas de pescadores e piratas. Assim, por viverem na costa, constantemente em contato com
+                    o mar, a radiação os fez desenvolver caudas e os tornou capaz de respirar embaixo da água. O Rei dos Sereianos é o guardião 
+                    da Pedra da Água, conhecido por ser um guerreiro cuidadoso e saber toda a história de Ardens Missus, ele prevê os movimentos 
+                    de seus inimigos e é capaz de roubar seu fôlego, rompendo até mesmo o mais poderoso feitiço de respiração. Para vencer o sábio
+                    rei é importante saber a hora de descansar.
+
 
                 </Paragraph>
 

@@ -14,34 +14,34 @@
 
         <Canvas Background="Gray">
 
-            <TextBlock Width="1192" Height="88" Text="Ápos descobrir a verdade sobre a história de Ardens Missus, e ter seu" 
+            <TextBlock Width="1192" Height="88" Text="Ápos descobrir a verdade sobre a história de Ardens Missus, e ter seu" Foreground="White"
              Canvas.Left="69" Canvas.Top="45" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="1192" Height="88" Text="trono roubado, a princesa do Reino Savi foge para a floresta com a Pedra" 
+            <TextBlock Width="1192" Height="88" Text="trono roubado, a princesa do Reino Savi foge para a floresta com a Pedra" Foreground="White"
              Canvas.Left="69" Canvas.Top="111" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="169" Height="88" Text="da Terra." 
+            <TextBlock Width="169" Height="88" Text="da Terra." Foreground="White"
              Canvas.Left="580" Canvas.Top="177" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="1221" Height="88" Text="Na floresta ela encontra uma Anciã que fala para a princesa aceitar seu herança" 
+            <TextBlock Width="1221" Height="88" Text="Na floresta ela encontra uma Anciã que fala para a princesa aceitar seu herança" Foreground="White"
              Canvas.Left="48" Canvas.Top="289" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="1222" Height="88" Text="como feiticeira e aceitar seu destino de resgatar todas as pedras e acbar com a" 
+            <TextBlock Width="1222" Height="88" Text="como feiticeira e aceitar seu destino de resgatar todas as pedras e acbar com a" Foreground="White"
              Canvas.Left="47" Canvas.Top="355" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
-            <TextBlock Width="1225" Height="88" Text="escravidão das feiticeiras. Sua jornada tem início no labirinto do Reino Aequor" 
+            <TextBlock Width="1225" Height="88" Text="escravidão das feiticeiras. Sua jornada tem início no labirinto do Reino Aequor" Foreground="White"
              Canvas.Left="43" Canvas.Top="421" FontSize="45" FontFamily="Cardinal"></TextBlock>
 
             <Button x:Name="pedraTerra" Click="pedraTerra_handleClick" Width="158" Height="134" Canvas.Left="580" Canvas.Top="538" Background="Transparent">
-                <Image Source="Assets/pedras_da_terra.png" Canvas.Left="590" Canvas.Top="225" Margin="-27,-20,-7,3" />
+                <Image Source="Assets/pedras_da_terra.png" Canvas.Left="590" Canvas.Top="225" Margin="-27,-20,-7,3"  />
             </Button>
 
             <Button x:Name="instrucoes"  Width="300" Height="103" Canvas.Left="204" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
-            Canvas.Top="554"   Click="Instrucoes_handleClick" Background="DarkGray" Content="Instruções"></Button>
+            Canvas.Top="554"   Click="Instrucoes_handleClick" Background="DarkGray" Content="Instruções" Foreground="Black"></Button>
 
 
             <Button x:Name="jogo"  Width="300" Height="103" Canvas.Left="804" FontFamily="Cardinal" FontSize="60" BorderBrush="Black"
-            Canvas.Top="554"   Click="Iniciar_handleClick" Background="DarkGray" Content="Iniciar Jogo"></Button>
+            Canvas.Top="554"   Click="Iniciar_handleClick" Background="DarkGray" Content="Iniciar Jogo" Foreground="Black" ></Button>
 
 
 

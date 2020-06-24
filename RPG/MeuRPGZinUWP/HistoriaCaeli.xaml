@@ -20,9 +20,17 @@
             <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Caeli" Width="592" Height="100" 
              Canvas.Left="401" Canvas.Top="19"></TextBlock>
 
-            <RichTextBlock FontSize="21" Width="1213"  FontFamily="Cardinal" Canvas.Left="53" Canvas.Top="105" Height="558" Foreground="White">
+            <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="45" Canvas.Top="125" Height="423" Foreground="White">
 
                 <Paragraph>
+
+                    O Reino Caeli é habitado pelas Fadas, localizado nas cadeias montanhosas de Ardens Missus, mesmo antes da Grande Guerra Nuclear
+                    o povo das montanhas  vivia em grandes altitude, acostumados ao ar rarefeitos e a escalar até os picos mais altos. Depois da 
+                    onda de radiação, aqueles que moravam lá desenvolveram asas e uma estrutura corporal leve para o voo. O Rei das Fadas é o 
+                    guardião da pedra do Ar, mas não se deixe enganar pelo título, apesar de sua descendência nobre, esse rei luta sem a menor 
+                    elegância, roubando a proteção de seus oponentes sem nunca demonstrar misericórdia. Contra o Rei das Fadas você não deve poupar 
+                    escudo, mas não exite em usar o seu ataque mais forte.
+
 
                 </Paragraph>
 

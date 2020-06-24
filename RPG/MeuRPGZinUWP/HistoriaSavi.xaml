@@ -19,9 +19,15 @@
             <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Savi" Width="592" Height="100" 
              Canvas.Left="395" Canvas.Top="29"></TextBlock>
 
-            <RichTextBlock FontSize="21" Width="1213"  FontFamily="Cardinal" Canvas.Left="53" Canvas.Top="105" Height="558" Foreground="White">
+            <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="45" Canvas.Top="125" Height="447" Foreground="White">
 
                 <Paragraph>
+                    O Reino Savi é habitado pelos humanos, localizado no Sul de Ardens Missus, os humanos desse reino não sofreram alteração em sua 
+                    estrutura genética, antes da Grande Guerra Mundial eram um povo composto por comerciantes, concentrando as principais rotas de 
+                    comércio de Ardens Missus, se tornando assim o reino mais rico. O Rei dos Humanos é o guardião da Pedra da Terra e da Pedra da
+                    Magia, e apesar de manter as aparências, não é difícil notar seu ar de superioridade, sempre subestimando os seus inimigos.
+                    Assim, quando está em combate, este rei é capaz de enganar as defesas inimigas, e por esse motivo, contra os humanos, o ataque 
+                    é a melhor defesa.
 
                 </Paragraph>
 

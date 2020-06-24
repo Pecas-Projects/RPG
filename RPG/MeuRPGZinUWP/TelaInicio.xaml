@@ -15,11 +15,11 @@
         <Canvas Background="Gray">
 
             <TextBlock Width="1045" Height="100" Canvas.Left="129" Canvas.Top="45" Text="Uma jornada por Ardens Missus"
-             FontSize="80" FontFamily="Cardinal"
+             FontSize="80" FontFamily="Cardinal" Foreground="White"
              ></TextBlock>
 
             <TextBlock Width="502" Height="100" Canvas.Left="374" Canvas.Top="159" Text="A aventura da feiticeira"
-             FontSize="60" FontFamily="Cardinal"
+             FontSize="60" FontFamily="Cardinal" Foreground="White"
              ></TextBlock>
 
             <Button x:Name="historia"  Canvas.Left="198" Canvas.Top="536"  Content="História" FontSize="60" Foreground="Black"

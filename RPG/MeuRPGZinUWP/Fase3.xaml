@@ -1,5 +1,4 @@
 ﻿<Page
-    Background="Black"
     Height="750" Width="700"
     x:Class="MeuRPGZinUWP.Fase3"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -18,8 +17,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Canvas Grid.Row="0" x:Name="canvasMap">
-            <TextBlock x:Name="tempo" Foreground="Coral" Text="TEMPO RESTANTE: 50s" Width="481" Height="50" FontSize="35" FontFamily="roboto" TextWrapping="Wrap"></TextBlock>
+
+        <Canvas Grid.Row="0" x:Name="canvasMap" Background="OrangeRed">
+            <TextBlock x:Name="tempo" Foreground="BlanchedAlmond" Text="Tempo Restante: 40s" Width="481" Height="50" 
+             FontSize="35" FontFamily="Berkahi Blackletter" TextWrapping="Wrap" Canvas.Left="60" Canvas.Top="4"></TextBlock>
+
+            <Image Source="Assets/tempo.png" Width="45" Height="40" Canvas.Left="10" Canvas.Top="4"></Image>
 
             <Image x:Name="lab2" Stretch="UniformToFill" Source="Assets/lab_vulcao.png" Height="700" Width="700" FocusVisualPrimaryBrush="Black" Canvas.Top="49">
             </Image>

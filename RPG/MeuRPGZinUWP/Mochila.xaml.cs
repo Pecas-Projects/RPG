@@ -73,6 +73,8 @@ namespace MeuRPGZinUWP
             contPecas.Text = "Pecas: " + feiticeira.Moedas;
             forca.Text = "Força: " + feiticeira.Forca;
             escudo.Text = "Escudo: " + feiticeira.Escudo;
+            magia.Text = "Magia: " + feiticeira.Magia;
+            estamina.Text = "Ganho estamina: " + feiticeira.GanhoEstamnina;
 
         }
 
@@ -175,19 +177,19 @@ namespace MeuRPGZinUWP
             else if (NomeItem == "WheyButton")
             {
                 titulo = "Taurus Rubber";
-                texto = "Aumenta a sua estamina!";
+                texto = "Aumenta a sua estamina em 0,3 pontos!";
                 address = WheyImg.Source;
             }
             else if (NomeItem == "VitaeButton")
             {
                 titulo = "Poção Vitae";
-                texto = "Aumenta a sua vida em 50 pontos!";
+                texto = "Aumenta a sua vida em 30 pontos!";
                 address = VitaeImg.Source;
             }
             else if (NomeItem == "RadixButton")
             {
                 titulo = "Poção Radix";
-                texto = "Recupera 15% de seu escudo atual!";
+                texto = "Recupera 15 pontos do escudo!";
                 address = RadixImg.Source;
             }
             else if (NomeItem == "FortalecedoraButton")

@@ -31,5 +31,25 @@ namespace MeuRPGZinUWP
         {
             this.Frame.GoBack();
         }
+
+        private void pedraAgua_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaAequor));
+        }
+
+        private void pedraTerra_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaSavi));
+        }
+
+        private void pedraFogo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaIgnis));
+        }
+
+        private void pedraAr_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoriaCaeli));
+        }
     }
 }
