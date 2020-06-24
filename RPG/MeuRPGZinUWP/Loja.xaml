@@ -62,20 +62,20 @@
             </ContentDialog>
 
 
-            <TextBlock x:Name="contPirlimpimpim" Height="54" Canvas.Left="129" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="57" RenderTransformOrigin="0.211,0.13"/>
-            <TextBlock x:Name="precoPirlimpimpim" Height="42" Canvas.Left="179" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="37" RenderTransformOrigin="1.162,0.571"/>
+            <TextBlock x:Name="contPirlimpimpim" Height="54" Canvas.Left="129" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="57" FontFamily="Berkahi Blackletter" RenderTransformOrigin="0.211,0.13"/>
+            <TextBlock x:Name="precoPirlimpimpim" Height="42" Canvas.Left="179" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" FontFamily="Berkahi Blackletter" Width="37" RenderTransformOrigin="1.162,0.571"/>
 
-            <TextBlock x:Name="contWhey" Height="51" Canvas.Left="434" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="54"/>
-            <TextBlock x:Name="precoWhey" Height="42" Canvas.Left="458" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="32"/>
+            <TextBlock x:Name="contWhey" Height="51" Canvas.Left="434" Canvas.Top="63" Text="0" FontSize="30" TextWrapping="Wrap" Width="54" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="precoWhey" Height="42" Canvas.Left="458" Canvas.Top="303" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="32" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contVitae" Height="52" Canvas.Left="70" Canvas.Top="398" FontSize="30" TextWrapping="Wrap" Width="29" RenderTransformOrigin="0.612,1.038"><Run Text="0"/><Run Text=""/><Run Text=""/></TextBlock>
-            <TextBlock x:Name="precoVitae"  Height="39" Canvas.Left="95" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+            <TextBlock x:Name="contVitae" Height="52" Canvas.Left="70" Canvas.Top="398" FontSize="30" TextWrapping="Wrap" Width="29" RenderTransformOrigin="0.612,1.038" FontFamily="Berkahi Blackletter"><Run Text="0"/><Run Text=""/><Run Text=""/></TextBlock>
+            <TextBlock x:Name="precoVitae"  Height="39" Canvas.Left="95" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contFortalecedora" Height="44" Canvas.Left="276" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="52" RenderTransformOrigin="0.558,0.523"/>
-            <TextBlock x:Name="precoFortalecedora"  Height="39" Canvas.Left="304" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+            <TextBlock x:Name="contFortalecedora" Height="44" Canvas.Left="276" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="52" RenderTransformOrigin="0.558,0.523" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="precoFortalecedora"  Height="39" Canvas.Left="304" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
-            <TextBlock x:Name="contRadix" Height="39" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58"/>
-            <TextBlock x:Name="precoRadix"  Height="39" Canvas.Left="515" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38"/>
+            <TextBlock x:Name="contRadix" Height="39" Canvas.Left="490" Canvas.Top="400" Text="0" FontSize="30" TextWrapping="Wrap" Width="58" FontFamily="Berkahi Blackletter"/>
+            <TextBlock x:Name="precoRadix"  Height="39" Canvas.Left="515" Canvas.Top="630" Text="0" FontSize="30" Foreground="Gold" TextWrapping="Wrap" Width="38" FontFamily="Berkahi Blackletter"/>
 
             <TextBlock x:Name="contPecas"  Height="69" Canvas.Left="780" Canvas.Top="485" Text="0" FontFamily="Berkahi Blackletter" FontSize="50" TextWrapping="Wrap" Width="158" />
 
