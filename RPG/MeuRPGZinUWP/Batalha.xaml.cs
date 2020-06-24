@@ -114,7 +114,7 @@ namespace MeuRPGZinUWP
             feiticeiraEscudo.Text = "escudo: " + feiticeira.Escudo;
             feiticeiraEstamina.Text = "estamina: " + feiticeira.Estamina;
 
-            inimigoVida.Text = "vida: " + Inimigo.Vida;
+            inimigoVida.Text = "vida: " + Math.Round(Inimigo.Vida, 2);
             inimigoEscudo.Text = "escudo: " + Inimigo.Escudo;
             inimigoEstamina.Text = "estamina: " + Inimigo.Estamina;
 
