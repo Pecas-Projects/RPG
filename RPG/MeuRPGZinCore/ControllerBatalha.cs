@@ -138,7 +138,18 @@ namespace MeuRPGZinCore
                 {
                     if (i.Utilizado)
                     {
-                        this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)i);
+                        //this.DesativarItemDesativavel(((Feiticeira)jogadora), (ItemDesativado)i);
+                        if(this.Fase < 3)
+                        {
+                            ((Feiticeira)jogadora).Forca = 20;
+                            i.Utilizado = true;
+                        }
+                        else
+                        {
+                            ((Feiticeira)jogadora).Forca = 25;
+                            i.Utilizado = true;
+
+                        }
                     }
                 }
                 if(i.GetType() == pirlimpimpim.GetType())
