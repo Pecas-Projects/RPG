@@ -29,7 +29,7 @@ namespace MeuRPGZinCore
 
         public int Acao(Feiticeira inimiga, ControllerBatalha controller)
         {
-            if (controller.ContAtaqueFeiticeira == 6 && this.Estamina >= 0.8)
+            if (controller.ContAtaqueFeiticeira == 6 && this.Estamina >= 0.7 && inimiga.EscudoAtivo)
             {
                 this.AtaqueEspecial(((Personagem)inimiga));
                 controller.ContAtaqueFeiticeira = 0;
