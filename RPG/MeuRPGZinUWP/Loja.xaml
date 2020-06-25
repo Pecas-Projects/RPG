@@ -44,18 +44,18 @@
             <ContentDialog  x:Name="CaixaDeDialogo" Canvas.Top="6" Background="Black" >
                 <Canvas Width="2000" Height="150">
                     <Image Source="Assets/placa.png" Width="2000" Height="150" />
-                    <TextBlock x:Name="NomeDoItem" FontFamily="Cardinal" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
+                    <TextBlock x:Name="NomeDoItem" FontFamily="Berkahi Blackletter" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
                     <Image x:Name="NewItemImg" Source="Assets/pocao_radix.png" Width="40" Height="40" Canvas.Left="10"/>
-                    <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
+                    <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Berkahi Blackletter" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
                     <Button x:Name="comprarButton" Content="Comprar" Background="Gray" Height="50" Width="90" FontWeight="Black" Canvas.Top="100" Canvas.Left="130" FontFamily="Cardinal" FontSize="22" Click="ComprarItem"/>
                     <Button x:Name="fecharButton" Content="Fechar" Background="Gray" Height="50" Width="90" FontWeight="Black" Canvas.Top="100" Canvas.Left="270" FontFamily="Cardinal" FontSize="22" Click="FecharContent"/>
                 </Canvas>
             </ContentDialog>
 
-            <ContentDialog x:Name="AposClick" Background="Black" FontFamily="Cardinal" Canvas.Left="10" Canvas.Top="9" >
+            <ContentDialog x:Name="AposClick" Background="Black" FontFamily="Berkahi Blackletter" Canvas.Left="10" Canvas.Top="9" >
                 <Canvas Height="150" Width="300">
                     <Image x:Name="PECA" Visibility="Collapsed" Source="Assets/moeda_front.png" Width="60" Height="60" Canvas.Left="120" Canvas.Top="-20" />
-                    <TextBlock x:Name="textoCaixaDialogo2" FontWeight="Light" FontSize="30px" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Top="45" Canvas.Left="0"/>
+                    <TextBlock x:Name="textoCaixaDialogo2" FontWeight="Light" FontSize="30px" FontFamily="Berkahi Blackletter" TextWrapping="WrapWholeWords" Canvas.Top="45" Canvas.Left="0"/>
                     <Button x:Name="fecharButton2" FontSize="25" Content="Fechar" Background="Gray" Canvas.Top="90" Canvas.Left="100"  Height="50" Width="100" FontFamily="Cardinal" Click="FecharContent2"/>
                     <Image Source="Assets/placa.png" Width="2000" Height="150" />
                 </Canvas>

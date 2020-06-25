@@ -140,9 +140,9 @@
             <ContentDialog  x:Name="CaixaDeDialogo" >
                 <Canvas Width="2000" Height="150">
                     <Image Source="Assets/placa.png" Width="2000" Height="150" />
-                    <TextBlock x:Name="NomeDoItem" FontFamily="Cardinal" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
+                    <TextBlock x:Name="NomeDoItem" FontFamily="Berkahi Blackletter" FontSize="20" FontWeight="Black" Text="Pó de Pirlimpim" Canvas.Top="5" Canvas.Left="60"/>
                     <Image x:Name="NewItemImg" Source="Assets/pocao_radix.png" Width="40" Height="40" Canvas.Left="10"/>
-                    <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Cardinal" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
+                    <TextBlock x:Name="textoCaixaDialogo"  FontSize="30" FontWeight="Black" FontFamily="Berkahi Blackletter" TextWrapping="WrapWholeWords" Canvas.Left="60" Canvas.Top="50"/>
                     <Button x:Name="fecharButton" Content="Fechar" Background="Gray" Height="50" Width="90" FontWeight="Black" Canvas.Top="100" Canvas.Left="200" FontFamily="Cardinal" FontSize="22" Click="FecharContent"/>
                 </Canvas>
             </ContentDialog>
