@@ -46,7 +46,7 @@ namespace MeuRPGZinUWP
         {
             escolhaFeiticeira.Text = "Você escolheu a feiticeira Bia";
             feiticeira.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
-            feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_Ana_Morta.png");
+            feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_morta.png");
             feiticeira.FeiticeiraDireita = new Uri("ms-appx:///Assets/feiticeira_right_2.png");
             feiticeira.FeiticeiraEsquerda = new Uri("ms-appx:///Assets/feiticeira_left_2.png");
             feiticeira.FeiticeiraCostas = new Uri("ms-appx:///Assets/feiticeira_back.png");

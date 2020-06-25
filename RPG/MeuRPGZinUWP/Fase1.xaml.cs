@@ -210,7 +210,10 @@ namespace MeuRPGZinUWP
                 span = stopTime - startTime;
 
                 //deleta tudo que o jogador coletou no labirinto se ele perder
-                if (Whey) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
+                if (Whey)
+                {
+                    feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
+                }
                 feiticeira.Moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";

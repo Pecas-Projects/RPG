@@ -100,8 +100,8 @@ namespace MeuRPGZinUWP
         /// </summary>
         public void AtualizarStatus()
         {
-            feiticeiraVida.Text = "vida: " + feiticeira.Vida;
-            feiticeiraEscudo.Text = "escudo: " + feiticeira.Escudo;
+            feiticeiraVida.Text = "vida: " + Math.Round(feiticeira.Vida);
+            feiticeiraEscudo.Text = "escudo: " + Math.Round(feiticeira.Escudo);
             feiticeiraEstamina.Text = "estamina: " + feiticeira.Estamina;
 
             inimigoVida.Text = "vida: " + Math.Round(Inimigo.Vida, 2);
