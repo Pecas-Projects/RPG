@@ -16,7 +16,7 @@
             <Image Source="Assets/pedras_do_fogo.png" Width="100" Height ="100" Canvas.Left="194" Canvas.Top="10"></Image>
             <Image Source="Assets/barbaro_front.png" Width="100" Height="100" Canvas.Left="1014" Canvas.Top="10"></Image>
 
-            <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Ignis" Width="592" Height="100" 
+            <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Ignis" Width="592" Height="100" Foreground="White"
              Canvas.Left="395" Canvas.Top="29"></TextBlock>
 
             <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="57" Canvas.Top="138" Height="423" Foreground="White">
