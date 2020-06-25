@@ -33,7 +33,7 @@ namespace MeuRPGZinUWP
 
         private void Ana_Click(object sender, RoutedEventArgs e)
         {
-            escolhaFeiticeira.Text = "Você escolheu a feiticeira Ana";
+            escolhaFeiticeira.Text = "Você escolheu a feiticeira Ana!";
             feiticeira.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_Ana.png");
             feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_Ana_Morta.png");
             feiticeira.FeiticeiraDireita = new Uri("ms-appx:///Assets/Direita_feiticeira_Ana.png");
@@ -44,7 +44,7 @@ namespace MeuRPGZinUWP
 
         private void Bia_Click(object sender, RoutedEventArgs e)
         {
-            escolhaFeiticeira.Text = "Você escolheu a feiticeira Bia";
+            escolhaFeiticeira.Text = "Você escolheu a feiticeira Bia!";
             feiticeira.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_front.png");
             feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_morta.png");
             feiticeira.FeiticeiraDireita = new Uri("ms-appx:///Assets/feiticeira_right_2.png");
@@ -54,7 +54,7 @@ namespace MeuRPGZinUWP
 
         private void Maria_Click(object sender, RoutedEventArgs e)
         {
-            escolhaFeiticeira.Text = "Você escolheu a feiticeira Maria";
+            escolhaFeiticeira.Text = "Você escolheu a feiticeira Maria!";
             feiticeira.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_Maria.png");
             feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_Maria_Morta.png");
             feiticeira.FeiticeiraDireita = new Uri("ms-appx:///Assets/Direita_feiticeira_Maria.png");
@@ -64,7 +64,7 @@ namespace MeuRPGZinUWP
 
         private void Fernanda_Click(object sender, RoutedEventArgs e)
         {
-            escolhaFeiticeira.Text = "Você escolheu a feiticeira Fernanda";
+            escolhaFeiticeira.Text = "Você escolheu a feiticeira Fernanda!";
             feiticeira.ImagemPersonagem = new Uri("ms-appx:///Assets/feiticeira_Fernanda.png");
             feiticeira.feiticeiraMorta = new Uri("ms-appx:///Assets/feiticeira_Fernanda_Morta.png");
             feiticeira.FeiticeiraDireita = new Uri("ms-appx:///Assets/Direita_feiticeira_Fernanda.png");
@@ -74,8 +74,16 @@ namespace MeuRPGZinUWP
 
         private void contunuar_Click(object sender, RoutedEventArgs e)
         {
-            controller.Feiticeira = feiticeira;
-            this.Frame.Navigate(typeof(TelaInicio2), controller);
+            if (feiticeira.ImagemPersonagem != null)
+            {
+                controller.Feiticeira = feiticeira;
+                this.Frame.Navigate(typeof(TelaInicio2), controller);
+            }
+            else
+            {
+                escolhaFeiticeira.Text = "Você precisa escolher uma feiticeira!";
+            }
+            
         }
     }
 }

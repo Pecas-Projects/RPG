@@ -6,8 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Height="700" Width="1300"
-    Background="Black">
+    Height="700" Width="1300">
 
     <Grid>
 
@@ -16,7 +15,7 @@
             <Image Source="Assets/pedras_da_terra.png" Width="100" Height ="100" Canvas.Left="194" Canvas.Top="10"></Image>
             <Image Source="Assets/humano.png" Width="100" Height="100" Canvas.Left="1014" Canvas.Top="10"></Image>
 
-            <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Savi" Width="592" Height="100" 
+            <TextBlock FontFamily="Cardinal" FontSize="60" Text="História do Reino Savi" Width="592" Height="100" Foreground="White"
              Canvas.Left="395" Canvas.Top="29"></TextBlock>
 
             <RichTextBlock FontSize="35" Width="1213"  FontFamily="Cardinal" Canvas.Left="45" Canvas.Top="125" Height="447" Foreground="White">
