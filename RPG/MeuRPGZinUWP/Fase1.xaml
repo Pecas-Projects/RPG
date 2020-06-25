@@ -18,7 +18,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Canvas Grid.Row="0" x:Name="canvasMap" Background="CornflowerBlue">
+        <Canvas Grid.Row="0" x:Name="canvasMap" Background="#009999">
             <TextBlock x:Name="tempo" Foreground="LightGreen" Text="Tempo Restante: 30s" Width="481"
                        FontFamily="Berkahi Blackletter" Height="50" FontSize="35" TextWrapping="Wrap" Canvas.Left="57">
             </TextBlock>
