@@ -20,8 +20,6 @@
 - [Preparando Uso](#preparando)
 - [Como jogar](#como-usar)
 - [Tecnologias Usadas](#tecnologias-usadas)
-- [TODO](./TODO.md)
-- [Contribuindo](./CONTRIBUTING.md)
 - [Desenvolvedoras](#desenvolvedoras)
 - [O jogo](#o-jogo)
 - [Mecânica do jogo](#mecanica)
