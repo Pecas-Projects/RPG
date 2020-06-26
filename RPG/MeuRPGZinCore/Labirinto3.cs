@@ -120,7 +120,7 @@ namespace MeuRPGZinCore
             linha9.Add(new Parede { topo = true, direita = true, baixo = true });
             linha9.Add(new Parede { esquerda = true, baixo = true });
             linha9.Add(new Parede { topo = true, baixo = true });
-            linha9.Add(new Parede { topo = true });
+            linha9.Add(new Parede { topo = true, baixo = true });
             linha9.Add(new Parede { topo = true, baixo = true, direita = true });
             linha9.Add(new Parede { esquerda = true, baixo = true });
             linha9.Add(new Parede { baixo = true, direita = true });
