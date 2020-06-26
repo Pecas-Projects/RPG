@@ -14,15 +14,12 @@
 - [História geral](#historia)
 - [Iniciando](#inicio)
 - [Preparando Uso](#preparando)
-- [Como Usar](#como-usar)
-- [Regras](#regras)
+- [Como jogar](#como-usar)
 - [Tecnologias Usadas](#tecnologias-usadas)
 - [TODO](./TODO.md)
 - [Contribuindo](./CONTRIBUTING.md)
 - [Desenvolvedoras](#desenvolvedoras)
-- [Raças](#racas)
-- [Reinos](#reinos)
-- [Fases do jogo](#fases)
+- [O jogo](#o-jogo)
 - [Personagens encontrados](#personagens)
 - [Mecânica do jogo](#mecanica)
 
@@ -51,7 +48,7 @@ Escolha da feiticeira que jogará.
 
 Instruções de como jogar.
 
-### ✍️ Regras do jogo: <a name = "regras"></a>
+### ✍️ Regras do jogo: 
 
 * O personagem aparece no começo do labirinto de cada fase
 * O jogador, utilizando as setas do teclado, pode mover-se pelo labirinto, devendo chegar ao fim antes que o tempo acabe
@@ -69,8 +66,9 @@ Instruções de como jogar.
 - [@fernandanlisboa](https://github.com/fernandanlisboa)
 - [@AmadoMaria](https://github.com/AmadoMaria)
 
+## 🎈 O jogo <a name="o-jogo"></a>
 
-### ✍️ Raças <a name = "raças"></a>
+### ✍️ Raças 
 
 * Feiticeiras
 * Fadas
@@ -78,7 +76,7 @@ Instruções de como jogar.
 * Barbaros 
 * Humanos
 
-### ✍️ Reinos <a name = "reinos"></a>
+### ✍️ Reinos
 
 * Floresta Proíbida
 * Reino Aequor
@@ -86,7 +84,7 @@ Instruções de como jogar.
 * Reino Ignis
 * Reino Savi
 
-### ✍️ Fases do jogo: <a name = "fases"></a>
+### ✍️ Fases: 
 * Cada fase é composta por um labirinto e uma batalha de turnos respectivamente, com exceção da fase final, que possui apenas uma batalha;
 * Dentro do labirinto o jogador pode coletar itens e moedas.
 * Antes de cada batalha o jogador tem acesso a sua mochila. Nela,o jogador pode escolher dois itens para usar durante a batalha de turnos. 
