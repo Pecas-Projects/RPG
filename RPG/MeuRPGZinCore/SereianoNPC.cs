@@ -26,7 +26,8 @@ namespace MeuRPGZinCore
         /// </summary>
         public SereianosNPC()
         {
-            this.Forca = 20;
+            this.Forca = 0;
+            //this.Forca = 20;
             this.PerdaEstamina = 0.25;
             this.GanhoEstamnina = 0.15;
             this.Escudo = 50;
