@@ -229,11 +229,7 @@ namespace MeuRPGZinUWP
                     RegistraAcoes(1, acaoInimigo);
                     AtualizarStatus();
                 }
-            }
-            else
-            {
-                //algo no fronte falando que não pode atacar 
-            }           
+            }         
         }
 
         /// <summary>
@@ -262,10 +258,6 @@ namespace MeuRPGZinUWP
                     AtualizarStatus();
                    
                 }               
-            }
-            else
-            {
-                //algo no fronte avisando q não tem escudo e pedindo pra escolher outra coisa
             }
             
         }
@@ -371,10 +363,6 @@ namespace MeuRPGZinUWP
                     RegistraAcoes(2, acaoInimigo);
                     AtualizarStatus();
                 }
-            }
-            else
-            {
-                //Algo no front
             }
             
        }
