@@ -107,11 +107,11 @@ Instruções de como jogar.
 * Antes de cada batalha o jogador tem acesso a sua mochila. Nela,o jogador pode escolher dois itens para usar durante a batalha de turnos. 
    Alem disso, da mochila o jogador pode acessar a loja, onde as moedas coletadas podem ser trocadas por itens.
 * Durante a batalha de turnos, o jogador luta contra um NPC, podendo:
-  ** Atacar
-  ** Usar Escudo
-  ** Descansar
-  ** Usar um item
-  ** Usar Ataque Especial
+  **  Atacar
+  **  Usar Escudo
+  **  Descansar
+  **  Usar um item
+  **  Usar Ataque Especial
 * Entre as etapas do labirinto e da batalha de turnos é pssível ler a história do reino correspondente, clicando na pedra daquele reino;
 
 #### 1ª fase:
