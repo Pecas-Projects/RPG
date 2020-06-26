@@ -12,6 +12,10 @@
 ## 📝 Sumário
 
 - [História geral](#historia)
+- [História Aequor](#historiaAequor)
+- [História Caeli](#historiaCaeli)
+- [História Ignis](#historiaIgnis)
+- [História Savi](#historiaSavi)
 - [Iniciando](#inicio)
 - [Preparando Uso](#preparando)
 - [Como jogar](#como-usar)
@@ -26,11 +30,16 @@
 
 ## 🧐 História geral <a name = "historia"></a>
 
- Em um futuro pos apocalíptico, após a grande guerra nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades. As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa. Eles descobriram em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anulava o efeito da outra, mas separadas tinham um enorme poder. Assim a Imperium Liberium (pedra da magia) enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor, uma gargantilha com essa pedra, aprisionando-a.
+Em um futuro pós apocalíptico, após a Grande Guerra Nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades. As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa. Eles descobriram em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anula o efeito da outra, mas separadas tinham um enorme poder. Assim a Imperium Liberium, a Pedra da Magia, enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor, uma gargantilha com essa pedra, aprisionando-a.
  
- Quando ele consegue enfraquecer a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, assim, tomando o poder. Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes enfraquecidos apenas para servi-los, sem conhecer a verdadeira historia e impossibilitadas de explorar seu verdadeiro potencial. 
+Quando ele enfraquece a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, assim, tomando o poder. Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes enfraquecidos apenas para servi-los, sem conhecer a verdade e impossibilitadas de explorar seu verdadeiro potencial.
  
- 1000 anos depois da queda das feiticeiras, um rei dos humanos se apaixona por uma feiteceira e decide torná-la sua rainha, contudo como feiticeiras são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomam o poder e matam tanto a feiticeira, quanto o antigo rei. Assim, a garota começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus uma das pedras elementais para acabar com o controle sobre as feiticeiras, além de descobrir algo sobre seu verdadeiro eu e derrubar tantos anos de opressão...
+1000 anos depois da queda, o Rei dos humanos se apaixona por uma feiticeira e decide torná-la sua rainha, contudo como elas são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta com a Pedra da Terra à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomaram o poder matando o Rei e a Rainha. Assim, a Princesa começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus as outras três Pedras Elementais, retornando ao seu reino para enfrentar o novo Rei dos Humanos, recuperar a Pedra da Magia e libertar as feiticeiras da escravidão.
+
+## 🌊 História Aequor <a name = "historiaAequor"></a>
+## ☁️ História Caeli <a name = "historiaCaeli"></a>
+## 🔥 História Ignis <a name = "historiaIgnis"></a>
+## 🏰 História Savi <a name = "historiaSavi"></a>
  
  ## 🏁 Iniciando <a name = "inicio"></a>
 
@@ -155,57 +164,67 @@ contar a história (rápida) de cada personagem e sua personalidade
 ### ✍️ Mecânica do jogo: <a name = "mecanica"></a>
 os cálculos ficarão aqui
 
-##### Jogador:
+##### Jogador (início do jogo):
 * Personagem: Principal (Feiticeira);
-* Escudo = Defesa - AtaqueInimigo * Estamina; 
 * Ataque = Força * Estamina;
-* Dano = Ataque - Escudo do inimigo;
-* Magia(ataque especial = força * );
-* Estamina: 100% -> a cada ataque desce uma % em cada fase -> A cada turno almenta uma % em cada fase
-* A cada fase que passa a personagem ganha +5 magia e +3 força.
+* Dano = Ataque - Escudo do inimigo (caso esteja ativo);
+* Ataque Especial = Força * Estamina * Magia; 
+* Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
+* Ganho de Estamina (por turno) = 0,3;
+* Perda de Estamina (por ataque) = 0,12;
  
 ### Início do Jogo:
-* Vida: 100
-* Moedas: 0
-* Força: 15
-* Defesa: 10
-* Poder: 5
-* Itens na mochila: 0
+* O usuário sempre joga como uma feiticeira;
+* Vida: 100;
+* Moedas: 0;
+* Força: 20;
+* Escudo: 50;
+* Magia = 1,2;
+* Itens na mochila: 0;
 
 ### Chefe da Fase:
 ##### Atributos
-* Escudo = Defesa - Ataque * Estamina; 
+* Escudo = varia de acordo com o chefe da fase;
 * Ataque = Força * Estamina;
-* Dano = Ataque - Escudo do inimigo;
-* Ataque especial
+* Dano = Ataque - Escudo do inimigo (caso esteja ativo);
+* Ataque especial = varia de acordo com o chefe da fase;
 
 #### Rei dos sereianos
-* Vida: 100
-* Força: 20
-* Defesa: 20
-* Estamina: 100% -> a cada ataque desce 25% -> A cada turno almenta 10%
-* Ataque especial: Tsunami (Força = 30, estamina desce em 40%)
+* Vida: 100;
+* Força: 20;
+* Escudo: 50;
+* Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
+* Ganho de Estamina (por turno) = 0,15;
+* Perda de Estamina (por ataque) = 0,25;
+* Ataque especial: A cada oito rodadas zera a estamina do seu oponente, porém precisa estar com a sua estamina em no mínimo 85%;
 
 #### Rei das fadas
-* Vida: 100
-* Força: 25
-* Defesa: 25
-* Estamina: 100% -> a cada ataque desce 25% -> A cada turno almenta 10%
-* Ataque especial:Tornado (Força = 35, estamina desce em 40%)
+* Vida: 100;
+* Força: 25;
+* Escudo: 55;
+* Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
+* Ganho de Estamina (por turno) = 0,18;
+* Perda de Estamina (por ataque) = 0,3;
+* Ataque especial:Tendo mais de 60% de estamina a Fada consegue "Roubar o escudo da feiticeira em 10 pontos
 
 #### Rei dos bárbaros
-* Vida: 100
-* Força: 30
-* Defesa: 30
-* Estamina: 100% -> a cada ataque desce 25% -> A cada turno almenta 10%
-* Ataque especial: Ataque com machado (Força = 40, estamina desce em 45%)
+* Vida: 100;
+* Força: 30;
+* Escudo: 70;
+* Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
+* Ganho de Estamina (por turno) = 0,2;
+* Perda de Estamina (por ataque) = 0,4;
+* Ataque especial:  Rouba a metade da estamina da Feiticeira e em seguida ataca;
 
 #### Rei dos Humanos
-* Vida: 100
-* Força: 35
-* Defesa: 35
-* Estamina: 100% -> a cada ataque desce 25% -> A cada turno almenta 10%
-* Ataque especial: Terremoto (Força = 45, estamina desce em 45%)
+* Vida: 100;
+* Força: 30;
+* Escudo: 40;
+* Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
+* Ganho de Estamina (por turno) = 0,1;
+* Perda de Estamina (por ataque) = 0,2;
+* Ataque especial: Caso o a estamida seja maior que 80% ele pode desativar o escudo da feiticeira e dar um "Contra-Ataque".
+
 
 
 
