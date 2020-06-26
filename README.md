@@ -11,11 +11,11 @@
 
 ## 📝 Sumário
 
-- [Componentes da equipe](#equipe)
 - [História geral](#historia)
 - [Iniciando](#inicio)
 - [Preparando Uso](#preparando)
 - [Como Usar](#como-usar)
+- [Regras](#regras)
 - [Tecnologias Usadas](#tecnologias-usadas)
 - [TODO](./TODO.md)
 - [Contribuindo](./CONTRIBUTING.md)
@@ -26,13 +26,6 @@
 - [Personagens encontrados](#personagens)
 - [Mecânica do jogo](#mecanica)
 
-
-## 🧐 Componentes da equipe <a name = "equipe"></a>
-
-* Ana Paula Tártari
-* Beatriz Calazanes
-* Fernanda Lisboa
-* Maria Antonia Amado
 
 ## 🧐 História geral <a name = "historia"></a>
 
@@ -57,6 +50,15 @@ Escolha da feiticeira que jogará.
 ## 🎈 Como jogar <a name="como-usar"></a>
 
 Instruções de como jogar.
+
+### ✍️ Regras do jogo: <a name = "regras"></a>
+
+* O personagem aparece no começo do labirinto de cada fase
+* O jogador, utilizando as setas do teclado, pode mover-se pelo labirinto, devendo chegar ao fim antes que o tempo acabe
+* Recompensas estão espalhadas pelo labirinto, coletá-las é opcional
+* Após completar o labirinto o usuário pode ir diretamente para a batalha, ou acessar a mochila
+* A mochila exibe todo o inventário do jogador, e a partir dela  é possível acessar a loja
+* As moedas são utilizadas para comprar itens na loja
 
 ## ⛏️ Tecnologias Usadas <a name = "tecnologias-usadas"></a>
 
@@ -121,15 +123,6 @@ Instruções de como jogar.
 * Recompensas: Fim da opressão
 
 ## Mecânica:
-
-### ✍️ Regras do jogo: <a name = "regras"></a>
-
-* O personagem aparece no começo do labirinto de cada fase
-* O jogador, utilizando as setas do teclado, pode mover-se pelo labirinto, devendo chegar ao fim antes que o tempo acabe
-* Recompensas estão espalhadas pelo labirinto, coletá-las é opcional
-* Após completar o labirinto o usuário pode ir diretamente para a batalha, ou acessar a mochila
-* A mochila exibe todo o inventário do jogador, e a partir dela  é possível acessar a loja
-* As moedas são utilizadas para comprar itens na loja
 
 ### Itens extra:
 * Poção Taurus Rubber: Recupera instantâneamente 0,3 pontos de estamina.
