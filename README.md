@@ -24,7 +24,6 @@
 - [Contribuindo](./CONTRIBUTING.md)
 - [Desenvolvedoras](#desenvolvedoras)
 - [O jogo](#o-jogo)
-- [Personagens encontrados](#personagens)
 - [Mecânica do jogo](#mecanica)
 
 
@@ -140,7 +139,7 @@ Instruções de como jogar.
 * Raça presente: humanos
 * Recompensas: Fim da opressão
 
-## ⚙️ Mecânica:
+## ⚙️ Mecânica <a name = "mecanica"></a>:
 
 ### Itens extra:
 * Poção Taurus Rubber: Recupera instantâneamente 0,3 pontos de estamina.
@@ -166,14 +165,6 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Durante o Labirinto o jogador pode se mover usando as setas do teclado;
 * A personagem poderá coletar itens e moedas, antes que o tempo acabe;
 * Se o jogador não sair do labirinto antes que o tempo acabe, o labirinto começará novamente;
-
-### ✍️ Personagens do jogo: <a name = "personagens"></a>
-
-contar a história (rápida) de cada personagem e sua personalidade
-
-
-### ✍️ Mecânica do jogo: <a name = "mecanica"></a>
-os cálculos ficarão aqui
 
 ##### Jogador (início do jogo):
 * Personagem: Principal (Feiticeira);
