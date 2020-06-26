@@ -1,6 +1,27 @@
-# RPG - Pecas
+<p align="center">
+  <a href="" rel="noopener">
+  <img width=300px height=300px src="./RPG/MeuRPGZinUWP/Assets/LockScreenLogo.scale-200.png" alt="Logo do Projeto"></a>
+</p>
 
-Trabalho para a disciplina de Linguagem de Programação II, lecionada por Marcos Lapa
+<h3 align="center">RPG Ardens Missus </h3>
+
+<p align="center"> RPG realizado como trabalho da avaliação 3 para a disciplina de Linguagem de Programação II, lecionada por Marcos Lapa.
+    <br>
+</p>
+
+## 📝 Sumário
+
+- [Sobre](#sobre)
+- [História] (#historia)
+- [Iniciando](#inicio)
+- [Preparando Uso](#preparando)
+- [Como Usar](#como-usar)
+- [Tecnologias Usadas](#tecnologias-usadas)
+- [TODO](./TODO.md)
+- [Contribuindo](./CONTRIBUTING.md)
+- [Desenvolvedores](#desenvolvedores)
+
+## 🧐 Sobre <a name = "sobre"></a>
 
 ## Componentes da equipe
 * Ana Paula Tártari
@@ -8,6 +29,7 @@ Trabalho para a disciplina de Linguagem de Programação II, lecionada por Marco
 * Fernanda Lisboa
 * Maria Antonia Amado
 
+## 🧐 História <a name = "historia"></a>
 ## Historia geral
 
  Em um futuro pos apocalíptico, após a grande guerra nuclear, os seres humanos sofreram alteração genética em seu DNA devido à radiação, desenvolvendo poderes e habilidades. As feiticeiras ascenderam logo após a reestruturação da sociedade, comandando pequenas tribos. Porém, quando os homens percebem que elas estavam tomando grande parte do poder, um homem e seus aliados armaram um plano para seduzir a feiticeira mais poderosa. Eles descobriram em uma caverna 5 pedras, cada uma influenciava um dos elementos da natureza, água, fogo, terra, ar e a magia, juntas uma anulava o efeito da outra, mas separadas tinham um enorme poder. Assim a Imperium Liberium (pedra da magia) enfraquecia os poderes das feiticeiras, dessa forma quando o homem ganhou o coração da feiticeira ele deu como presente para provar seu amor, uma gargantilha com essa pedra, aprisionando-a.
@@ -15,6 +37,10 @@ Trabalho para a disciplina de Linguagem de Programação II, lecionada por Marco
  Quando ele consegue enfraquecer a líder mais poderosa, ele e seus aliados conseguiram aprisionar as principais feiticeiras, assim, tomando o poder. Após isso, as próximas gerações de feiticeiras foram ensinadas a adorar a pedra, utilizando seus poderes enfraquecidos apenas para servi-los, sem conhecer a verdadeira historia e impossibilitadas de explorar seu verdadeiro potencial. 
  
  1000 anos depois da queda das feiticeiras, um rei dos humanos se apaixona por uma feiteceira e decide torná-la sua rainha, contudo como feiticeiras são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomam o poder e matam tanto a feiticeira, quanto o antigo rei. Assim, a garota começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus uma das pedras elementais para acabar com o controle sobre as feiticeiras, além de descobrir algo sobre seu verdadeiro eu e derrubar tantos anos de opressão...
+
+### Pré-requisitos
+Saber ler.
+
 
 ### Tipos de personagens encontrados:
 * Feiticeiras
