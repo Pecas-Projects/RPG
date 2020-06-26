@@ -39,7 +39,7 @@
  1000 anos depois da queda das feiticeiras, um rei dos humanos se apaixona por uma feiteceira e decide torná-la sua rainha, contudo como feiticeiras são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomam o poder e matam tanto a feiticeira, quanto o antigo rei. Assim, a garota começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus uma das pedras elementais para acabar com o controle sobre as feiticeiras, além de descobrir algo sobre seu verdadeiro eu e derrubar tantos anos de opressão...
 
 ### Pré-requisitos
-Saber ler.
+
 
 
 ### Tipos de personagens encontrados:
@@ -57,33 +57,38 @@ Saber ler.
 * Reino Savi
 
 ### Fases do jogo:
-Ao final de cada fase será disponibilizada a história do reino presente.
-
-#### Fase Inicial:
-* Local: Floresta Proíbida
-* Raça presente: nenhuma
-* Objetivo: conhecimento dos movimentos e coletar de itens
+*Cada fase é composta por um labirinto e uma batalha de turnos respectivamente, com exceção da fase final, que possui apenas uma batalha;
+*Dentro do labirinto o jogador pode coletar itens e moedas.
+*Antes de cada batalha o jogador tem acesso a sua mochila. Nela,o jogador pode escolher dois itens para usar durante a batalha de turnos. 
+   Alem disso, da mochila o jogador pode acessar a loja, onde as moedas coletadas podem ser trocadas por itens.
+*Durante a batalha de turnos, o jogador luta contra um NPC, podendo:
+  ** Atacar
+  ** Usar Escudo
+  ** Descansar
+  ** Usar um item
+  ** Usar Ataque Especial
+*Entre as etapas do labirinto e da batalha de turnos é pssível ler a história do reino correspondente, clicando na pedra daquele reino;
 
 #### 1ª fase:
 * Local: Reino Aequor
-* Raça presente: Sereianos
-* Recompensas: Pedra da água e Asas
-* Bônus: Pecas
+* Raça presente: Sereiano
+* Recompensas: Pedra da água
+* Bônus: 10 moedas, maior ganho de estamina por turno
 
 #### 2ª fase:
 * Local: Reino Caeli
 * Raça presente: Fadas
-* Recompensas: Pedra do ar 
-* Bônus: Poção fortalecedora (Aumenta no próximo ataque em 15% da sua força)
+* Recompensas: Pedra do Ar
+* Bônus: 5 moedas, e uma poção fortalecedora
 
 #### 3ª fase:
 * Cenário: Reino Ignis
 * Raça presente: bárbaros 
-* Recompensas: Pedra do fogo e Espada forjada com espaço para as pedras elementais
-* Bônus: Poção de Whey
+* Recompensas: Pedra do Fogo
+* Bônus: Aumento da força, e uma ppoção Vitae
 
 #### Fase final:
-*	Cenário: Castelo (Reino Savi)
+*	Cenário: Floresta Proibída
 * Raça presente: humanos
 * Recompensas: Fim da opressão
 
