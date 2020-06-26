@@ -16,8 +16,8 @@
             <Image Source="Assets/ceu_desfocado.png" Height="700" Width="1300" Stretch="UniformToFill" ></Image>
 
             <Image Source="Assets/fada_de_chapeu.png" Width="200" Height="200" Canvas.Left="1090" Canvas.Top="10"></Image>
-            <Image Source="Assets/moeda_front.png" Width="81" Height="81" Canvas.Left="1109" Canvas.Top="314" RenderTransformOrigin="0.084,0.528"></Image>
-            
+            <Image Source="Assets/moeda_front.png" Width="81" Height="81" Canvas.Left="1109" Canvas.Top="291" RenderTransformOrigin="0.084,0.528"></Image>
+
             <TextBlock Height="97" FontSize="55"  FontFamily="Cardinal" Foreground="White"
         Text="Parabéns feiticeira, você derrotou o Rei das Fadas!" Canvas.Left="39" Canvas.Top="35" Width="1061"/>
 
@@ -29,14 +29,19 @@
 
 
             <TextBlock Height="100"  FontSize="55" Foreground="White" FontFamily="Cardinal"
-        Text="Como recompensa por sua vitória você receberá " Canvas.Left="130" Canvas.Top="320" Width="884"/>
+        Text="Como recompensa por sua vitória você receberá " Canvas.Left="143" Canvas.Top="291" Width="884"/>
 
-            <TextBlock Width="80" Foreground="White" Height="80" Text="5" FontFamily="Cardinal" FontSize="70" Canvas.Left="1041" Canvas.Top="314" RenderTransformOrigin="0.5,0.5">
+            <TextBlock  Height="100"  FontSize="55" Foreground="White" FontFamily="Cardinal"
+        Text="e uma Poção Fortalecedora" Canvas.Left="304" Canvas.Top="350" Width="545"></TextBlock>
+
+            <Image Source="Assets/pocao_fortalecedora.png" Width="80" Height="80" Canvas.Left="824" Canvas.Top="345"></Image>
+
+            <TextBlock Width="80" Foreground="White" Height="80" Text="5" FontFamily="Cardinal" FontSize="70" Canvas.Left="1064" Canvas.Top="285" RenderTransformOrigin="0.5,0.5">
             </TextBlock>
 
 
             <TextBlock Height="100"  FontSize="55" Foreground="White" FontFamily="Cardinal"
-        Text="Sua jornada agora a levará ao labirinto do Reino Ignis." Canvas.Left="117" Canvas.Top="420" Width="1155"/>
+        Text="Sua jornada agora a levará ao labirinto do Reino Ignis." Canvas.Left="106" Canvas.Top="430" Width="1155"/>
 
             <Button x:Name="irLab"  Canvas.Left="596" Canvas.Top="559"  Content="Iniciar Labirinto" FontSize="50" Foreground="Black"
                     Click="IrLab_handleClick"

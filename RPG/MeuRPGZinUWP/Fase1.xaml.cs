@@ -203,17 +203,15 @@ namespace MeuRPGZinUWP
             tempoTotal = timesToTick - timesTicked;
             tempo.Text = "Tempo Restante: " + tempoTotal.ToString() + "s";
             timesTicked++;
-            if (timesTicked > timesToTick) //quando ot empo terminar
+            if (timesTicked > timesToTick) //quando o tempo terminar
             {
                 stopTime = time;
                 dispatcherTimer.Stop();
                 span = stopTime - startTime;
 
                 //deleta tudo que o jogador coletou no labirinto se ele perder
-                if (Whey)
-                {
-                    feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
-                }
+                if (Whey) feiticeira.mochila.RemoverItem(feiticeira.mochila.bagWhey);
+              
                 feiticeira.Moedas -= contMoedas;
 
                 tempo.Text = "GAME OVER";
