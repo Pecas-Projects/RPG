@@ -67,12 +67,12 @@ Instruções de como jogar.
 
 ### ✍️ Regras do jogo: 
 
-* O personagem aparece no começo do labirinto de cada fase
-* O jogador, utilizando as setas do teclado, pode mover-se pelo labirinto, devendo chegar ao fim antes que o tempo acabe
-* Recompensas estão espalhadas pelo labirinto, coletá-las é opcional
-* Após completar o labirinto o usuário pode ir diretamente para a batalha, ou acessar a mochila
-* A mochila exibe todo o inventário do jogador, e a partir dela  é possível acessar a loja
-* As moedas são utilizadas para comprar itens na loja
+* O personagem aparece no começo do labirinto de cada fase;
+* O jogador, utilizando as setas do teclado, pode mover-se pelo labirinto, devendo chegar ao fim antes que o tempo acabe;
+* Recompensas estão espalhadas pelo labirinto, coletá-las é opcional;
+* Após completar o labirinto o usuário pode ir diretamente para a batalha, ou acessar a mochila;
+* A mochila exibe todo o inventário do jogador, e a partir dela  é possível acessar a loja;
+* As moedas são utilizadas para comprar itens na loja.
 
 ## ⛏️ Tecnologias Usadas <a name = "tecnologias-usadas"></a>
 
@@ -87,82 +87,82 @@ Instruções de como jogar.
 
 ### ✍️ Raças 
 
-* Feiticeiras
-* Fadas
-* Sereianos
-* Barbaros 
-* Humanos
+* Feiticeiras;
+* Fadas;
+* Sereianos;
+* Barbaros;
+* Humanos.
 
 ### ✍️ Reinos
 
-* 🌳 Floresta Proíbida
-* 🌊 Reino Aequor
-* ☁️ Reino Caeli
-* 🔥 Reino Ignis
-* 🏰 Reino Savi
+* 🌳 Floresta Proíbida;
+* 🌊 Reino Aequor;
+* ☁️ Reino Caeli;
+* 🔥 Reino Ignis;
+* 🏰 Reino Savi.
 
 ### 🌈 Fases: 
 * Cada fase é composta por um labirinto e uma batalha de turnos respectivamente, com exceção da fase final, que possui apenas uma batalha;
-* Dentro do labirinto o jogador pode coletar itens e moedas.
+* Dentro do labirinto o jogador pode coletar itens e moedas;
 * Antes de cada batalha o jogador tem acesso a sua mochila. Nela,o jogador pode escolher dois itens para usar durante a batalha de turnos. 
-   Alem disso, da mochila o jogador pode acessar a loja, onde as moedas coletadas podem ser trocadas por itens.
+   Alem disso, da mochila o jogador pode acessar a loja, onde as moedas coletadas podem ser trocadas por itens;
 * Durante a batalha de turnos, o jogador luta contra um NPC, podendo:
-  * Atacar
-  * Usar Escudo
-  * Descansar
-  * Usar um item
-  * Usar Ataque Especial
-* Entre as etapas do labirinto e da batalha de turnos é pssível ler a história do reino correspondente, clicando na pedra daquele reino;
+  * Atacar;
+  * Usar Escudo;
+  * Descansar;
+  * Usar um item;
+  * Usar Ataque Especial;
+* Entre as etapas do labirinto e da batalha de turnos é pssível ler a história do reino correspondente, clicando na pedra daquele reino.
 
 #### 1ª fase:
-* Local: Reino Aequor
-* Raça presente: Sereiano
-* Recompensas: Pedra da água
-* Bônus: 10 moedas, maior ganho de estamina por turno
+* Local: Reino Aequor;
+* Raça presente: Sereiano;
+* Recompensas: Pedra da água;
+* Bônus: 10 moedas, maior ganho de estamina por turno.
 
 #### 2ª fase:
-* Local: Reino Caeli
-* Raça presente: Fadas
-* Recompensas: Pedra do Ar
-* Bônus: 5 moedas, e uma poção fortalecedora
+* Local: Reino Caeli;
+* Raça presente: Fadas;
+* Recompensas: Pedra do Ar;
+* Bônus: 5 moedas, e uma poção fortalecedora.
 
 #### 3ª fase:
-* Cenário: Reino Ignis
-* Raça presente: bárbaros 
-* Recompensas: Pedra do Fogo
-* Bônus: Aumento da força, e uma ppoção Vitae
+* Cenário: Reino Ignis;
+* Raça presente: bárbaros;
+* Recompensas: Pedra do Fogo;
+* Bônus: Aumento da força, e uma ppoção Vitae.
 
 #### Fase final:
-*	Cenário: Floresta Proibída
-* Raça presente: humanos
-* Recompensas: Fim da opressão
+*	Cenário: Floresta Proibída;
+* Raça presente: humanos;
+* Recompensas: Fim da opressão.
 
 ## ⚙️ Mecânica <a name = "mecanica"></a>:
 
 ### Itens extra:
-* Poção Taurus Rubber: Recupera instantâneamente 0,3 pontos de estamina.
-* Poção radix: Aumenta 15 pontos de escudo.
-* Pó de pirlimpimpim: Aumenta a magia da feiticeira em 20%.
-* Poção vitae: Aumenta a vida em 30 pontos
+* Poção Taurus Rubber: Recupera instantâneamente 0,3 pontos de estamina;
+* Poção radix: Aumenta 15 pontos de escudo;
+* Pó de pirlimpimpim: Aumenta a magia da feiticeira em 20%;
+* Poção vitae: Aumenta a vida em 30 pontos.
 
 ### Mecânica dos personagens:
-* Todos os personagens possuem uma quantidade de vida, força e defesa. Atributos como defesa e força podem mudar de acordo com o tipo de criatura.
-* O jogador possuirá uma mochila para armazenar seus itens.
-* Apenas o personagem do jogador pode possuir moedas.
+* Todos os personagens possuem uma quantidade de vida, força e defesa. Atributos como defesa e força podem mudar de acordo com o tipo de criatura;
+* O jogador possuirá uma mochila para armazenar seus itens;
+* Apenas o personagem do jogador pode possuir moedas;
 * Ao avançar o jogo, o jogador pode aumentar o valor dos seus atributos a partir de bônus.
 
 ### Mecânica das batalhas de turnos:
-O jogador poderá escolher entre ataque normal e ataque especial na batalha de turnos.
-* Tipo: turnos
-* Visão: 2D frontal
-O jogador e o NPC possuirão um valor de vida, escudo e estamina.
+O jogador poderá escolher entre ataque normal e ataque especial na batalha de turnos;
+* Tipo: turnos;
+* Visão: 2D frontal;
+O jogador e o NPC possuirão um valor de vida, escudo e estamina;
 Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porcentagem do escudo, e o NPC na estamina.
 
 
 ### Mecânica do Labirinto:
 * Durante o Labirinto o jogador pode se mover usando as setas do teclado;
 * A personagem poderá coletar itens e moedas, antes que o tempo acabe;
-* Se o jogador não sair do labirinto antes que o tempo acabe, o labirinto começará novamente;
+* Se o jogador não sair do labirinto antes que o tempo acabe, o labirinto começará novamente.
 
 ##### Jogador (início do jogo):
 * Personagem: Principal (Feiticeira);
@@ -171,7 +171,7 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Ataque Especial = Força * Estamina * Magia; 
 * Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
 * Ganho de Estamina (por turno) = 0,3;
-* Perda de Estamina (por ataque) = 0,12;
+* Perda de Estamina (por ataque) = 0,12.
  
 ### Início do Jogo:
 * O usuário sempre joga como uma feiticeira;
@@ -180,14 +180,14 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Força: 20;
 * Escudo: 50;
 * Magia = 1,2;
-* Itens na mochila: 0;
+* Itens na mochila: 0.
 
 ### Chefe da Fase:
 ##### Atributos
 * Escudo = varia de acordo com o chefe da fase;
 * Ataque = Força * Estamina;
 * Dano = Ataque - Escudo do inimigo (caso esteja ativo);
-* Ataque especial = varia de acordo com o chefe da fase;
+* Ataque especial = varia de acordo com o chefe da fase.
 
 #### Rei dos sereianos
 * Vida: 100;
@@ -196,7 +196,7 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
 * Ganho de Estamina (por turno) = 0,15;
 * Perda de Estamina (por ataque) = 0,25;
-* Ataque especial: A cada oito rodadas zera a estamina do seu oponente, porém precisa estar com a sua estamina em no mínimo 85%;
+* Ataque especial: A cada oito rodadas zera a estamina do seu oponente, porém precisa estar com a sua estamina em no mínimo 85%.
 
 #### Rei das fadas
 * Vida: 100;
@@ -205,7 +205,7 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
 * Ganho de Estamina (por turno) = 0,18;
 * Perda de Estamina (por ataque) = 0,3;
-* Ataque especial:Tendo mais de 60% de estamina a Fada consegue "Roubar o escudo da feiticeira em 10 pontos
+* Ataque especial:Tendo mais de 60% de estamina a Fada consegue "Roubar o escudo da feiticeira em 10 pontos.
 
 #### Rei dos bárbaros
 * Vida: 100;
@@ -214,7 +214,7 @@ Ex: Se o o jogador joga com o escudo e o NPC com ataque, o jogador perde na porc
 * Estamina: 1 -> a cada ataque uma porcentagem é retirada -> A cada turno a estamina é recuperada;
 * Ganho de Estamina (por turno) = 0,2;
 * Perda de Estamina (por ataque) = 0,4;
-* Ataque especial:  Rouba a metade da estamina da Feiticeira e em seguida ataca;
+* Ataque especial:  Rouba a metade da estamina da Feiticeira e em seguida ataca.
 
 #### Rei dos Humanos
 * Vida: 100;
