@@ -78,13 +78,13 @@ Instruções de como jogar.
 
 ### ✍️ Reinos
 
-* Floresta Proíbida
-* Reino Aequor
-* Reino Caeli
-* Reino Ignis
-* Reino Savi
+* 🌳 Floresta Proíbida
+* 🌊 Reino Aequor
+* ☁️ Reino Caeli
+* 🔥 Reino Ignis
+* 🏰 Reino Savi
 
-### ✍️ Fases: 
+### 🌈 Fases: 
 * Cada fase é composta por um labirinto e uma batalha de turnos respectivamente, com exceção da fase final, que possui apenas uma batalha;
 * Dentro do labirinto o jogador pode coletar itens e moedas.
 * Antes de cada batalha o jogador tem acesso a sua mochila. Nela,o jogador pode escolher dois itens para usar durante a batalha de turnos. 
@@ -120,7 +120,7 @@ Instruções de como jogar.
 * Raça presente: humanos
 * Recompensas: Fim da opressão
 
-## Mecânica:
+## ⚙️ Mecânica:
 
 ### Itens extra:
 * Poção Taurus Rubber: Recupera instantâneamente 0,3 pontos de estamina.
