@@ -20,8 +20,8 @@ namespace MeuRPGZinCore
         /// </summary>
         public HumanoNPC()
         {
-            this.Forca = 0;
-            //this.Forca = 30;
+          
+            this.Forca = 30;
             this.PerdaEstamina = 0.2;
             this.GanhoEstamnina = 0.1;
             this.Escudo = 40;

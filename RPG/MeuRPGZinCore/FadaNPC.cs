@@ -21,8 +21,8 @@ namespace MeuRPGZinCore
         /// </summary>
         public FadaNPC()
         {
-            this.Forca = 0;
-            //this.Forca = 25;
+            
+            this.Forca = 25;
             this.PerdaEstamina = 0.3;
             this.GanhoEstamnina = 0.18;
             this.Escudo = 55;

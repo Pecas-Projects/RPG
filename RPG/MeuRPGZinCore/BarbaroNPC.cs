@@ -20,8 +20,8 @@ namespace MeuRPGZinCore
         /// </summary>
         public BarbaroNPC()
         {
-            this.Forca = 0;
-            //this.Forca = 30;
+            
+            this.Forca = 30;
             this.PerdaEstamina = 0.4;
             this.GanhoEstamnina = 0.2;
             this.Escudo = 70;
