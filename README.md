@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-  <img width=300px height=300px src="./RPG/MeuRPGZinUWP/Assets/SplashScreen.scale-200.png" alt="Logo do Projeto"></a>
+  <img width=1024px height=600px src="./RPG/MeuRPGZinUWP/Assets/SplashScreen.scale-200.png" alt="Logo do Projeto"></a>
 </p>
 
 <h3 align="center">RPG Ardens Missus </h3>
