@@ -37,9 +37,20 @@ Quando ele enfraquece a líder mais poderosa, ele e seus aliados conseguiram apr
 1000 anos depois da queda, o Rei dos humanos se apaixona por uma feiticeira e decide torná-la sua rainha, contudo como elas são proibidas de assumir qualquer posição de poder, ela esconde sua verdadeira face do rei, para poder continuar com ele, tendo uma filha. Infelizmente, após alguns anos, o povo descobre seu segredo, realizando uma revolução. Nesse mesmo período, temendo o pior, a feiticeira conta a sua filha sobre seu poder e os riscos que correm, mandando-a fugir para a floresta com a Pedra da Terra à procura de uma anciã antes que encontrem a menina. Com isso, os "revolucionários" tomaram o poder matando o Rei e a Rainha. Assim, a Princesa começa a sua jornada, onde terá que recolher em cada um dos reinos das terras Ardens Missus as outras três Pedras Elementais, retornando ao seu reino para enfrentar o novo Rei dos Humanos, recuperar a Pedra da Magia e libertar as feiticeiras da escravidão.
 
 ## 🌊 História Aequor <a name = "historiaAequor"></a>
+
+O Reino Aequor é habitado pelo povo Sereiano, localizado na parte litorânea de Ardens Missus, antes da Grande Guerra Nuclear o Reino era composto por diversas vilas de pescadores e piratas. Assim, por viverem na costa, constantemente em contato com o mar, a radiação os fez desenvolver caudas e os tornou capaz de respirar embaixo da água. O Rei dos Sereianos é o guardião da Pedra da Água, conhecido por ser um guerreiro cuidadoso e saber toda a história de Ardens Missus, ele prevê os movimentos de seus inimigos e é capaz de roubar seu fôlego, rompendo até mesmo o mais poderoso feitiço de respiração. Para vencer o sábio rei é importante saber a hora de descansar.
+
 ## ☁️ História Caeli <a name = "historiaCaeli"></a>
+
+O Reino Caeli é habitado pelas Fadas, localizado nas cadeias montanhosas de Ardens Missus, mesmo antes da Grande Guerra Nuclear o povo das montanhas  vivia em grandes altitude, acostumados ao ar rarefeitos e a escalar até os picos mais altos. Depois da onda de radiação, aqueles que moravam lá desenvolveram asas e uma estrutura corporal leve para o voo. O Rei das Fadas é o guardião da pedra do Ar, mas não se deixe enganar pelo título, apesar de sua descendência nobre, esse rei luta sem a menor elegância, roubando a proteção de seus oponentes sem nunca demonstrar misericórdia. Contra o Rei das Fadas você não deve poupar escudo, mas não exite em usar o seu ataque mais forte.
+
 ## 🔥 História Ignis <a name = "historiaIgnis"></a>
+
+O Reino Ignis é habitado pelos Bárbaros, localizado no Norte de Ardens Missus, antes da Grande Guerra Nuclear seu povo era composto de ferreiros que forjavam as melhores armas com o calor dos vulcões do Norte. Dessa forma, a radiação alterou o DNA dos ferreiros, dando a eles uma enorme força física. O Rei dos Bárbaros é o guardião da Pedra do Fogo, sua natureza é impulsiva, e seu instinto é o ataque, não se surpreenda se esse for o resumo de seu combate. A fraqueza de seus inimigos o fortalece, assim, você precisa derrotá-lo o mais rápido possível. Provavelmente, só haverá uma chance para executar o seu melhor golpe, e ele precisa ser surpreendente.
+
 ## 🏰 História Savi <a name = "historiaSavi"></a>
+
+O Reino Savi é habitado pelos humanos, localizado no Sul de Ardens Missus, os humanos desse reino não sofreram alteração em sua estrutura genética, antes da Grande Guerra Mundial eram um povo composto por comerciantes, concentrando as principais rotas de comércio de Ardens Missus, se tornando assim o reino mais rico. O Rei dos Humanos é o guardião da Pedra da Terra e da Pedra da Magia, e apesar de manter as aparências, não é difícil notar seu ar de superioridade, sempre subestimando os seus inimigos. Assim, quando está em combate, este rei é capaz de enganar as defesas inimigas, e por esse motivo, contra os humanos, o ataque é a melhor defesa.
  
  ## 🏁 Iniciando <a name = "inicio"></a>
 
